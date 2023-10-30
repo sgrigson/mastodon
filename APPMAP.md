@@ -18,6 +18,8 @@ Run `bundle exec rails server` on devcontainer startup, after installing AppMap.
 
 Run `RAILS_ENV=test ./bin/webpack` to generate assets for the tests.
 
+Try running `RAILS_ENV=test bundle exec rspec spec/controllers/settings/applications_controller_spec.rb` first to confirm a single test works.
+
 Run `RAILS_ENV=test bundle exec rspec` to execute all the tests. This will take as long as an hour to complete.
 
 Run `npx @appland/appmap@latest openapi --output-file openapi.yml --openapi-title Mastodon` to generate openapi.yml docs.
