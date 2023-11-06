@@ -14,8 +14,6 @@ Running this via VS Code is recommended.
 
 Run as a local machine devcontainer via Docker.
 
-You might need to manually run `foreman start -f Procfile.dev`.
-
 Run `bundle exec rails server` on devcontainer startup, after installing AppMap. When the server starts up it will run via AppMap and start logging requests.
 
 ## Running All of The Tests Locally
