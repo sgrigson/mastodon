@@ -1,0 +1,4 @@
+[
+  "SELECT \"custom_filter_statuses\".\"status_id\" FROM \"custom_filter_statuses\" WHERE \"custom_filter_statuses\".\"custom_filter_id\" = $?",
+  "SELECT \"custom_filters\".\"id\", \"custom_filters\".\"account_id\", \"custom_filters\".\"expires_at\", \"custom_filters\".\"phrase\", \"custom_filters\".\"context\", \"custom_filters\".\"created_at\", \"custom_filters\".\"updated_at\", \"custom_filters\".\"action\" FROM \"custom_filters\" WHERE \"custom_filters\".\"account_id\" = $? ORDER BY \"custom_filters\".\"id\" ASC LIMIT $?"
+]

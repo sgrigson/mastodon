@@ -1,0 +1,14 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/lib/UserSettingsSerializer",
+  "app/models/Account",
+  "app/models/Setting",
+  "app/models/User",
+  "app/models/UserRole",
+  "app/validators/BlacklistedEmailValidator",
+  "app/validators/RegistrationFormTimeValidator",
+  "app/validators/URLValidator",
+  "logger/Logger::LogDevice",
+  "ruby/Array",
+  "ruby/Marshal"
+]

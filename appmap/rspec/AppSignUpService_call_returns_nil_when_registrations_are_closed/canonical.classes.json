@@ -1,0 +1,8 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/models/Setting",
+  "app/validators/URLValidator",
+  "logger/Logger::LogDevice",
+  "psych/Psych",
+  "ruby/Array"
+]
