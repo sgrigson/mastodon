@@ -1,0 +1,7 @@
+[
+  "SELECT ? AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $? AND \"blocks\".\"target_account_id\" = $? LIMIT $?",
+  "SELECT ? AS one FROM \"follows\" WHERE \"follows\".\"account_id\" = $? AND \"follows\".\"target_account_id\" = $? LIMIT $?",
+  "SELECT ? AS one FROM \"tags\" INNER JOIN \"statuses_tags\" ON \"tags\".\"id\" = \"statuses_tags\".\"tag_id\" WHERE \"statuses_tags\".\"status_id\" = $? AND \"tags\".\"id\" = $? LIMIT $?",
+  "SELECT \"statuses\".* FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses_tags\".\"status_id\" = \"statuses\".\"id\" LEFT OUTER JOIN \"mentions\" ON \"mentions\".\"status_id\" = \"statuses\".\"id\" WHERE \"statuses\".\"account_id\" = $? AND (\"statuses\".\"visibility\" IN ($?, $?, $?) OR \"mentions\".\"account_id\" = $?) AND \"statuses\".\"deleted_at\" IS ? AND \"statuses_tags\".\"tag_id\" = $? GROUP BY \"statuses\".\"id\" ORDER BY \"statuses\".\"id\" DESC",
+  "SELECT \"tags\".* FROM \"tags\" WHERE LOWER(\"tags\".\"name\") = LOWER(?) ORDER BY \"tags\".\"id\" ASC LIMIT $?"
+]

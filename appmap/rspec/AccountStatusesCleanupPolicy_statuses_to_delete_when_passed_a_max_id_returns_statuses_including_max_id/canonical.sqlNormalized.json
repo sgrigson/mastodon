@@ -1,0 +1,6 @@
+[
+  "INSERT INTO \"account_statuses_cleanup_policies\" (\"account_id\", \"enabled\", \"min_status_age\", \"keep_direct\", \"keep_pinned\", \"keep_polls\", \"keep_media\", \"keep_self_fav\", \"keep_self_bookmark\", \"min_favs\", \"min_reblogs\", \"created_at\", \"updated_at\") VALUES ($?, $?, $?, $?, $?, $?, $?, $?, $?, $?, $?, $?, $?) RETURNING \"id\"",
+  "RELEASE SAVEPOINT active_record_1",
+  "SAVEPOINT active_record_1",
+  "SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"account_id\" = $? AND \"statuses\".\"id\" <= $? AND \"statuses\".\"visibility\" != $? AND (NOT EXISTS (SELECT ? FROM status_pins pin WHERE pin.account_id = statuses.account_id AND pin.status_id = statuses.id)) AND (NOT EXISTS (SELECT ? FROM favourites fav WHERE fav.account_id = statuses.account_id AND fav.status_id = statuses.id)) AND \"statuses\".\"deleted_at\" IS ? AND (NOT EXISTS (SELECT ? FROM bookmarks bookmark WHERE bookmark.account_id = statuses.account_id AND bookmark.status_id = statuses.id)) ORDER BY \"statuses\".\"id\" ASC LIMIT $?"
+]

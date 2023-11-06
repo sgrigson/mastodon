@@ -1,0 +1,9 @@
+[
+  "SELECT ? AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $? AND \"blocks\".\"target_account_id\" = $? LIMIT $?",
+  "SELECT ? AS one FROM \"follows\" WHERE \"follows\".\"account_id\" = $? AND \"follows\".\"target_account_id\" = $? LIMIT $?",
+  "SELECT \"account_domain_blocks\".\"domain\" FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $?",
+  "SELECT \"blocks\".\"account_id\" FROM \"blocks\" WHERE \"blocks\".\"target_account_id\" = $?",
+  "SELECT \"blocks\".\"target_account_id\" FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $?",
+  "SELECT \"mutes\".\"target_account_id\" FROM \"mutes\" WHERE \"mutes\".\"account_id\" = $?",
+  "SELECT \"statuses\".* FROM \"statuses\" LEFT OUTER JOIN \"mentions\" ON \"mentions\".\"status_id\" = \"statuses\".\"id\" LEFT OUTER JOIN \"statuses\" \"reblog\" ON \"reblog\".\"deleted_at\" IS ? AND \"reblog\".\"id\" = \"statuses\".\"reblog_of_id\" LEFT OUTER JOIN \"accounts\" ON \"accounts\".\"id\" = \"reblog\".\"account_id\" WHERE \"statuses\".\"account_id\" = $? AND (\"statuses\".\"visibility\" IN ($?, $?, $?) OR \"mentions\".\"account_id\" = $?) AND (\"statuses\".\"reblog_of_id\" IS ? OR (\"accounts\".\"domain\" IS ? OR ?=?) AND ?=?) AND \"statuses\".\"deleted_at\" IS ? AND (statuses.reply = ? OR statuses.in_reply_to_account_id = statuses.account_id) GROUP BY \"statuses\".\"id\" ORDER BY \"statuses\".\"id\" DESC"
+]

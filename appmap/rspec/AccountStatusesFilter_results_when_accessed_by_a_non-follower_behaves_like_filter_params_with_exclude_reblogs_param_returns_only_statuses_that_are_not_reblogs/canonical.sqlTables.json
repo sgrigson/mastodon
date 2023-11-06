@@ -1,0 +1,13 @@
+[
+  "account_stats",
+  "accounts",
+  "blocks",
+  "follows",
+  "mentions",
+  "statuses",
+  "user_invite_requests",
+  "user_ips",
+  "user_roles",
+  "users",
+  "webhooks"
+]

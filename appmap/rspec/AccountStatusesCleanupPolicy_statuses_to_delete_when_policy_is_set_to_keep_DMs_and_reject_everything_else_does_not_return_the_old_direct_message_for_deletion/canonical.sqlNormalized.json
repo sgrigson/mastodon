@@ -1,0 +1,3 @@
+[
+  "SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"account_id\" = $? AND \"statuses\".\"id\" <= $? AND \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"visibility\" != $? ORDER BY \"statuses\".\"id\" ASC LIMIT $?"
+]

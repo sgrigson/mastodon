@@ -1,0 +1,120 @@
+[
+  {
+    "name": "activesupport",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActiveSupport",
+        "type": "class",
+        "children": [
+          {
+            "name": "Callbacks",
+            "type": "class",
+            "children": [
+              {
+                "name": "CallbackSequence",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "invoke_before",
+                    "type": "function",
+                    "labels": [
+                      "mvc.before_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                  },
+                  {
+                    "name": "invoke_after",
+                    "type": "function",
+                    "labels": [
+                      "mvc.after_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "app/models",
+    "type": "package",
+    "children": [
+      {
+        "name": "Account",
+        "type": "class",
+        "children": [
+          {
+            "name": "local?",
+            "type": "function",
+            "static": false,
+            "location": "app/models/account.rb:163"
+          }
+        ]
+      },
+      {
+        "name": "AccountStatusesCleanupPolicy",
+        "type": "class",
+        "children": [
+          {
+            "name": "statuses_to_delete",
+            "type": "function",
+            "static": false,
+            "location": "app/models/account_statuses_cleanup_policy.rb:59"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lib/mastodon",
+    "type": "package",
+    "children": [
+      {
+        "name": "Mastodon",
+        "type": "class",
+        "children": [
+          {
+            "name": "Snowflake",
+            "type": "class",
+            "children": [
+              {
+                "name": "id_at",
+                "type": "function",
+                "static": true,
+                "location": "lib/mastodon/snowflake.rb:99"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"account_statuses_cleanup_policies\" (\"account_id\", \"enabled\", \"min_status_age\", \"keep_direct\", \"keep_pinned\", \"keep_polls\", \"keep_media\", \"keep_self_fav\", \"keep_self_bookmark\", \"min_favs\", \"min_reblogs\", \"created_at\", \"updated_at\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13) RETURNING \"id\""
+      },
+      {
+        "type": "query",
+        "name": "RELEASE SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"account_id\" = $1 AND \"statuses\".\"id\" <= $2 AND \"statuses\".\"visibility\" != $3 AND (NOT EXISTS (SELECT 1 FROM status_pins pin WHERE pin.account_id = statuses.account_id AND pin.status_id = statuses.id)) AND (NOT EXISTS (SELECT 1 FROM favourites fav WHERE fav.account_id = statuses.account_id AND fav.status_id = statuses.id)) AND \"statuses\".\"deleted_at\" IS NULL AND (NOT EXISTS (SELECT 1 FROM bookmarks bookmark WHERE bookmark.account_id = statuses.account_id AND bookmark.status_id = statuses.id)) ORDER BY \"statuses\".\"id\" ASC LIMIT $4"
+      }
+    ]
+  }
+]

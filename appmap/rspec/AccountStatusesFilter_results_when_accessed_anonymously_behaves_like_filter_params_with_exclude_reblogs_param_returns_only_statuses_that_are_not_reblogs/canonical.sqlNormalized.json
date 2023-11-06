@@ -1,0 +1,3 @@
+[
+  "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"account_id\" = $? AND \"statuses\".\"visibility\" IN ($?, $?) AND \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"reblog_of_id\" IS ? ORDER BY \"statuses\".\"id\" DESC"
+]

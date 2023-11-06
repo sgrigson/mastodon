@@ -1,0 +1,38 @@
+[
+  {
+    "caller": "app/lib",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT 1 AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1 AND \"blocks\".\"target_account_id\" = $2 LIMIT $3"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT 1 AS one FROM \"follows\" WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2 LIMIT $3"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"account_domain_blocks\".\"domain\" FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"blocks\".\"account_id\" FROM \"blocks\" WHERE \"blocks\".\"target_account_id\" = $1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"blocks\".\"target_account_id\" FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"mutes\".\"target_account_id\" FROM \"mutes\" WHERE \"mutes\".\"account_id\" = $1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/models",
+    "callee": "ruby/Marshal"
+  }
+]

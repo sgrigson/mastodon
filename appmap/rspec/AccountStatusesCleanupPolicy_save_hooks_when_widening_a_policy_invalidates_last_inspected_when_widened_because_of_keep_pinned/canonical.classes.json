@@ -1,0 +1,9 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/lib/RequestPool",
+  "app/lib/connection_pool/ConnectionPool::SharedConnectionPool",
+  "app/lib/connection_pool/ConnectionPool::SharedTimedStack",
+  "app/models/Account",
+  "app/models/AccountStatusesCleanupPolicy",
+  "app/models/concerns/Redisable"
+]

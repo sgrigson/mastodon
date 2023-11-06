@@ -1,0 +1,54 @@
+[
+  {
+    "name": "app/models",
+    "type": "package",
+    "children": [
+      {
+        "name": "AccountStatusesCleanupPolicy",
+        "type": "class",
+        "children": [
+          {
+            "name": "statuses_to_delete",
+            "type": "function",
+            "static": false,
+            "location": "app/models/account_statuses_cleanup_policy.rb:59"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lib/mastodon",
+    "type": "package",
+    "children": [
+      {
+        "name": "Mastodon",
+        "type": "class",
+        "children": [
+          {
+            "name": "Snowflake",
+            "type": "class",
+            "children": [
+              {
+                "name": "id_at",
+                "type": "function",
+                "static": true,
+                "location": "lib/mastodon/snowflake.rb:99"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"account_id\" = $1 AND \"statuses\".\"id\" <= $2 AND \"statuses\".\"deleted_at\" IS NULL AND (NOT EXISTS (SELECT 1 FROM media_attachments media WHERE media.status_id = statuses.id)) ORDER BY \"statuses\".\"id\" ASC LIMIT $3"
+      }
+    ]
+  }
+]

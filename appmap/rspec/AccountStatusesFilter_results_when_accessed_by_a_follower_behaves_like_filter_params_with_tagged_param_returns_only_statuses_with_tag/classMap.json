@@ -1,0 +1,142 @@
+[
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "AccountStatusesFilter",
+            "type": "class",
+            "children": [
+              {
+                "name": "results",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/account_statuses_filter.rb:20"
+              }
+            ]
+          },
+          {
+            "name": "HashtagNormalizer",
+            "type": "class",
+            "children": [
+              {
+                "name": "normalize",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/hashtag_normalizer.rb:4"
+              }
+            ]
+          },
+          {
+            "name": "ASCIIFolding",
+            "type": "class",
+            "children": [
+              {
+                "name": "fold",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/ascii_folding.rb:7"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "Account",
+            "type": "class",
+            "children": [
+              {
+                "name": "suspended?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:237"
+              }
+            ]
+          },
+          {
+            "name": "concerns",
+            "type": "package",
+            "children": [
+              {
+                "name": "AccountInteractions",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "blocking?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:214"
+                  },
+                  {
+                    "name": "following?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:198"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Tag",
+            "type": "class",
+            "children": [
+              {
+                "name": "find_normalized",
+                "type": "function",
+                "static": true,
+                "location": "app/models/tag.rb:138"
+              },
+              {
+                "name": "matching_name",
+                "type": "function",
+                "static": true,
+                "location": "app/models/tag.rb:146"
+              },
+              {
+                "name": "normalize",
+                "type": "function",
+                "static": true,
+                "location": "app/models/tag.rb:156"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1 AND \"blocks\".\"target_account_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"follows\" WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"tags\".* FROM \"tags\" WHERE LOWER(\"tags\".\"name\") = LOWER('quos66') ORDER BY \"tags\".\"id\" ASC LIMIT $1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"statuses\".* FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses_tags\".\"status_id\" = \"statuses\".\"id\" LEFT OUTER JOIN \"mentions\" ON \"mentions\".\"status_id\" = \"statuses\".\"id\" WHERE \"statuses\".\"account_id\" = $1 AND (\"statuses\".\"visibility\" IN ($2, $3, $4) OR \"mentions\".\"account_id\" = $5) AND \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $6 GROUP BY \"statuses\".\"id\" ORDER BY \"statuses\".\"id\" DESC"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"tags\" INNER JOIN \"statuses_tags\" ON \"tags\".\"id\" = \"statuses_tags\".\"tag_id\" WHERE \"statuses_tags\".\"status_id\" = $1 AND \"tags\".\"id\" = $2 LIMIT $3"
+      }
+    ]
+  }
+]

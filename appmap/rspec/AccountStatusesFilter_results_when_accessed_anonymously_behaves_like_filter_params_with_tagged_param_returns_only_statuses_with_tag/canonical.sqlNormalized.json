@@ -1,0 +1,5 @@
+[
+  "SELECT ? AS one FROM \"tags\" INNER JOIN \"statuses_tags\" ON \"tags\".\"id\" = \"statuses_tags\".\"tag_id\" WHERE \"statuses_tags\".\"status_id\" = $? AND \"tags\".\"id\" = $? LIMIT $?",
+  "SELECT \"statuses\".* FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses_tags\".\"status_id\" = \"statuses\".\"id\" WHERE \"statuses\".\"account_id\" = $? AND \"statuses\".\"visibility\" IN ($?, $?) AND \"statuses\".\"deleted_at\" IS ? AND \"statuses_tags\".\"tag_id\" = $? ORDER BY \"statuses\".\"id\" DESC",
+  "SELECT \"tags\".* FROM \"tags\" WHERE LOWER(\"tags\".\"name\") = LOWER(?) ORDER BY \"tags\".\"id\" ASC LIMIT $?"
+]

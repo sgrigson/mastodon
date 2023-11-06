@@ -1,0 +1,3 @@
+[
+  "SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"account_id\" = $? AND \"statuses\".\"id\" <= $? AND \"statuses\".\"visibility\" != $? AND (NOT EXISTS (SELECT ? FROM status_pins pin WHERE pin.account_id = statuses.account_id AND pin.status_id = statuses.id)) AND \"statuses\".\"poll_id\" IS ? AND (NOT EXISTS (SELECT ? FROM media_attachments media WHERE media.status_id = statuses.id)) AND (NOT EXISTS (SELECT ? FROM favourites fav WHERE fav.account_id = statuses.account_id AND fav.status_id = statuses.id)) AND \"statuses\".\"deleted_at\" IS ? AND (NOT EXISTS (SELECT ? FROM bookmarks bookmark WHERE bookmark.account_id = statuses.account_id AND bookmark.status_id = statuses.id)) ORDER BY \"statuses\".\"id\" ASC LIMIT $?"
+]

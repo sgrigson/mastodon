@@ -1,0 +1,14 @@
+[
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/models/Account"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/models/concerns"
+  },
+  {
+    "caller": "app/models/AccountStatusesCleanupPolicy",
+    "callee": "app/models/concerns"
+  }
+]

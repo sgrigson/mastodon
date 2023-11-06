@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "app/models/AccountStatusesCleanupPolicy",
+    "callee": "lib/mastodon/Mastodon"
+  }
+]

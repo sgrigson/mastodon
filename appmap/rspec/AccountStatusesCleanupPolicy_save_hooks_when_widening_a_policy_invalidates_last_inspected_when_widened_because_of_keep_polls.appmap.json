@@ -1,1 +1,540 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"AccountStatusesCleanupPolicy save hooks when widening a policy invalidates last_inspected when widened because of keep_polls","source_location":"spec/models/account_statuses_cleanup_policy_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[{"name":"activesupport","type":"package","children":[{"name":"ActiveSupport","type":"class","children":[{"name":"Callbacks","type":"class","children":[{"name":"CallbackSequence","type":"class","children":[{"name":"invoke_before","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597","static":false,"labels":["mvc.before_action"]},{"name":"invoke_after","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601","static":false,"labels":["mvc.after_action"]}]}]}]}]},{"name":"app/models","type":"package","children":[{"name":"Account","type":"class","children":[{"name":"local?","type":"function","location":"app/models/account.rb:163","static":false}]},{"name":"concerns","type":"package","children":[{"name":"Redisable","type":"class","children":[{"name":"redis","type":"function","location":"app/models/concerns/redisable.rb:4","static":false}]}]},{"name":"AccountStatusesCleanupPolicy","type":"class","children":[{"name":"last_inspected","type":"function","location":"app/models/account_statuses_cleanup_policy.rb:97","static":false}]}]}],"events":[{"id":3669985,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":17897220,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":318880,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93543e670>"}},{"id":3669986,"event":"return","thread_id":9160,"parent_id":3669985,"elapsed":2.0904000848531723e-05,"elapsed_instrumentation":0.00018389103934168816,"return_value":{"class":"Array","value":"[#<Proc:0x00007fc93408b8a8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]","object_id":318900,"size":1}},{"id":3669987,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":17897240,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":5991380,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc931012d70>"}},{"id":3669988,"event":"call","thread_id":9160,"defined_class":"Account","method_id":"local?","path":"app/models/account.rb","lineno":163,"static":false,"parameters":[],"receiver":{"class":"Account","object_id":17897160,"value":"#<Account:0x00007fc8e21bbcc0>"}},{"id":3669989,"event":"return","thread_id":9160,"parent_id":3669988,"elapsed":9.796989616006613e-06,"elapsed_instrumentation":0.0001556670176796615,"return_value":{"class":"TrueClass","value":"true","object_id":20}},{"id":3669990,"event":"return","thread_id":9160,"parent_id":3669987,"elapsed":0.0004282629815861583,"elapsed_instrumentation":0.00014416896738111973,"return_value":{"class":"Array","value":"[#<Proc:0x00007fc932f3b4b8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f3c048 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f3c868 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f3d178 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f3d740 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f3dbf0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]","object_id":5991420,"size":6}},{"id":3669991,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":17897240,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":5991380,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc931012d70>"}},{"id":3669992,"event":"return","thread_id":9160,"parent_id":3669991,"elapsed":3.0869850888848305e-06,"elapsed_instrumentation":7.687200559303164e-05,"return_value":{"class":"Array","value":"[]","object_id":5991440,"size":0}},{"id":3669993,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":17897220,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":318880,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93543e670>"}},{"id":3669994,"event":"return","thread_id":9160,"parent_id":3669993,"elapsed":2.3139873519539833e-06,"elapsed_instrumentation":7.006700616329908e-05,"return_value":{"class":"Array","value":"[]","object_id":319000,"size":0}},{"id":3669995,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":17897260,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":5991480,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc931012730>"}},{"id":3669996,"event":"call","thread_id":9160,"defined_class":"Redisable","method_id":"redis","path":"app/models/concerns/redisable.rb","lineno":4,"static":false,"parameters":[],"receiver":{"class":"AccountStatusesCleanupPolicy","object_id":17897200,"value":"#<AccountStatusesCleanupPolicy:0x00007fc8e21b4880>"}},{"id":3669997,"event":"return","thread_id":9160,"parent_id":3669996,"elapsed":5.474023055285215e-06,"elapsed_instrumentation":9.021401638165116e-05,"return_value":{"class":"Redis::Namespace","value":"#<Redis::Namespace:0x00007fc934c37e90>","object_id":319760}},{"id":3669998,"event":"return","thread_id":9160,"parent_id":3669995,"elapsed":0.000619028985965997,"elapsed_instrumentation":0.00015387096209451556,"return_value":{"class":"Array","value":"[#<Proc:0x00007fc932f32250 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f32390 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]","object_id":5992320,"size":2}},{"id":3669999,"event":"call","thread_id":9160,"sql_query":{"sql":"SAVEPOINT active_record_1","database_type":"postgres"}},{"id":3670000,"event":"return","thread_id":9160,"parent_id":3669999,"elapsed":0.00051326,"elapsed_instrumentation":0.0001272179652005434},{"id":3670001,"event":"call","thread_id":9160,"sql_query":{"sql":"UPDATE \"account_statuses_cleanup_policies\" SET \"keep_polls\" = $1, \"updated_at\" = $2 WHERE \"account_statuses_cleanup_policies\".\"id\" = $3","database_type":"postgres"}},{"id":3670002,"event":"return","thread_id":9160,"parent_id":3670001,"elapsed":0.00167441,"elapsed_instrumentation":0.00019712001085281372},{"id":3670003,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":17897260,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":5991480,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc931012730>"}},{"id":3670004,"event":"return","thread_id":9160,"parent_id":3670003,"elapsed":5.820998921990395e-06,"elapsed_instrumentation":0.00032877695048227906,"return_value":{"class":"Array","value":"[]","object_id":5992340,"size":0}},{"id":3670005,"event":"call","thread_id":9160,"sql_query":{"sql":"RELEASE SAVEPOINT active_record_1","database_type":"postgres"}},{"id":3670006,"event":"return","thread_id":9160,"parent_id":3670005,"elapsed":0.000520394,"elapsed_instrumentation":0.000325421045999974},{"id":3670007,"event":"call","thread_id":9160,"defined_class":"AccountStatusesCleanupPolicy","method_id":"last_inspected","path":"app/models/account_statuses_cleanup_policy.rb","lineno":97,"static":false,"parameters":[],"receiver":{"class":"AccountStatusesCleanupPolicy","object_id":17897200,"value":"#<AccountStatusesCleanupPolicy:0x00007fc8e21b4880>"}},{"id":3670008,"event":"call","thread_id":9160,"defined_class":"Redisable","method_id":"redis","path":"app/models/concerns/redisable.rb","lineno":4,"static":false,"parameters":[],"receiver":{"class":"AccountStatusesCleanupPolicy","object_id":17897200,"value":"#<AccountStatusesCleanupPolicy:0x00007fc8e21b4880>"}},{"id":3670009,"event":"return","thread_id":9160,"parent_id":3670008,"elapsed":9.097973816096783e-06,"elapsed_instrumentation":0.00018221797654405236,"return_value":{"class":"Redis::Namespace","value":"#<Redis::Namespace:0x00007fc934c37e90>","object_id":319760}},{"id":3670010,"event":"return","thread_id":9160,"parent_id":3670007,"elapsed":0.0008792679873295128,"elapsed_instrumentation":0.00020115997176617384}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 17897220,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 318880,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93543e670>"
+      }
+    },
+    {
+      "id": 2,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.000020904000848531723,
+      "elapsed_instrumentation": 0.00018389103934168816,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007fc93408b8a8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 318900,
+        "size": 1
+      }
+    },
+    {
+      "id": 3,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 17897240,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 5991380,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc931012d70>"
+      }
+    },
+    {
+      "id": 4,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Account",
+      "method_id": "local?",
+      "path": "app/models/account.rb",
+      "lineno": 163,
+      "static": false,
+      "receiver": {
+        "class": "Account",
+        "object_id": 17897160,
+        "value": "#<Account:0x00007fc8e21bbcc0>"
+      }
+    },
+    {
+      "id": 5,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 4,
+      "elapsed": 0.000009796989616006613,
+      "elapsed_instrumentation": 0.0001556670176796615,
+      "return_value": {
+        "class": "TrueClass",
+        "value": "true",
+        "object_id": 20
+      }
+    },
+    {
+      "id": 6,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 3,
+      "elapsed": 0.0004282629815861583,
+      "elapsed_instrumentation": 0.00014416896738111973,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007fc932f3b4b8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f3c048 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f3c868 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f3d178 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f3d740 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f3dbf0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 5991420,
+        "size": 6
+      }
+    },
+    {
+      "id": 7,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 17897240,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 5991380,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc931012d70>"
+      }
+    },
+    {
+      "id": 8,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 7,
+      "elapsed": 0.0000030869850888848305,
+      "elapsed_instrumentation": 0.00007687200559303164,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 5991440,
+        "size": 0
+      }
+    },
+    {
+      "id": 9,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 17897220,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 318880,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93543e670>"
+      }
+    },
+    {
+      "id": 10,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 9,
+      "elapsed": 0.0000023139873519539833,
+      "elapsed_instrumentation": 0.00007006700616329908,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 319000,
+        "size": 0
+      }
+    },
+    {
+      "id": 11,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 17897260,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 5991480,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc931012730>"
+      }
+    },
+    {
+      "id": 12,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Redisable",
+      "method_id": "redis",
+      "path": "app/models/concerns/redisable.rb",
+      "lineno": 4,
+      "static": false,
+      "receiver": {
+        "class": "AccountStatusesCleanupPolicy",
+        "object_id": 17897200,
+        "value": "#<AccountStatusesCleanupPolicy:0x00007fc8e21b4880>"
+      }
+    },
+    {
+      "id": 13,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 12,
+      "elapsed": 0.000005474023055285215,
+      "elapsed_instrumentation": 0.00009021401638165116,
+      "return_value": {
+        "class": "Redis::Namespace",
+        "value": "#<Redis::Namespace:0x00007fc934c37e90>",
+        "object_id": 319760
+      }
+    },
+    {
+      "id": 14,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 11,
+      "elapsed": 0.000619028985965997,
+      "elapsed_instrumentation": 0.00015387096209451556,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007fc932f32250 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc932f32390 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 5992320,
+        "size": 2
+      }
+    },
+    {
+      "id": 15,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SAVEPOINT active_record_1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 16,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 15,
+      "elapsed": 0.00051326,
+      "elapsed_instrumentation": 0.0001272179652005434
+    },
+    {
+      "id": 17,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "UPDATE \"account_statuses_cleanup_policies\" SET \"keep_polls\" = $1, \"updated_at\" = $2 WHERE \"account_statuses_cleanup_policies\".\"id\" = $3",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 18,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 17,
+      "elapsed": 0.00167441,
+      "elapsed_instrumentation": 0.00019712001085281372
+    },
+    {
+      "id": 19,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 17897260,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 5991480,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc931012730>"
+      }
+    },
+    {
+      "id": 20,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 19,
+      "elapsed": 0.000005820998921990395,
+      "elapsed_instrumentation": 0.00032877695048227906,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 5992340,
+        "size": 0
+      }
+    },
+    {
+      "id": 21,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "RELEASE SAVEPOINT active_record_1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 22,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 21,
+      "elapsed": 0.000520394,
+      "elapsed_instrumentation": 0.000325421045999974
+    },
+    {
+      "id": 23,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "AccountStatusesCleanupPolicy",
+      "method_id": "last_inspected",
+      "path": "app/models/account_statuses_cleanup_policy.rb",
+      "lineno": 97,
+      "static": false,
+      "receiver": {
+        "class": "AccountStatusesCleanupPolicy",
+        "object_id": 17897200,
+        "value": "#<AccountStatusesCleanupPolicy:0x00007fc8e21b4880>"
+      }
+    },
+    {
+      "id": 24,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Redisable",
+      "method_id": "redis",
+      "path": "app/models/concerns/redisable.rb",
+      "lineno": 4,
+      "static": false,
+      "receiver": {
+        "class": "AccountStatusesCleanupPolicy",
+        "object_id": 17897200,
+        "value": "#<AccountStatusesCleanupPolicy:0x00007fc8e21b4880>"
+      }
+    },
+    {
+      "id": 25,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 24,
+      "elapsed": 0.000009097973816096783,
+      "elapsed_instrumentation": 0.00018221797654405236,
+      "return_value": {
+        "class": "Redis::Namespace",
+        "value": "#<Redis::Namespace:0x00007fc934c37e90>",
+        "object_id": 319760
+      }
+    },
+    {
+      "id": 26,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 23,
+      "elapsed": 0.0008792679873295128,
+      "elapsed_instrumentation": 0.00020115997176617384
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "AccountStatusesCleanupPolicy save hooks when widening a policy invalidates last_inspected when widened because of keep_polls",
+    "source_location": "spec/models/account_statuses_cleanup_policy_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "name": "activesupport",
+      "type": "package",
+      "children": [
+        {
+          "name": "ActiveSupport",
+          "type": "class",
+          "children": [
+            {
+              "name": "Callbacks",
+              "type": "class",
+              "children": [
+                {
+                  "name": "CallbackSequence",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "invoke_before",
+                      "type": "function",
+                      "labels": [
+                        "mvc.before_action"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                    },
+                    {
+                      "name": "invoke_after",
+                      "type": "function",
+                      "labels": [
+                        "mvc.after_action"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "app/models",
+      "type": "package",
+      "children": [
+        {
+          "name": "Account",
+          "type": "class",
+          "children": [
+            {
+              "name": "local?",
+              "type": "function",
+              "static": false,
+              "location": "app/models/account.rb:163"
+            }
+          ]
+        },
+        {
+          "name": "concerns",
+          "type": "package",
+          "children": [
+            {
+              "name": "Redisable",
+              "type": "class",
+              "children": [
+                {
+                  "name": "redis",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/models/concerns/redisable.rb:4"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "AccountStatusesCleanupPolicy",
+          "type": "class",
+          "children": [
+            {
+              "name": "last_inspected",
+              "type": "function",
+              "static": false,
+              "location": "app/models/account_statuses_cleanup_policy.rb:97"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SAVEPOINT active_record_1"
+        },
+        {
+          "type": "query",
+          "name": "UPDATE \"account_statuses_cleanup_policies\" SET \"keep_polls\" = $1, \"updated_at\" = $2 WHERE \"account_statuses_cleanup_policies\".\"id\" = $3"
+        },
+        {
+          "type": "query",
+          "name": "RELEASE SAVEPOINT active_record_1"
+        }
+      ]
+    }
+  ]
+}
