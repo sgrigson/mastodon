@@ -1,0 +1,30 @@
+[
+  {
+    "name": "app/controllers",
+    "type": "package",
+    "children": [
+      {
+        "name": "ApplicationController",
+        "type": "class",
+        "children": [
+          {
+            "name": "single_user_mode?",
+            "type": "function",
+            "static": false,
+            "location": "app/controllers/application_controller.rb:131"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"accounts\" WHERE (id > 0) LIMIT $1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "helpers",
+        "type": "package",
+        "children": [
+          {
+            "name": "ApplicationHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "body_classes",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/application_helper.rb:154"
+              },
+              {
+                "name": "locale_direction",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/application_helper.rb:86"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "concerns",
+            "type": "package",
+            "children": [
+              {
+                "name": "HasUserSettings",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "setting_system_font_ui",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/has_user_settings.rb:46"
+                  },
+                  {
+                    "name": "setting_reduce_motion",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/has_user_settings.rb:42"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "UserSettings",
+            "type": "class",
+            "children": [
+              {
+                "name": "[]",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user_settings.rb:60"
+              }
+            ]
+          },
+          {
+            "name": "user_settings",
+            "type": "package",
+            "children": [
+              {
+                "name": "UserSettings",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "DSL",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "ClassMethods",
+                        "type": "class",
+                        "children": [
+                          {
+                            "name": "definition_for",
+                            "type": "function",
+                            "static": true,
+                            "location": "app/models/user_settings/dsl.rb:29"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Setting",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "key",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/models/user_settings/setting.rb:63"
+                      },
+                      {
+                        "name": "value_for",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/models/user_settings/setting.rb:18"
+                      },
+                      {
+                        "name": "default_value",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/models/user_settings/setting.rb:34"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "UserSettingsSerializer",
+            "type": "class",
+            "children": [
+              {
+                "name": "load",
+                "type": "function",
+                "static": true,
+                "location": "app/lib/user_settings_serializer.rb:4"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

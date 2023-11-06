@@ -1,0 +1,11 @@
+[
+  {
+    "class": "ActionController::RoutingError",
+    "message": "No route matches unmatched",
+    "stack": [
+      "/workspaces/mastodon/app/controllers/application_controller.rb:53",
+      "app/controllers/application_controller.rb:52"
+    ],
+    "location": "/workspaces/mastodon/app/controllers/application_controller.rb:53"
+  }
+]

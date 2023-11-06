@@ -1,0 +1,5 @@
+[
+  "app/helpers/ApplicationHelper",
+  "app/models/Setting",
+  "logger/Logger::LogDevice"
+]
