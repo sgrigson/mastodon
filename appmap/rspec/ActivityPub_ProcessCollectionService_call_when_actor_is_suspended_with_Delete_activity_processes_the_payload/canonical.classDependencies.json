@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "app/lib/activitypub",
+    "callee": "app/models"
+  }
+]

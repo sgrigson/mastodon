@@ -1,0 +1,5 @@
+[
+  "app/helpers/JsonLdHelper",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "app/models/Account"
+]
