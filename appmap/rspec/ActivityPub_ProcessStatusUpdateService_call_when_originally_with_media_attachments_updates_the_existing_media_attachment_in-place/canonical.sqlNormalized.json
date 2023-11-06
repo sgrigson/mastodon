@@ -1,0 +1,3 @@
+[
+  "SELECT \"media_attachments\".* FROM \"media_attachments\" WHERE \"media_attachments\".\"status_id\" = $? ORDER BY \"media_attachments\".\"id\" ASC"
+]

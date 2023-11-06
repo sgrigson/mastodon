@@ -1,0 +1,50 @@
+[
+  {
+    "name": "app/lib",
+    "type": "package",
+    "children": [
+      {
+        "name": "activitypub",
+        "type": "package",
+        "children": [
+          {
+            "name": "ActivityPub",
+            "type": "class",
+            "children": [
+              {
+                "name": "TagManager",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "local_uri?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/lib/activitypub/tag_manager.rb:152"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "TagManager",
+        "type": "class",
+        "children": [
+          {
+            "name": "local_domain?",
+            "type": "function",
+            "static": false,
+            "location": "app/lib/tag_manager.rb:13"
+          },
+          {
+            "name": "web_domain?",
+            "type": "function",
+            "static": false,
+            "location": "app/lib/tag_manager.rb:9"
+          }
+        ]
+      }
+    ]
+  }
+]

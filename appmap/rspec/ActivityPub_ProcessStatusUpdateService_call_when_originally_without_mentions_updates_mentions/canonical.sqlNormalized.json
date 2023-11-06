@@ -1,0 +1,3 @@
+[
+  "SELECT \"mentions\".* FROM \"mentions\" WHERE \"mentions\".\"status_id\" = $? AND \"mentions\".\"silent\" = $?"
+]

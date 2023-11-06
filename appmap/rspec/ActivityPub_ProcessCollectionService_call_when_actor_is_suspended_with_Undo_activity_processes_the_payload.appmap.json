@@ -1,1 +1,389 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"ActivityPub::ProcessCollectionService #call when actor is suspended with Undo activity processes the payload","source_location":"spec/services/activitypub/process_collection_service_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[{"name":"app","type":"package","children":[{"name":"lib/activitypub","type":"package","children":[{"name":"ActivityPub","type":"class","children":[{"name":"TagManager","type":"class","children":[{"name":"uri_for","type":"function","location":"app/lib/activitypub/tag_manager.rb:36","static":false}]}]}]},{"name":"models","type":"package","children":[{"name":"Account","type":"class","children":[{"name":"local?","type":"function","location":"app/models/account.rb:163","static":false},{"name":"suspended?","type":"function","location":"app/models/account.rb:237","static":false},{"name":"instance_actor?","type":"function","location":"app/models/account.rb:175","static":false}]}]},{"name":"helpers","type":"package","children":[{"name":"JsonLdHelper","type":"class","children":[{"name":"supported_context?","type":"function","location":"app/helpers/jsonld_helper.rb:58","static":false},{"name":"equals_or_includes?","type":"function","location":"app/helpers/jsonld_helper.rb:6","static":false},{"name":"value_or_id","type":"function","location":"app/helpers/jsonld_helper.rb:54","static":false}]}]}]}],"events":[{"id":2955761,"event":"call","thread_id":9160,"defined_class":"ActivityPub::TagManager","method_id":"uri_for","path":"app/lib/activitypub/tag_manager.rb","lineno":36,"static":false,"parameters":[{"name":"target","class":"Account","object_id":14630680,"value":"#<Account:0x00007fc8e15e76d8>","kind":"req"}],"receiver":{"class":"ActivityPub::TagManager","object_id":325700,"value":"#<ActivityPub::TagManager:0x00007fc937c92608>"}},{"id":2955762,"event":"call","thread_id":9160,"defined_class":"Account","method_id":"local?","path":"app/models/account.rb","lineno":163,"static":false,"parameters":[],"receiver":{"class":"Account","object_id":14630680,"value":"#<Account:0x00007fc8e15e76d8>"}},{"id":2955763,"event":"return","thread_id":9160,"parent_id":2955762,"elapsed":7.960014045238495e-06,"elapsed_instrumentation":6.084400229156017e-05},{"id":2955764,"event":"return","thread_id":9160,"parent_id":2955761,"elapsed":0.0001098400098271668,"elapsed_instrumentation":0.00017752702115103602,"return_value":{"class":"String","value":"http://example.com/account","object_id":14630740}},{"id":2955765,"event":"call","thread_id":9160,"defined_class":"JsonLdHelper","method_id":"supported_context?","path":"app/helpers/jsonld_helper.rb","lineno":58,"static":false,"parameters":[{"name":"json","class":"Hash","object_id":14630760,"value":"{@context=>https://www.w3.org/ns/activitystreams, id=>foo, type=>Undo, actor=>http://example.com/account}","kind":"req","size":4}],"receiver":{"class":"ActivityPub::ProcessCollectionService","object_id":14630780,"value":"#<ActivityPub::ProcessCollectionService:0x00007fc8e137f698>"}},{"id":2955766,"event":"call","thread_id":9160,"defined_class":"JsonLdHelper","method_id":"equals_or_includes?","path":"app/helpers/jsonld_helper.rb","lineno":6,"static":false,"parameters":[{"name":"haystack","class":"String","object_id":14630800,"value":"https://www.w3.org/ns/activitystreams","kind":"req"},{"name":"needle","class":"String","object_id":1463480,"value":"https://www.w3.org/ns/activitystreams","kind":"req"}],"receiver":{"class":"ActivityPub::ProcessCollectionService","object_id":14630780,"value":"#<ActivityPub::ProcessCollectionService:0x00007fc8e137f698>"}},{"id":2955767,"event":"return","thread_id":9160,"parent_id":2955766,"elapsed":3.874010872095823e-06,"elapsed_instrumentation":8.796091424301267e-05,"return_value":{"class":"TrueClass","value":"true","object_id":20}},{"id":2955768,"event":"return","thread_id":9160,"parent_id":2955765,"elapsed":0.00011367700062692165,"elapsed_instrumentation":0.00026142504066228867,"return_value":{"class":"TrueClass","value":"true","object_id":20}},{"id":2955769,"event":"call","thread_id":9160,"defined_class":"JsonLdHelper","method_id":"value_or_id","path":"app/helpers/jsonld_helper.rb","lineno":54,"static":false,"parameters":[{"name":"value","class":"String","object_id":14630820,"value":"http://example.com/account","kind":"req"}],"receiver":{"class":"ActivityPub::ProcessCollectionService","object_id":14630780,"value":"#<ActivityPub::ProcessCollectionService:0x00007fc8e137f698>"}},{"id":2955770,"event":"return","thread_id":9160,"parent_id":2955769,"elapsed":4.151021130383015e-06,"elapsed_instrumentation":0.0001360829919576645,"return_value":{"class":"String","value":"http://example.com/account","object_id":14630820}},{"id":2955771,"event":"call","thread_id":9160,"defined_class":"Account","method_id":"suspended?","path":"app/models/account.rb","lineno":237,"static":false,"parameters":[],"receiver":{"class":"Account","object_id":14630680,"value":"#<Account:0x00007fc8e15e76d8>"}},{"id":2955772,"event":"call","thread_id":9160,"defined_class":"Account","method_id":"instance_actor?","path":"app/models/account.rb","lineno":175,"static":false,"parameters":[],"receiver":{"class":"Account","object_id":14630680,"value":"#<Account:0x00007fc8e15e76d8>"}},{"id":2955773,"event":"return","thread_id":9160,"parent_id":2955772,"elapsed":6.903952453285456e-06,"elapsed_instrumentation":5.687301745638251e-05},{"id":2955774,"event":"return","thread_id":9160,"parent_id":2955771,"elapsed":0.00012775795767083764,"elapsed_instrumentation":7.043301593512297e-05,"return_value":{"class":"TrueClass","value":"true","object_id":20}},{"id":2955775,"event":"call","thread_id":9160,"defined_class":"Account","method_id":"local?","path":"app/models/account.rb","lineno":163,"static":false,"parameters":[],"receiver":{"class":"Account","object_id":14630680,"value":"#<Account:0x00007fc8e15e76d8>"}},{"id":2955776,"event":"return","thread_id":9160,"parent_id":2955775,"elapsed":4.888046532869339e-06,"elapsed_instrumentation":5.3538940846920013e-05}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActivityPub::TagManager",
+      "method_id": "uri_for",
+      "path": "app/lib/activitypub/tag_manager.rb",
+      "lineno": 36,
+      "static": false,
+      "parameters": [
+        {
+          "name": "target",
+          "class": "Account",
+          "object_id": 14630680,
+          "value": "#<Account:0x00007fc8e15e76d8>",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActivityPub::TagManager",
+        "object_id": 325700,
+        "value": "#<ActivityPub::TagManager:0x00007fc937c92608>"
+      }
+    },
+    {
+      "id": 2,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Account",
+      "method_id": "local?",
+      "path": "app/models/account.rb",
+      "lineno": 163,
+      "static": false,
+      "receiver": {
+        "class": "Account",
+        "object_id": 14630680,
+        "value": "#<Account:0x00007fc8e15e76d8>"
+      }
+    },
+    {
+      "id": 3,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 2,
+      "elapsed": 0.000007960014045238495,
+      "elapsed_instrumentation": 0.00006084400229156017
+    },
+    {
+      "id": 4,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.0001098400098271668,
+      "elapsed_instrumentation": 0.00017752702115103602,
+      "return_value": {
+        "class": "String",
+        "value": "http://example.com/account",
+        "object_id": 14630740
+      }
+    },
+    {
+      "id": 5,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "JsonLdHelper",
+      "method_id": "supported_context?",
+      "path": "app/helpers/jsonld_helper.rb",
+      "lineno": 58,
+      "static": false,
+      "parameters": [
+        {
+          "name": "json",
+          "class": "Hash",
+          "object_id": 14630760,
+          "value": "{@context=>https://www.w3.org/ns/activitystreams, id=>foo, type=>Undo, actor=>http://example.com/account}",
+          "kind": "req",
+          "size": 4
+        }
+      ],
+      "receiver": {
+        "class": "ActivityPub::ProcessCollectionService",
+        "object_id": 14630780,
+        "value": "#<ActivityPub::ProcessCollectionService:0x00007fc8e137f698>"
+      }
+    },
+    {
+      "id": 6,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "JsonLdHelper",
+      "method_id": "equals_or_includes?",
+      "path": "app/helpers/jsonld_helper.rb",
+      "lineno": 6,
+      "static": false,
+      "parameters": [
+        {
+          "name": "haystack",
+          "class": "String",
+          "object_id": 14630800,
+          "value": "https://www.w3.org/ns/activitystreams",
+          "kind": "req"
+        },
+        {
+          "name": "needle",
+          "class": "String",
+          "object_id": 1463480,
+          "value": "https://www.w3.org/ns/activitystreams",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActivityPub::ProcessCollectionService",
+        "object_id": 14630780,
+        "value": "#<ActivityPub::ProcessCollectionService:0x00007fc8e137f698>"
+      }
+    },
+    {
+      "id": 7,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 6,
+      "elapsed": 0.000003874010872095823,
+      "elapsed_instrumentation": 0.00008796091424301267,
+      "return_value": {
+        "class": "TrueClass",
+        "value": "true",
+        "object_id": 20
+      }
+    },
+    {
+      "id": 8,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 5,
+      "elapsed": 0.00011367700062692165,
+      "elapsed_instrumentation": 0.00026142504066228867,
+      "return_value": {
+        "class": "TrueClass",
+        "value": "true",
+        "object_id": 20
+      }
+    },
+    {
+      "id": 9,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "JsonLdHelper",
+      "method_id": "value_or_id",
+      "path": "app/helpers/jsonld_helper.rb",
+      "lineno": 54,
+      "static": false,
+      "parameters": [
+        {
+          "name": "value",
+          "class": "String",
+          "object_id": 14630820,
+          "value": "http://example.com/account",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActivityPub::ProcessCollectionService",
+        "object_id": 14630780,
+        "value": "#<ActivityPub::ProcessCollectionService:0x00007fc8e137f698>"
+      }
+    },
+    {
+      "id": 10,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 9,
+      "elapsed": 0.000004151021130383015,
+      "elapsed_instrumentation": 0.0001360829919576645,
+      "return_value": {
+        "class": "String",
+        "value": "http://example.com/account",
+        "object_id": 14630820
+      }
+    },
+    {
+      "id": 11,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Account",
+      "method_id": "suspended?",
+      "path": "app/models/account.rb",
+      "lineno": 237,
+      "static": false,
+      "receiver": {
+        "class": "Account",
+        "object_id": 14630680,
+        "value": "#<Account:0x00007fc8e15e76d8>"
+      }
+    },
+    {
+      "id": 12,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Account",
+      "method_id": "instance_actor?",
+      "path": "app/models/account.rb",
+      "lineno": 175,
+      "static": false,
+      "receiver": {
+        "class": "Account",
+        "object_id": 14630680,
+        "value": "#<Account:0x00007fc8e15e76d8>"
+      }
+    },
+    {
+      "id": 13,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 12,
+      "elapsed": 0.000006903952453285456,
+      "elapsed_instrumentation": 0.00005687301745638251
+    },
+    {
+      "id": 14,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 11,
+      "elapsed": 0.00012775795767083764,
+      "elapsed_instrumentation": 0.00007043301593512297,
+      "return_value": {
+        "class": "TrueClass",
+        "value": "true",
+        "object_id": 20
+      }
+    },
+    {
+      "id": 15,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Account",
+      "method_id": "local?",
+      "path": "app/models/account.rb",
+      "lineno": 163,
+      "static": false,
+      "receiver": {
+        "class": "Account",
+        "object_id": 14630680,
+        "value": "#<Account:0x00007fc8e15e76d8>"
+      }
+    },
+    {
+      "id": 16,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 15,
+      "elapsed": 0.000004888046532869339,
+      "elapsed_instrumentation": 0.000053538940846920013
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "ActivityPub::ProcessCollectionService #call when actor is suspended with Undo activity processes the payload",
+    "source_location": "spec/services/activitypub/process_collection_service_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "name": "app",
+      "type": "package",
+      "children": [
+        {
+          "name": "lib/activitypub",
+          "type": "package",
+          "children": [
+            {
+              "name": "ActivityPub",
+              "type": "class",
+              "children": [
+                {
+                  "name": "TagManager",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "uri_for",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/lib/activitypub/tag_manager.rb:36"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "models",
+          "type": "package",
+          "children": [
+            {
+              "name": "Account",
+              "type": "class",
+              "children": [
+                {
+                  "name": "local?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/models/account.rb:163"
+                },
+                {
+                  "name": "suspended?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/models/account.rb:237"
+                },
+                {
+                  "name": "instance_actor?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/models/account.rb:175"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "helpers",
+          "type": "package",
+          "children": [
+            {
+              "name": "JsonLdHelper",
+              "type": "class",
+              "children": [
+                {
+                  "name": "supported_context?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/helpers/jsonld_helper.rb:58"
+                },
+                {
+                  "name": "equals_or_includes?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/helpers/jsonld_helper.rb:6"
+                },
+                {
+                  "name": "value_or_id",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/helpers/jsonld_helper.rb:54"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

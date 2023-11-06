@@ -1,0 +1,5 @@
+[
+  "app/helpers",
+  "app/lib/activitypub",
+  "app/models"
+]

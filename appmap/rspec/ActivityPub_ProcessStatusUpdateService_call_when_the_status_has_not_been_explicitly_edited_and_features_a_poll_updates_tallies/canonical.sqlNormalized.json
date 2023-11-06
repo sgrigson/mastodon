@@ -1,0 +1,3 @@
+[
+  "SELECT \"polls\".* FROM \"polls\" WHERE \"polls\".\"id\" = $? LIMIT $?"
+]

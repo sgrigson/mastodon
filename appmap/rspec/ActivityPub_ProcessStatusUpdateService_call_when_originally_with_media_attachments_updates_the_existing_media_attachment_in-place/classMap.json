@@ -1,0 +1,12 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"media_attachments\".* FROM \"media_attachments\" WHERE \"media_attachments\".\"status_id\" = $1 ORDER BY \"media_attachments\".\"id\" ASC"
+      }
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "lib/activitypub",
+        "type": "package",
+        "children": [
+          {
+            "name": "ActivityPub",
+            "type": "class",
+            "children": [
+              {
+                "name": "TagManager",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "uri_for",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/lib/activitypub/tag_manager.rb:36"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "Account",
+            "type": "class",
+            "children": [
+              {
+                "name": "local?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:163"
+              },
+              {
+                "name": "suspended?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:237"
+              },
+              {
+                "name": "instance_actor?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:175"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "helpers",
+        "type": "package",
+        "children": [
+          {
+            "name": "JsonLdHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "supported_context?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/jsonld_helper.rb:58"
+              },
+              {
+                "name": "equals_or_includes?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/jsonld_helper.rb:6"
+              },
+              {
+                "name": "value_or_id",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/jsonld_helper.rb:54"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  "accounts",
+  "conversations",
+  "favourites",
+  "follows",
+  "media_attachments",
+  "mentions",
+  "relays",
+  "settings",
+  "statuses",
+  "statuses_tags",
+  "tags",
+  "unavailable_domains"
+]
