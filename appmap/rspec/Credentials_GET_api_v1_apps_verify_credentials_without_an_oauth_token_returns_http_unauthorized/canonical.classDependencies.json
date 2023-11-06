@@ -1,0 +1,66 @@
+[
+  {
+    "caller": "GET /api/v1/apps/verify_credentials",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "GET /api/v1/apps/verify_credentials",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "GET /api/v1/apps/verify_credentials",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "GET /api/v1/apps/verify_credentials",
+    "callee": "lib/chewy/strategy/Chewy"
+  },
+  {
+    "caller": "GET /api/v1/apps/verify_credentials",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "GET /api/v1/apps/verify_credentials",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "GET /api/v1/apps/verify_credentials",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "actionpack/ActionController"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "actionpack/ActionDispatch"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "lib/chewy/strategy/Chewy",
+    "callee": "app/lib"
+  }
+]
