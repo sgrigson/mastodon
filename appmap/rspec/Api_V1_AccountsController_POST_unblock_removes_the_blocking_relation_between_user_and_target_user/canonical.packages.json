@@ -1,3 +1,5 @@
 [
+  "app/lib",
+  "app/lib/connection_pool",
   "app/models/concerns"
 ]

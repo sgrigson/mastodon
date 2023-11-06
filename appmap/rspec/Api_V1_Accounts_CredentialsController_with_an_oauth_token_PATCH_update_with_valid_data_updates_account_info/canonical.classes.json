@@ -1,0 +1,9 @@
+[
+  "app/lib/UserSettingsSerializer",
+  "app/models/Account",
+  "app/models/UserSettings",
+  "app/models/concerns/HasUserSettings",
+  "app/models/user_settings/UserSettings::DSL::ClassMethods",
+  "app/models/user_settings/UserSettings::Setting",
+  "lib/paperclip/Paperclip::AttachmentExtensions"
+]

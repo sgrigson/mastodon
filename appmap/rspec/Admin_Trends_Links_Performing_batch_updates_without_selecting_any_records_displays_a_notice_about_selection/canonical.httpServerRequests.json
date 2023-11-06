@@ -1,0 +1,12 @@
+[
+  {
+    "route": "GET /admin/trends/links",
+    "parameters": "(page)",
+    "status": 200
+  },
+  {
+    "route": "POST /admin/trends/links/batch",
+    "parameters": "(page,approve)",
+    "status": 302
+  }
+]

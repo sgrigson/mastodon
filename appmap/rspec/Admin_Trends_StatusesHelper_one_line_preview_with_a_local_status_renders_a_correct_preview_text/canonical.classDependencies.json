@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "app/helpers",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/models",
+    "callee": "app/lib"
+  }
+]

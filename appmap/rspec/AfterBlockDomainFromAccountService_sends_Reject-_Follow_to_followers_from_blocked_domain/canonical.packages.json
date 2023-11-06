@@ -1,0 +1,13 @@
+[
+  "activesupport",
+  "app/helpers",
+  "app/lib",
+  "app/lib/activitypub",
+  "app/models",
+  "app/models/concerns",
+  "app/serializers/activitypub",
+  "app/services/concerns",
+  "app/validators",
+  "logger",
+  "ruby"
+]

@@ -1,0 +1,4 @@
+[
+  "app/lib/admin/system_check/Admin::SystemCheck::SoftwareVersionCheck",
+  "app/models/SoftwareUpdate"
+]

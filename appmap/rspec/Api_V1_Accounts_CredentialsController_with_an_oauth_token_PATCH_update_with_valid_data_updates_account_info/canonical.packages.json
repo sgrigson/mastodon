@@ -1,0 +1,7 @@
+[
+  "app/lib",
+  "app/models",
+  "app/models/concerns",
+  "app/models/user_settings",
+  "lib/paperclip"
+]

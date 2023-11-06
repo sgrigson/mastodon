@@ -1,0 +1,14 @@
+[
+  "app/helpers/ApplicationHelper",
+  "app/helpers/StatusesHelper",
+  "app/helpers/admin/trends/Admin::Trends::StatusesHelper",
+  "app/lib/UserSettingsSerializer",
+  "app/models/Account",
+  "app/models/CustomEmoji",
+  "app/models/Status",
+  "app/models/UserSettings",
+  "app/models/concerns/HasUserSettings",
+  "app/models/user_settings/UserSettings::DSL::ClassMethods",
+  "app/models/user_settings/UserSettings::Setting",
+  "openssl/OpenSSL::Random"
+]

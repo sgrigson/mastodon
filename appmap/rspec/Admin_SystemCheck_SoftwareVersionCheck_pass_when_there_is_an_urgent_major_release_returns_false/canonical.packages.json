@@ -1,0 +1,21 @@
+[
+  "activesupport",
+  "app/helpers",
+  "app/lib",
+  "app/lib/activitypub",
+  "app/lib/admin/system_check",
+  "app/models",
+  "app/models/concerns",
+  "app/models/user_settings",
+  "app/serializers/rest",
+  "app/serializers/rest/admin",
+  "app/validators",
+  "app/workers",
+  "json",
+  "lib/mastodon",
+  "lib/paperclip",
+  "logger",
+  "openssl",
+  "ruby",
+  "sidekiq"
+]

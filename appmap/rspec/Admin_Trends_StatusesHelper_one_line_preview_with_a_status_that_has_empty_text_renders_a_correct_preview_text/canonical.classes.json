@@ -1,0 +1,6 @@
+[
+  "app/helpers/admin/trends/Admin::Trends::StatusesHelper",
+  "app/models/Account",
+  "app/models/Status",
+  "openssl/OpenSSL::Random"
+]

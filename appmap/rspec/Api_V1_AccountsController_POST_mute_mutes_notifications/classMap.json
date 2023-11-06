@@ -1,29 +1,89 @@
 [
   {
-    "name": "app/models/concerns",
+    "name": "app",
     "type": "package",
     "children": [
       {
-        "name": "AccountInteractions",
-        "type": "class",
+        "name": "models/concerns",
+        "type": "package",
         "children": [
           {
-            "name": "following?",
-            "type": "function",
-            "static": false,
-            "location": "app/models/concerns/account_interactions.rb:198"
+            "name": "AccountInteractions",
+            "type": "class",
+            "children": [
+              {
+                "name": "following?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/concerns/account_interactions.rb:198"
+              },
+              {
+                "name": "muting?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/concerns/account_interactions.rb:222"
+              },
+              {
+                "name": "muting_notifications?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/concerns/account_interactions.rb:230"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "RequestPool",
+            "type": "class",
+            "children": [
+              {
+                "name": "flush",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/request_pool.rb:114"
+              }
+            ]
           },
           {
-            "name": "muting?",
-            "type": "function",
-            "static": false,
-            "location": "app/models/concerns/account_interactions.rb:222"
-          },
-          {
-            "name": "muting_notifications?",
-            "type": "function",
-            "static": false,
-            "location": "app/models/concerns/account_interactions.rb:230"
+            "name": "connection_pool",
+            "type": "package",
+            "children": [
+              {
+                "name": "ConnectionPool",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "SharedConnectionPool",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "flush",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/connection_pool/shared_connection_pool.rb:13"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "SharedTimedStack",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "flush",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/connection_pool/shared_timed_stack.rb:51"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

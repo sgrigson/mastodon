@@ -1,17 +1,77 @@
 [
   {
-    "name": "app/models/concerns",
+    "name": "app",
     "type": "package",
     "children": [
       {
-        "name": "AccountInteractions",
-        "type": "class",
+        "name": "models/concerns",
+        "type": "package",
         "children": [
           {
-            "name": "blocking?",
-            "type": "function",
-            "static": false,
-            "location": "app/models/concerns/account_interactions.rb:214"
+            "name": "AccountInteractions",
+            "type": "class",
+            "children": [
+              {
+                "name": "blocking?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/concerns/account_interactions.rb:214"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "RequestPool",
+            "type": "class",
+            "children": [
+              {
+                "name": "flush",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/request_pool.rb:114"
+              }
+            ]
+          },
+          {
+            "name": "connection_pool",
+            "type": "package",
+            "children": [
+              {
+                "name": "ConnectionPool",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "SharedConnectionPool",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "flush",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/connection_pool/shared_connection_pool.rb:13"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "SharedTimedStack",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "flush",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/connection_pool/shared_timed_stack.rb:51"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
           }
         ]
       }

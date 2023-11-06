@@ -1,0 +1,11 @@
+[
+  "account_stats",
+  "accounts",
+  "settings",
+  "software_updates",
+  "user_invite_requests",
+  "user_ips",
+  "user_roles",
+  "users",
+  "webhooks"
+]

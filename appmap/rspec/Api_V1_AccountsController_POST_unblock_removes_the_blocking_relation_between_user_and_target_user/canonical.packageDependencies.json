@@ -1,6 +1,6 @@
 [
   {
-    "caller": "app/models/concerns",
+    "caller": "app",
     "callee": "Database"
   }
 ]
