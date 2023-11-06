@@ -1,0 +1,92 @@
+[
+  {
+    "name": "app/models",
+    "type": "package",
+    "children": [
+      {
+        "name": "concerns",
+        "type": "package",
+        "children": [
+          {
+            "name": "AccountInteractions",
+            "type": "class",
+            "children": [
+              {
+                "name": "reblogged?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/concerns/account_interactions.rb:250"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Status",
+        "type": "class",
+        "children": [
+          {
+            "name": "proper",
+            "type": "function",
+            "static": false,
+            "location": "app/models/status.rb:216"
+          },
+          {
+            "name": "reblog?",
+            "type": "function",
+            "static": false,
+            "location": "app/models/status.rb:196"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "json",
+    "type": "package",
+    "children": [
+      {
+        "name": "JSON",
+        "type": "class",
+        "children": [
+          {
+            "name": "Ext",
+            "type": "class",
+            "children": [
+              {
+                "name": "Parser",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "parse",
+                    "type": "function",
+                    "labels": [
+                      "format.json.parse",
+                      "deserialize.safe"
+                    ],
+                    "static": false,
+                    "location": "JSON::Ext::Parser#parse"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT COUNT(*) FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses\".\"reblog_of_id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses\".\"reblog_of_id\" = $1 AND \"statuses\".\"account_id\" = $2 LIMIT $3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,3 @@
+[
+  "SELECT \"announcement_reactions\".* FROM \"announcement_reactions\" WHERE \"announcement_reactions\".\"announcement_id\" = $? AND \"announcement_reactions\".\"name\" = $? AND \"announcement_reactions\".\"account_id\" = $? LIMIT $?"
+]

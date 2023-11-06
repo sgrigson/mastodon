@@ -1,0 +1,34 @@
+[
+  {
+    "name": "app/models",
+    "type": "package",
+    "children": [
+      {
+        "name": "CustomFilter",
+        "type": "class",
+        "children": [
+          {
+            "name": "irreversible?",
+            "type": "function",
+            "static": false,
+            "location": "app/models/custom_filter.rb:61"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"custom_filters\".\"id\", \"custom_filters\".\"account_id\", \"custom_filters\".\"expires_at\", \"custom_filters\".\"phrase\", \"custom_filters\".\"context\", \"custom_filters\".\"created_at\", \"custom_filters\".\"updated_at\", \"custom_filters\".\"action\" FROM \"custom_filters\" WHERE \"custom_filters\".\"account_id\" = $1 ORDER BY \"custom_filters\".\"id\" ASC LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"custom_filter_keywords\".\"keyword\", \"custom_filter_keywords\".\"whole_word\" FROM \"custom_filter_keywords\" WHERE \"custom_filter_keywords\".\"custom_filter_id\" = $1"
+      }
+    ]
+  }
+]

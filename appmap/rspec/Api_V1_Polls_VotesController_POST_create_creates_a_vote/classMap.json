@@ -1,0 +1,16 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"poll_votes\".* FROM \"poll_votes\" WHERE \"poll_votes\".\"poll_id\" = $1 AND \"poll_votes\".\"account_id\" = $2 ORDER BY \"poll_votes\".\"id\" ASC LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"polls\".* FROM \"polls\" WHERE \"polls\".\"id\" = $1 LIMIT $2"
+      }
+    ]
+  }
+]

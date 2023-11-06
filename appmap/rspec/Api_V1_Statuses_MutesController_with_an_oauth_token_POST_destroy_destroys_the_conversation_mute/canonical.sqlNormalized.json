@@ -1,0 +1,3 @@
+[
+  "SELECT \"conversation_mutes\".* FROM \"conversation_mutes\" WHERE \"conversation_mutes\".\"account_id\" = $? AND \"conversation_mutes\".\"conversation_id\" = $? LIMIT $?"
+]

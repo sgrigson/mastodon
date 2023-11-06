@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/v1/instance/translation_languages",
+    "parameters": "(controller,action)",
+    "status": null
+  }
+]

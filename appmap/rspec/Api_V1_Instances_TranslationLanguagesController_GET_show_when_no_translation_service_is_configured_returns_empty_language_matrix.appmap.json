@@ -1,1 +1,1692 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"Api::V1::Instances::TranslationLanguagesController GET #show when no translation service is configured returns empty language matrix","source_location":"spec/controllers/api/v1/instances/translation_languages_controller_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"failed","test_failure":{"message":"Exception(s) occurred within instrumentation subscribers: NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError","location":"spec/controllers/api/v1/instances/translation_languages_controller_spec.rb:9"},"exception":{"class":"ActiveSupport::Notifications::InstrumentationSubscriberError","message":"Exception(s) occurred within instrumentation subscribers: NoMethodError, NoMethodError, NoMethodErro (...10951 more characters)"}},"classMap":[{"name":"actionpack","type":"package","children":[{"name":"ActionDispatch","type":"class","children":[{"name":"Cookies","type":"class","children":[{"name":"CookieJar","type":"class","children":[{"name":"update","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb:344","static":false,"labels":["http.session.write"]},{"name":"[]","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb:328","static":false,"labels":["http.session.read"]}]}]}]}]},{"name":"activesupport","type":"package","children":[{"name":"ActiveSupport","type":"class","children":[{"name":"Callbacks","type":"class","children":[{"name":"CallbackSequence","type":"class","children":[{"name":"invoke_before","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597","static":false,"labels":["mvc.before_action"]},{"name":"invoke_after","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601","static":false,"labels":["mvc.after_action"]}]}]}]}]},{"name":"logger","type":"package","children":[{"name":"Logger","type":"class","children":[{"name":"LogDevice","type":"class","children":[{"name":"write","type":"function","location":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31","static":false,"labels":["log"]}]}]}]},{"name":"app","type":"package","children":[{"name":"controllers","type":"package","children":[{"name":"concerns","type":"package","children":[{"name":"Localized","type":"class","children":[{"name":"set_locale","type":"function","location":"app/controllers/concerns/localized.rb:10","static":false}]}]},{"name":"api","type":"package","children":[{"name":"Api","type":"class","children":[{"name":"BaseController","type":"class","children":[{"name":"current_user","type":"function","location":"app/controllers/api/base_controller.rb:116","static":false},{"name":"current_resource_owner","type":"function","location":"app/controllers/api/base_controller.rb:112","static":false},{"name":"disallow_unauthenticated_api_access?","type":"function","location":"app/controllers/api/base_controller.rb:152","static":false},{"name":"require_not_suspended!","type":"function","location":"app/controllers/api/base_controller.rb:126","static":false}]}]}]},{"name":"ApplicationController","type":"class","children":[{"name":"current_session","type":"function","location":"app/controllers/application_controller.rb:153","static":false},{"name":"check_self_destruct!","type":"function","location":"app/controllers/application_controller.rb:176","static":false},{"name":"set_cache_control_defaults","type":"function","location":"app/controllers/application_controller.rb:185","static":false}]}]},{"name":"helpers","type":"package","children":[{"name":"SelfDestructHelper","type":"class","children":[{"name":"self_destruct?","type":"function","location":"app/helpers/self_destruct_helper.rb:11","static":false}]}]},{"name":"lib","type":"package","children":[{"name":"TranslationService","type":"class","children":[{"name":"configured?","type":"function","location":"app/lib/translation_service.rb:20","static":true},{"name":"configured","type":"function","location":"app/lib/translation_service.rb:10","static":true}]},{"name":"translation_service","type":"package","children":[{"name":"TranslationService","type":"class","children":[{"name":"LibreTranslate","type":"class","children":[{"name":"languages","type":"function","location":"app/lib/translation_service/libre_translate.rb:18","static":false}]}]}]},{"name":"Request","type":"class","children":[{"name":"add_headers","type":"function","location":"app/lib/request.rb:100","static":false},{"name":"perform","type":"function","location":"app/lib/request.rb:105","static":false},{"name":"http_client","type":"function","location":"app/lib/request.rb:141","static":true},{"name":"headers","type":"function","location":"app/lib/request.rb:126","static":false}]}]}]},{"name":"lib/mastodon","type":"package","children":[{"name":"Mastodon","type":"class","children":[{"name":"Version","type":"class","children":[{"name":"user_agent","type":"function","location":"lib/mastodon/version.rb:67","static":true}]}]}]}],"events":[{"id":1950271,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"update","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":344,"static":false,"parameters":[{"name":"other_hash","class":"ActiveSupport::HashWithIndifferentAccess","object_id":10310880,"value":"{}","kind":"req","size":0}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":10310900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>"}},{"id":1950272,"event":"return","thread_id":9160,"parent_id":1950271,"elapsed":1.6812002286314964e-05,"elapsed_instrumentation":0.00017275696154683828,"return_value":{"class":"ActionDispatch::Cookies::CookieJar","value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>","object_id":10310900}},{"id":1950273,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"update","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":344,"static":false,"parameters":[{"name":"other_hash","class":"ActiveSupport::HashWithIndifferentAccess","object_id":10310880,"value":"{}","kind":"req","size":0}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":10310900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>"}},{"id":1950274,"event":"return","thread_id":9160,"parent_id":1950273,"elapsed":9.329000022262335e-06,"elapsed_instrumentation":8.998200064525008e-05,"return_value":{"class":"ActionDispatch::Cookies::CookieJar","value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>","object_id":10310900}},{"id":1950275,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"update","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":344,"static":false,"parameters":[{"name":"other_hash","class":"ActiveSupport::HashWithIndifferentAccess","object_id":10310880,"value":"{}","kind":"req","size":0}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":10310920,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc9316007a0>"}},{"id":1950276,"event":"return","thread_id":9160,"parent_id":1950275,"elapsed":8.468050509691238e-06,"elapsed_instrumentation":8.146895561367273e-05,"return_value":{"class":"ActionDispatch::Cookies::CookieJar","value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc9316007a0>","object_id":10310920}},{"id":1950277,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":10310960,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":222040,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93803c8a8>"}},{"id":1950278,"event":"return","thread_id":9160,"parent_id":1950277,"elapsed":9.604898514226079e-05,"elapsed_instrumentation":0.00017137103714048862,"return_value":{"class":"Array","value":"[#<Proc:0x00007fc934226eb0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934226ff0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934227158 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934227310 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]","object_id":222060,"size":4}},{"id":1950279,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":10310960,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":222040,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93803c8a8>"}},{"id":1950280,"event":"return","thread_id":9160,"parent_id":1950279,"elapsed":3.1249946914613247e-06,"elapsed_instrumentation":7.776299025863409e-05,"return_value":{"class":"Array","value":"[]","object_id":222080,"size":0}},{"id":1950281,"event":"call","thread_id":9160,"http_server_request":{"request_method":"GET","path_info":"/api/v1/instance/translation_languages","normalized_path_info":"/api/v1/instance/translation_languages","headers":{"Host":"test.host","User-Agent":"Rails Testing"}},"message":[{"name":"controller","class":"String","value":"api/v1/instances/translation_languages","object_id":10310820},{"name":"action","class":"String","value":"show","object_id":10311280}]},{"id":1950282,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":10310980,"value":"Processing by Api::V1::Instances::TranslationLanguagesController#show as HTML\n","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":1950283,"event":"return","thread_id":9160,"parent_id":1950282,"elapsed":0.000658225966617465,"elapsed_instrumentation":0.00018614297732710838,"return_value":{"class":"Integer","value":"78","object_id":157}},{"id":1950284,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":10311000,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":10310240,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc931496590>"}},{"id":1950285,"event":"return","thread_id":9160,"parent_id":1950284,"elapsed":8.909031748771667e-06,"elapsed_instrumentation":0.00039244594518095255,"return_value":{"class":"Array","value":"[]","object_id":10310260,"size":0}},{"id":1950286,"event":"call","thread_id":9160,"defined_class":"Localized","method_id":"set_locale","path":"app/controllers/concerns/localized.rb","lineno":10,"static":false,"parameters":[{"name":"block","class":"NilClass","object_id":4,"value":null,"kind":"block"}],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950287,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_user","path":"app/controllers/api/base_controller.rb","lineno":116,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950288,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_resource_owner","path":"app/controllers/api/base_controller.rb","lineno":112,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950289,"event":"return","thread_id":9160,"parent_id":1950288,"elapsed":0.0001738920109346509,"elapsed_instrumentation":0.00010679796105250716},{"id":1950290,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"update","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":344,"static":false,"parameters":[{"name":"other_hash","class":"Hash","object_id":10311040,"value":"{}","kind":"req","size":0}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":10311060,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"}},{"id":1950291,"event":"return","thread_id":9160,"parent_id":1950290,"elapsed":7.412047125399113e-06,"elapsed_instrumentation":0.00015277700731530786,"return_value":{"class":"ActionDispatch::Cookies::CookieJar","value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>","object_id":10311060}},{"id":1950292,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":10311060,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"}},{"id":1950293,"event":"return","thread_id":9160,"parent_id":1950292,"elapsed":3.010965883731842e-06,"elapsed_instrumentation":7.812707917764783e-05},{"id":1950294,"event":"return","thread_id":9160,"parent_id":1950287,"elapsed":0.0012832239735871553,"elapsed_instrumentation":0.00013204204151406884},{"id":1950295,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":10311000,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":10310340,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc9314965e0>"}},{"id":1950296,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_user","path":"app/controllers/api/base_controller.rb","lineno":116,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950297,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_resource_owner","path":"app/controllers/api/base_controller.rb","lineno":112,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950298,"event":"return","thread_id":9160,"parent_id":1950297,"elapsed":5.1445967983454466e-05,"elapsed_instrumentation":5.103799048811197e-05},{"id":1950299,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":10311060,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"}},{"id":1950300,"event":"return","thread_id":9160,"parent_id":1950299,"elapsed":6.043002940714359e-06,"elapsed_instrumentation":0.0001109620206989348},{"id":1950301,"event":"return","thread_id":9160,"parent_id":1950296,"elapsed":0.0004346930072642863,"elapsed_instrumentation":6.570498226210475e-05},{"id":1950302,"event":"call","thread_id":9160,"defined_class":"ApplicationController","method_id":"current_session","path":"app/controllers/application_controller.rb","lineno":153,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950303,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":10311060,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"}},{"id":1950304,"event":"return","thread_id":9160,"parent_id":1950303,"elapsed":3.396999090909958e-06,"elapsed_instrumentation":0.00011820101644843817},{"id":1950305,"event":"return","thread_id":9160,"parent_id":1950302,"elapsed":0.00016877398593351245,"elapsed_instrumentation":0.00032842904329299927},{"id":1950306,"event":"call","thread_id":9160,"defined_class":"ApplicationController","method_id":"check_self_destruct!","path":"app/controllers/application_controller.rb","lineno":176,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950307,"event":"call","thread_id":9160,"defined_class":"SelfDestructHelper","method_id":"self_destruct?","path":"app/helpers/self_destruct_helper.rb","lineno":11,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950308,"event":"return","thread_id":9160,"parent_id":1950307,"elapsed":7.5400457717478275e-06,"elapsed_instrumentation":4.84500196762383e-05},{"id":1950309,"event":"return","thread_id":9160,"parent_id":1950306,"elapsed":7.776403799653053e-05,"elapsed_instrumentation":5.8563018683344126e-05},{"id":1950310,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_user","path":"app/controllers/api/base_controller.rb","lineno":116,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950311,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_resource_owner","path":"app/controllers/api/base_controller.rb","lineno":112,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950312,"event":"return","thread_id":9160,"parent_id":1950311,"elapsed":6.980501348152757e-05,"elapsed_instrumentation":6.607500836253166e-05},{"id":1950313,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":10311060,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"}},{"id":1950314,"event":"return","thread_id":9160,"parent_id":1950313,"elapsed":3.442983143031597e-06,"elapsed_instrumentation":0.00011844199616461992},{"id":1950315,"event":"return","thread_id":9160,"parent_id":1950310,"elapsed":0.0006228049751371145,"elapsed_instrumentation":5.174602847546339e-05},{"id":1950316,"event":"call","thread_id":9160,"defined_class":"ApplicationController","method_id":"set_cache_control_defaults","path":"app/controllers/application_controller.rb","lineno":185,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950317,"event":"return","thread_id":9160,"parent_id":1950316,"elapsed":5.176989361643791e-06,"elapsed_instrumentation":0.00011786702089011669,"return_value":{"class":"Hash","value":"{:private=>true, :no_store=>true}","object_id":10311080,"size":2}},{"id":1950318,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"disallow_unauthenticated_api_access?","path":"app/controllers/api/base_controller.rb","lineno":152,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950319,"event":"return","thread_id":9160,"parent_id":1950318,"elapsed":2.080504782497883e-05,"elapsed_instrumentation":6.351090269163251e-05},{"id":1950320,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"require_not_suspended!","path":"app/controllers/api/base_controller.rb","lineno":126,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950321,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_user","path":"app/controllers/api/base_controller.rb","lineno":116,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950322,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_resource_owner","path":"app/controllers/api/base_controller.rb","lineno":112,"static":false,"parameters":[],"receiver":{"class":"Api::V1::Instances::TranslationLanguagesController","object_id":10311020,"value":"#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"}},{"id":1950323,"event":"return","thread_id":9160,"parent_id":1950322,"elapsed":3.121898043900728e-05,"elapsed_instrumentation":4.747905768454075e-05},{"id":1950324,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":10311060,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"}},{"id":1950325,"event":"return","thread_id":9160,"parent_id":1950324,"elapsed":3.275985363870859e-06,"elapsed_instrumentation":0.00019504898227751255},{"id":1950326,"event":"return","thread_id":9160,"parent_id":1950321,"elapsed":0.0004522660165093839,"elapsed_instrumentation":5.213596159592271e-05},{"id":1950327,"event":"return","thread_id":9160,"parent_id":1950320,"elapsed":0.0005231060204096138,"elapsed_instrumentation":5.5191980209201574e-05},{"id":1950328,"event":"call","thread_id":9160,"defined_class":"TranslationService","method_id":"configured?","path":"app/lib/translation_service.rb","lineno":20,"static":true,"parameters":[],"receiver":{"class":"Class","object_id":44680,"value":"TranslationService"}},{"id":1950329,"event":"return","thread_id":9160,"parent_id":1950328,"elapsed":1.3788987416774035e-05,"elapsed_instrumentation":8.888106094673276e-05,"return_value":{"class":"TrueClass","value":"true","object_id":20}},{"id":1950330,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":10311100,"value":"Cache read: translation_service/languages ({:compress=>false, :compress_threshold=>1024, :expires_in (...40 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":1950331,"event":"return","thread_id":9160,"parent_id":1950330,"elapsed":0.0008521180134266615,"elapsed_instrumentation":0.00014475599164143205,"return_value":{"class":"Integer","value":"140","object_id":281}},{"id":1950332,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":10311120,"value":"Cache generate: translation_service/languages ({:compress=>false, :compress_threshold=>1024, :expire (...44 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":1950333,"event":"return","thread_id":9160,"parent_id":1950332,"elapsed":0.000761356030125171,"elapsed_instrumentation":0.0001518860226497054,"return_value":{"class":"Integer","value":"144","object_id":289}},{"id":1950334,"event":"call","thread_id":9160,"defined_class":"TranslationService","method_id":"configured","path":"app/lib/translation_service.rb","lineno":10,"static":true,"parameters":[],"receiver":{"class":"Class","object_id":44680,"value":"TranslationService"}},{"id":1950335,"event":"return","thread_id":9160,"parent_id":1950334,"elapsed":3.473501419648528e-05,"elapsed_instrumentation":0.0001440400374121964,"return_value":{"class":"TranslationService::LibreTranslate","value":"#<TranslationService::LibreTranslate:0x00007fc9319e79b8>","object_id":10311140}},{"id":1950336,"event":"call","thread_id":9160,"defined_class":"TranslationService::LibreTranslate","method_id":"languages","path":"app/lib/translation_service/libre_translate.rb","lineno":18,"static":false,"parameters":[],"receiver":{"class":"TranslationService::LibreTranslate","object_id":10311140,"value":"#<TranslationService::LibreTranslate:0x00007fc9319e79b8>"}},{"id":1950337,"event":"call","thread_id":9160,"defined_class":"Mastodon::Version","method_id":"user_agent","path":"lib/mastodon/version.rb","lineno":67,"static":true,"parameters":[],"receiver":{"class":"Module","object_id":884020,"value":"4.3.0-alpha.0"}},{"id":1950338,"event":"return","thread_id":9160,"parent_id":1950337,"elapsed":3.769004251807928e-06,"elapsed_instrumentation":0.00017627101624384522,"return_value":{"class":"String","value":"http.rb/5.1.1 (Mastodon/4.3.0-alpha.0; +https://cb6e6126.ngrok.io/)","object_id":2261300}},{"id":1950339,"event":"call","thread_id":9160,"defined_class":"Request","method_id":"add_headers","path":"app/lib/request.rb","lineno":100,"static":false,"parameters":[{"name":"new_headers","class":"Hash","object_id":10311160,"value":"{:Content-Type=>application/json}","kind":"req","size":1}],"receiver":{"class":"Request","object_id":10311180,"value":"#<Request:0x00007fc93163aec8>"}},{"id":1950340,"event":"return","thread_id":9160,"parent_id":1950339,"elapsed":5.070003680884838e-06,"elapsed_instrumentation":0.00024024100275710225,"return_value":{"class":"Request","value":"#<Request:0x00007fc93163aec8>","object_id":10311180}},{"id":1950341,"event":"call","thread_id":9160,"defined_class":"Request","method_id":"perform","path":"app/lib/request.rb","lineno":105,"static":false,"parameters":[],"receiver":{"class":"Request","object_id":10311180,"value":"#<Request:0x00007fc93163aec8>"}},{"id":1950342,"event":"call","thread_id":9160,"defined_class":"Request","method_id":"http_client","path":"app/lib/request.rb","lineno":141,"static":true,"parameters":[],"receiver":{"class":"Class","object_id":55840,"value":"Request"}},{"id":1950343,"event":"return","thread_id":9160,"parent_id":1950342,"elapsed":5.715701263397932e-05,"elapsed_instrumentation":7.717404514551163e-05,"return_value":{"class":"HTTP::Client","value":"#<HTTP::Client:0x00007fc9319691a8>","object_id":10311200}},{"id":1950344,"event":"call","thread_id":9160,"defined_class":"Request","method_id":"headers","path":"app/lib/request.rb","lineno":126,"static":false,"parameters":[],"receiver":{"class":"Request","object_id":10311180,"value":"#<Request:0x00007fc93163aec8>"}},{"id":1950345,"event":"return","thread_id":9160,"parent_id":1950344,"elapsed":1.0816031135618687e-05,"elapsed_instrumentation":0.00014880794333294034,"return_value":{"class":"Hash","value":"{User-Agent=>http.rb/5.1.1 (Mastodon/4.3.0-alpha.0; +https://cb6e6126.ngrok.io/), Host=>libretranslate, Date=>Mon, 06 Nov 2023 03:08:56 GMT, Accept-Encoding=>gzip, :Content-Type=>application/json}","object_id":10311220,"size":5}},{"id":1950346,"event":"return","thread_id":9160,"parent_id":1950341,"elapsed":0.004666669003199786,"elapsed_instrumentation":7.390201790258288e-05},{"id":1950347,"event":"return","thread_id":9160,"parent_id":1950336,"elapsed":0.0063789369887672365,"elapsed_instrumentation":5.221896572038531e-05},{"id":1950348,"event":"return","thread_id":9160,"parent_id":1950295,"elapsed":0.012599149020388722,"elapsed_instrumentation":8.951296331360936e-05},{"id":1950349,"event":"return","thread_id":9160,"parent_id":1950286,"elapsed":0.014702925982419401,"elapsed_instrumentation":0.0007904110243543983},{"id":1950350,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":10311240,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":318420,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934c37c10>"}},{"id":1950351,"event":"return","thread_id":9160,"parent_id":1950350,"elapsed":0.00013866904191672802,"elapsed_instrumentation":0.00027821894036605954,"return_value":{"class":"Array","value":"[#<Proc:0x00007fc933f1f4d8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f618 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f758 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f910 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]","object_id":318440,"size":4}},{"id":1950352,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":10311240,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":318420,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934c37c10>"}},{"id":1950353,"event":"return","thread_id":9160,"parent_id":1950352,"elapsed":3.677967470139265e-06,"elapsed_instrumentation":8.899904787540436e-05,"return_value":{"class":"Array","value":"[]","object_id":318460,"size":0}},{"id":1950354,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"update","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":344,"static":false,"parameters":[{"name":"other_hash","class":"Hash","object_id":10311260,"value":"{}","kind":"req","size":0}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":10310900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>"}},{"id":1950355,"event":"return","thread_id":9160,"parent_id":1950354,"elapsed":6.475020200014114e-06,"elapsed_instrumentation":0.0002404240076430142,"return_value":{"class":"ActionDispatch::Cookies::CookieJar","value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>","object_id":10310900}}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "update",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 344,
+      "static": false,
+      "parameters": [
+        {
+          "name": "other_hash",
+          "class": "ActiveSupport::HashWithIndifferentAccess",
+          "object_id": 10310880,
+          "value": "{}",
+          "kind": "req",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 10310900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>"
+      }
+    },
+    {
+      "id": 2,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.000016812002286314964,
+      "elapsed_instrumentation": 0.00017275696154683828,
+      "return_value": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>",
+        "object_id": 10310900
+      }
+    },
+    {
+      "id": 3,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "update",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 344,
+      "static": false,
+      "parameters": [
+        {
+          "name": "other_hash",
+          "class": "ActiveSupport::HashWithIndifferentAccess",
+          "object_id": 10310880,
+          "value": "{}",
+          "kind": "req",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 10310900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>"
+      }
+    },
+    {
+      "id": 4,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 3,
+      "elapsed": 0.000009329000022262335,
+      "elapsed_instrumentation": 0.00008998200064525008,
+      "return_value": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>",
+        "object_id": 10310900
+      }
+    },
+    {
+      "id": 5,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "update",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 344,
+      "static": false,
+      "parameters": [
+        {
+          "name": "other_hash",
+          "class": "ActiveSupport::HashWithIndifferentAccess",
+          "object_id": 10310880,
+          "value": "{}",
+          "kind": "req",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 10310920,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc9316007a0>"
+      }
+    },
+    {
+      "id": 6,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 5,
+      "elapsed": 0.000008468050509691238,
+      "elapsed_instrumentation": 0.00008146895561367273,
+      "return_value": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc9316007a0>",
+        "object_id": 10310920
+      }
+    },
+    {
+      "id": 7,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 10310960,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 222040,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93803c8a8>"
+      }
+    },
+    {
+      "id": 8,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 7,
+      "elapsed": 0.00009604898514226079,
+      "elapsed_instrumentation": 0.00017137103714048862,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007fc934226eb0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934226ff0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934227158 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934227310 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 222060,
+        "size": 4
+      }
+    },
+    {
+      "id": 9,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 10310960,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 222040,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93803c8a8>"
+      }
+    },
+    {
+      "id": 10,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 9,
+      "elapsed": 0.0000031249946914613247,
+      "elapsed_instrumentation": 0.00007776299025863409,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 222080,
+        "size": 0
+      }
+    },
+    {
+      "id": 11,
+      "event": "call",
+      "thread_id": 9160,
+      "http_server_request": {
+        "request_method": "GET",
+        "path_info": "/api/v1/instance/translation_languages",
+        "normalized_path_info": "/api/v1/instance/translation_languages",
+        "headers": {
+          "Host": "test.host",
+          "User-Agent": "Rails Testing"
+        }
+      },
+      "message": [
+        {
+          "name": "controller",
+          "class": "String",
+          "value": "api/v1/instances/translation_languages",
+          "object_id": 10310820
+        },
+        {
+          "name": "action",
+          "class": "String",
+          "value": "show",
+          "object_id": 10311280
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 10310980,
+          "value": "Processing by Api::V1::Instances::TranslationLanguagesController#show as HTML\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 13,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 12,
+      "elapsed": 0.000658225966617465,
+      "elapsed_instrumentation": 0.00018614297732710838,
+      "return_value": {
+        "class": "Integer",
+        "value": "78",
+        "object_id": 157
+      }
+    },
+    {
+      "id": 14,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 10311000,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 10310240,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc931496590>"
+      }
+    },
+    {
+      "id": 15,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 14,
+      "elapsed": 0.000008909031748771667,
+      "elapsed_instrumentation": 0.00039244594518095255,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 10310260,
+        "size": 0
+      }
+    },
+    {
+      "id": 16,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Localized",
+      "method_id": "set_locale",
+      "path": "app/controllers/concerns/localized.rb",
+      "lineno": 10,
+      "static": false,
+      "parameters": [
+        {
+          "name": "block",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "block"
+        }
+      ],
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 17,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_user",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 116,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 18,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_resource_owner",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 112,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 19,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 18,
+      "elapsed": 0.0001738920109346509,
+      "elapsed_instrumentation": 0.00010679796105250716
+    },
+    {
+      "id": 20,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "update",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 344,
+      "static": false,
+      "parameters": [
+        {
+          "name": "other_hash",
+          "class": "Hash",
+          "object_id": 10311040,
+          "value": "{}",
+          "kind": "req",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 10311060,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"
+      }
+    },
+    {
+      "id": 21,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 20,
+      "elapsed": 0.000007412047125399113,
+      "elapsed_instrumentation": 0.00015277700731530786,
+      "return_value": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>",
+        "object_id": 10311060
+      }
+    },
+    {
+      "id": 22,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 10311060,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"
+      }
+    },
+    {
+      "id": 23,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 22,
+      "elapsed": 0.000003010965883731842,
+      "elapsed_instrumentation": 0.00007812707917764783
+    },
+    {
+      "id": 24,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 17,
+      "elapsed": 0.0012832239735871553,
+      "elapsed_instrumentation": 0.00013204204151406884
+    },
+    {
+      "id": 25,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 10311000,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 10310340,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc9314965e0>"
+      }
+    },
+    {
+      "id": 26,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_user",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 116,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 27,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_resource_owner",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 112,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 28,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 27,
+      "elapsed": 0.000051445967983454466,
+      "elapsed_instrumentation": 0.00005103799048811197
+    },
+    {
+      "id": 29,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 10311060,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"
+      }
+    },
+    {
+      "id": 30,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 29,
+      "elapsed": 0.000006043002940714359,
+      "elapsed_instrumentation": 0.0001109620206989348
+    },
+    {
+      "id": 31,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 26,
+      "elapsed": 0.0004346930072642863,
+      "elapsed_instrumentation": 0.00006570498226210475
+    },
+    {
+      "id": 32,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ApplicationController",
+      "method_id": "current_session",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 153,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 33,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 10311060,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"
+      }
+    },
+    {
+      "id": 34,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 33,
+      "elapsed": 0.000003396999090909958,
+      "elapsed_instrumentation": 0.00011820101644843817
+    },
+    {
+      "id": 35,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 32,
+      "elapsed": 0.00016877398593351245,
+      "elapsed_instrumentation": 0.00032842904329299927
+    },
+    {
+      "id": 36,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ApplicationController",
+      "method_id": "check_self_destruct!",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 176,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 37,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "SelfDestructHelper",
+      "method_id": "self_destruct?",
+      "path": "app/helpers/self_destruct_helper.rb",
+      "lineno": 11,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 38,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 37,
+      "elapsed": 0.0000075400457717478275,
+      "elapsed_instrumentation": 0.0000484500196762383
+    },
+    {
+      "id": 39,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 36,
+      "elapsed": 0.00007776403799653053,
+      "elapsed_instrumentation": 0.000058563018683344126
+    },
+    {
+      "id": 40,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_user",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 116,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 41,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_resource_owner",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 112,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 42,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 41,
+      "elapsed": 0.00006980501348152757,
+      "elapsed_instrumentation": 0.00006607500836253166
+    },
+    {
+      "id": 43,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 10311060,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"
+      }
+    },
+    {
+      "id": 44,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 43,
+      "elapsed": 0.000003442983143031597,
+      "elapsed_instrumentation": 0.00011844199616461992
+    },
+    {
+      "id": 45,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 40,
+      "elapsed": 0.0006228049751371145,
+      "elapsed_instrumentation": 0.00005174602847546339
+    },
+    {
+      "id": 46,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ApplicationController",
+      "method_id": "set_cache_control_defaults",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 185,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 47,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 46,
+      "elapsed": 0.000005176989361643791,
+      "elapsed_instrumentation": 0.00011786702089011669,
+      "return_value": {
+        "class": "Hash",
+        "value": "{:private=>true, :no_store=>true}",
+        "object_id": 10311080,
+        "size": 2
+      }
+    },
+    {
+      "id": 48,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "disallow_unauthenticated_api_access?",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 152,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 49,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 48,
+      "elapsed": 0.00002080504782497883,
+      "elapsed_instrumentation": 0.00006351090269163251
+    },
+    {
+      "id": 50,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "require_not_suspended!",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 126,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 51,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_user",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 116,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 52,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_resource_owner",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 112,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::Instances::TranslationLanguagesController",
+        "object_id": 10311020,
+        "value": "#<Api::V1::Instances::TranslationLanguagesController:0x00007fc8e21a3990>"
+      }
+    },
+    {
+      "id": 53,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 52,
+      "elapsed": 0.00003121898043900728,
+      "elapsed_instrumentation": 0.00004747905768454075
+    },
+    {
+      "id": 54,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 10311060,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc93163e3e8>"
+      }
+    },
+    {
+      "id": 55,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 54,
+      "elapsed": 0.000003275985363870859,
+      "elapsed_instrumentation": 0.00019504898227751255
+    },
+    {
+      "id": 56,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 51,
+      "elapsed": 0.0004522660165093839,
+      "elapsed_instrumentation": 0.00005213596159592271
+    },
+    {
+      "id": 57,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 50,
+      "elapsed": 0.0005231060204096138,
+      "elapsed_instrumentation": 0.000055191980209201574
+    },
+    {
+      "id": 58,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "TranslationService",
+      "method_id": "configured?",
+      "path": "app/lib/translation_service.rb",
+      "lineno": 20,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 44680,
+        "value": "TranslationService"
+      }
+    },
+    {
+      "id": 59,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 58,
+      "elapsed": 0.000013788987416774035,
+      "elapsed_instrumentation": 0.00008888106094673276,
+      "return_value": {
+        "class": "TrueClass",
+        "value": "true",
+        "object_id": 20
+      }
+    },
+    {
+      "id": 60,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 10311100,
+          "value": "Cache read: translation_service/languages ({:compress=>false, :compress_threshold=>1024, :expires_in (...40 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 61,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 60,
+      "elapsed": 0.0008521180134266615,
+      "elapsed_instrumentation": 0.00014475599164143205,
+      "return_value": {
+        "class": "Integer",
+        "value": "140",
+        "object_id": 281
+      }
+    },
+    {
+      "id": 62,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 10311120,
+          "value": "Cache generate: translation_service/languages ({:compress=>false, :compress_threshold=>1024, :expire (...44 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 63,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 62,
+      "elapsed": 0.000761356030125171,
+      "elapsed_instrumentation": 0.0001518860226497054,
+      "return_value": {
+        "class": "Integer",
+        "value": "144",
+        "object_id": 289
+      }
+    },
+    {
+      "id": 64,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "TranslationService",
+      "method_id": "configured",
+      "path": "app/lib/translation_service.rb",
+      "lineno": 10,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 44680,
+        "value": "TranslationService"
+      }
+    },
+    {
+      "id": 65,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 64,
+      "elapsed": 0.00003473501419648528,
+      "elapsed_instrumentation": 0.0001440400374121964,
+      "return_value": {
+        "class": "TranslationService::LibreTranslate",
+        "value": "#<TranslationService::LibreTranslate:0x00007fc9319e79b8>",
+        "object_id": 10311140
+      }
+    },
+    {
+      "id": 66,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "TranslationService::LibreTranslate",
+      "method_id": "languages",
+      "path": "app/lib/translation_service/libre_translate.rb",
+      "lineno": 18,
+      "static": false,
+      "receiver": {
+        "class": "TranslationService::LibreTranslate",
+        "object_id": 10311140,
+        "value": "#<TranslationService::LibreTranslate:0x00007fc9319e79b8>"
+      }
+    },
+    {
+      "id": 67,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Mastodon::Version",
+      "method_id": "user_agent",
+      "path": "lib/mastodon/version.rb",
+      "lineno": 67,
+      "static": true,
+      "receiver": {
+        "class": "Module",
+        "object_id": 884020,
+        "value": "4.3.0-alpha.0"
+      }
+    },
+    {
+      "id": 68,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 67,
+      "elapsed": 0.000003769004251807928,
+      "elapsed_instrumentation": 0.00017627101624384522,
+      "return_value": {
+        "class": "String",
+        "value": "http.rb/5.1.1 (Mastodon/4.3.0-alpha.0; +https://cb6e6126.ngrok.io/)",
+        "object_id": 2261300
+      }
+    },
+    {
+      "id": 69,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Request",
+      "method_id": "add_headers",
+      "path": "app/lib/request.rb",
+      "lineno": 100,
+      "static": false,
+      "parameters": [
+        {
+          "name": "new_headers",
+          "class": "Hash",
+          "object_id": 10311160,
+          "value": "{:Content-Type=>application/json}",
+          "kind": "req",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "Request",
+        "object_id": 10311180,
+        "value": "#<Request:0x00007fc93163aec8>"
+      }
+    },
+    {
+      "id": 70,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 69,
+      "elapsed": 0.000005070003680884838,
+      "elapsed_instrumentation": 0.00024024100275710225,
+      "return_value": {
+        "class": "Request",
+        "value": "#<Request:0x00007fc93163aec8>",
+        "object_id": 10311180
+      }
+    },
+    {
+      "id": 71,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Request",
+      "method_id": "perform",
+      "path": "app/lib/request.rb",
+      "lineno": 105,
+      "static": false,
+      "receiver": {
+        "class": "Request",
+        "object_id": 10311180,
+        "value": "#<Request:0x00007fc93163aec8>"
+      }
+    },
+    {
+      "id": 72,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Request",
+      "method_id": "http_client",
+      "path": "app/lib/request.rb",
+      "lineno": 141,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 55840,
+        "value": "Request"
+      }
+    },
+    {
+      "id": 73,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 72,
+      "elapsed": 0.00005715701263397932,
+      "elapsed_instrumentation": 0.00007717404514551163,
+      "return_value": {
+        "class": "HTTP::Client",
+        "value": "#<HTTP::Client:0x00007fc9319691a8>",
+        "object_id": 10311200
+      }
+    },
+    {
+      "id": 74,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Request",
+      "method_id": "headers",
+      "path": "app/lib/request.rb",
+      "lineno": 126,
+      "static": false,
+      "receiver": {
+        "class": "Request",
+        "object_id": 10311180,
+        "value": "#<Request:0x00007fc93163aec8>"
+      }
+    },
+    {
+      "id": 75,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 74,
+      "elapsed": 0.000010816031135618687,
+      "elapsed_instrumentation": 0.00014880794333294034,
+      "return_value": {
+        "class": "Hash",
+        "value": "{User-Agent=>http.rb/5.1.1 (Mastodon/4.3.0-alpha.0; +https://cb6e6126.ngrok.io/), Host=>libretranslate, Date=>Mon, 06 Nov 2023 03:08:56 GMT, Accept-Encoding=>gzip, :Content-Type=>application/json}",
+        "object_id": 10311220,
+        "size": 5
+      }
+    },
+    {
+      "id": 76,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 71,
+      "elapsed": 0.004666669003199786,
+      "elapsed_instrumentation": 0.00007390201790258288
+    },
+    {
+      "id": 77,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 66,
+      "elapsed": 0.0063789369887672365,
+      "elapsed_instrumentation": 0.00005221896572038531
+    },
+    {
+      "id": 78,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 25,
+      "elapsed": 0.012599149020388722,
+      "elapsed_instrumentation": 0.00008951296331360936
+    },
+    {
+      "id": 79,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 16,
+      "elapsed": 0.014702925982419401,
+      "elapsed_instrumentation": 0.0007904110243543983
+    },
+    {
+      "id": 80,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 10311240,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 318420,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934c37c10>"
+      }
+    },
+    {
+      "id": 81,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 80,
+      "elapsed": 0.00013866904191672802,
+      "elapsed_instrumentation": 0.00027821894036605954,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007fc933f1f4d8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f618 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f758 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f910 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 318440,
+        "size": 4
+      }
+    },
+    {
+      "id": 82,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 10311240,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 318420,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934c37c10>"
+      }
+    },
+    {
+      "id": 83,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 82,
+      "elapsed": 0.000003677967470139265,
+      "elapsed_instrumentation": 0.00008899904787540436,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 318460,
+        "size": 0
+      }
+    },
+    {
+      "id": 84,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "update",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 344,
+      "static": false,
+      "parameters": [
+        {
+          "name": "other_hash",
+          "class": "Hash",
+          "object_id": 10311260,
+          "value": "{}",
+          "kind": "req",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 10310900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>"
+      }
+    },
+    {
+      "id": 85,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 84,
+      "elapsed": 0.000006475020200014114,
+      "elapsed_instrumentation": 0.0002404240076430142,
+      "return_value": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc931600a20>",
+        "object_id": 10310900
+      }
+    },
+    {
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 11
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "Api::V1::Instances::TranslationLanguagesController GET #show when no translation service is configured returns empty language matrix",
+    "source_location": "spec/controllers/api/v1/instances/translation_languages_controller_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "failed",
+    "test_failure": {
+      "message": "Exception(s) occurred within instrumentation subscribers: NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError, NoMethodError",
+      "location": "spec/controllers/api/v1/instances/translation_languages_controller_spec.rb:9"
+    },
+    "exception": {
+      "class": "ActiveSupport::Notifications::InstrumentationSubscriberError",
+      "message": "Exception(s) occurred within instrumentation subscribers: NoMethodError, NoMethodError, NoMethodErro (...10951 more characters)"
+    }
+  },
+  "classMap": [
+    {
+      "name": "actionpack",
+      "type": "package",
+      "children": [
+        {
+          "name": "ActionDispatch",
+          "type": "class",
+          "children": [
+            {
+              "name": "Cookies",
+              "type": "class",
+              "children": [
+                {
+                  "name": "CookieJar",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "update",
+                      "type": "function",
+                      "labels": [
+                        "http.session.write"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb:344"
+                    },
+                    {
+                      "name": "[]",
+                      "type": "function",
+                      "labels": [
+                        "http.session.read"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb:328"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "activesupport",
+      "type": "package",
+      "children": [
+        {
+          "name": "ActiveSupport",
+          "type": "class",
+          "children": [
+            {
+              "name": "Callbacks",
+              "type": "class",
+              "children": [
+                {
+                  "name": "CallbackSequence",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "invoke_before",
+                      "type": "function",
+                      "labels": [
+                        "mvc.before_action"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                    },
+                    {
+                      "name": "invoke_after",
+                      "type": "function",
+                      "labels": [
+                        "mvc.after_action"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "type": "package",
+      "children": [
+        {
+          "name": "Logger",
+          "type": "class",
+          "children": [
+            {
+              "name": "LogDevice",
+              "type": "class",
+              "children": [
+                {
+                  "name": "write",
+                  "type": "function",
+                  "labels": [
+                    "log"
+                  ],
+                  "static": false,
+                  "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "app",
+      "type": "package",
+      "children": [
+        {
+          "name": "controllers",
+          "type": "package",
+          "children": [
+            {
+              "name": "concerns",
+              "type": "package",
+              "children": [
+                {
+                  "name": "Localized",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "set_locale",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/controllers/concerns/localized.rb:10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "api",
+              "type": "package",
+              "children": [
+                {
+                  "name": "Api",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "BaseController",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "current_user",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/controllers/api/base_controller.rb:116"
+                        },
+                        {
+                          "name": "current_resource_owner",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/controllers/api/base_controller.rb:112"
+                        },
+                        {
+                          "name": "disallow_unauthenticated_api_access?",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/controllers/api/base_controller.rb:152"
+                        },
+                        {
+                          "name": "require_not_suspended!",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/controllers/api/base_controller.rb:126"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ApplicationController",
+              "type": "class",
+              "children": [
+                {
+                  "name": "current_session",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:153"
+                },
+                {
+                  "name": "check_self_destruct!",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:176"
+                },
+                {
+                  "name": "set_cache_control_defaults",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:185"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "helpers",
+          "type": "package",
+          "children": [
+            {
+              "name": "SelfDestructHelper",
+              "type": "class",
+              "children": [
+                {
+                  "name": "self_destruct?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/helpers/self_destruct_helper.rb:11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lib",
+          "type": "package",
+          "children": [
+            {
+              "name": "TranslationService",
+              "type": "class",
+              "children": [
+                {
+                  "name": "configured?",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/lib/translation_service.rb:20"
+                },
+                {
+                  "name": "configured",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/lib/translation_service.rb:10"
+                }
+              ]
+            },
+            {
+              "name": "translation_service",
+              "type": "package",
+              "children": [
+                {
+                  "name": "TranslationService",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "LibreTranslate",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "languages",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/translation_service/libre_translate.rb:18"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Request",
+              "type": "class",
+              "children": [
+                {
+                  "name": "add_headers",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/request.rb:100"
+                },
+                {
+                  "name": "perform",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/request.rb:105"
+                },
+                {
+                  "name": "http_client",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/lib/request.rb:141"
+                },
+                {
+                  "name": "headers",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/request.rb:126"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lib/mastodon",
+      "type": "package",
+      "children": [
+        {
+          "name": "Mastodon",
+          "type": "class",
+          "children": [
+            {
+              "name": "Version",
+              "type": "class",
+              "children": [
+                {
+                  "name": "user_agent",
+                  "type": "function",
+                  "static": true,
+                  "location": "lib/mastodon/version.rb:67"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /api/v1/instance/translation_languages"
+        }
+      ]
+    }
+  ]
+}

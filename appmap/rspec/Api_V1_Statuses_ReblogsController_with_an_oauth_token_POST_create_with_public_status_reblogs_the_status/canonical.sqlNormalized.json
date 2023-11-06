@@ -1,0 +1,4 @@
+[
+  "SELECT ? AS one FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"reblog_of_id\" = $? AND \"statuses\".\"account_id\" = $? LIMIT $?",
+  "SELECT COUNT(*) FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"reblog_of_id\" = $?"
+]

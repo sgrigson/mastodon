@@ -1,0 +1,12 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"announcement_mutes\".* FROM \"announcement_mutes\" WHERE \"announcement_mutes\".\"announcement_id\" = $1 AND \"announcement_mutes\".\"account_id\" = $2 LIMIT $3"
+      }
+    ]
+  }
+]

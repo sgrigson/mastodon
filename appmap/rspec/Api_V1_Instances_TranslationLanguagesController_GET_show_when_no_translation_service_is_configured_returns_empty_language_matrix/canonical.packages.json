@@ -1,0 +1,12 @@
+[
+  "actionpack",
+  "activesupport",
+  "app/controllers",
+  "app/controllers/api",
+  "app/controllers/concerns",
+  "app/helpers",
+  "app/lib",
+  "app/lib/translation_service",
+  "lib/mastodon",
+  "logger"
+]
