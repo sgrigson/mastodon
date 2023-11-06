@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT 1 AS one FROM \"conversations\" WHERE \"conversations\".\"uri\" = $1 LIMIT $2"
+  }
+]

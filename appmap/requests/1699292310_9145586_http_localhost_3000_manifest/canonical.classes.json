@@ -1,0 +1,21 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "activesupport/ActiveSupport::LazyLoadHooks",
+  "app/controllers/ManifestsController",
+  "app/helpers/EmailHelper",
+  "app/helpers/ManifestSerializer",
+  "app/helpers/RoutingHelper",
+  "app/lib/FastIpMap",
+  "app/lib/RedisConfiguration",
+  "app/models/IpBlock",
+  "app/models/Setting",
+  "app/presenters/InstancePresenter",
+  "app/serializers/ManifestSerializer",
+  "json/JSON::Ext::Generator::State",
+  "json/JSON::Ext::Parser",
+  "lib/chewy/strategy/Chewy::Strategy::Mastodon",
+  "lib/webpacker/Webpacker::ManifestExtensions",
+  "logger/Logger::LogDevice",
+  "ruby/Marshal",
+  "ruby/String"
+]
