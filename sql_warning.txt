@@ -1,0 +1,1 @@
+Syntax error found near WITH Clause (Statement): REFRESH MATERIALIZED VIEW CONCURRENTLY "instances";

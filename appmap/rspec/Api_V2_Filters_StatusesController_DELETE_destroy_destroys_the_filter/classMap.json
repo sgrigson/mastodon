@@ -1,0 +1,12 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"custom_filter_statuses\".* FROM \"custom_filter_statuses\" WHERE \"custom_filter_statuses\".\"id\" = $1 LIMIT $2"
+      }
+    ]
+  }
+]
