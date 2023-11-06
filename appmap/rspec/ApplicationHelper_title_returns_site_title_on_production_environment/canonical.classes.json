@@ -1,0 +1,8 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/helpers/ApplicationHelper",
+  "app/helpers/InstanceHelper",
+  "app/models/Setting",
+  "logger/Logger::LogDevice",
+  "psych/Psych"
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "psych/Psych"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/models",
+    "callee": "logger/Logger"
+  }
+]
