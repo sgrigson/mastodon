@@ -1,0 +1,22 @@
+[
+  "actionview",
+  "activesupport",
+  "app/helpers",
+  "app/lib",
+  "app/lib/activitypub",
+  "app/mailers",
+  "app/models",
+  "app/models/concerns",
+  "app/models/user_settings",
+  "app/serializers/rest",
+  "app/serializers/rest/admin",
+  "app/validators",
+  "app/views",
+  "app/workers",
+  "json",
+  "lib/paperclip",
+  "logger",
+  "openssl",
+  "ruby",
+  "sidekiq"
+]

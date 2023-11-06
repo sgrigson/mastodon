@@ -1,0 +1,50 @@
+[
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "SELECT SUM(COALESCE(avatar_file_size, 0) + COALESCE(header_file_size, 0)) FROM \"accounts\""
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "SELECT SUM(COALESCE(file_file_size, 0) + COALESCE(thumbnail_file_size, 0)) FROM \"media_attachments\""
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "SELECT SUM(\"backups\".\"dump_file_size\") FROM \"backups\""
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "SELECT SUM(\"custom_emojis\".\"image_file_size\") FROM \"custom_emojis\""
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "SELECT SUM(\"imports\".\"data_file_size\") FROM \"imports\""
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "SELECT SUM(\"preview_cards\".\"image_file_size\") FROM \"preview_cards\""
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "SELECT SUM(\"site_uploads\".\"file_file_size\") FROM \"site_uploads\""
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "SELECT pg_database_size(current_database())"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "app/models/concerns"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "lib/chewy/Chewy"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "ruby/Marshal"
+  }
+]

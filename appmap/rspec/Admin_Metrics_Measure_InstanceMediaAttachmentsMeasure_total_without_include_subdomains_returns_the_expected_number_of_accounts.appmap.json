@@ -1,1 +1,1004 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure total without include_subdomains returns the expected number of accounts","source_location":"spec/lib/admin/metrics/measure/instance_media_attachments_measure_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[{"name":"app/lib/admin/metrics/measure","type":"package","children":[{"name":"Admin","type":"class","children":[{"name":"Metrics","type":"class","children":[{"name":"Measure","type":"class","children":[{"name":"BaseMeasure","type":"class","children":[{"name":"total","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:37","static":false},{"name":"load","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:59","static":false},{"name":"cache_key","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:21","static":false},{"name":"canonicalized_params","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:104","static":false},{"name":"perform_queries","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:68","static":false}]},{"name":"InstanceMediaAttachmentsMeasure","type":"class","children":[{"name":"key","type":"function","location":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:11","static":false},{"name":"params","type":"function","location":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:69","static":false},{"name":"perform_total_query","type":"function","location":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:29","static":false},{"name":"perform_previous_total_query","type":"function","location":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:35","static":false},{"name":"sql_array","type":"function","location":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:39","static":false},{"name":"sql_query_string","type":"function","location":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:43","static":false}]},{"name":"QueryHelper","type":"class","children":[{"name":"perform_data_query","type":"function","location":"app/lib/admin/metrics/measure/query_helper.rb:6","static":false},{"name":"measurement_data_rows","type":"function","location":"app/lib/admin/metrics/measure/query_helper.rb:10","static":false},{"name":"sanitized_sql_string","type":"function","location":"app/lib/admin/metrics/measure/query_helper.rb:14","static":false},{"name":"account_domain_sql","type":"function","location":"app/lib/admin/metrics/measure/query_helper.rb:18","static":false}]}]}]}]}]},{"name":"logger","type":"package","children":[{"name":"Logger","type":"class","children":[{"name":"LogDevice","type":"class","children":[{"name":"write","type":"function","location":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31","static":false,"labels":["log"]}]}]}]},{"name":"ruby","type":"package","children":[{"name":"Marshal","type":"class","children":[{"name":"dump","type":"function","location":"Marshal.dump","static":true,"labels":["serialize"]}]}]}],"events":[{"id":2624150,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT SUM(\"media_attachments\".\"file_file_size\") FROM \"media_attachments\" WHERE \"media_attachments\".\"account_id\" = $1","database_type":"postgres"}},{"id":2624151,"event":"return","thread_id":9160,"parent_id":2624150,"elapsed":0.000780274,"elapsed_instrumentation":0.00010371400276198983},{"id":2624152,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT SUM(\"media_attachments\".\"thumbnail_file_size\") FROM \"media_attachments\" WHERE \"media_attachments\".\"account_id\" = $1","database_type":"postgres"}},{"id":2624153,"event":"return","thread_id":9160,"parent_id":2624152,"elapsed":0.000866126,"elapsed_instrumentation":0.000185929995495826},{"id":2624154,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"total","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":37,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624155,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"load","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":59,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624156,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"cache_key","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":21,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624157,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","method_id":"key","path":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb","lineno":11,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624158,"event":"return","thread_id":9160,"parent_id":2624157,"elapsed":3.374996595084667e-06,"elapsed_instrumentation":8.401303784921765e-05,"return_value":{"class":"String","value":"instance_media_attachments","object_id":12889340}},{"id":2624159,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"canonicalized_params","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":104,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624160,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","method_id":"params","path":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb","lineno":69,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624161,"event":"return","thread_id":9160,"parent_id":2624160,"elapsed":9.951903484761715e-05,"elapsed_instrumentation":0.00011121394345536828,"return_value":{"class":"ActionController::Parameters","value":"{\"domain\"=>\"example.com\"}","object_id":12890020}},{"id":2624162,"event":"return","thread_id":9160,"parent_id":2624159,"elapsed":0.0002781570074148476,"elapsed_instrumentation":8.714594878256321e-05,"return_value":{"class":"String","value":"domain=example.com","object_id":12890040}},{"id":2624163,"event":"return","thread_id":9160,"parent_id":2624156,"elapsed":0.0005116109969094396,"elapsed_instrumentation":0.00016371504170820117,"return_value":{"class":"String","value":"metrics/measure/instance_media_attachments;2023-11-04T03:15:36+00:00;2023-11-06T03:15:36+00:00;domai (...13 more characters)","object_id":12890060}},{"id":2624164,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":12890080,"value":"Cache read: metrics/measure/instance_media_attachments;2023-11-04T03:15:36+00:00;2023-11-06T03:15:36 (...98 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":2624165,"event":"return","thread_id":9160,"parent_id":2624164,"elapsed":0.001205255975946784,"elapsed_instrumentation":0.0001510120346210897,"return_value":{"class":"Integer","value":"198","object_id":397}},{"id":2624166,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":12890100,"value":"Cache generate: metrics/measure/instance_media_attachments;2023-11-04T03:15:36+00:00;2023-11-06T03:1 (...102 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":2624167,"event":"return","thread_id":9160,"parent_id":2624166,"elapsed":0.001053675019647926,"elapsed_instrumentation":0.0002215069835074246,"return_value":{"class":"Integer","value":"202","object_id":405}},{"id":2624168,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"perform_queries","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":68,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624169,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","method_id":"perform_total_query","path":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb","lineno":29,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624170,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","method_id":"params","path":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb","lineno":69,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624171,"event":"return","thread_id":9160,"parent_id":2624170,"elapsed":6.58880453556776e-05,"elapsed_instrumentation":8.521898416802287e-05,"return_value":{"class":"ActionController::Parameters","value":"{\"domain\"=>\"example.com\"}","object_id":12890120}},{"id":2624172,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","method_id":"params","path":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb","lineno":69,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624173,"event":"return","thread_id":9160,"parent_id":2624172,"elapsed":3.480695886537433e-05,"elapsed_instrumentation":7.912906585261226e-05,"return_value":{"class":"ActionController::Parameters","value":"{\"domain\"=>\"example.com\"}","object_id":12890140}},{"id":2624174,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT SUM(COALESCE(file_file_size, 0) + COALESCE(thumbnail_file_size, 0)) FROM \"media_attachments\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"media_attachments\".\"account_id\" WHERE \"accounts\".\"domain\" = $1","database_type":"postgres"}},{"id":2624175,"event":"return","thread_id":9160,"parent_id":2624174,"elapsed":0.00145003,"elapsed_instrumentation":0.00010413001291453838},{"id":2624176,"event":"return","thread_id":9160,"parent_id":2624169,"elapsed":0.004007929004728794,"elapsed_instrumentation":0.00011564197484403849,"return_value":{"class":"Integer","value":"61022","object_id":122045}},{"id":2624177,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","method_id":"perform_previous_total_query","path":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb","lineno":35,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624178,"event":"return","thread_id":9160,"parent_id":2624177,"elapsed":3.00002284348011e-06,"elapsed_instrumentation":9.45129431784153e-05},{"id":2624179,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::QueryHelper","method_id":"perform_data_query","path":"app/lib/admin/metrics/measure/query_helper.rb","lineno":6,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624180,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::QueryHelper","method_id":"measurement_data_rows","path":"app/lib/admin/metrics/measure/query_helper.rb","lineno":10,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624181,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::QueryHelper","method_id":"sanitized_sql_string","path":"app/lib/admin/metrics/measure/query_helper.rb","lineno":14,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624182,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","method_id":"sql_array","path":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb","lineno":39,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624183,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","method_id":"sql_query_string","path":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb","lineno":43,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624184,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","method_id":"params","path":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb","lineno":69,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624185,"event":"return","thread_id":9160,"parent_id":2624184,"elapsed":6.82569807395339e-05,"elapsed_instrumentation":8.605601033195853e-05,"return_value":{"class":"ActionController::Parameters","value":"{\"domain\"=>\"example.com\"}","object_id":12890160}},{"id":2624186,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::QueryHelper","method_id":"account_domain_sql","path":"app/lib/admin/metrics/measure/query_helper.rb","lineno":18,"static":false,"parameters":[{"name":"include_subdomains","class":"NilClass","object_id":4,"value":null,"kind":"req"}],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624187,"event":"return","thread_id":9160,"parent_id":2624186,"elapsed":4.429020918905735e-06,"elapsed_instrumentation":0.0001349130179733038,"return_value":{"class":"String","value":"accounts.domain = :domain::text","object_id":3036700}},{"id":2624188,"event":"return","thread_id":9160,"parent_id":2624183,"elapsed":0.0005790360155515373,"elapsed_instrumentation":9.764998685568571e-05,"return_value":{"class":"String","value":"SELECT axis.*, ( WITH new_media_attachments AS ( SELECT COALESCE(media_attachments.file_file_size, 0 (...478 more characters)","object_id":12890180}},{"id":2624189,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","method_id":"params","path":"app/lib/admin/metrics/measure/instance_media_attachments_measure.rb","lineno":69,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure","object_id":12890000,"value":"#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"}},{"id":2624190,"event":"return","thread_id":9160,"parent_id":2624189,"elapsed":4.9712019972503185e-05,"elapsed_instrumentation":8.752895519137383e-05,"return_value":{"class":"ActionController::Parameters","value":"{\"domain\"=>\"example.com\"}","object_id":12890200}},{"id":2624191,"event":"return","thread_id":9160,"parent_id":2624182,"elapsed":0.0008610269869677722,"elapsed_instrumentation":0.00015291903400793672,"return_value":{"class":"Array","value":"[SELECT axis.*, ( WITH new_media_attachments AS ( SELECT COALESCE(media_attachments.file_file_size, 0 (...478 more characters), {:start_at=>2023-11-04T03:15:36+00:00, :end_at=>2023-11-06T03:15:36+00:00, :domain=>example.com}]","object_id":12890220,"size":2}},{"id":2624192,"event":"return","thread_id":9160,"parent_id":2624181,"elapsed":0.0012555659632198513,"elapsed_instrumentation":7.463101064786315e-05,"return_value":{"class":"String","value":"SELECT axis.*, ( WITH new_media_attachments AS ( SELECT COALESCE(media_attachments.file_file_size, 0 (...524 more characters)","object_id":12890240}},{"id":2624193,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT axis.*, ( WITH new_media_attachments AS ( SELECT COALESCE(media_attachments.file_file_size, 0) + COALESCE(media_attachments.thumbnail_file_size, 0) AS size FROM media_attachments INNER JOIN accounts ON accounts.id = media_attachments.account_id WHERE date_trunc('day', media_attachments.created_at)::date = axis.period AND accounts.domain = 'example.com'::text ) SELECT SUM(size) FROM new_media_attachments ) AS value FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:15:36.669578'::timestamp)::date, date_trunc('day', '2023-11-06 03:15:36.669757'::timestamp)::date, interval '1 day') AS period ) AS axis","database_type":"postgres"}},{"id":2624194,"event":"return","thread_id":9160,"parent_id":2624193,"elapsed":0.002007259,"elapsed_instrumentation":0.00012208695989102125},{"id":2624195,"event":"return","thread_id":9160,"parent_id":2624180,"elapsed":0.004094408999662846,"elapsed_instrumentation":0.00017756898887455463,"return_value":{"class":"ActiveRecord::Result","value":"#<ActiveRecord::Result:0x00007fc8e1472b90>","object_id":12890260}},{"id":2624196,"event":"return","thread_id":9160,"parent_id":2624179,"elapsed":0.004349064023699611,"elapsed_instrumentation":0.0006114100106060505,"return_value":{"class":"Array","value":"[{:date=>2023-11-04 00:00:00 +0000, :value=>}, {:date=>2023-11-05 00:00:00 +0000, :value=>}, {:date=>2023-11-06 00:00:00 +0000, :value=>61022}]","object_id":12890280,"size":3}},{"id":2624197,"event":"return","thread_id":9160,"parent_id":2624168,"elapsed":0.009258548961952329,"elapsed_instrumentation":0.00034461606992408633,"return_value":{"class":"Hash","value":"{:total=>61022, :previous_total=>, :data=>[{:date=>2023-11-04 00:00:00 +0000, :value=>}, {:date=>2023-11-05 00:00:00 +0000, :value=>}, {:date=>2023-11-06 00:00:00 +0000, :value=>61022}]}","object_id":12890300,"size":3}},{"id":2624198,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":12890320,"value":"Cache write: metrics/measure/instance_media_attachments;2023-11-04T03:15:36+00:00;2023-11-06T03:15:3 (...99 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":2624199,"event":"return","thread_id":9160,"parent_id":2624198,"elapsed":0.0009746039868332446,"elapsed_instrumentation":0.0002501220442354679,"return_value":{"class":"Integer","value":"199","object_id":399}},{"id":2624200,"event":"call","thread_id":9160,"defined_class":"Marshal","method_id":"dump","path":"Marshal.dump","static":true,"parameters":[{"name":"arg","class":"Array","object_id":12890340,"value":"[{:total=>61022, :previous_total=>, :data=>[{:date=>2023-11-04 00:00:00 +0000, :value=>}, {:date=>2023-11-05 00:00:00 +0000, :value=>}, {:date=>2023-11-06 00:00:00 +0000, :value=>61022}]}]","kind":"rest","size":1}],"receiver":{"class":"Module","object_id":318180,"value":"Marshal"}},{"id":2624201,"event":"return","thread_id":9160,"parent_id":2624200,"elapsed":4.147301660850644e-05,"elapsed_instrumentation":0.0004316970007494092,"return_value":{"class":"String","value":"\u0004\b{\b:\ntotali\u0002^_:\u0013previous_total0:\tdata[\b{\u0007:\tdateIu:\tTime\r__\u001e_\u0000\u0000\u0000\u0000\u0007:\u000boffseti\u0000:\tzone0:\nvalueI\"\u0000\u0006:\u0006EF{\u0007 (...66 more characters)","object_id":12890360}},{"id":2624202,"event":"return","thread_id":9160,"parent_id":2624155,"elapsed":0.016435669036582112,"elapsed_instrumentation":0.00035930000012740493,"return_value":{"class":"ActiveSupport::HashWithIndifferentAccess","value":"{total=>61022, previous_total=>, data=>[{date=>2023-11-04 00:00:00 +0000, value=>}, {date=>2023-11-05 00:00:00 +0000, value=>}, {date=>2023-11-06 00:00:00 +0000, value=>61022}]}","object_id":12890380,"size":3}},{"id":2624203,"event":"return","thread_id":9160,"parent_id":2624154,"elapsed":0.016833889996632934,"elapsed_instrumentation":0.00016646203584969044,"return_value":{"class":"Integer","value":"61022","object_id":122045}}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT SUM(\"media_attachments\".\"file_file_size\") FROM \"media_attachments\" WHERE \"media_attachments\".\"account_id\" = $1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 2,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.000780274,
+      "elapsed_instrumentation": 0.00010371400276198983
+    },
+    {
+      "id": 3,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT SUM(\"media_attachments\".\"thumbnail_file_size\") FROM \"media_attachments\" WHERE \"media_attachments\".\"account_id\" = $1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 4,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 3,
+      "elapsed": 0.000866126,
+      "elapsed_instrumentation": 0.000185929995495826
+    },
+    {
+      "id": 5,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "total",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 37,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 6,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "load",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 59,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 7,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "cache_key",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 21,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 8,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+      "method_id": "key",
+      "path": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb",
+      "lineno": 11,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 9,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 8,
+      "elapsed": 0.000003374996595084667,
+      "elapsed_instrumentation": 0.00008401303784921765,
+      "return_value": {
+        "class": "String",
+        "value": "instance_media_attachments",
+        "object_id": 12889340
+      }
+    },
+    {
+      "id": 10,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "canonicalized_params",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 104,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 11,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+      "method_id": "params",
+      "path": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb",
+      "lineno": 69,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 12,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 11,
+      "elapsed": 0.00009951903484761715,
+      "elapsed_instrumentation": 0.00011121394345536828,
+      "return_value": {
+        "class": "ActionController::Parameters",
+        "value": "{\"domain\"=>\"example.com\"}",
+        "object_id": 12890020
+      }
+    },
+    {
+      "id": 13,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 10,
+      "elapsed": 0.0002781570074148476,
+      "elapsed_instrumentation": 0.00008714594878256321,
+      "return_value": {
+        "class": "String",
+        "value": "domain=example.com",
+        "object_id": 12890040
+      }
+    },
+    {
+      "id": 14,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 7,
+      "elapsed": 0.0005116109969094396,
+      "elapsed_instrumentation": 0.00016371504170820117,
+      "return_value": {
+        "class": "String",
+        "value": "metrics/measure/instance_media_attachments;2023-11-04T03:15:36+00:00;2023-11-06T03:15:36+00:00;domai (...13 more characters)",
+        "object_id": 12890060
+      }
+    },
+    {
+      "id": 15,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 12890080,
+          "value": "Cache read: metrics/measure/instance_media_attachments;2023-11-04T03:15:36+00:00;2023-11-06T03:15:36 (...98 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 16,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 15,
+      "elapsed": 0.001205255975946784,
+      "elapsed_instrumentation": 0.0001510120346210897,
+      "return_value": {
+        "class": "Integer",
+        "value": "198",
+        "object_id": 397
+      }
+    },
+    {
+      "id": 17,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 12890100,
+          "value": "Cache generate: metrics/measure/instance_media_attachments;2023-11-04T03:15:36+00:00;2023-11-06T03:1 (...102 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 18,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 17,
+      "elapsed": 0.001053675019647926,
+      "elapsed_instrumentation": 0.0002215069835074246,
+      "return_value": {
+        "class": "Integer",
+        "value": "202",
+        "object_id": 405
+      }
+    },
+    {
+      "id": 19,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "perform_queries",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 68,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 20,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+      "method_id": "perform_total_query",
+      "path": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb",
+      "lineno": 29,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 21,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+      "method_id": "params",
+      "path": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb",
+      "lineno": 69,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 22,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 21,
+      "elapsed": 0.0000658880453556776,
+      "elapsed_instrumentation": 0.00008521898416802287,
+      "return_value": {
+        "class": "ActionController::Parameters",
+        "value": "{\"domain\"=>\"example.com\"}",
+        "object_id": 12890120
+      }
+    },
+    {
+      "id": 23,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+      "method_id": "params",
+      "path": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb",
+      "lineno": 69,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 24,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 23,
+      "elapsed": 0.00003480695886537433,
+      "elapsed_instrumentation": 0.00007912906585261226,
+      "return_value": {
+        "class": "ActionController::Parameters",
+        "value": "{\"domain\"=>\"example.com\"}",
+        "object_id": 12890140
+      }
+    },
+    {
+      "id": 25,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT SUM(COALESCE(file_file_size, 0) + COALESCE(thumbnail_file_size, 0)) FROM \"media_attachments\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"media_attachments\".\"account_id\" WHERE \"accounts\".\"domain\" = $1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 26,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 25,
+      "elapsed": 0.00145003,
+      "elapsed_instrumentation": 0.00010413001291453838
+    },
+    {
+      "id": 27,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 20,
+      "elapsed": 0.004007929004728794,
+      "elapsed_instrumentation": 0.00011564197484403849,
+      "return_value": {
+        "class": "Integer",
+        "value": "61022",
+        "object_id": 122045
+      }
+    },
+    {
+      "id": 28,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+      "method_id": "perform_previous_total_query",
+      "path": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb",
+      "lineno": 35,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 29,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 28,
+      "elapsed": 0.00000300002284348011,
+      "elapsed_instrumentation": 0.0000945129431784153
+    },
+    {
+      "id": 30,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::QueryHelper",
+      "method_id": "perform_data_query",
+      "path": "app/lib/admin/metrics/measure/query_helper.rb",
+      "lineno": 6,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 31,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::QueryHelper",
+      "method_id": "measurement_data_rows",
+      "path": "app/lib/admin/metrics/measure/query_helper.rb",
+      "lineno": 10,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 32,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::QueryHelper",
+      "method_id": "sanitized_sql_string",
+      "path": "app/lib/admin/metrics/measure/query_helper.rb",
+      "lineno": 14,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 33,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+      "method_id": "sql_array",
+      "path": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb",
+      "lineno": 39,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 34,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+      "method_id": "sql_query_string",
+      "path": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb",
+      "lineno": 43,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 35,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+      "method_id": "params",
+      "path": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb",
+      "lineno": 69,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 36,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 35,
+      "elapsed": 0.0000682569807395339,
+      "elapsed_instrumentation": 0.00008605601033195853,
+      "return_value": {
+        "class": "ActionController::Parameters",
+        "value": "{\"domain\"=>\"example.com\"}",
+        "object_id": 12890160
+      }
+    },
+    {
+      "id": 37,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::QueryHelper",
+      "method_id": "account_domain_sql",
+      "path": "app/lib/admin/metrics/measure/query_helper.rb",
+      "lineno": 18,
+      "static": false,
+      "parameters": [
+        {
+          "name": "include_subdomains",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 38,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 37,
+      "elapsed": 0.000004429020918905735,
+      "elapsed_instrumentation": 0.0001349130179733038,
+      "return_value": {
+        "class": "String",
+        "value": "accounts.domain = :domain::text",
+        "object_id": 3036700
+      }
+    },
+    {
+      "id": 39,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 34,
+      "elapsed": 0.0005790360155515373,
+      "elapsed_instrumentation": 0.00009764998685568571,
+      "return_value": {
+        "class": "String",
+        "value": "SELECT axis.*, ( WITH new_media_attachments AS ( SELECT COALESCE(media_attachments.file_file_size, 0 (...478 more characters)",
+        "object_id": 12890180
+      }
+    },
+    {
+      "id": 40,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+      "method_id": "params",
+      "path": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb",
+      "lineno": 69,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure",
+        "object_id": 12890000,
+        "value": "#<Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure:0x00007fc8e14740d0>"
+      }
+    },
+    {
+      "id": 41,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 40,
+      "elapsed": 0.000049712019972503185,
+      "elapsed_instrumentation": 0.00008752895519137383,
+      "return_value": {
+        "class": "ActionController::Parameters",
+        "value": "{\"domain\"=>\"example.com\"}",
+        "object_id": 12890200
+      }
+    },
+    {
+      "id": 42,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 33,
+      "elapsed": 0.0008610269869677722,
+      "elapsed_instrumentation": 0.00015291903400793672,
+      "return_value": {
+        "class": "Array",
+        "value": "[SELECT axis.*, ( WITH new_media_attachments AS ( SELECT COALESCE(media_attachments.file_file_size, 0 (...478 more characters), {:start_at=>2023-11-04T03:15:36+00:00, :end_at=>2023-11-06T03:15:36+00:00, :domain=>example.com}]",
+        "object_id": 12890220,
+        "size": 2
+      }
+    },
+    {
+      "id": 43,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 32,
+      "elapsed": 0.0012555659632198513,
+      "elapsed_instrumentation": 0.00007463101064786315,
+      "return_value": {
+        "class": "String",
+        "value": "SELECT axis.*, ( WITH new_media_attachments AS ( SELECT COALESCE(media_attachments.file_file_size, 0 (...524 more characters)",
+        "object_id": 12890240
+      }
+    },
+    {
+      "id": 44,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT axis.*, ( WITH new_media_attachments AS ( SELECT COALESCE(media_attachments.file_file_size, 0) + COALESCE(media_attachments.thumbnail_file_size, 0) AS size FROM media_attachments INNER JOIN accounts ON accounts.id = media_attachments.account_id WHERE date_trunc('day', media_attachments.created_at)::date = axis.period AND accounts.domain = 'example.com'::text ) SELECT SUM(size) FROM new_media_attachments ) AS value FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:15:36.669578'::timestamp)::date, date_trunc('day', '2023-11-06 03:15:36.669757'::timestamp)::date, interval '1 day') AS period ) AS axis",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 45,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 44,
+      "elapsed": 0.002007259,
+      "elapsed_instrumentation": 0.00012208695989102125
+    },
+    {
+      "id": 46,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 31,
+      "elapsed": 0.004094408999662846,
+      "elapsed_instrumentation": 0.00017756898887455463,
+      "return_value": {
+        "class": "ActiveRecord::Result",
+        "value": "#<ActiveRecord::Result:0x00007fc8e1472b90>",
+        "object_id": 12890260
+      }
+    },
+    {
+      "id": 47,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 30,
+      "elapsed": 0.004349064023699611,
+      "elapsed_instrumentation": 0.0006114100106060505,
+      "return_value": {
+        "class": "Array",
+        "value": "[{:date=>2023-11-04 00:00:00 +0000, :value=>}, {:date=>2023-11-05 00:00:00 +0000, :value=>}, {:date=>2023-11-06 00:00:00 +0000, :value=>61022}]",
+        "object_id": 12890280,
+        "size": 3
+      }
+    },
+    {
+      "id": 48,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 19,
+      "elapsed": 0.009258548961952329,
+      "elapsed_instrumentation": 0.00034461606992408633,
+      "return_value": {
+        "class": "Hash",
+        "value": "{:total=>61022, :previous_total=>, :data=>[{:date=>2023-11-04 00:00:00 +0000, :value=>}, {:date=>2023-11-05 00:00:00 +0000, :value=>}, {:date=>2023-11-06 00:00:00 +0000, :value=>61022}]}",
+        "object_id": 12890300,
+        "size": 3
+      }
+    },
+    {
+      "id": 49,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 12890320,
+          "value": "Cache write: metrics/measure/instance_media_attachments;2023-11-04T03:15:36+00:00;2023-11-06T03:15:3 (...99 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 50,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 49,
+      "elapsed": 0.0009746039868332446,
+      "elapsed_instrumentation": 0.0002501220442354679,
+      "return_value": {
+        "class": "Integer",
+        "value": "199",
+        "object_id": 399
+      }
+    },
+    {
+      "id": 51,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Marshal",
+      "method_id": "dump",
+      "path": "Marshal.dump",
+      "static": true,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 12890340,
+          "value": "[{:total=>61022, :previous_total=>, :data=>[{:date=>2023-11-04 00:00:00 +0000, :value=>}, {:date=>2023-11-05 00:00:00 +0000, :value=>}, {:date=>2023-11-06 00:00:00 +0000, :value=>61022}]}]",
+          "kind": "rest",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 318180,
+        "value": "Marshal"
+      }
+    },
+    {
+      "id": 52,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 51,
+      "elapsed": 0.00004147301660850644,
+      "elapsed_instrumentation": 0.0004316970007494092,
+      "return_value": {
+        "class": "String",
+        "value": "\u0004\b{\b:\ntotali\u0002^_:\u0013previous_total0:\tdata[\b{\u0007:\tdateIu:\tTime\r__\u001e_\u0000\u0000\u0000\u0000\u0007:\u000boffseti\u0000:\tzone0:\nvalueI\"\u0000\u0006:\u0006EF{\u0007 (...66 more characters)",
+        "object_id": 12890360
+      }
+    },
+    {
+      "id": 53,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 6,
+      "elapsed": 0.016435669036582112,
+      "elapsed_instrumentation": 0.00035930000012740493,
+      "return_value": {
+        "class": "ActiveSupport::HashWithIndifferentAccess",
+        "value": "{total=>61022, previous_total=>, data=>[{date=>2023-11-04 00:00:00 +0000, value=>}, {date=>2023-11-05 00:00:00 +0000, value=>}, {date=>2023-11-06 00:00:00 +0000, value=>61022}]}",
+        "object_id": 12890380,
+        "size": 3
+      }
+    },
+    {
+      "id": 54,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 5,
+      "elapsed": 0.016833889996632934,
+      "elapsed_instrumentation": 0.00016646203584969044,
+      "return_value": {
+        "class": "Integer",
+        "value": "61022",
+        "object_id": 122045
+      }
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "Admin::Metrics::Measure::InstanceMediaAttachmentsMeasure total without include_subdomains returns the expected number of accounts",
+    "source_location": "spec/lib/admin/metrics/measure/instance_media_attachments_measure_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "name": "app/lib/admin/metrics/measure",
+      "type": "package",
+      "children": [
+        {
+          "name": "Admin",
+          "type": "class",
+          "children": [
+            {
+              "name": "Metrics",
+              "type": "class",
+              "children": [
+                {
+                  "name": "Measure",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "BaseMeasure",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "total",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:37"
+                        },
+                        {
+                          "name": "load",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:59"
+                        },
+                        {
+                          "name": "cache_key",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:21"
+                        },
+                        {
+                          "name": "canonicalized_params",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:104"
+                        },
+                        {
+                          "name": "perform_queries",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:68"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "InstanceMediaAttachmentsMeasure",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "key",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:11"
+                        },
+                        {
+                          "name": "params",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:69"
+                        },
+                        {
+                          "name": "perform_total_query",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:29"
+                        },
+                        {
+                          "name": "perform_previous_total_query",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:35"
+                        },
+                        {
+                          "name": "sql_array",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:39"
+                        },
+                        {
+                          "name": "sql_query_string",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/instance_media_attachments_measure.rb:43"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "QueryHelper",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "perform_data_query",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/query_helper.rb:6"
+                        },
+                        {
+                          "name": "measurement_data_rows",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/query_helper.rb:10"
+                        },
+                        {
+                          "name": "sanitized_sql_string",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/query_helper.rb:14"
+                        },
+                        {
+                          "name": "account_domain_sql",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/query_helper.rb:18"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "type": "package",
+      "children": [
+        {
+          "name": "Logger",
+          "type": "class",
+          "children": [
+            {
+              "name": "LogDevice",
+              "type": "class",
+              "children": [
+                {
+                  "name": "write",
+                  "type": "function",
+                  "labels": [
+                    "log"
+                  ],
+                  "static": false,
+                  "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ruby",
+      "type": "package",
+      "children": [
+        {
+          "name": "Marshal",
+          "type": "class",
+          "children": [
+            {
+              "name": "dump",
+              "type": "function",
+              "labels": [
+                "serialize"
+              ],
+              "static": true,
+              "location": "Marshal.dump"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT SUM(\"media_attachments\".\"file_file_size\") FROM \"media_attachments\" WHERE \"media_attachments\".\"account_id\" = $1"
+        },
+        {
+          "type": "query",
+          "name": "SELECT SUM(\"media_attachments\".\"thumbnail_file_size\") FROM \"media_attachments\" WHERE \"media_attachments\".\"account_id\" = $1"
+        },
+        {
+          "type": "query",
+          "name": "SELECT SUM(COALESCE(file_file_size, 0) + COALESCE(thumbnail_file_size, 0)) FROM \"media_attachments\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"media_attachments\".\"account_id\" WHERE \"accounts\".\"domain\" = $1"
+        },
+        {
+          "type": "query",
+          "name": "SELECT axis.*, ( WITH new_media_attachments AS ( SELECT COALESCE(media_attachments.file_file_size, 0) + COALESCE(media_attachments.thumbnail_file_size, 0) AS size FROM media_attachments INNER JOIN accounts ON accounts.id = media_attachments.account_id WHERE date_trunc('day', media_attachments.created_at)::date = axis.period AND accounts.domain = 'example.com'::text ) SELECT SUM(size) FROM new_media_attachments ) AS value FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:15:36.669578'::timestamp)::date, date_trunc('day', '2023-11-06 03:15:36.669757'::timestamp)::date, interval '1 day') AS period ) AS axis"
+        }
+      ]
+    }
+  ]
+}

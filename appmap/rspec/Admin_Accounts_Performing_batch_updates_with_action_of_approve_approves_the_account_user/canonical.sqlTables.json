@@ -1,0 +1,18 @@
+[
+  "account_domain_blocks",
+  "account_stats",
+  "accounts",
+  "admin_action_logs",
+  "blocks",
+  "mutes",
+  "notifications",
+  "oauth_access_tokens",
+  "session_activations",
+  "user_invite_requests",
+  "user_ips",
+  "user_roles",
+  "users",
+  "web_push_subscriptions",
+  "web_settings",
+  "webhooks"
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "name": "app/helpers/admin",
+    "type": "package",
+    "children": [
+      {
+        "name": "Admin",
+        "type": "class",
+        "children": [
+          {
+            "name": "FilterHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "filter_link_to",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/admin/filter_helper.rb:20"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

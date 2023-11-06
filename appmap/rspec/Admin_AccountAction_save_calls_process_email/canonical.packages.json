@@ -1,0 +1,7 @@
+[
+  "activesupport",
+  "app/controllers/concerns",
+  "app/models",
+  "app/models/admin",
+  "app/policies"
+]

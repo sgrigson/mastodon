@@ -1,0 +1,34 @@
+[
+  {
+    "caller": "app",
+    "callee": "Account"
+  },
+  {
+    "caller": "app",
+    "callee": "Database"
+  },
+  {
+    "caller": "app",
+    "callee": "activesupport"
+  },
+  {
+    "caller": "app",
+    "callee": "json"
+  },
+  {
+    "caller": "app",
+    "callee": "lib/mastodon"
+  },
+  {
+    "caller": "app",
+    "callee": "logger"
+  },
+  {
+    "caller": "app",
+    "callee": "openssl"
+  },
+  {
+    "caller": "app",
+    "callee": "ruby"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  "account_deletion_requests",
+  "account_stats",
+  "account_warnings",
+  "accounts",
+  "admin_action_logs",
+  "canonical_email_blocks",
+  "reports",
+  "user_roles"
+]

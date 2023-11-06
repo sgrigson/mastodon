@@ -1,0 +1,12 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"name\" = $1 LIMIT $2"
+      }
+    ]
+  }
+]

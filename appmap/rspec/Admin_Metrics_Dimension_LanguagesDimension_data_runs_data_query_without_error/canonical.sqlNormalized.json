@@ -1,0 +1,3 @@
+[
+  "SELECT locale, count(*) AS value FROM users WHERE current_sign_in_at BETWEEN ? AND ? AND locale IS NOT ? GROUP BY locale ORDER BY count(*) DESC LIMIT ?"
+]

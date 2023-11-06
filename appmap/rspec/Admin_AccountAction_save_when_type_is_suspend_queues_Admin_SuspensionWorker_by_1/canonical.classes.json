@@ -1,0 +1,22 @@
+[
+  "activejob/ActiveJob::Enqueuing",
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/controllers/concerns/AccountableConcern",
+  "app/controllers/concerns/Authorization",
+  "app/helpers/EmailHelper",
+  "app/lib/RequestPool",
+  "app/lib/connection_pool/ConnectionPool::SharedConnectionPool",
+  "app/lib/connection_pool/ConnectionPool::SharedTimedStack",
+  "app/models/Account",
+  "app/models/CanonicalEmailBlock",
+  "app/models/User",
+  "app/models/UserRole",
+  "app/models/admin/Admin::AccountAction",
+  "app/models/concerns/AccountCounters",
+  "app/policies/AccountPolicy",
+  "json/JSON::Ext::Generator::State",
+  "json/JSON::Ext::Parser",
+  "lib/paperclip/Paperclip::AttachmentExtensions",
+  "ruby/String",
+  "sidekiq/Sidekiq::Client"
+]

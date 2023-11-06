@@ -1,0 +1,12 @@
+[
+  {
+    "class": "ActiveRecord::RecordNotFound",
+    "message": "Couldn't find Account with 'id'=999",
+    "stack": [
+      "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/core.rb:252",
+      "app/helpers/database_helper.rb:17",
+      "app/workers/add_to_public_statuses_index_worker.rb:9"
+    ],
+    "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/core.rb:252"
+  }
+]

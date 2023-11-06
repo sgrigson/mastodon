@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "app/lib/RequestPool",
+    "callee": "app/lib/connection_pool"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "SELECT accounts.username, count(follows.*) AS value FROM accounts LEFT JOIN follows ON follows.target_account_id = accounts.id WHERE accounts.domain = NULL GROUP BY accounts.id, follows.target_account_id ORDER BY value DESC LIMIT 10"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "ruby/Marshal"
+  }
+]

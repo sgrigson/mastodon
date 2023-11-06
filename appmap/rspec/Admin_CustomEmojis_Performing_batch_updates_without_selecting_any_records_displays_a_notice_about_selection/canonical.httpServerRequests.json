@@ -1,0 +1,12 @@
+[
+  {
+    "route": "GET /admin/custom_emojis",
+    "parameters": "(page)",
+    "status": 200
+  },
+  {
+    "route": "POST /admin/custom_emojis/batch",
+    "parameters": "(page,enable)",
+    "status": 302
+  }
+]

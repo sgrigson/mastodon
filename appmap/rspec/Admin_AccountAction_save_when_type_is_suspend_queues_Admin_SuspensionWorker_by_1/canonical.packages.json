@@ -1,0 +1,16 @@
+[
+  "activejob",
+  "activesupport",
+  "app/controllers/concerns",
+  "app/helpers",
+  "app/lib",
+  "app/lib/connection_pool",
+  "app/models",
+  "app/models/admin",
+  "app/models/concerns",
+  "app/policies",
+  "json",
+  "lib/paperclip",
+  "ruby",
+  "sidekiq"
+]

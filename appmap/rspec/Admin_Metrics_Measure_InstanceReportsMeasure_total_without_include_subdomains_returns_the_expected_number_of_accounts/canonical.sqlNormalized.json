@@ -1,0 +1,4 @@
+[
+  "SELECT COUNT(*) FROM \"reports\" WHERE \"reports\".\"target_account_id\" IN (SELECT \"accounts\".\"id\" FROM \"accounts\" WHERE \"accounts\".\"domain\" = $?)",
+  "SELECT axis.*, ( WITH new_reports AS ( SELECT reports.id FROM reports INNER JOIN accounts ON accounts.id = reports.target_account_id WHERE date_trunc(?, reports.created_at)::date = axis.period AND accounts.domain = ?::text ) SELECT count(*) FROM new_reports ) AS value FROM ( SELECT generate_series(date_trunc(?, ?::timestamp)::date, date_trunc(?, ?::timestamp)::date, interval ?) AS period ) AS axis"
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "caller": "GET /admin/email_domain_blocks",
+    "callee": "actionpack/ActionDispatch"
+  },
+  {
+    "caller": "GET /admin/email_domain_blocks",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "GET /admin/email_domain_blocks",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "GET /admin/email_domain_blocks",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "GET /admin/email_domain_blocks",
+    "callee": "lib/chewy"
+  },
+  {
+    "caller": "GET /admin/email_domain_blocks",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "GET /admin/email_domain_blocks",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "POST /admin/email_domain_blocks/batch",
+    "callee": "actionpack/ActionDispatch"
+  },
+  {
+    "caller": "POST /admin/email_domain_blocks/batch",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "POST /admin/email_domain_blocks/batch",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "POST /admin/email_domain_blocks/batch",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "POST /admin/email_domain_blocks/batch",
+    "callee": "lib/chewy"
+  },
+  {
+    "caller": "POST /admin/email_domain_blocks/batch",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "POST /admin/email_domain_blocks/batch",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "POST /admin/email_domain_blocks/batch",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "app/views"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "actionpack/ActionDispatch",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "actionpack/ActionDispatch",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/models"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "openssl/OpenSSL"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"session_activations\".* FROM \"session_activations\" WHERE \"session_activations\".\"session_id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"session_activations\".* FROM \"session_activations\" WHERE \"session_activations\".\"user_id\" = $1 AND \"session_activations\".\"session_id\" = $2 LIMIT $3"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"users\".\"id\", \"users\".\"email\", \"users\".\"created_at\", \"users\".\"updated_at\", \"users\".\"encrypted_password\", \"users\".\"reset_password_token\", \"users\".\"reset_password_sent_at\", \"users\".\"sign_in_count\", \"users\".\"current_sign_in_at\", \"users\".\"last_sign_in_at\", \"users\".\"admin\", \"users\".\"confirmation_token\", \"users\".\"confirmed_at\", \"users\".\"confirmation_sent_at\", \"users\".\"unconfirmed_email\", \"users\".\"locale\", \"users\".\"encrypted_otp_secret\", \"users\".\"encrypted_otp_secret_iv\", \"users\".\"encrypted_otp_secret_salt\", \"users\".\"consumed_timestep\", \"users\".\"otp_required_for_login\", \"users\".\"last_emailed_at\", \"users\".\"otp_backup_codes\", \"users\".\"account_id\", \"users\".\"disabled\", \"users\".\"moderator\", \"users\".\"invite_id\", \"users\".\"chosen_languages\", \"users\".\"created_by_application_id\", \"users\".\"approved\", \"users\".\"sign_in_token\", \"users\".\"sign_in_token_sent_at\", \"users\".\"webauthn_id\", \"users\".\"sign_up_ip\", \"users\".\"role_id\", \"users\".\"settings\", \"users\".\"time_zone\" FROM \"users\" WHERE \"users\".\"id\" = $1 ORDER BY \"users\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "actionpack/ActionController"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "actionpack/ActionDispatch"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "actionview/ActionView"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/policies"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "SELECT \"web_settings\".* FROM \"web_settings\" WHERE \"web_settings\".\"user_id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "actionpack/ActionDispatch"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "app/presenters"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "app/serializers"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "inline_template.render"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "lib/webpacker"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"account_stats\".\"id\", \"account_stats\".\"account_id\", \"account_stats\".\"statuses_count\", \"account_stats\".\"following_count\", \"account_stats\".\"followers_count\", \"account_stats\".\"created_at\", \"account_stats\".\"updated_at\", \"account_stats\".\"last_status_at\" FROM \"account_stats\" WHERE \"account_stats\".\"account_id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") != '' AND LOWER(\"accounts\".\"username\") = '' AND LOWER(\"accounts\".\"domain\") IS NULL ORDER BY \"accounts\".\"id\" ASC LIMIT $1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" WHERE \"accounts\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"oauth_access_tokens\".* FROM \"oauth_access_tokens\" WHERE \"oauth_access_tokens\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/models",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "app/models",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "app/models",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/policies",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/presenters",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/presenters",
+    "callee": "lib/mastodon"
+  },
+  {
+    "caller": "app/presenters",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/serializers",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "app/serializers",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "app/serializers",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/serializers",
+    "callee": "app/presenters"
+  },
+  {
+    "caller": "app/serializers",
+    "callee": "lib/chewy"
+  },
+  {
+    "caller": "app/serializers",
+    "callee": "lib/mastodon"
+  },
+  {
+    "caller": "app/views",
+    "callee": "SELECT 1 AS one FROM \"email_domain_blocks\" WHERE \"email_domain_blocks\".\"parent_id\" IS NULL LIMIT $1 OFFSET $2"
+  },
+  {
+    "caller": "app/views",
+    "callee": "SELECT COUNT(*) FROM \"email_domain_blocks\" WHERE \"email_domain_blocks\".\"parent_id\" IS NULL"
+  },
+  {
+    "caller": "app/views",
+    "callee": "actionview/ActionView"
+  },
+  {
+    "caller": "app/views",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "app/views",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "app/views",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/views",
+    "callee": "inline_template.render"
+  },
+  {
+    "caller": "app/views",
+    "callee": "lib/simple_navigation"
+  },
+  {
+    "caller": "app/views",
+    "callee": "lib/webpacker"
+  },
+  {
+    "caller": "app/views",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "inline_template.render",
+    "callee": "app/views"
+  },
+  {
+    "caller": "lib/chewy",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "lib/webpacker",
+    "callee": "json/JSON"
+  }
+]

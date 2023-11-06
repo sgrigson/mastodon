@@ -1,0 +1,10 @@
+[
+  "SELECT SUM(COALESCE(avatar_file_size, ?) + COALESCE(header_file_size, ?)) FROM \"accounts\"",
+  "SELECT SUM(COALESCE(file_file_size, ?) + COALESCE(thumbnail_file_size, ?)) FROM \"media_attachments\"",
+  "SELECT SUM(\"backups\".\"dump_file_size\") FROM \"backups\"",
+  "SELECT SUM(\"custom_emojis\".\"image_file_size\") FROM \"custom_emojis\"",
+  "SELECT SUM(\"imports\".\"data_file_size\") FROM \"imports\"",
+  "SELECT SUM(\"preview_cards\".\"image_file_size\") FROM \"preview_cards\"",
+  "SELECT SUM(\"site_uploads\".\"file_file_size\") FROM \"site_uploads\"",
+  "SELECT pg_database_size(current_database())"
+]

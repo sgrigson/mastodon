@@ -1,0 +1,3 @@
+[
+  "SELECT accounts.username, count(follows.*) AS value FROM accounts LEFT JOIN follows ON follows.target_account_id = accounts.id WHERE accounts.domain = ? GROUP BY accounts.id, follows.target_account_id ORDER BY value DESC LIMIT ?"
+]

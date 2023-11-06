@@ -1,0 +1,54 @@
+[
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/controllers/concerns",
+    "callee": "INSERT INTO \"admin_action_logs\" (\"account_id\", \"action\", \"target_type\", \"target_id\", \"created_at\", \"updated_at\", \"human_identifier\", \"route_param\", \"permalink\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING \"id\""
+  },
+  {
+    "caller": "app/controllers/concerns",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/controllers/concerns",
+    "callee": "app/policies"
+  },
+  {
+    "caller": "app/models",
+    "callee": "INSERT INTO \"account_warnings\" (\"account_id\", \"target_account_id\", \"action\", \"text\", \"created_at\", \"updated_at\", \"report_id\", \"status_ids\", \"overruled_at\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING \"id\""
+  },
+  {
+    "caller": "app/models",
+    "callee": "RELEASE SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"reports\".\"id\", \"reports\".\"status_ids\", \"reports\".\"comment\", \"reports\".\"created_at\", \"reports\".\"updated_at\", \"reports\".\"account_id\", \"reports\".\"action_taken_by_account_id\", \"reports\".\"target_account_id\", \"reports\".\"assigned_account_id\", \"reports\".\"uri\", \"reports\".\"forwarded\", \"reports\".\"category\", \"reports\".\"action_taken_at\", \"reports\".\"rule_ids\" FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $1 AND \"reports\".\"action_taken_at\" IS NULL"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/models",
+    "callee": "UPDATE \"users\" SET \"updated_at\" = $1, \"disabled\" = $2 WHERE \"users\".\"id\" = $3"
+  },
+  {
+    "caller": "app/models",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/models",
+    "callee": "app/controllers/concerns"
+  },
+  {
+    "caller": "app/policies",
+    "callee": "app/models"
+  }
+]

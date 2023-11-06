@@ -1,0 +1,282 @@
+[
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "admin",
+            "type": "package",
+            "children": [
+              {
+                "name": "Admin",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "AccountAction",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "save!",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/models/admin/account_action.rb:46"
+                      },
+                      {
+                        "name": "report",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/models/admin/account_action.rb:59"
+                      },
+                      {
+                        "name": "with_report?",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/models/admin/account_action.rb:63"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "User",
+            "type": "class",
+            "children": [
+              {
+                "name": "role",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user.rb:153"
+              },
+              {
+                "name": "to_log_human_identifier",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user.rb:181"
+              },
+              {
+                "name": "to_log_route_param",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user.rb:185"
+              },
+              {
+                "name": "disable!",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user.rb:173"
+              },
+              {
+                "name": "password_required?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user.rb:332"
+              },
+              {
+                "name": "confirmed?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user.rb:161"
+              }
+            ]
+          },
+          {
+            "name": "UserRole",
+            "type": "class",
+            "children": [
+              {
+                "name": "can?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user_role.rb:131"
+              },
+              {
+                "name": "computed_permissions",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user_role.rb:139"
+              },
+              {
+                "name": "everyone?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user_role.rb:115"
+              },
+              {
+                "name": "nobody?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user_role.rb:119"
+              },
+              {
+                "name": "everyone",
+                "type": "function",
+                "static": true,
+                "location": "app/models/user_role.rb:105"
+              },
+              {
+                "name": "overrides?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user_role.rb:135"
+              }
+            ]
+          },
+          {
+            "name": "Account",
+            "type": "class",
+            "children": [
+              {
+                "name": "acct",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:191"
+              },
+              {
+                "name": "local?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:163"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "controllers/concerns",
+        "type": "package",
+        "children": [
+          {
+            "name": "Authorization",
+            "type": "class",
+            "children": [
+              {
+                "name": "authorize",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/concerns/authorization.rb:12"
+              },
+              {
+                "name": "pundit_user",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/concerns/authorization.rb:8"
+              }
+            ]
+          },
+          {
+            "name": "AccountableConcern",
+            "type": "class",
+            "children": [
+              {
+                "name": "log_action",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/concerns/accountable_concern.rb:6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "policies",
+        "type": "package",
+        "children": [
+          {
+            "name": "UserPolicy",
+            "type": "class",
+            "children": [
+              {
+                "name": "disable?",
+                "type": "function",
+                "static": false,
+                "location": "app/policies/user_policy.rb:36"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "activesupport",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActiveSupport",
+        "type": "class",
+        "children": [
+          {
+            "name": "Callbacks",
+            "type": "class",
+            "children": [
+              {
+                "name": "CallbackSequence",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "invoke_before",
+                    "type": "function",
+                    "labels": [
+                      "mvc.before_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                  },
+                  {
+                    "name": "invoke_after",
+                    "type": "function",
+                    "labels": [
+                      "mvc.after_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $1 LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"admin_action_logs\" (\"account_id\", \"action\", \"target_type\", \"target_id\", \"created_at\", \"updated_at\", \"human_identifier\", \"route_param\", \"permalink\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING \"id\""
+      },
+      {
+        "type": "query",
+        "name": "UPDATE \"users\" SET \"updated_at\" = $1, \"disabled\" = $2 WHERE \"users\".\"id\" = $3"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"account_warnings\" (\"account_id\", \"target_account_id\", \"action\", \"text\", \"created_at\", \"updated_at\", \"report_id\", \"status_ids\", \"overruled_at\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING \"id\""
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"reports\".\"id\", \"reports\".\"status_ids\", \"reports\".\"comment\", \"reports\".\"created_at\", \"reports\".\"updated_at\", \"reports\".\"account_id\", \"reports\".\"action_taken_by_account_id\", \"reports\".\"target_account_id\", \"reports\".\"assigned_account_id\", \"reports\".\"uri\", \"reports\".\"forwarded\", \"reports\".\"category\", \"reports\".\"action_taken_at\", \"reports\".\"rule_ids\" FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $1 AND \"reports\".\"action_taken_at\" IS NULL"
+      },
+      {
+        "type": "query",
+        "name": "RELEASE SAVEPOINT active_record_1"
+      }
+    ]
+  }
+]

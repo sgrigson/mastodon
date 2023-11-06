@@ -1,0 +1,4 @@
+[
+  "SELECT COUNT(*) FROM \"accounts\" WHERE \"accounts\".\"domain\" = $?",
+  "SELECT axis.*, ( WITH new_accounts AS ( SELECT accounts.id FROM accounts WHERE date_trunc(?, accounts.created_at)::date = axis.period AND accounts.domain = ?::text ) SELECT count(*) FROM new_accounts ) AS value FROM ( SELECT generate_series(date_trunc(?, ?::timestamp)::date, date_trunc(?, ?::timestamp)::date, interval ?) AS period ) AS axis"
+]

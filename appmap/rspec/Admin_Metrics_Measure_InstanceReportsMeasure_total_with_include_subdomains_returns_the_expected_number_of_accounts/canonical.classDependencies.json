@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "SELECT COUNT(*) FROM \"reports\" WHERE \"reports\".\"target_account_id\" IN (SELECT \"accounts\".\"id\" FROM \"accounts\" WHERE \"accounts\".\"domain\" IN (SELECT \"instances\".\"domain\" FROM \"instances\" WHERE (reverse('.' || domain) LIKE reverse('%.example.com'))))"
+  },
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "SELECT axis.*, ( WITH new_reports AS ( SELECT reports.id FROM reports INNER JOIN accounts ON accounts.id = reports.target_account_id WHERE date_trunc('day', reports.created_at)::date = axis.period AND accounts.domain IN (SELECT domain FROM instances WHERE reverse('.' || domain) LIKE reverse('.' || 'example.com'::text)) ) SELECT count(*) FROM new_reports ) AS value FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 02:53:40.002463'::timestamp)::date, date_trunc('day', '2023-11-06 02:53:40.002628'::timestamp)::date, interval '1 day') AS period ) AS axis"
+  },
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "ruby/Marshal"
+  }
+]

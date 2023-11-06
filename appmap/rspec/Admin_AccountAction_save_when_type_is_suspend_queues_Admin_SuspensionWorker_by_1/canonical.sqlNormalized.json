@@ -1,0 +1,15 @@
+[
+  "INSERT INTO \"account_deletion_requests\" (\"account_id\", \"created_at\", \"updated_at\") VALUES ($?, $?, $?) RETURNING \"id\"",
+  "INSERT INTO \"account_stats\" (\"account_id\", \"statuses_count\", \"following_count\", \"followers_count\", \"created_at\", \"updated_at\", \"last_status_at\") VALUES ($?, $?, $?, $?, $?, $?, $?) RETURNING \"id\"",
+  "INSERT INTO \"account_warnings\" (\"account_id\", \"target_account_id\", \"action\", \"text\", \"created_at\", \"updated_at\", \"report_id\", \"status_ids\", \"overruled_at\") VALUES ($?, $?, $?, $?, $?, $?, $?, $?, $?) RETURNING \"id\"",
+  "INSERT INTO \"admin_action_logs\" (\"account_id\", \"action\", \"target_type\", \"target_id\", \"created_at\", \"updated_at\", \"human_identifier\", \"route_param\", \"permalink\") VALUES ($?, $?, $?, $?, $?, $?, $?, $?, $?) RETURNING \"id\"",
+  "INSERT INTO \"canonical_email_blocks\" (\"canonical_email_hash\", \"reference_account_id\", \"created_at\", \"updated_at\") VALUES ($?, $?, $?, $?) RETURNING \"id\"",
+  "RELEASE SAVEPOINT active_record_1",
+  "SAVEPOINT active_record_1",
+  "SELECT ? AS one FROM \"canonical_email_blocks\" WHERE \"canonical_email_blocks\".\"canonical_email_hash\" = $? LIMIT $?",
+  "SELECT \"account_deletion_requests\".* FROM \"account_deletion_requests\" WHERE \"account_deletion_requests\".\"account_id\" = $? LIMIT $?",
+  "SELECT \"account_stats\".\"id\", \"account_stats\".\"account_id\", \"account_stats\".\"statuses_count\", \"account_stats\".\"following_count\", \"account_stats\".\"followers_count\", \"account_stats\".\"created_at\", \"account_stats\".\"updated_at\", \"account_stats\".\"last_status_at\" FROM \"account_stats\" WHERE \"account_stats\".\"account_id\" = $? LIMIT $?",
+  "SELECT \"reports\".\"id\", \"reports\".\"status_ids\", \"reports\".\"comment\", \"reports\".\"created_at\", \"reports\".\"updated_at\", \"reports\".\"account_id\", \"reports\".\"action_taken_by_account_id\", \"reports\".\"target_account_id\", \"reports\".\"assigned_account_id\", \"reports\".\"uri\", \"reports\".\"forwarded\", \"reports\".\"category\", \"reports\".\"action_taken_at\", \"reports\".\"rule_ids\" FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $? AND \"reports\".\"action_taken_at\" IS ?",
+  "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $? LIMIT $?",
+  "UPDATE \"accounts\" SET \"updated_at\" = $?, \"suspended_at\" = $?, \"suspension_origin\" = $? WHERE \"accounts\".\"id\" = $?"
+]

@@ -1,0 +1,4 @@
+[
+  "app/helpers/ApplicationHelper",
+  "app/helpers/admin/Admin::FilterHelper"
+]

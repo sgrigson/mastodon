@@ -1,0 +1,26 @@
+[
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "SELECT VERSION()"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "app/models/concerns"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "lib/chewy"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "lib/mastodon"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "ruby/Marshal"
+  }
+]

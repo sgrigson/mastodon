@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "app/helpers/admin/Admin",
+    "callee": "logger/Logger"
+  }
+]

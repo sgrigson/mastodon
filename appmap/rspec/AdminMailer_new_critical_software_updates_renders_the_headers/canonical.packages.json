@@ -1,0 +1,8 @@
+[
+  "actionview",
+  "activesupport",
+  "app/helpers",
+  "app/mailers",
+  "app/models",
+  "app/views"
+]

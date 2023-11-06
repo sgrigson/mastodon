@@ -1,0 +1,14 @@
+[
+  {
+    "caller": "app/lib",
+    "callee": "app/models/concerns"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "ruby/Marshal"
+  }
+]

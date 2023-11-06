@@ -1,0 +1,11 @@
+[
+  {
+    "class": "ActiveRecord::RecordInvalid",
+    "message": "Validation failed: Type is not included in the list",
+    "stack": [
+      "/workspaces/mastodon/app/models/admin/account_action.rb:47",
+      "app/models/admin/account_action.rb:46"
+    ],
+    "location": "/workspaces/mastodon/app/models/admin/account_action.rb:47"
+  }
+]

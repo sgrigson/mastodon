@@ -1,0 +1,9 @@
+[
+  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::BaseDimension",
+  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::SoftwareVersionsDimension",
+  "app/models/concerns/Redisable",
+  "lib/chewy/Chewy::SettingsExtensions",
+  "lib/mastodon/Mastodon::Version",
+  "logger/Logger::LogDevice",
+  "ruby/Marshal"
+]

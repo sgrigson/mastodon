@@ -1,0 +1,11 @@
+[
+  "account_stats",
+  "accounts",
+  "oauth_access_tokens",
+  "session_activations",
+  "user_invite_requests",
+  "user_ips",
+  "user_roles",
+  "users",
+  "web_settings"
+]

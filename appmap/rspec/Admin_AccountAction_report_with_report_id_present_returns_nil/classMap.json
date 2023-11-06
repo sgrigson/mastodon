@@ -1,0 +1,26 @@
+[
+  {
+    "name": "app/models/admin",
+    "type": "package",
+    "children": [
+      {
+        "name": "Admin",
+        "type": "class",
+        "children": [
+          {
+            "name": "AccountAction",
+            "type": "class",
+            "children": [
+              {
+                "name": "report",
+                "type": "function",
+                "static": false,
+                "location": "app/models/admin/account_action.rb:59"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

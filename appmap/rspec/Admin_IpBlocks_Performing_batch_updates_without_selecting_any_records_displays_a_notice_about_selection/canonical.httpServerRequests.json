@@ -1,0 +1,12 @@
+[
+  {
+    "route": "GET /admin/ip_blocks",
+    "parameters": "()",
+    "status": 200
+  },
+  {
+    "route": "POST /admin/ip_blocks/batch",
+    "parameters": "(page,delete)",
+    "status": 302
+  }
+]

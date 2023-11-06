@@ -1,0 +1,12 @@
+[
+  "app/lib/RedisConfiguration",
+  "app/lib/admin/metrics/measure/Admin::Metrics::Measure::BaseMeasure",
+  "app/lib/admin/metrics/measure/Admin::Metrics::Measure::TagAccountsMeasure",
+  "app/models/Tag",
+  "app/models/concerns/Redisable",
+  "app/models/trends/Trends::History",
+  "app/models/trends/Trends::History::Aggregate",
+  "app/models/trends/Trends::History::Day",
+  "logger/Logger::LogDevice",
+  "ruby/Marshal"
+]

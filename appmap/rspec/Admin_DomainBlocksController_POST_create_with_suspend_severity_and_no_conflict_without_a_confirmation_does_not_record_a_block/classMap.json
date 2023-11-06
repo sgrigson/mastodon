@@ -1,0 +1,12 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"domain_blocks\" WHERE \"domain_blocks\".\"domain\" = $1 AND \"domain_blocks\".\"severity\" = $2 LIMIT $3"
+      }
+    ]
+  }
+]

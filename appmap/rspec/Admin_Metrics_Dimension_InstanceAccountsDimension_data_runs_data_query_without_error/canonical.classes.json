@@ -1,0 +1,10 @@
+[
+  "app/lib/RequestPool",
+  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::BaseDimension",
+  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::InstanceAccountsDimension",
+  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::QueryHelper",
+  "app/lib/connection_pool/ConnectionPool::SharedConnectionPool",
+  "app/lib/connection_pool/ConnectionPool::SharedTimedStack",
+  "logger/Logger::LogDevice",
+  "ruby/Marshal"
+]

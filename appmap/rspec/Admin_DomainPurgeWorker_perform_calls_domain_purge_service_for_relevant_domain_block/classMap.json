@@ -1,0 +1,26 @@
+[
+  {
+    "name": "app/workers/admin",
+    "type": "package",
+    "children": [
+      {
+        "name": "Admin",
+        "type": "class",
+        "children": [
+          {
+            "name": "DomainPurgeWorker",
+            "type": "class",
+            "children": [
+              {
+                "name": "perform",
+                "type": "function",
+                "static": false,
+                "location": "app/workers/admin/domain_purge_worker.rb:8"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,244 @@
+[
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "lib/admin/metrics/dimension",
+        "type": "package",
+        "children": [
+          {
+            "name": "Admin",
+            "type": "class",
+            "children": [
+              {
+                "name": "Metrics",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "Dimension",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "BaseDimension",
+                        "type": "class",
+                        "children": [
+                          {
+                            "name": "data",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/base_dimension.rb:30"
+                          },
+                          {
+                            "name": "load",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/base_dimension.rb:44"
+                          },
+                          {
+                            "name": "cache_key",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/base_dimension.rb:26"
+                          },
+                          {
+                            "name": "canonicalized_params",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/base_dimension.rb:65"
+                          },
+                          {
+                            "name": "params",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/base_dimension.rb:61"
+                          }
+                        ]
+                      },
+                      {
+                        "name": "SpaceUsageDimension",
+                        "type": "class",
+                        "children": [
+                          {
+                            "name": "key",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/space_usage_dimension.rb:7"
+                          },
+                          {
+                            "name": "perform_query",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/space_usage_dimension.rb:13"
+                          },
+                          {
+                            "name": "postgresql_size",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/space_usage_dimension.rb:17"
+                          },
+                          {
+                            "name": "redis_size",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/space_usage_dimension.rb:29"
+                          },
+                          {
+                            "name": "redis_info",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/space_usage_dimension.rb:61"
+                          },
+                          {
+                            "name": "media_size",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/space_usage_dimension.rb:41"
+                          },
+                          {
+                            "name": "search_size",
+                            "type": "function",
+                            "static": false,
+                            "location": "app/lib/admin/metrics/dimension/space_usage_dimension.rb:69"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "models/concerns",
+        "type": "package",
+        "children": [
+          {
+            "name": "Redisable",
+            "type": "class",
+            "children": [
+              {
+                "name": "redis",
+                "type": "function",
+                "static": false,
+                "location": "app/models/concerns/redisable.rb:4"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lib/chewy",
+    "type": "package",
+    "children": [
+      {
+        "name": "Chewy",
+        "type": "class",
+        "children": [
+          {
+            "name": "SettingsExtensions",
+            "type": "class",
+            "children": [
+              {
+                "name": "enabled?",
+                "type": "function",
+                "static": true,
+                "location": "lib/chewy/settings_extensions.rb:5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "type": "package",
+    "children": [
+      {
+        "name": "Marshal",
+        "type": "class",
+        "children": [
+          {
+            "name": "dump",
+            "type": "function",
+            "labels": [
+              "serialize"
+            ],
+            "static": true,
+            "location": "Marshal.dump"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT pg_database_size(current_database())"
+      },
+      {
+        "type": "query",
+        "name": "SELECT SUM(COALESCE(file_file_size, 0) + COALESCE(thumbnail_file_size, 0)) FROM \"media_attachments\""
+      },
+      {
+        "type": "query",
+        "name": "SELECT SUM(\"custom_emojis\".\"image_file_size\") FROM \"custom_emojis\""
+      },
+      {
+        "type": "query",
+        "name": "SELECT SUM(\"preview_cards\".\"image_file_size\") FROM \"preview_cards\""
+      },
+      {
+        "type": "query",
+        "name": "SELECT SUM(COALESCE(avatar_file_size, 0) + COALESCE(header_file_size, 0)) FROM \"accounts\""
+      },
+      {
+        "type": "query",
+        "name": "SELECT SUM(\"backups\".\"dump_file_size\") FROM \"backups\""
+      },
+      {
+        "type": "query",
+        "name": "SELECT SUM(\"imports\".\"data_file_size\") FROM \"imports\""
+      },
+      {
+        "type": "query",
+        "name": "SELECT SUM(\"site_uploads\".\"file_file_size\") FROM \"site_uploads\""
+      }
+    ]
+  }
+]

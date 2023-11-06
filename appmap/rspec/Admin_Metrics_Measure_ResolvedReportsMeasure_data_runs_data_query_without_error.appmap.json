@@ -1,1 +1,961 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"Admin::Metrics::Measure::ResolvedReportsMeasure #data runs data query without error","source_location":"spec/lib/admin/metrics/measure/resolved_reports_measure_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[{"name":"app/lib/admin/metrics/measure","type":"package","children":[{"name":"Admin","type":"class","children":[{"name":"Metrics","type":"class","children":[{"name":"Measure","type":"class","children":[{"name":"BaseMeasure","type":"class","children":[{"name":"data","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:45","static":false},{"name":"load","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:59","static":false},{"name":"cache_key","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:21","static":false},{"name":"canonicalized_params","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:104","static":false},{"name":"params","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:100","static":false},{"name":"perform_queries","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:68","static":false},{"name":"time_period","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:88","static":false},{"name":"previous_time_period","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:92","static":false},{"name":"length_of_period","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:96","static":false}]},{"name":"ResolvedReportsMeasure","type":"class","children":[{"name":"key","type":"function","location":"app/lib/admin/metrics/measure/resolved_reports_measure.rb:6","static":false},{"name":"perform_total_query","type":"function","location":"app/lib/admin/metrics/measure/resolved_reports_measure.rb:12","static":false},{"name":"perform_previous_total_query","type":"function","location":"app/lib/admin/metrics/measure/resolved_reports_measure.rb:16","static":false},{"name":"sql_array","type":"function","location":"app/lib/admin/metrics/measure/resolved_reports_measure.rb:20","static":false},{"name":"sql_query_string","type":"function","location":"app/lib/admin/metrics/measure/resolved_reports_measure.rb:24","static":false}]},{"name":"QueryHelper","type":"class","children":[{"name":"perform_data_query","type":"function","location":"app/lib/admin/metrics/measure/query_helper.rb:6","static":false},{"name":"measurement_data_rows","type":"function","location":"app/lib/admin/metrics/measure/query_helper.rb:10","static":false},{"name":"sanitized_sql_string","type":"function","location":"app/lib/admin/metrics/measure/query_helper.rb:14","static":false}]}]}]}]}]},{"name":"logger","type":"package","children":[{"name":"Logger","type":"class","children":[{"name":"LogDevice","type":"class","children":[{"name":"write","type":"function","location":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31","static":false,"labels":["log"]}]}]}]},{"name":"ruby","type":"package","children":[{"name":"Marshal","type":"class","children":[{"name":"dump","type":"function","location":"Marshal.dump","static":true,"labels":["serialize"]}]}]}],"events":[{"id":3023699,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"data","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":45,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023700,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"load","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":59,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023701,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"cache_key","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":21,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023702,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::ResolvedReportsMeasure","method_id":"key","path":"app/lib/admin/metrics/measure/resolved_reports_measure.rb","lineno":6,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023703,"event":"return","thread_id":9160,"parent_id":3023702,"elapsed":3.123015630990267e-06,"elapsed_instrumentation":0.00015196495223790407,"return_value":{"class":"String","value":"resolved_reports","object_id":14817760}},{"id":3023704,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"canonicalized_params","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":104,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023705,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"params","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":100,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023706,"event":"return","thread_id":9160,"parent_id":3023705,"elapsed":2.34297476708889e-06,"elapsed_instrumentation":8.471799083054066e-05,"return_value":{"class":"Hash","value":"{}","object_id":14817780,"size":0}},{"id":3023707,"event":"return","thread_id":9160,"parent_id":3023704,"elapsed":0.00011830497533082962,"elapsed_instrumentation":8.618796709924936e-05,"return_value":{"class":"String","value":"","object_id":14817800}},{"id":3023708,"event":"return","thread_id":9160,"parent_id":3023701,"elapsed":0.00042624701745808125,"elapsed_instrumentation":7.963599637150764e-05,"return_value":{"class":"String","value":"metrics/measure/resolved_reports;2023-11-04T03:20:17+00:00;2023-11-06T03:20:17+00:00;","object_id":14817820}},{"id":3023709,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":14817840,"value":"Cache read: metrics/measure/resolved_reports;2023-11-04T03:20:17+00:00;2023-11-06T03:20:17+00:00; ({ (...70 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":3023710,"event":"return","thread_id":9160,"parent_id":3023709,"elapsed":0.0012656149920076132,"elapsed_instrumentation":0.00029890600126236677,"return_value":{"class":"Integer","value":"170","object_id":341}},{"id":3023711,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":14817860,"value":"Cache generate: metrics/measure/resolved_reports;2023-11-04T03:20:17+00:00;2023-11-06T03:20:17+00:00 (...74 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":3023712,"event":"return","thread_id":9160,"parent_id":3023711,"elapsed":0.0009986420045606792,"elapsed_instrumentation":0.00016011000843718648,"return_value":{"class":"Integer","value":"174","object_id":349}},{"id":3023713,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"perform_queries","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":68,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023714,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::ResolvedReportsMeasure","method_id":"perform_total_query","path":"app/lib/admin/metrics/measure/resolved_reports_measure.rb","lineno":12,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023715,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"time_period","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":88,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023716,"event":"return","thread_id":9160,"parent_id":3023715,"elapsed":1.3833981938660145e-05,"elapsed_instrumentation":0.00010906095849350095,"return_value":{"class":"Range","value":"2023-11-04T03:20:17+00:00..2023-11-06T03:20:17+00:00","object_id":14817880}},{"id":3023717,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT COUNT(*) FROM \"reports\" WHERE \"reports\".\"action_taken_at\" IS NOT NULL AND \"reports\".\"action_taken_at\" BETWEEN $1 AND $2","database_type":"postgres"}},{"id":3023718,"event":"return","thread_id":9160,"parent_id":3023717,"elapsed":0.001048589,"elapsed_instrumentation":0.00010789296356961131},{"id":3023719,"event":"return","thread_id":9160,"parent_id":3023714,"elapsed":0.003365216020029038,"elapsed_instrumentation":0.0001361629692837596,"return_value":{"class":"Integer","value":"0","object_id":1}},{"id":3023720,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::ResolvedReportsMeasure","method_id":"perform_previous_total_query","path":"app/lib/admin/metrics/measure/resolved_reports_measure.rb","lineno":16,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023721,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"previous_time_period","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":92,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023722,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"length_of_period","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":96,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023723,"event":"return","thread_id":9160,"parent_id":3023722,"elapsed":1.728098141029477e-05,"elapsed_instrumentation":6.859999848529696e-05,"return_value":{"class":"Rational","value":"57600000062951/28800000000000","object_id":14817900}},{"id":3023724,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"length_of_period","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":96,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023725,"event":"return","thread_id":9160,"parent_id":3023724,"elapsed":2.295011654496193e-06,"elapsed_instrumentation":6.49159774184227e-05,"return_value":{"class":"Rational","value":"57600000062951/28800000000000","object_id":14817900}},{"id":3023726,"event":"return","thread_id":9160,"parent_id":3023721,"elapsed":0.00030370900640264153,"elapsed_instrumentation":0.00010766304330900311,"return_value":{"class":"Range","value":"2023-11-02T03:20:17+00:00..2023-11-04T03:20:17+00:00","object_id":14817920}},{"id":3023727,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT COUNT(*) FROM \"reports\" WHERE \"reports\".\"action_taken_at\" IS NOT NULL AND \"reports\".\"action_taken_at\" BETWEEN $1 AND $2","database_type":"postgres"}},{"id":3023728,"event":"return","thread_id":9160,"parent_id":3023727,"elapsed":0.00074584,"elapsed_instrumentation":8.720700861886144e-05},{"id":3023729,"event":"return","thread_id":9160,"parent_id":3023720,"elapsed":0.0023546600132249296,"elapsed_instrumentation":0.0006496270070783794,"return_value":{"class":"Integer","value":"0","object_id":1}},{"id":3023730,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::QueryHelper","method_id":"perform_data_query","path":"app/lib/admin/metrics/measure/query_helper.rb","lineno":6,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023731,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::QueryHelper","method_id":"measurement_data_rows","path":"app/lib/admin/metrics/measure/query_helper.rb","lineno":10,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023732,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::QueryHelper","method_id":"sanitized_sql_string","path":"app/lib/admin/metrics/measure/query_helper.rb","lineno":14,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023733,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::ResolvedReportsMeasure","method_id":"sql_array","path":"app/lib/admin/metrics/measure/resolved_reports_measure.rb","lineno":20,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023734,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::ResolvedReportsMeasure","method_id":"sql_query_string","path":"app/lib/admin/metrics/measure/resolved_reports_measure.rb","lineno":24,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::ResolvedReportsMeasure","object_id":14817740,"value":"#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"}},{"id":3023735,"event":"return","thread_id":9160,"parent_id":3023734,"elapsed":8.023204281926155e-05,"elapsed_instrumentation":8.508696919307113e-05,"return_value":{"class":"String","value":"SELECT axis.*, ( WITH resolved_reports AS ( SELECT reports.id FROM reports WHERE date_trunc('day', r (...254 more characters)","object_id":14817940}},{"id":3023736,"event":"return","thread_id":9160,"parent_id":3023733,"elapsed":0.000186040997505188,"elapsed_instrumentation":0.0001441960339434445,"return_value":{"class":"Array","value":"[SELECT axis.*, ( WITH resolved_reports AS ( SELECT reports.id FROM reports WHERE date_trunc('day', r (...254 more characters), {:start_at=>2023-11-04T03:20:17+00:00, :end_at=>2023-11-06T03:20:17+00:00}]","object_id":14817960,"size":2}},{"id":3023737,"event":"return","thread_id":9160,"parent_id":3023732,"elapsed":0.00046516896691173315,"elapsed_instrumentation":8.08140030130744e-05,"return_value":{"class":"String","value":"SELECT axis.*, ( WITH resolved_reports AS ( SELECT reports.id FROM reports WHERE date_trunc('day', r (...294 more characters)","object_id":14817980}},{"id":3023738,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT axis.*, ( WITH resolved_reports AS ( SELECT reports.id FROM reports WHERE date_trunc('day', reports.action_taken_at)::date = axis.period ) SELECT count(*) FROM resolved_reports ) AS value FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:20:17.764231'::timestamp)::date, date_trunc('day', '2023-11-06 03:20:17.764420'::timestamp)::date, interval '1 day') AS period ) AS axis","database_type":"postgres"}},{"id":3023739,"event":"return","thread_id":9160,"parent_id":3023738,"elapsed":0.000940279,"elapsed_instrumentation":7.880199700593948e-05},{"id":3023740,"event":"return","thread_id":9160,"parent_id":3023731,"elapsed":0.0020534259965643287,"elapsed_instrumentation":0.0001972219324670732,"return_value":{"class":"ActiveRecord::Result","value":"#<ActiveRecord::Result:0x00007fc8e0d94710>","object_id":14818000}},{"id":3023741,"event":"return","thread_id":9160,"parent_id":3023730,"elapsed":0.002299654996022582,"elapsed_instrumentation":0.00020036002388224006,"return_value":{"class":"Array","value":"[{:date=>2023-11-04 00:00:00 +0000, :value=>0}, {:date=>2023-11-05 00:00:00 +0000, :value=>0}, {:date=>2023-11-06 00:00:00 +0000, :value=>0}]","object_id":14818020,"size":3}},{"id":3023742,"event":"return","thread_id":9160,"parent_id":3023713,"elapsed":0.009083026030566543,"elapsed_instrumentation":0.00045767001574859023,"return_value":{"class":"Hash","value":"{:total=>0, :previous_total=>0, :data=>[{:date=>2023-11-04 00:00:00 +0000, :value=>0}, {:date=>2023-11-05 00:00:00 +0000, :value=>0}, {:date=>2023-11-06 00:00:00 +0000, :value=>0}]}","object_id":14818040,"size":3}},{"id":3023743,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":14818060,"value":"Cache write: metrics/measure/resolved_reports;2023-11-04T03:20:17+00:00;2023-11-06T03:20:17+00:00; ( (...71 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":3023744,"event":"return","thread_id":9160,"parent_id":3023743,"elapsed":0.0006926690111868083,"elapsed_instrumentation":0.00012474600225687027,"return_value":{"class":"Integer","value":"171","object_id":343}},{"id":3023745,"event":"call","thread_id":9160,"defined_class":"Marshal","method_id":"dump","path":"Marshal.dump","static":true,"parameters":[{"name":"arg","class":"Array","object_id":14818080,"value":"[{:total=>0, :previous_total=>0, :data=>[{:date=>2023-11-04 00:00:00 +0000, :value=>0}, {:date=>2023-11-05 00:00:00 +0000, :value=>0}, {:date=>2023-11-06 00:00:00 +0000, :value=>0}]}]","kind":"rest","size":1}],"receiver":{"class":"Module","object_id":318180,"value":"Marshal"}},{"id":3023746,"event":"return","thread_id":9160,"parent_id":3023745,"elapsed":3.824703162536025e-05,"elapsed_instrumentation":0.0002576900296844542,"return_value":{"class":"String","value":"\u0004\b{\b:\ntotali\u0000:\u0013previous_totali\u0000:\tdata[\b{\u0007:\tdateIu:\tTime\r__\u001e_\u0000\u0000\u0000\u0000\u0007:\u000boffseti\u0000:\tzone0:\nvalueI\"\u00060\u0006:\u0006EF{\u0007 (...68 more characters)","object_id":14818100}},{"id":3023747,"event":"return","thread_id":9160,"parent_id":3023700,"elapsed":0.014779391989577562,"elapsed_instrumentation":0.00047913799062371254,"return_value":{"class":"ActiveSupport::HashWithIndifferentAccess","value":"{total=>0, previous_total=>0, data=>[{date=>2023-11-04 00:00:00 +0000, value=>0}, {date=>2023-11-05 00:00:00 +0000, value=>0}, {date=>2023-11-06 00:00:00 +0000, value=>0}]}","object_id":14818120,"size":3}},{"id":3023748,"event":"return","thread_id":9160,"parent_id":3023699,"elapsed":0.01528487796895206,"elapsed_instrumentation":0.00023281504400074482,"return_value":{"class":"Array","value":"[{date=>2023-11-04 00:00:00 +0000, value=>0}, {date=>2023-11-05 00:00:00 +0000, value=>0}, {date=>2023-11-06 00:00:00 +0000, value=>0}]","object_id":14818140,"size":3}}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "data",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 45,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 2,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "load",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 59,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 3,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "cache_key",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 21,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 4,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+      "method_id": "key",
+      "path": "app/lib/admin/metrics/measure/resolved_reports_measure.rb",
+      "lineno": 6,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 5,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 4,
+      "elapsed": 0.000003123015630990267,
+      "elapsed_instrumentation": 0.00015196495223790407,
+      "return_value": {
+        "class": "String",
+        "value": "resolved_reports",
+        "object_id": 14817760
+      }
+    },
+    {
+      "id": 6,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "canonicalized_params",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 104,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 7,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "params",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 100,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 8,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 7,
+      "elapsed": 0.00000234297476708889,
+      "elapsed_instrumentation": 0.00008471799083054066,
+      "return_value": {
+        "class": "Hash",
+        "value": "{}",
+        "object_id": 14817780,
+        "size": 0
+      }
+    },
+    {
+      "id": 9,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 6,
+      "elapsed": 0.00011830497533082962,
+      "elapsed_instrumentation": 0.00008618796709924936,
+      "return_value": {
+        "class": "String",
+        "value": "",
+        "object_id": 14817800
+      }
+    },
+    {
+      "id": 10,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 3,
+      "elapsed": 0.00042624701745808125,
+      "elapsed_instrumentation": 0.00007963599637150764,
+      "return_value": {
+        "class": "String",
+        "value": "metrics/measure/resolved_reports;2023-11-04T03:20:17+00:00;2023-11-06T03:20:17+00:00;",
+        "object_id": 14817820
+      }
+    },
+    {
+      "id": 11,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 14817840,
+          "value": "Cache read: metrics/measure/resolved_reports;2023-11-04T03:20:17+00:00;2023-11-06T03:20:17+00:00; ({ (...70 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 12,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 11,
+      "elapsed": 0.0012656149920076132,
+      "elapsed_instrumentation": 0.00029890600126236677,
+      "return_value": {
+        "class": "Integer",
+        "value": "170",
+        "object_id": 341
+      }
+    },
+    {
+      "id": 13,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 14817860,
+          "value": "Cache generate: metrics/measure/resolved_reports;2023-11-04T03:20:17+00:00;2023-11-06T03:20:17+00:00 (...74 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 14,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 13,
+      "elapsed": 0.0009986420045606792,
+      "elapsed_instrumentation": 0.00016011000843718648,
+      "return_value": {
+        "class": "Integer",
+        "value": "174",
+        "object_id": 349
+      }
+    },
+    {
+      "id": 15,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "perform_queries",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 68,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 16,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+      "method_id": "perform_total_query",
+      "path": "app/lib/admin/metrics/measure/resolved_reports_measure.rb",
+      "lineno": 12,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 17,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "time_period",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 88,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 18,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 17,
+      "elapsed": 0.000013833981938660145,
+      "elapsed_instrumentation": 0.00010906095849350095,
+      "return_value": {
+        "class": "Range",
+        "value": "2023-11-04T03:20:17+00:00..2023-11-06T03:20:17+00:00",
+        "object_id": 14817880
+      }
+    },
+    {
+      "id": 19,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT COUNT(*) FROM \"reports\" WHERE \"reports\".\"action_taken_at\" IS NOT NULL AND \"reports\".\"action_taken_at\" BETWEEN $1 AND $2",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 20,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 19,
+      "elapsed": 0.001048589,
+      "elapsed_instrumentation": 0.00010789296356961131
+    },
+    {
+      "id": 21,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 16,
+      "elapsed": 0.003365216020029038,
+      "elapsed_instrumentation": 0.0001361629692837596,
+      "return_value": {
+        "class": "Integer",
+        "value": "0",
+        "object_id": 1
+      }
+    },
+    {
+      "id": 22,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+      "method_id": "perform_previous_total_query",
+      "path": "app/lib/admin/metrics/measure/resolved_reports_measure.rb",
+      "lineno": 16,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 23,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "previous_time_period",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 92,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 24,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "length_of_period",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 96,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 25,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 24,
+      "elapsed": 0.00001728098141029477,
+      "elapsed_instrumentation": 0.00006859999848529696,
+      "return_value": {
+        "class": "Rational",
+        "value": "57600000062951/28800000000000",
+        "object_id": 14817900
+      }
+    },
+    {
+      "id": 26,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "length_of_period",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 96,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 27,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 26,
+      "elapsed": 0.000002295011654496193,
+      "elapsed_instrumentation": 0.0000649159774184227,
+      "return_value": {
+        "class": "Rational",
+        "value": "57600000062951/28800000000000",
+        "object_id": 14817900
+      }
+    },
+    {
+      "id": 28,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 23,
+      "elapsed": 0.00030370900640264153,
+      "elapsed_instrumentation": 0.00010766304330900311,
+      "return_value": {
+        "class": "Range",
+        "value": "2023-11-02T03:20:17+00:00..2023-11-04T03:20:17+00:00",
+        "object_id": 14817920
+      }
+    },
+    {
+      "id": 29,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT COUNT(*) FROM \"reports\" WHERE \"reports\".\"action_taken_at\" IS NOT NULL AND \"reports\".\"action_taken_at\" BETWEEN $1 AND $2",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 30,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 29,
+      "elapsed": 0.00074584,
+      "elapsed_instrumentation": 0.00008720700861886144
+    },
+    {
+      "id": 31,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 22,
+      "elapsed": 0.0023546600132249296,
+      "elapsed_instrumentation": 0.0006496270070783794,
+      "return_value": {
+        "class": "Integer",
+        "value": "0",
+        "object_id": 1
+      }
+    },
+    {
+      "id": 32,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::QueryHelper",
+      "method_id": "perform_data_query",
+      "path": "app/lib/admin/metrics/measure/query_helper.rb",
+      "lineno": 6,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 33,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::QueryHelper",
+      "method_id": "measurement_data_rows",
+      "path": "app/lib/admin/metrics/measure/query_helper.rb",
+      "lineno": 10,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 34,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::QueryHelper",
+      "method_id": "sanitized_sql_string",
+      "path": "app/lib/admin/metrics/measure/query_helper.rb",
+      "lineno": 14,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 35,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+      "method_id": "sql_array",
+      "path": "app/lib/admin/metrics/measure/resolved_reports_measure.rb",
+      "lineno": 20,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 36,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+      "method_id": "sql_query_string",
+      "path": "app/lib/admin/metrics/measure/resolved_reports_measure.rb",
+      "lineno": 24,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::ResolvedReportsMeasure",
+        "object_id": 14817740,
+        "value": "#<Admin::Metrics::Measure::ResolvedReportsMeasure:0x00007fc8e0d969c0>"
+      }
+    },
+    {
+      "id": 37,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 36,
+      "elapsed": 0.00008023204281926155,
+      "elapsed_instrumentation": 0.00008508696919307113,
+      "return_value": {
+        "class": "String",
+        "value": "SELECT axis.*, ( WITH resolved_reports AS ( SELECT reports.id FROM reports WHERE date_trunc('day', r (...254 more characters)",
+        "object_id": 14817940
+      }
+    },
+    {
+      "id": 38,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 35,
+      "elapsed": 0.000186040997505188,
+      "elapsed_instrumentation": 0.0001441960339434445,
+      "return_value": {
+        "class": "Array",
+        "value": "[SELECT axis.*, ( WITH resolved_reports AS ( SELECT reports.id FROM reports WHERE date_trunc('day', r (...254 more characters), {:start_at=>2023-11-04T03:20:17+00:00, :end_at=>2023-11-06T03:20:17+00:00}]",
+        "object_id": 14817960,
+        "size": 2
+      }
+    },
+    {
+      "id": 39,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 34,
+      "elapsed": 0.00046516896691173315,
+      "elapsed_instrumentation": 0.0000808140030130744,
+      "return_value": {
+        "class": "String",
+        "value": "SELECT axis.*, ( WITH resolved_reports AS ( SELECT reports.id FROM reports WHERE date_trunc('day', r (...294 more characters)",
+        "object_id": 14817980
+      }
+    },
+    {
+      "id": 40,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT axis.*, ( WITH resolved_reports AS ( SELECT reports.id FROM reports WHERE date_trunc('day', reports.action_taken_at)::date = axis.period ) SELECT count(*) FROM resolved_reports ) AS value FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:20:17.764231'::timestamp)::date, date_trunc('day', '2023-11-06 03:20:17.764420'::timestamp)::date, interval '1 day') AS period ) AS axis",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 41,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 40,
+      "elapsed": 0.000940279,
+      "elapsed_instrumentation": 0.00007880199700593948
+    },
+    {
+      "id": 42,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 33,
+      "elapsed": 0.0020534259965643287,
+      "elapsed_instrumentation": 0.0001972219324670732,
+      "return_value": {
+        "class": "ActiveRecord::Result",
+        "value": "#<ActiveRecord::Result:0x00007fc8e0d94710>",
+        "object_id": 14818000
+      }
+    },
+    {
+      "id": 43,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 32,
+      "elapsed": 0.002299654996022582,
+      "elapsed_instrumentation": 0.00020036002388224006,
+      "return_value": {
+        "class": "Array",
+        "value": "[{:date=>2023-11-04 00:00:00 +0000, :value=>0}, {:date=>2023-11-05 00:00:00 +0000, :value=>0}, {:date=>2023-11-06 00:00:00 +0000, :value=>0}]",
+        "object_id": 14818020,
+        "size": 3
+      }
+    },
+    {
+      "id": 44,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 15,
+      "elapsed": 0.009083026030566543,
+      "elapsed_instrumentation": 0.00045767001574859023,
+      "return_value": {
+        "class": "Hash",
+        "value": "{:total=>0, :previous_total=>0, :data=>[{:date=>2023-11-04 00:00:00 +0000, :value=>0}, {:date=>2023-11-05 00:00:00 +0000, :value=>0}, {:date=>2023-11-06 00:00:00 +0000, :value=>0}]}",
+        "object_id": 14818040,
+        "size": 3
+      }
+    },
+    {
+      "id": 45,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 14818060,
+          "value": "Cache write: metrics/measure/resolved_reports;2023-11-04T03:20:17+00:00;2023-11-06T03:20:17+00:00; ( (...71 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 46,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 45,
+      "elapsed": 0.0006926690111868083,
+      "elapsed_instrumentation": 0.00012474600225687027,
+      "return_value": {
+        "class": "Integer",
+        "value": "171",
+        "object_id": 343
+      }
+    },
+    {
+      "id": 47,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Marshal",
+      "method_id": "dump",
+      "path": "Marshal.dump",
+      "static": true,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 14818080,
+          "value": "[{:total=>0, :previous_total=>0, :data=>[{:date=>2023-11-04 00:00:00 +0000, :value=>0}, {:date=>2023-11-05 00:00:00 +0000, :value=>0}, {:date=>2023-11-06 00:00:00 +0000, :value=>0}]}]",
+          "kind": "rest",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 318180,
+        "value": "Marshal"
+      }
+    },
+    {
+      "id": 48,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 47,
+      "elapsed": 0.00003824703162536025,
+      "elapsed_instrumentation": 0.0002576900296844542,
+      "return_value": {
+        "class": "String",
+        "value": "\u0004\b{\b:\ntotali\u0000:\u0013previous_totali\u0000:\tdata[\b{\u0007:\tdateIu:\tTime\r__\u001e_\u0000\u0000\u0000\u0000\u0007:\u000boffseti\u0000:\tzone0:\nvalueI\"\u00060\u0006:\u0006EF{\u0007 (...68 more characters)",
+        "object_id": 14818100
+      }
+    },
+    {
+      "id": 49,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 2,
+      "elapsed": 0.014779391989577562,
+      "elapsed_instrumentation": 0.00047913799062371254,
+      "return_value": {
+        "class": "ActiveSupport::HashWithIndifferentAccess",
+        "value": "{total=>0, previous_total=>0, data=>[{date=>2023-11-04 00:00:00 +0000, value=>0}, {date=>2023-11-05 00:00:00 +0000, value=>0}, {date=>2023-11-06 00:00:00 +0000, value=>0}]}",
+        "object_id": 14818120,
+        "size": 3
+      }
+    },
+    {
+      "id": 50,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.01528487796895206,
+      "elapsed_instrumentation": 0.00023281504400074482,
+      "return_value": {
+        "class": "Array",
+        "value": "[{date=>2023-11-04 00:00:00 +0000, value=>0}, {date=>2023-11-05 00:00:00 +0000, value=>0}, {date=>2023-11-06 00:00:00 +0000, value=>0}]",
+        "object_id": 14818140,
+        "size": 3
+      }
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "Admin::Metrics::Measure::ResolvedReportsMeasure #data runs data query without error",
+    "source_location": "spec/lib/admin/metrics/measure/resolved_reports_measure_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "name": "app/lib/admin/metrics/measure",
+      "type": "package",
+      "children": [
+        {
+          "name": "Admin",
+          "type": "class",
+          "children": [
+            {
+              "name": "Metrics",
+              "type": "class",
+              "children": [
+                {
+                  "name": "Measure",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "BaseMeasure",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "data",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:45"
+                        },
+                        {
+                          "name": "load",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:59"
+                        },
+                        {
+                          "name": "cache_key",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:21"
+                        },
+                        {
+                          "name": "canonicalized_params",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:104"
+                        },
+                        {
+                          "name": "params",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:100"
+                        },
+                        {
+                          "name": "perform_queries",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:68"
+                        },
+                        {
+                          "name": "time_period",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:88"
+                        },
+                        {
+                          "name": "previous_time_period",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:92"
+                        },
+                        {
+                          "name": "length_of_period",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:96"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "ResolvedReportsMeasure",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "key",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/resolved_reports_measure.rb:6"
+                        },
+                        {
+                          "name": "perform_total_query",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/resolved_reports_measure.rb:12"
+                        },
+                        {
+                          "name": "perform_previous_total_query",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/resolved_reports_measure.rb:16"
+                        },
+                        {
+                          "name": "sql_array",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/resolved_reports_measure.rb:20"
+                        },
+                        {
+                          "name": "sql_query_string",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/resolved_reports_measure.rb:24"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "QueryHelper",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "perform_data_query",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/query_helper.rb:6"
+                        },
+                        {
+                          "name": "measurement_data_rows",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/query_helper.rb:10"
+                        },
+                        {
+                          "name": "sanitized_sql_string",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/query_helper.rb:14"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "type": "package",
+      "children": [
+        {
+          "name": "Logger",
+          "type": "class",
+          "children": [
+            {
+              "name": "LogDevice",
+              "type": "class",
+              "children": [
+                {
+                  "name": "write",
+                  "type": "function",
+                  "labels": [
+                    "log"
+                  ],
+                  "static": false,
+                  "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ruby",
+      "type": "package",
+      "children": [
+        {
+          "name": "Marshal",
+          "type": "class",
+          "children": [
+            {
+              "name": "dump",
+              "type": "function",
+              "labels": [
+                "serialize"
+              ],
+              "static": true,
+              "location": "Marshal.dump"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT COUNT(*) FROM \"reports\" WHERE \"reports\".\"action_taken_at\" IS NOT NULL AND \"reports\".\"action_taken_at\" BETWEEN $1 AND $2"
+        },
+        {
+          "type": "query",
+          "name": "SELECT axis.*, ( WITH resolved_reports AS ( SELECT reports.id FROM reports WHERE date_trunc('day', reports.action_taken_at)::date = axis.period ) SELECT count(*) FROM resolved_reports ) AS value FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:20:17.764231'::timestamp)::date, date_trunc('day', '2023-11-06 03:20:17.764420'::timestamp)::date, interval '1 day') AS period ) AS axis"
+        }
+      ]
+    }
+  ]
+}

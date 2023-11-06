@@ -1,0 +1,246 @@
+[
+  {
+    "name": "app/lib/admin/metrics/measure",
+    "type": "package",
+    "children": [
+      {
+        "name": "Admin",
+        "type": "class",
+        "children": [
+          {
+            "name": "Metrics",
+            "type": "class",
+            "children": [
+              {
+                "name": "Measure",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "BaseMeasure",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "data",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:45"
+                      },
+                      {
+                        "name": "load",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:59"
+                      },
+                      {
+                        "name": "cache_key",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:21"
+                      },
+                      {
+                        "name": "canonicalized_params",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:104"
+                      },
+                      {
+                        "name": "perform_queries",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:68"
+                      },
+                      {
+                        "name": "length_of_period",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:96"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "TagServersMeasure",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "key",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:10"
+                      },
+                      {
+                        "name": "params",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:57"
+                      },
+                      {
+                        "name": "perform_total_query",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:16"
+                      },
+                      {
+                        "name": "tag",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:53"
+                      },
+                      {
+                        "name": "perform_previous_total_query",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:20"
+                      },
+                      {
+                        "name": "sql_array",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:24"
+                      },
+                      {
+                        "name": "sql_query_string",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:28"
+                      },
+                      {
+                        "name": "earliest_status_id",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:45"
+                      },
+                      {
+                        "name": "latest_status_id",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:49"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "QueryHelper",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "perform_data_query",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/query_helper.rb:6"
+                      },
+                      {
+                        "name": "measurement_data_rows",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/query_helper.rb:10"
+                      },
+                      {
+                        "name": "sanitized_sql_string",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/query_helper.rb:14"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lib/mastodon",
+    "type": "package",
+    "children": [
+      {
+        "name": "Mastodon",
+        "type": "class",
+        "children": [
+          {
+            "name": "Snowflake",
+            "type": "class",
+            "children": [
+              {
+                "name": "id_at",
+                "type": "function",
+                "static": true,
+                "location": "lib/mastodon/snowflake.rb:99"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "type": "package",
+    "children": [
+      {
+        "name": "Marshal",
+        "type": "class",
+        "children": [
+          {
+            "name": "dump",
+            "type": "function",
+            "labels": [
+              "serialize"
+            ],
+            "static": true,
+            "location": "Marshal.dump"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"tags\".* FROM \"tags\" WHERE \"tags\".\"id\" = $1 LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $1 AND (statuses.id BETWEEN 111350085451776000 AND 111361410072576000)"
+      },
+      {
+        "type": "query",
+        "name": "SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $1 AND (statuses.id BETWEEN 111338760830976000 AND 111350085451776000)"
+      },
+      {
+        "type": "query",
+        "name": "SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_tags ON statuses.id = statuses_tags.status_id INNER JOIN accounts ON statuses.account_id = accounts.id WHERE statuses_tags.tag_id = 1369 AND statuses.id BETWEEN 111350085451776000 AND 111361410072576000 AND date_trunc('day', statuses.created_at)::date = axis.day ) FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:11:06.106848'::timestamp)::date, date_trunc('day', '2023-11-06 03:11:06.107119'::timestamp)::date, ('1 day')::interval) AS day ) as axis"
+      }
+    ]
+  }
+]

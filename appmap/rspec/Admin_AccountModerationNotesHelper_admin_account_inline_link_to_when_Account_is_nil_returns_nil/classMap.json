@@ -1,0 +1,26 @@
+[
+  {
+    "name": "app/helpers/admin",
+    "type": "package",
+    "children": [
+      {
+        "name": "Admin",
+        "type": "class",
+        "children": [
+          {
+            "name": "AccountModerationNotesHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "admin_account_inline_link_to",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/admin/account_moderation_notes_helper.rb:15"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

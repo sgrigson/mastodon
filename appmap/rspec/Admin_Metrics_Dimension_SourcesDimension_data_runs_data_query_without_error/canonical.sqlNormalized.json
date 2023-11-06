@@ -1,0 +1,3 @@
+[
+  "SELECT oauth_applications.name, count(*) AS value FROM users LEFT JOIN oauth_applications ON oauth_applications.id = users.created_by_application_id WHERE users.created_at BETWEEN ? AND ? GROUP BY oauth_applications.name ORDER BY count(*) DESC LIMIT ?"
+]

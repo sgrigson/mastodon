@@ -1,0 +1,12 @@
+[
+  {
+    "route": "GET /admin/accounts",
+    "parameters": "(page)",
+    "status": 200
+  },
+  {
+    "route": "POST /admin/accounts/batch",
+    "parameters": "(page,select_all_matching,reject,form_account_batch)",
+    "status": 302
+  }
+]

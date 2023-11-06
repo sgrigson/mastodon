@@ -1,1 +1,1391 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"Admin::Metrics::Measure::TagServersMeasure #data runs data query without error","source_location":"spec/lib/admin/metrics/measure/tag_servers_measure_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[{"name":"app/lib/admin/metrics/measure","type":"package","children":[{"name":"Admin","type":"class","children":[{"name":"Metrics","type":"class","children":[{"name":"Measure","type":"class","children":[{"name":"BaseMeasure","type":"class","children":[{"name":"data","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:45","static":false},{"name":"load","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:59","static":false},{"name":"cache_key","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:21","static":false},{"name":"canonicalized_params","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:104","static":false},{"name":"perform_queries","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:68","static":false},{"name":"length_of_period","type":"function","location":"app/lib/admin/metrics/measure/base_measure.rb:96","static":false}]},{"name":"TagServersMeasure","type":"class","children":[{"name":"key","type":"function","location":"app/lib/admin/metrics/measure/tag_servers_measure.rb:10","static":false},{"name":"params","type":"function","location":"app/lib/admin/metrics/measure/tag_servers_measure.rb:57","static":false},{"name":"perform_total_query","type":"function","location":"app/lib/admin/metrics/measure/tag_servers_measure.rb:16","static":false},{"name":"tag","type":"function","location":"app/lib/admin/metrics/measure/tag_servers_measure.rb:53","static":false},{"name":"perform_previous_total_query","type":"function","location":"app/lib/admin/metrics/measure/tag_servers_measure.rb:20","static":false},{"name":"sql_array","type":"function","location":"app/lib/admin/metrics/measure/tag_servers_measure.rb:24","static":false},{"name":"sql_query_string","type":"function","location":"app/lib/admin/metrics/measure/tag_servers_measure.rb:28","static":false},{"name":"earliest_status_id","type":"function","location":"app/lib/admin/metrics/measure/tag_servers_measure.rb:45","static":false},{"name":"latest_status_id","type":"function","location":"app/lib/admin/metrics/measure/tag_servers_measure.rb:49","static":false}]},{"name":"QueryHelper","type":"class","children":[{"name":"perform_data_query","type":"function","location":"app/lib/admin/metrics/measure/query_helper.rb:6","static":false},{"name":"measurement_data_rows","type":"function","location":"app/lib/admin/metrics/measure/query_helper.rb:10","static":false},{"name":"sanitized_sql_string","type":"function","location":"app/lib/admin/metrics/measure/query_helper.rb:14","static":false}]}]}]}]}]},{"name":"logger","type":"package","children":[{"name":"Logger","type":"class","children":[{"name":"LogDevice","type":"class","children":[{"name":"write","type":"function","location":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31","static":false,"labels":["log"]}]}]}]},{"name":"lib/mastodon","type":"package","children":[{"name":"Mastodon","type":"class","children":[{"name":"Snowflake","type":"class","children":[{"name":"id_at","type":"function","location":"lib/mastodon/snowflake.rb:99","static":true}]}]}]},{"name":"ruby","type":"package","children":[{"name":"Marshal","type":"class","children":[{"name":"dump","type":"function","location":"Marshal.dump","static":true,"labels":["serialize"]}]}]}],"events":[{"id":2160568,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"data","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":45,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160569,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"load","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":59,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160570,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"cache_key","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":21,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160571,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"key","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":10,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160572,"event":"return","thread_id":9160,"parent_id":2160571,"elapsed":3.331981133669615e-06,"elapsed_instrumentation":0.0001297229900956154,"return_value":{"class":"String","value":"tag_servers","object_id":11045380}},{"id":2160573,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"canonicalized_params","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":104,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160574,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"params","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":57,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160575,"event":"return","thread_id":9160,"parent_id":2160574,"elapsed":8.278602035716176e-05,"elapsed_instrumentation":0.0002676359727047384,"return_value":{"class":"ActionController::Parameters","value":"{\"id\"=>1369}","object_id":11045400}},{"id":2160576,"event":"return","thread_id":9160,"parent_id":2160573,"elapsed":0.00045031297486275434,"elapsed_instrumentation":0.00015084800543263555,"return_value":{"class":"String","value":"id=1369","object_id":11045420}},{"id":2160577,"event":"return","thread_id":9160,"parent_id":2160570,"elapsed":0.0008162240264937282,"elapsed_instrumentation":0.00012617901666089892,"return_value":{"class":"String","value":"metrics/measure/tag_servers;2023-11-04T03:11:06+00:00;2023-11-06T03:11:06+00:00;id=1369","object_id":11045440}},{"id":2160578,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":11045460,"value":"Cache read: metrics/measure/tag_servers;2023-11-04T03:11:06+00:00;2023-11-06T03:11:06+00:00;id=1369  (...72 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":2160579,"event":"return","thread_id":9160,"parent_id":2160578,"elapsed":0.0007944459794089198,"elapsed_instrumentation":0.0012233959860168397,"return_value":{"class":"Integer","value":"172","object_id":345}},{"id":2160580,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":11045480,"value":"Cache generate: metrics/measure/tag_servers;2023-11-04T03:11:06+00:00;2023-11-06T03:11:06+00:00;id=1 (...76 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":2160581,"event":"return","thread_id":9160,"parent_id":2160580,"elapsed":0.0012116089928895235,"elapsed_instrumentation":0.0003061440074816346,"return_value":{"class":"Integer","value":"176","object_id":353}},{"id":2160582,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"perform_queries","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":68,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160583,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"perform_total_query","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":16,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160584,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"tag","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":53,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160585,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"params","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":57,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160586,"event":"return","thread_id":9160,"parent_id":2160585,"elapsed":9.19720041565597e-05,"elapsed_instrumentation":9.239197243005037e-05,"return_value":{"class":"ActionController::Parameters","value":"{\"id\"=>1369}","object_id":11045500}},{"id":2160587,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"tags\".* FROM \"tags\" WHERE \"tags\".\"id\" = $1 LIMIT $2","database_type":"postgres"}},{"id":2160588,"event":"return","thread_id":9160,"parent_id":2160587,"elapsed":0.00134656,"elapsed_instrumentation":0.00010643003042787313},{"id":2160589,"event":"return","thread_id":9160,"parent_id":2160584,"elapsed":0.0024699579807929695,"elapsed_instrumentation":0.00015167106175795197,"return_value":{"class":"Tag","value":"#<Tag:0x00007fc8e172d5d8>","object_id":11045520}},{"id":2160590,"event":"call","thread_id":9160,"defined_class":"Mastodon::Snowflake","method_id":"id_at","path":"lib/mastodon/snowflake.rb","lineno":99,"static":true,"parameters":[{"name":"timestamp","class":"DateTime","object_id":11045540,"value":"2023-11-04T03:11:06+00:00","kind":"req"},{"name":"with_random","class":"FalseClass","object_id":0,"value":"false","kind":"key"}],"receiver":{"class":"Module","object_id":1610500,"value":"Mastodon::Snowflake"}},{"id":2160591,"event":"return","thread_id":9160,"parent_id":2160590,"elapsed":1.6924983356148005e-05,"elapsed_instrumentation":0.00015748903388157487,"return_value":{"class":"Integer","value":"111350085451776000","object_id":222700170903552001}},{"id":2160592,"event":"call","thread_id":9160,"defined_class":"Mastodon::Snowflake","method_id":"id_at","path":"lib/mastodon/snowflake.rb","lineno":99,"static":true,"parameters":[{"name":"timestamp","class":"DateTime","object_id":11045560,"value":"2023-11-06T03:11:06+00:00","kind":"req"},{"name":"with_random","class":"FalseClass","object_id":0,"value":"false","kind":"key"}],"receiver":{"class":"Module","object_id":1610500,"value":"Mastodon::Snowflake"}},{"id":2160593,"event":"return","thread_id":9160,"parent_id":2160592,"elapsed":6.99399970471859e-06,"elapsed_instrumentation":9.344902355223894e-05,"return_value":{"class":"Integer","value":"111361410072576000","object_id":222722820145152001}},{"id":2160594,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $1 AND (statuses.id BETWEEN 111350085451776000 AND 111361410072576000)","database_type":"postgres"}},{"id":2160595,"event":"return","thread_id":9160,"parent_id":2160594,"elapsed":0.001341892,"elapsed_instrumentation":8.512596832588315e-05},{"id":2160596,"event":"return","thread_id":9160,"parent_id":2160583,"elapsed":0.008069149043876678,"elapsed_instrumentation":0.0004870709963142872,"return_value":{"class":"Integer","value":"0","object_id":1}},{"id":2160597,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"perform_previous_total_query","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":20,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160598,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"tag","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":53,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160599,"event":"return","thread_id":9160,"parent_id":2160598,"elapsed":2.5249901227653027e-06,"elapsed_instrumentation":8.007505675777793e-05,"return_value":{"class":"Tag","value":"#<Tag:0x00007fc8e172d5d8>","object_id":11045520}},{"id":2160600,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"length_of_period","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":96,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160601,"event":"return","thread_id":9160,"parent_id":2160600,"elapsed":1.8941995222121477e-05,"elapsed_instrumentation":7.205503061413765e-05,"return_value":{"class":"Rational","value":"172800000270937/86400000000000","object_id":11045580}},{"id":2160602,"event":"call","thread_id":9160,"defined_class":"Mastodon::Snowflake","method_id":"id_at","path":"lib/mastodon/snowflake.rb","lineno":99,"static":true,"parameters":[{"name":"timestamp","class":"DateTime","object_id":11045600,"value":"2023-11-02T03:11:06+00:00","kind":"req"},{"name":"with_random","class":"FalseClass","object_id":0,"value":"false","kind":"key"}],"receiver":{"class":"Module","object_id":1610500,"value":"Mastodon::Snowflake"}},{"id":2160603,"event":"return","thread_id":9160,"parent_id":2160602,"elapsed":9.66398511081934e-06,"elapsed_instrumentation":0.00010663206921890378,"return_value":{"class":"Integer","value":"111338760830976000","object_id":222677521661952001}},{"id":2160604,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::BaseMeasure","method_id":"length_of_period","path":"app/lib/admin/metrics/measure/base_measure.rb","lineno":96,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160605,"event":"return","thread_id":9160,"parent_id":2160604,"elapsed":2.3919856175780296e-06,"elapsed_instrumentation":6.387406028807163e-05,"return_value":{"class":"Rational","value":"172800000270937/86400000000000","object_id":11045580}},{"id":2160606,"event":"call","thread_id":9160,"defined_class":"Mastodon::Snowflake","method_id":"id_at","path":"lib/mastodon/snowflake.rb","lineno":99,"static":true,"parameters":[{"name":"timestamp","class":"DateTime","object_id":11045620,"value":"2023-11-04T03:11:06+00:00","kind":"req"},{"name":"with_random","class":"FalseClass","object_id":0,"value":"false","kind":"key"}],"receiver":{"class":"Module","object_id":1610500,"value":"Mastodon::Snowflake"}},{"id":2160607,"event":"return","thread_id":9160,"parent_id":2160606,"elapsed":7.044000085443258e-06,"elapsed_instrumentation":0.0002104899613186717,"return_value":{"class":"Integer","value":"111350085451776000","object_id":222700170903552001}},{"id":2160608,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $1 AND (statuses.id BETWEEN 111338760830976000 AND 111350085451776000)","database_type":"postgres"}},{"id":2160609,"event":"return","thread_id":9160,"parent_id":2160608,"elapsed":0.001556974,"elapsed_instrumentation":9.231304284185171e-05},{"id":2160610,"event":"return","thread_id":9160,"parent_id":2160597,"elapsed":0.004474110959563404,"elapsed_instrumentation":0.00014493003254756331,"return_value":{"class":"Integer","value":"0","object_id":1}},{"id":2160611,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::QueryHelper","method_id":"perform_data_query","path":"app/lib/admin/metrics/measure/query_helper.rb","lineno":6,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160612,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::QueryHelper","method_id":"measurement_data_rows","path":"app/lib/admin/metrics/measure/query_helper.rb","lineno":10,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160613,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::QueryHelper","method_id":"sanitized_sql_string","path":"app/lib/admin/metrics/measure/query_helper.rb","lineno":14,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160614,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"sql_array","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":24,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160615,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"sql_query_string","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":28,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160616,"event":"return","thread_id":9160,"parent_id":2160615,"elapsed":0.00015110900858417153,"elapsed_instrumentation":0.00011215097038075328,"return_value":{"class":"String","value":"SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_t (...426 more characters)","object_id":11045640}},{"id":2160617,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"tag","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":53,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160618,"event":"return","thread_id":9160,"parent_id":2160617,"elapsed":2.788030542433262e-06,"elapsed_instrumentation":0.00010572298197075725,"return_value":{"class":"Tag","value":"#<Tag:0x00007fc8e172d5d8>","object_id":11045520}},{"id":2160619,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"earliest_status_id","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":45,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160620,"event":"call","thread_id":9160,"defined_class":"Mastodon::Snowflake","method_id":"id_at","path":"lib/mastodon/snowflake.rb","lineno":99,"static":true,"parameters":[{"name":"timestamp","class":"DateTime","object_id":11045540,"value":"2023-11-04T03:11:06+00:00","kind":"req"},{"name":"with_random","class":"FalseClass","object_id":0,"value":"false","kind":"key"}],"receiver":{"class":"Module","object_id":1610500,"value":"Mastodon::Snowflake"}},{"id":2160621,"event":"return","thread_id":9160,"parent_id":2160620,"elapsed":1.762795727699995e-05,"elapsed_instrumentation":0.0001460069906897843,"return_value":{"class":"Integer","value":"111350085451776000","object_id":222700170903552001}},{"id":2160622,"event":"return","thread_id":9160,"parent_id":2160619,"elapsed":0.0001968709984794259,"elapsed_instrumentation":0.000284869980532676,"return_value":{"class":"Integer","value":"111350085451776000","object_id":222700170903552001}},{"id":2160623,"event":"call","thread_id":9160,"defined_class":"Admin::Metrics::Measure::TagServersMeasure","method_id":"latest_status_id","path":"app/lib/admin/metrics/measure/tag_servers_measure.rb","lineno":49,"static":false,"parameters":[],"receiver":{"class":"Admin::Metrics::Measure::TagServersMeasure","object_id":11045360,"value":"#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"}},{"id":2160624,"event":"call","thread_id":9160,"defined_class":"Mastodon::Snowflake","method_id":"id_at","path":"lib/mastodon/snowflake.rb","lineno":99,"static":true,"parameters":[{"name":"timestamp","class":"DateTime","object_id":11045560,"value":"2023-11-06T03:11:06+00:00","kind":"req"},{"name":"with_random","class":"FalseClass","object_id":0,"value":"false","kind":"key"}],"receiver":{"class":"Module","object_id":1610500,"value":"Mastodon::Snowflake"}},{"id":2160625,"event":"return","thread_id":9160,"parent_id":2160624,"elapsed":9.525043424218893e-06,"elapsed_instrumentation":9.842496365308762e-05,"return_value":{"class":"Integer","value":"111361410072576000","object_id":222722820145152001}},{"id":2160626,"event":"return","thread_id":9160,"parent_id":2160623,"elapsed":0.00013043999206274748,"elapsed_instrumentation":8.613400859758258e-05,"return_value":{"class":"Integer","value":"111361410072576000","object_id":222722820145152001}},{"id":2160627,"event":"return","thread_id":9160,"parent_id":2160614,"elapsed":0.0011632719542831182,"elapsed_instrumentation":0.00018703402020037174,"return_value":{"class":"Array","value":"[SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_t (...426 more characters), {:start_at=>2023-11-04T03:11:06+00:00, :end_at=>2023-11-06T03:11:06+00:00, :tag_id=>1369, :earliest_status_id=>111350085451776000, :latest_status_id=>111361410072576000}]","object_id":11045660,"size":2}},{"id":2160628,"event":"return","thread_id":9160,"parent_id":2160613,"elapsed":0.001782856008503586,"elapsed_instrumentation":0.00013078999472782016,"return_value":{"class":"String","value":"SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_t (...463 more characters)","object_id":11045680}},{"id":2160629,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_tags ON statuses.id = statuses_tags.status_id INNER JOIN accounts ON statuses.account_id = accounts.id WHERE statuses_tags.tag_id = 1369 AND statuses.id BETWEEN 111350085451776000 AND 111361410072576000 AND date_trunc('day', statuses.created_at)::date = axis.day ) FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:11:06.106848'::timestamp)::date, date_trunc('day', '2023-11-06 03:11:06.107119'::timestamp)::date, ('1 day')::interval) AS day ) as axis","database_type":"postgres"}},{"id":2160630,"event":"return","thread_id":9160,"parent_id":2160629,"elapsed":0.001773283,"elapsed_instrumentation":9.733601473271847e-05},{"id":2160631,"event":"return","thread_id":9160,"parent_id":2160612,"elapsed":0.004202341951895505,"elapsed_instrumentation":0.0001472150324843824,"return_value":{"class":"ActiveRecord::Result","value":"#<ActiveRecord::Result:0x00007fc930bb1ab0>","object_id":11045700}},{"id":2160632,"event":"return","thread_id":9160,"parent_id":2160611,"elapsed":0.004588116018567234,"elapsed_instrumentation":0.00020481494721025229,"return_value":{"class":"Array","value":"[{:date=>, :value=>0}, {:date=>, :value=>0}, {:date=>, :value=>0}]","object_id":11045720,"size":3}},{"id":2160633,"event":"return","thread_id":9160,"parent_id":2160582,"elapsed":0.01806416001636535,"elapsed_instrumentation":0.00019759498536586761,"return_value":{"class":"Hash","value":"{:total=>0, :previous_total=>0, :data=>[{:date=>, :value=>0}, {:date=>, :value=>0}, {:date=>, :value=>0}]}","object_id":11045740,"size":3}},{"id":2160634,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":11045760,"value":"Cache write: metrics/measure/tag_servers;2023-11-04T03:11:06+00:00;2023-11-06T03:11:06+00:00;id=1369 (...73 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":2160635,"event":"return","thread_id":9160,"parent_id":2160634,"elapsed":0.0006527209770865738,"elapsed_instrumentation":0.00029073498444631696,"return_value":{"class":"Integer","value":"173","object_id":347}},{"id":2160636,"event":"call","thread_id":9160,"defined_class":"Marshal","method_id":"dump","path":"Marshal.dump","static":true,"parameters":[{"name":"arg","class":"Array","object_id":11045780,"value":"[{:total=>0, :previous_total=>0, :data=>[{:date=>, :value=>0}, {:date=>, :value=>0}, {:date=>, :value=>0}]}]","kind":"rest","size":1}],"receiver":{"class":"Module","object_id":318180,"value":"Marshal"}},{"id":2160637,"event":"return","thread_id":9160,"parent_id":2160636,"elapsed":2.335099270567298e-05,"elapsed_instrumentation":0.000245002971496433,"return_value":{"class":"String","value":"\u0004\b{\b:\ntotali\u0000:\u0013previous_totali\u0000:\tdata[\b{\u0007:\tdate0:\nvalueI\"\u00060\u0006:\u0006EF{\u0007;\b0;\tI\"\u00060\u0006;\nF{\u0007;\b0;\tI\"\u00060\u0006;\nF","object_id":11045800}},{"id":2160638,"event":"return","thread_id":9160,"parent_id":2160569,"elapsed":0.025167785002849996,"elapsed_instrumentation":0.000218883971683681,"return_value":{"class":"ActiveSupport::HashWithIndifferentAccess","value":"{total=>0, previous_total=>0, data=>[{date=>, value=>0}, {date=>, value=>0}, {date=>, value=>0}]}","object_id":11045820,"size":3}},{"id":2160639,"event":"return","thread_id":9160,"parent_id":2160568,"elapsed":0.025414566975086927,"elapsed_instrumentation":0.00030511297518387437,"return_value":{"class":"Array","value":"[{date=>, value=>0}, {date=>, value=>0}, {date=>, value=>0}]","object_id":11045840,"size":3}}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "data",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 45,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 2,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "load",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 59,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 3,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "cache_key",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 21,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 4,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "key",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 10,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 5,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 4,
+      "elapsed": 0.000003331981133669615,
+      "elapsed_instrumentation": 0.0001297229900956154,
+      "return_value": {
+        "class": "String",
+        "value": "tag_servers",
+        "object_id": 11045380
+      }
+    },
+    {
+      "id": 6,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "canonicalized_params",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 104,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 7,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "params",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 57,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 8,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 7,
+      "elapsed": 0.00008278602035716176,
+      "elapsed_instrumentation": 0.0002676359727047384,
+      "return_value": {
+        "class": "ActionController::Parameters",
+        "value": "{\"id\"=>1369}",
+        "object_id": 11045400
+      }
+    },
+    {
+      "id": 9,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 6,
+      "elapsed": 0.00045031297486275434,
+      "elapsed_instrumentation": 0.00015084800543263555,
+      "return_value": {
+        "class": "String",
+        "value": "id=1369",
+        "object_id": 11045420
+      }
+    },
+    {
+      "id": 10,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 3,
+      "elapsed": 0.0008162240264937282,
+      "elapsed_instrumentation": 0.00012617901666089892,
+      "return_value": {
+        "class": "String",
+        "value": "metrics/measure/tag_servers;2023-11-04T03:11:06+00:00;2023-11-06T03:11:06+00:00;id=1369",
+        "object_id": 11045440
+      }
+    },
+    {
+      "id": 11,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 11045460,
+          "value": "Cache read: metrics/measure/tag_servers;2023-11-04T03:11:06+00:00;2023-11-06T03:11:06+00:00;id=1369  (...72 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 12,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 11,
+      "elapsed": 0.0007944459794089198,
+      "elapsed_instrumentation": 0.0012233959860168397,
+      "return_value": {
+        "class": "Integer",
+        "value": "172",
+        "object_id": 345
+      }
+    },
+    {
+      "id": 13,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 11045480,
+          "value": "Cache generate: metrics/measure/tag_servers;2023-11-04T03:11:06+00:00;2023-11-06T03:11:06+00:00;id=1 (...76 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 14,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 13,
+      "elapsed": 0.0012116089928895235,
+      "elapsed_instrumentation": 0.0003061440074816346,
+      "return_value": {
+        "class": "Integer",
+        "value": "176",
+        "object_id": 353
+      }
+    },
+    {
+      "id": 15,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "perform_queries",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 68,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 16,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "perform_total_query",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 16,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 17,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "tag",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 53,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 18,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "params",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 57,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 19,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 18,
+      "elapsed": 0.0000919720041565597,
+      "elapsed_instrumentation": 0.00009239197243005037,
+      "return_value": {
+        "class": "ActionController::Parameters",
+        "value": "{\"id\"=>1369}",
+        "object_id": 11045500
+      }
+    },
+    {
+      "id": 20,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"tags\".* FROM \"tags\" WHERE \"tags\".\"id\" = $1 LIMIT $2",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 21,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 20,
+      "elapsed": 0.00134656,
+      "elapsed_instrumentation": 0.00010643003042787313
+    },
+    {
+      "id": 22,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 17,
+      "elapsed": 0.0024699579807929695,
+      "elapsed_instrumentation": 0.00015167106175795197,
+      "return_value": {
+        "class": "Tag",
+        "value": "#<Tag:0x00007fc8e172d5d8>",
+        "object_id": 11045520
+      }
+    },
+    {
+      "id": 23,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Mastodon::Snowflake",
+      "method_id": "id_at",
+      "path": "lib/mastodon/snowflake.rb",
+      "lineno": 99,
+      "static": true,
+      "parameters": [
+        {
+          "name": "timestamp",
+          "class": "DateTime",
+          "object_id": 11045540,
+          "value": "2023-11-04T03:11:06+00:00",
+          "kind": "req"
+        },
+        {
+          "name": "with_random",
+          "class": "FalseClass",
+          "object_id": 0,
+          "value": "false",
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 1610500,
+        "value": "Mastodon::Snowflake"
+      }
+    },
+    {
+      "id": 24,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 23,
+      "elapsed": 0.000016924983356148005,
+      "elapsed_instrumentation": 0.00015748903388157487,
+      "return_value": {
+        "class": "Integer",
+        "value": "111350085451776000",
+        "object_id": 222700170903552000
+      }
+    },
+    {
+      "id": 25,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Mastodon::Snowflake",
+      "method_id": "id_at",
+      "path": "lib/mastodon/snowflake.rb",
+      "lineno": 99,
+      "static": true,
+      "parameters": [
+        {
+          "name": "timestamp",
+          "class": "DateTime",
+          "object_id": 11045560,
+          "value": "2023-11-06T03:11:06+00:00",
+          "kind": "req"
+        },
+        {
+          "name": "with_random",
+          "class": "FalseClass",
+          "object_id": 0,
+          "value": "false",
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 1610500,
+        "value": "Mastodon::Snowflake"
+      }
+    },
+    {
+      "id": 26,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 25,
+      "elapsed": 0.00000699399970471859,
+      "elapsed_instrumentation": 0.00009344902355223894,
+      "return_value": {
+        "class": "Integer",
+        "value": "111361410072576000",
+        "object_id": 222722820145152000
+      }
+    },
+    {
+      "id": 27,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $1 AND (statuses.id BETWEEN 111350085451776000 AND 111361410072576000)",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 28,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 27,
+      "elapsed": 0.001341892,
+      "elapsed_instrumentation": 0.00008512596832588315
+    },
+    {
+      "id": 29,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 16,
+      "elapsed": 0.008069149043876678,
+      "elapsed_instrumentation": 0.0004870709963142872,
+      "return_value": {
+        "class": "Integer",
+        "value": "0",
+        "object_id": 1
+      }
+    },
+    {
+      "id": 30,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "perform_previous_total_query",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 20,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 31,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "tag",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 53,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 32,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 31,
+      "elapsed": 0.0000025249901227653027,
+      "elapsed_instrumentation": 0.00008007505675777793,
+      "return_value": {
+        "class": "Tag",
+        "value": "#<Tag:0x00007fc8e172d5d8>",
+        "object_id": 11045520
+      }
+    },
+    {
+      "id": 33,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "length_of_period",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 96,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 34,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 33,
+      "elapsed": 0.000018941995222121477,
+      "elapsed_instrumentation": 0.00007205503061413765,
+      "return_value": {
+        "class": "Rational",
+        "value": "172800000270937/86400000000000",
+        "object_id": 11045580
+      }
+    },
+    {
+      "id": 35,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Mastodon::Snowflake",
+      "method_id": "id_at",
+      "path": "lib/mastodon/snowflake.rb",
+      "lineno": 99,
+      "static": true,
+      "parameters": [
+        {
+          "name": "timestamp",
+          "class": "DateTime",
+          "object_id": 11045600,
+          "value": "2023-11-02T03:11:06+00:00",
+          "kind": "req"
+        },
+        {
+          "name": "with_random",
+          "class": "FalseClass",
+          "object_id": 0,
+          "value": "false",
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 1610500,
+        "value": "Mastodon::Snowflake"
+      }
+    },
+    {
+      "id": 36,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 35,
+      "elapsed": 0.00000966398511081934,
+      "elapsed_instrumentation": 0.00010663206921890378,
+      "return_value": {
+        "class": "Integer",
+        "value": "111338760830976000",
+        "object_id": 222677521661952000
+      }
+    },
+    {
+      "id": 37,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::BaseMeasure",
+      "method_id": "length_of_period",
+      "path": "app/lib/admin/metrics/measure/base_measure.rb",
+      "lineno": 96,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 38,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 37,
+      "elapsed": 0.0000023919856175780296,
+      "elapsed_instrumentation": 0.00006387406028807163,
+      "return_value": {
+        "class": "Rational",
+        "value": "172800000270937/86400000000000",
+        "object_id": 11045580
+      }
+    },
+    {
+      "id": 39,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Mastodon::Snowflake",
+      "method_id": "id_at",
+      "path": "lib/mastodon/snowflake.rb",
+      "lineno": 99,
+      "static": true,
+      "parameters": [
+        {
+          "name": "timestamp",
+          "class": "DateTime",
+          "object_id": 11045620,
+          "value": "2023-11-04T03:11:06+00:00",
+          "kind": "req"
+        },
+        {
+          "name": "with_random",
+          "class": "FalseClass",
+          "object_id": 0,
+          "value": "false",
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 1610500,
+        "value": "Mastodon::Snowflake"
+      }
+    },
+    {
+      "id": 40,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 39,
+      "elapsed": 0.000007044000085443258,
+      "elapsed_instrumentation": 0.0002104899613186717,
+      "return_value": {
+        "class": "Integer",
+        "value": "111350085451776000",
+        "object_id": 222700170903552000
+      }
+    },
+    {
+      "id": 41,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $1 AND (statuses.id BETWEEN 111338760830976000 AND 111350085451776000)",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 42,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 41,
+      "elapsed": 0.001556974,
+      "elapsed_instrumentation": 0.00009231304284185171
+    },
+    {
+      "id": 43,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 30,
+      "elapsed": 0.004474110959563404,
+      "elapsed_instrumentation": 0.00014493003254756331,
+      "return_value": {
+        "class": "Integer",
+        "value": "0",
+        "object_id": 1
+      }
+    },
+    {
+      "id": 44,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::QueryHelper",
+      "method_id": "perform_data_query",
+      "path": "app/lib/admin/metrics/measure/query_helper.rb",
+      "lineno": 6,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 45,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::QueryHelper",
+      "method_id": "measurement_data_rows",
+      "path": "app/lib/admin/metrics/measure/query_helper.rb",
+      "lineno": 10,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 46,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::QueryHelper",
+      "method_id": "sanitized_sql_string",
+      "path": "app/lib/admin/metrics/measure/query_helper.rb",
+      "lineno": 14,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 47,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "sql_array",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 24,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 48,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "sql_query_string",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 28,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 49,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 48,
+      "elapsed": 0.00015110900858417153,
+      "elapsed_instrumentation": 0.00011215097038075328,
+      "return_value": {
+        "class": "String",
+        "value": "SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_t (...426 more characters)",
+        "object_id": 11045640
+      }
+    },
+    {
+      "id": 50,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "tag",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 53,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 51,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 50,
+      "elapsed": 0.000002788030542433262,
+      "elapsed_instrumentation": 0.00010572298197075725,
+      "return_value": {
+        "class": "Tag",
+        "value": "#<Tag:0x00007fc8e172d5d8>",
+        "object_id": 11045520
+      }
+    },
+    {
+      "id": 52,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "earliest_status_id",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 45,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 53,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Mastodon::Snowflake",
+      "method_id": "id_at",
+      "path": "lib/mastodon/snowflake.rb",
+      "lineno": 99,
+      "static": true,
+      "parameters": [
+        {
+          "name": "timestamp",
+          "class": "DateTime",
+          "object_id": 11045540,
+          "value": "2023-11-04T03:11:06+00:00",
+          "kind": "req"
+        },
+        {
+          "name": "with_random",
+          "class": "FalseClass",
+          "object_id": 0,
+          "value": "false",
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 1610500,
+        "value": "Mastodon::Snowflake"
+      }
+    },
+    {
+      "id": 54,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 53,
+      "elapsed": 0.00001762795727699995,
+      "elapsed_instrumentation": 0.0001460069906897843,
+      "return_value": {
+        "class": "Integer",
+        "value": "111350085451776000",
+        "object_id": 222700170903552000
+      }
+    },
+    {
+      "id": 55,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 52,
+      "elapsed": 0.0001968709984794259,
+      "elapsed_instrumentation": 0.000284869980532676,
+      "return_value": {
+        "class": "Integer",
+        "value": "111350085451776000",
+        "object_id": 222700170903552000
+      }
+    },
+    {
+      "id": 56,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Admin::Metrics::Measure::TagServersMeasure",
+      "method_id": "latest_status_id",
+      "path": "app/lib/admin/metrics/measure/tag_servers_measure.rb",
+      "lineno": 49,
+      "static": false,
+      "receiver": {
+        "class": "Admin::Metrics::Measure::TagServersMeasure",
+        "object_id": 11045360,
+        "value": "#<Admin::Metrics::Measure::TagServersMeasure:0x00007fc930bb7e60>"
+      }
+    },
+    {
+      "id": 57,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Mastodon::Snowflake",
+      "method_id": "id_at",
+      "path": "lib/mastodon/snowflake.rb",
+      "lineno": 99,
+      "static": true,
+      "parameters": [
+        {
+          "name": "timestamp",
+          "class": "DateTime",
+          "object_id": 11045560,
+          "value": "2023-11-06T03:11:06+00:00",
+          "kind": "req"
+        },
+        {
+          "name": "with_random",
+          "class": "FalseClass",
+          "object_id": 0,
+          "value": "false",
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 1610500,
+        "value": "Mastodon::Snowflake"
+      }
+    },
+    {
+      "id": 58,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 57,
+      "elapsed": 0.000009525043424218893,
+      "elapsed_instrumentation": 0.00009842496365308762,
+      "return_value": {
+        "class": "Integer",
+        "value": "111361410072576000",
+        "object_id": 222722820145152000
+      }
+    },
+    {
+      "id": 59,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 56,
+      "elapsed": 0.00013043999206274748,
+      "elapsed_instrumentation": 0.00008613400859758258,
+      "return_value": {
+        "class": "Integer",
+        "value": "111361410072576000",
+        "object_id": 222722820145152000
+      }
+    },
+    {
+      "id": 60,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 47,
+      "elapsed": 0.0011632719542831182,
+      "elapsed_instrumentation": 0.00018703402020037174,
+      "return_value": {
+        "class": "Array",
+        "value": "[SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_t (...426 more characters), {:start_at=>2023-11-04T03:11:06+00:00, :end_at=>2023-11-06T03:11:06+00:00, :tag_id=>1369, :earliest_status_id=>111350085451776000, :latest_status_id=>111361410072576000}]",
+        "object_id": 11045660,
+        "size": 2
+      }
+    },
+    {
+      "id": 61,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 46,
+      "elapsed": 0.001782856008503586,
+      "elapsed_instrumentation": 0.00013078999472782016,
+      "return_value": {
+        "class": "String",
+        "value": "SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_t (...463 more characters)",
+        "object_id": 11045680
+      }
+    },
+    {
+      "id": 62,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_tags ON statuses.id = statuses_tags.status_id INNER JOIN accounts ON statuses.account_id = accounts.id WHERE statuses_tags.tag_id = 1369 AND statuses.id BETWEEN 111350085451776000 AND 111361410072576000 AND date_trunc('day', statuses.created_at)::date = axis.day ) FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:11:06.106848'::timestamp)::date, date_trunc('day', '2023-11-06 03:11:06.107119'::timestamp)::date, ('1 day')::interval) AS day ) as axis",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 63,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 62,
+      "elapsed": 0.001773283,
+      "elapsed_instrumentation": 0.00009733601473271847
+    },
+    {
+      "id": 64,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 45,
+      "elapsed": 0.004202341951895505,
+      "elapsed_instrumentation": 0.0001472150324843824,
+      "return_value": {
+        "class": "ActiveRecord::Result",
+        "value": "#<ActiveRecord::Result:0x00007fc930bb1ab0>",
+        "object_id": 11045700
+      }
+    },
+    {
+      "id": 65,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 44,
+      "elapsed": 0.004588116018567234,
+      "elapsed_instrumentation": 0.00020481494721025229,
+      "return_value": {
+        "class": "Array",
+        "value": "[{:date=>, :value=>0}, {:date=>, :value=>0}, {:date=>, :value=>0}]",
+        "object_id": 11045720,
+        "size": 3
+      }
+    },
+    {
+      "id": 66,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 15,
+      "elapsed": 0.01806416001636535,
+      "elapsed_instrumentation": 0.00019759498536586761,
+      "return_value": {
+        "class": "Hash",
+        "value": "{:total=>0, :previous_total=>0, :data=>[{:date=>, :value=>0}, {:date=>, :value=>0}, {:date=>, :value=>0}]}",
+        "object_id": 11045740,
+        "size": 3
+      }
+    },
+    {
+      "id": 67,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 11045760,
+          "value": "Cache write: metrics/measure/tag_servers;2023-11-04T03:11:06+00:00;2023-11-06T03:11:06+00:00;id=1369 (...73 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 68,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 67,
+      "elapsed": 0.0006527209770865738,
+      "elapsed_instrumentation": 0.00029073498444631696,
+      "return_value": {
+        "class": "Integer",
+        "value": "173",
+        "object_id": 347
+      }
+    },
+    {
+      "id": 69,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Marshal",
+      "method_id": "dump",
+      "path": "Marshal.dump",
+      "static": true,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 11045780,
+          "value": "[{:total=>0, :previous_total=>0, :data=>[{:date=>, :value=>0}, {:date=>, :value=>0}, {:date=>, :value=>0}]}]",
+          "kind": "rest",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 318180,
+        "value": "Marshal"
+      }
+    },
+    {
+      "id": 70,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 69,
+      "elapsed": 0.00002335099270567298,
+      "elapsed_instrumentation": 0.000245002971496433,
+      "return_value": {
+        "class": "String",
+        "value": "\u0004\b{\b:\ntotali\u0000:\u0013previous_totali\u0000:\tdata[\b{\u0007:\tdate0:\nvalueI\"\u00060\u0006:\u0006EF{\u0007;\b0;\tI\"\u00060\u0006;\nF{\u0007;\b0;\tI\"\u00060\u0006;\nF",
+        "object_id": 11045800
+      }
+    },
+    {
+      "id": 71,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 2,
+      "elapsed": 0.025167785002849996,
+      "elapsed_instrumentation": 0.000218883971683681,
+      "return_value": {
+        "class": "ActiveSupport::HashWithIndifferentAccess",
+        "value": "{total=>0, previous_total=>0, data=>[{date=>, value=>0}, {date=>, value=>0}, {date=>, value=>0}]}",
+        "object_id": 11045820,
+        "size": 3
+      }
+    },
+    {
+      "id": 72,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.025414566975086927,
+      "elapsed_instrumentation": 0.00030511297518387437,
+      "return_value": {
+        "class": "Array",
+        "value": "[{date=>, value=>0}, {date=>, value=>0}, {date=>, value=>0}]",
+        "object_id": 11045840,
+        "size": 3
+      }
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "Admin::Metrics::Measure::TagServersMeasure #data runs data query without error",
+    "source_location": "spec/lib/admin/metrics/measure/tag_servers_measure_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "name": "app/lib/admin/metrics/measure",
+      "type": "package",
+      "children": [
+        {
+          "name": "Admin",
+          "type": "class",
+          "children": [
+            {
+              "name": "Metrics",
+              "type": "class",
+              "children": [
+                {
+                  "name": "Measure",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "BaseMeasure",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "data",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:45"
+                        },
+                        {
+                          "name": "load",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:59"
+                        },
+                        {
+                          "name": "cache_key",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:21"
+                        },
+                        {
+                          "name": "canonicalized_params",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:104"
+                        },
+                        {
+                          "name": "perform_queries",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:68"
+                        },
+                        {
+                          "name": "length_of_period",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/base_measure.rb:96"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "TagServersMeasure",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "key",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:10"
+                        },
+                        {
+                          "name": "params",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:57"
+                        },
+                        {
+                          "name": "perform_total_query",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:16"
+                        },
+                        {
+                          "name": "tag",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:53"
+                        },
+                        {
+                          "name": "perform_previous_total_query",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:20"
+                        },
+                        {
+                          "name": "sql_array",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:24"
+                        },
+                        {
+                          "name": "sql_query_string",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:28"
+                        },
+                        {
+                          "name": "earliest_status_id",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:45"
+                        },
+                        {
+                          "name": "latest_status_id",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/tag_servers_measure.rb:49"
+                        }
+                      ]
+                    },
+                    {
+                      "name": "QueryHelper",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "perform_data_query",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/query_helper.rb:6"
+                        },
+                        {
+                          "name": "measurement_data_rows",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/query_helper.rb:10"
+                        },
+                        {
+                          "name": "sanitized_sql_string",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/lib/admin/metrics/measure/query_helper.rb:14"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "type": "package",
+      "children": [
+        {
+          "name": "Logger",
+          "type": "class",
+          "children": [
+            {
+              "name": "LogDevice",
+              "type": "class",
+              "children": [
+                {
+                  "name": "write",
+                  "type": "function",
+                  "labels": [
+                    "log"
+                  ],
+                  "static": false,
+                  "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lib/mastodon",
+      "type": "package",
+      "children": [
+        {
+          "name": "Mastodon",
+          "type": "class",
+          "children": [
+            {
+              "name": "Snowflake",
+              "type": "class",
+              "children": [
+                {
+                  "name": "id_at",
+                  "type": "function",
+                  "static": true,
+                  "location": "lib/mastodon/snowflake.rb:99"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ruby",
+      "type": "package",
+      "children": [
+        {
+          "name": "Marshal",
+          "type": "class",
+          "children": [
+            {
+              "name": "dump",
+              "type": "function",
+              "labels": [
+                "serialize"
+              ],
+              "static": true,
+              "location": "Marshal.dump"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT \"tags\".* FROM \"tags\" WHERE \"tags\".\"id\" = $1 LIMIT $2"
+        },
+        {
+          "type": "query",
+          "name": "SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $1 AND (statuses.id BETWEEN 111350085451776000 AND 111361410072576000)"
+        },
+        {
+          "type": "query",
+          "name": "SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $1 AND (statuses.id BETWEEN 111338760830976000 AND 111350085451776000)"
+        },
+        {
+          "type": "query",
+          "name": "SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_tags ON statuses.id = statuses_tags.status_id INNER JOIN accounts ON statuses.account_id = accounts.id WHERE statuses_tags.tag_id = 1369 AND statuses.id BETWEEN 111350085451776000 AND 111361410072576000 AND date_trunc('day', statuses.created_at)::date = axis.day ) FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:11:06.106848'::timestamp)::date, date_trunc('day', '2023-11-06 03:11:06.107119'::timestamp)::date, ('1 day')::interval) AS day ) as axis"
+        }
+      ]
+    }
+  ]
+}

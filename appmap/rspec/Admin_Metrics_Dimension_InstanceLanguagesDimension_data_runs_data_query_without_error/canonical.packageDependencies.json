@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "Database"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "lib/mastodon"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "logger"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension",
+    "callee": "ruby"
+  }
+]

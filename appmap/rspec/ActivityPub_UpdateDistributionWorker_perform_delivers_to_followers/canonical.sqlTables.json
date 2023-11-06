@@ -1,0 +1,12 @@
+[
+  "accounts",
+  "accounts_tags",
+  "follows",
+  "mentions",
+  "relays",
+  "reports",
+  "settings",
+  "statuses",
+  "tags",
+  "unavailable_domains"
+]

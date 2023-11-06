@@ -1,0 +1,3 @@
+[
+  "SELECT accounts.domain, count(*) AS value FROM statuses INNER JOIN accounts ON accounts.id = statuses.account_id WHERE statuses.id BETWEEN ? AND ? GROUP BY accounts.domain ORDER BY count(*) DESC LIMIT ?"
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "workers",
+        "type": "package",
+        "children": [
+          {
+            "name": "AddToPublicStatusesIndexWorker",
+            "type": "class",
+            "children": [
+              {
+                "name": "perform",
+                "type": "function",
+                "static": false,
+                "location": "app/workers/add_to_public_statuses_index_worker.rb:9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "helpers",
+        "type": "package",
+        "children": [
+          {
+            "name": "DatabaseHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "with_primary",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/database_helper.rb:17"
+              },
+              {
+                "name": "with_read_replica",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/database_helper.rb:9"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

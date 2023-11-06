@@ -1,0 +1,9 @@
+[
+  "app/lib",
+  "app/lib/admin/metrics/measure",
+  "app/models",
+  "app/models/concerns",
+  "app/models/trends",
+  "logger",
+  "ruby"
+]

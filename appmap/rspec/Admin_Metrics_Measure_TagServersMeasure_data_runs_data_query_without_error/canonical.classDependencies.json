@@ -1,0 +1,30 @@
+[
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $1 AND (statuses.id BETWEEN 111338760830976000 AND 111350085451776000)"
+  },
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $1 AND (statuses.id BETWEEN 111350085451776000 AND 111361410072576000)"
+  },
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "SELECT \"tags\".* FROM \"tags\" WHERE \"tags\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_tags ON statuses.id = statuses_tags.status_id INNER JOIN accounts ON statuses.account_id = accounts.id WHERE statuses_tags.tag_id = 1369 AND statuses.id BETWEEN 111350085451776000 AND 111361410072576000 AND date_trunc('day', statuses.created_at)::date = axis.day ) FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 03:11:06.106848'::timestamp)::date, date_trunc('day', '2023-11-06 03:11:06.107119'::timestamp)::date, ('1 day')::interval) AS day ) as axis"
+  },
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "lib/mastodon/Mastodon"
+  },
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/lib/admin/metrics/measure/Admin",
+    "callee": "ruby/Marshal"
+  }
+]

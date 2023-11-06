@@ -1,0 +1,3 @@
+[
+  "SELECT COALESCE(statuses.language, ?) AS language, count(*) AS value FROM statuses INNER JOIN accounts ON accounts.id = statuses.account_id WHERE accounts.domain = ? AND statuses.id BETWEEN ? AND ? AND statuses.reblog_of_id IS ? GROUP BY COALESCE(statuses.language, ?) ORDER BY count(*) DESC LIMIT ?"
+]

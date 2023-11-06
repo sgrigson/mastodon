@@ -1,0 +1,9 @@
+[
+  "INSERT INTO \"account_warnings\" (\"account_id\", \"target_account_id\", \"action\", \"text\", \"created_at\", \"updated_at\", \"report_id\", \"status_ids\", \"overruled_at\") VALUES ($?, $?, $?, $?, $?, $?, $?, $?, $?) RETURNING \"id\"",
+  "INSERT INTO \"admin_action_logs\" (\"account_id\", \"action\", \"target_type\", \"target_id\", \"created_at\", \"updated_at\", \"human_identifier\", \"route_param\", \"permalink\") VALUES ($?, $?, $?, $?, $?, $?, $?, $?, $?) RETURNING \"id\"",
+  "RELEASE SAVEPOINT active_record_1",
+  "SAVEPOINT active_record_1",
+  "SELECT \"reports\".\"id\", \"reports\".\"status_ids\", \"reports\".\"comment\", \"reports\".\"created_at\", \"reports\".\"updated_at\", \"reports\".\"account_id\", \"reports\".\"action_taken_by_account_id\", \"reports\".\"target_account_id\", \"reports\".\"assigned_account_id\", \"reports\".\"uri\", \"reports\".\"forwarded\", \"reports\".\"category\", \"reports\".\"action_taken_at\", \"reports\".\"rule_ids\" FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $? AND \"reports\".\"action_taken_at\" IS ?",
+  "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $? LIMIT $?",
+  "UPDATE \"users\" SET \"updated_at\" = $?, \"disabled\" = $? WHERE \"users\".\"id\" = $?"
+]

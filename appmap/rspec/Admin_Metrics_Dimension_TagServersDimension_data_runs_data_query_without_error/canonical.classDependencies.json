@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "app/lib/admin/metrics/dimension/Admin",
+    "callee": "SELECT accounts.domain, count(*) AS value FROM statuses INNER JOIN accounts ON accounts.id = statuses.account_id INNER JOIN statuses_tags ON statuses_tags.status_id = statuses.id WHERE statuses_tags.tag_id = NULL AND statuses.id BETWEEN 111350105112576000 AND 111361429733376000 GROUP BY accounts.domain ORDER BY count(*) DESC LIMIT 10"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension/Admin",
+    "callee": "lib/mastodon/Mastodon"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension/Admin",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/lib/admin/metrics/dimension/Admin",
+    "callee": "ruby/Marshal"
+  }
+]

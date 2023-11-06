@@ -1,0 +1,196 @@
+[
+  {
+    "name": "app/lib/admin/metrics/measure",
+    "type": "package",
+    "children": [
+      {
+        "name": "Admin",
+        "type": "class",
+        "children": [
+          {
+            "name": "Metrics",
+            "type": "class",
+            "children": [
+              {
+                "name": "Measure",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "BaseMeasure",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "data",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:45"
+                      },
+                      {
+                        "name": "load",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:59"
+                      },
+                      {
+                        "name": "cache_key",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:21"
+                      },
+                      {
+                        "name": "canonicalized_params",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:104"
+                      },
+                      {
+                        "name": "perform_queries",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/base_measure.rb:68"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "InstanceFollowsMeasure",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "key",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/instance_follows_measure.rb:10"
+                      },
+                      {
+                        "name": "params",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/instance_follows_measure.rb:60"
+                      },
+                      {
+                        "name": "perform_total_query",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/instance_follows_measure.rb:20"
+                      },
+                      {
+                        "name": "perform_previous_total_query",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/instance_follows_measure.rb:26"
+                      },
+                      {
+                        "name": "sql_array",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/instance_follows_measure.rb:30"
+                      },
+                      {
+                        "name": "sql_query_string",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/instance_follows_measure.rb:34"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "QueryHelper",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "perform_data_query",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/query_helper.rb:6"
+                      },
+                      {
+                        "name": "measurement_data_rows",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/query_helper.rb:10"
+                      },
+                      {
+                        "name": "sanitized_sql_string",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/query_helper.rb:14"
+                      },
+                      {
+                        "name": "account_domain_sql",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/admin/metrics/measure/query_helper.rb:18"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "type": "package",
+    "children": [
+      {
+        "name": "Marshal",
+        "type": "class",
+        "children": [
+          {
+            "name": "dump",
+            "type": "function",
+            "labels": [
+              "serialize"
+            ],
+            "static": true,
+            "location": "Marshal.dump"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT COUNT(*) FROM \"follows\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"follows\".\"target_account_id\" WHERE \"accounts\".\"domain\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT axis.*, ( WITH new_follows AS ( SELECT follows.id FROM follows INNER JOIN accounts ON follows.target_account_id = accounts.id WHERE date_trunc('day', follows.created_at)::date = axis.period AND accounts.domain = 'example.com'::text ) SELECT count(*) FROM new_follows ) AS value FROM ( SELECT generate_series(date_trunc('day', '2023-11-04 02:57:57.999985'::timestamp)::date, date_trunc('day', '2023-11-06 02:57:58.000158'::timestamp)::date, interval '1 day') AS period ) AS axis"
+      }
+    ]
+  }
+]
