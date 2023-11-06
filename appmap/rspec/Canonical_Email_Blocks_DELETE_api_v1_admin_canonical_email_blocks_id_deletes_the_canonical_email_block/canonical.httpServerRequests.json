@@ -1,0 +1,7 @@
+[
+  {
+    "route": "DELETE /api/v1/admin/canonical_email_blocks/{id}",
+    "parameters": "()",
+    "status": 200
+  }
+]

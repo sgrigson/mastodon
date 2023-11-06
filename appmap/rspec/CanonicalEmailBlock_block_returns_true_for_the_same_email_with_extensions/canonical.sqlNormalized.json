@@ -1,0 +1,3 @@
+[
+  "SELECT ? AS one FROM \"canonical_email_blocks\" WHERE \"canonical_email_blocks\".\"canonical_email_hash\" = $? LIMIT $?"
+]
