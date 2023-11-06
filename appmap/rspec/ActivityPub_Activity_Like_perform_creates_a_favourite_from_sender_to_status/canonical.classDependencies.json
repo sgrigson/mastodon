@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "app/models/concerns",
+    "callee": "SELECT 1 AS one FROM \"favourites\" WHERE \"favourites\".\"status_id\" = $1 AND \"favourites\".\"account_id\" = $2 LIMIT $3"
+  },
+  {
+    "caller": "app/models/concerns",
+    "callee": "app/models/Status"
+  }
+]

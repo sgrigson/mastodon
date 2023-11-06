@@ -1,1 +1,149 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"ActivityPub::Activity::Follow #perform with no prior follow when silenced account following an unlocked account creates a follow request","source_location":"spec/lib/activitypub/activity/follow_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[{"name":"app/models/concerns","type":"package","children":[{"name":"AccountInteractions","type":"class","children":[{"name":"requested?","type":"function","location":"app/models/concerns/account_interactions.rb:238","static":false}]}]}],"events":[{"id":1112593,"event":"call","thread_id":9160,"defined_class":"AccountInteractions","method_id":"requested?","path":"app/models/concerns/account_interactions.rb","lineno":238,"static":false,"parameters":[{"name":"other_account","class":"Account","object_id":6442440,"value":"#<Account:0x00007fc91a3bd220>","kind":"req"}],"receiver":{"class":"Account","object_id":6442400,"value":"#<Account:0x00007fc91a394d98>"}},{"id":1112594,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT 1 AS one FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"target_account_id\" = $2 LIMIT $3","database_type":"postgres"}},{"id":1112595,"event":"return","thread_id":9160,"parent_id":1112594,"elapsed":0.000660833,"elapsed_instrumentation":0.00010046100942417979},{"id":1112596,"event":"return","thread_id":9160,"parent_id":1112593,"elapsed":0.002181114978156984,"elapsed_instrumentation":0.0001778900041244924,"return_value":{"class":"TrueClass","value":"true","object_id":20}},{"id":1112597,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"follow_requests\".* FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"target_account_id\" = $2 LIMIT $3","database_type":"postgres"}},{"id":1112598,"event":"return","thread_id":9160,"parent_id":1112597,"elapsed":0.000513999,"elapsed_instrumentation":9.24339983612299e-05}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "AccountInteractions",
+      "method_id": "requested?",
+      "path": "app/models/concerns/account_interactions.rb",
+      "lineno": 238,
+      "static": false,
+      "parameters": [
+        {
+          "name": "other_account",
+          "class": "Account",
+          "object_id": 6442440,
+          "value": "#<Account:0x00007fc91a3bd220>",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Account",
+        "object_id": 6442400,
+        "value": "#<Account:0x00007fc91a394d98>"
+      }
+    },
+    {
+      "id": 2,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT 1 AS one FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"target_account_id\" = $2 LIMIT $3",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 3,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 2,
+      "elapsed": 0.000660833,
+      "elapsed_instrumentation": 0.00010046100942417979
+    },
+    {
+      "id": 4,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.002181114978156984,
+      "elapsed_instrumentation": 0.0001778900041244924,
+      "return_value": {
+        "class": "TrueClass",
+        "value": "true",
+        "object_id": 20
+      }
+    },
+    {
+      "id": 5,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"follow_requests\".* FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"target_account_id\" = $2 LIMIT $3",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 6,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 5,
+      "elapsed": 0.000513999,
+      "elapsed_instrumentation": 0.0000924339983612299
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "ActivityPub::Activity::Follow #perform with no prior follow when silenced account following an unlocked account creates a follow request",
+    "source_location": "spec/lib/activitypub/activity/follow_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "name": "app/models/concerns",
+      "type": "package",
+      "children": [
+        {
+          "name": "AccountInteractions",
+          "type": "class",
+          "children": [
+            {
+              "name": "requested?",
+              "type": "function",
+              "static": false,
+              "location": "app/models/concerns/account_interactions.rb:238"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT 1 AS one FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"target_account_id\" = $2 LIMIT $3"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"follow_requests\".* FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"target_account_id\" = $2 LIMIT $3"
+        }
+      ]
+    }
+  ]
+}

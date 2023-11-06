@@ -1,0 +1,90 @@
+[
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "models/concerns",
+        "type": "package",
+        "children": [
+          {
+            "name": "AccountInteractions",
+            "type": "class",
+            "children": [
+              {
+                "name": "requested?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/concerns/account_interactions.rb:238"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "RequestPool",
+            "type": "class",
+            "children": [
+              {
+                "name": "flush",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/request_pool.rb:114"
+              }
+            ]
+          },
+          {
+            "name": "connection_pool",
+            "type": "package",
+            "children": [
+              {
+                "name": "ConnectionPool",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "SharedConnectionPool",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "flush",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/connection_pool/shared_connection_pool.rb:13"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "SharedTimedStack",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "flush",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/connection_pool/shared_timed_stack.rb:51"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"target_account_id\" = $2 LIMIT $3"
+      }
+    ]
+  }
+]
