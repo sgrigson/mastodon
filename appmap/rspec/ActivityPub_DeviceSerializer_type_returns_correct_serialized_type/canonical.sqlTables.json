@@ -1,0 +1,12 @@
+[
+  "account_stats",
+  "accounts",
+  "devices",
+  "oauth_access_tokens",
+  "settings",
+  "user_invite_requests",
+  "user_ips",
+  "user_roles",
+  "users",
+  "webhooks"
+]

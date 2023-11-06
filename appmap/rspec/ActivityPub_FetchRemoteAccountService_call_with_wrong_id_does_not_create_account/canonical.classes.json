@@ -1,0 +1,7 @@
+[
+  "app/helpers/DomainControlHelper",
+  "app/helpers/JsonLdHelper",
+  "app/lib/TagManager",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "app/models/DomainBlock"
+]

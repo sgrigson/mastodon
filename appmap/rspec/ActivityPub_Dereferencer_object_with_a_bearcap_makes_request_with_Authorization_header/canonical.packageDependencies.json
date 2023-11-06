@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "app",
+    "callee": "lib/mastodon"
+  }
+]

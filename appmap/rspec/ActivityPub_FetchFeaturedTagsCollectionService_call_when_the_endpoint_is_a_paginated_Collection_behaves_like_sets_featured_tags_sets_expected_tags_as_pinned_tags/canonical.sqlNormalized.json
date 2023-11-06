@@ -1,0 +1,4 @@
+[
+  "SELECT \"featured_tags\".* FROM \"featured_tags\" WHERE \"featured_tags\".\"account_id\" = $?",
+  "SELECT \"tags\".* FROM \"tags\" WHERE \"tags\".\"id\" IN ($?, $?, $?)"
+]

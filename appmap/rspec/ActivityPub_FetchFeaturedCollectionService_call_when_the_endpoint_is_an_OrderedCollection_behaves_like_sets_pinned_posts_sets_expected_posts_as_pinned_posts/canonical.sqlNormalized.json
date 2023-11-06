@@ -1,0 +1,3 @@
+[
+  "SELECT \"statuses\".\"uri\" FROM \"statuses\" INNER JOIN \"status_pins\" ON \"statuses\".\"id\" = \"status_pins\".\"status_id\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"status_pins\".\"account_id\" = $? ORDER BY status_pins.created_at DESC"
+]

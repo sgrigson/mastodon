@@ -1,0 +1,9 @@
+[
+  "app/helpers",
+  "app/lib",
+  "app/lib/activitypub",
+  "app/models",
+  "lib/mastodon",
+  "openssl",
+  "ruby"
+]

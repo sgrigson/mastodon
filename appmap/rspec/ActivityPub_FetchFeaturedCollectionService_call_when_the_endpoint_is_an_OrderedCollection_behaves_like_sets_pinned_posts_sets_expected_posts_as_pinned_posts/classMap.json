@@ -1,0 +1,12 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"statuses\".\"uri\" FROM \"statuses\" INNER JOIN \"status_pins\" ON \"statuses\".\"id\" = \"status_pins\".\"status_id\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"status_pins\".\"account_id\" = $1 ORDER BY status_pins.created_at DESC"
+      }
+    ]
+  }
+]

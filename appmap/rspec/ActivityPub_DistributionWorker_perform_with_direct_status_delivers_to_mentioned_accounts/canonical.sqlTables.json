@@ -1,0 +1,10 @@
+[
+  "accounts",
+  "conversations",
+  "media_attachments",
+  "mentions",
+  "statuses",
+  "statuses_tags",
+  "tags",
+  "unavailable_domains"
+]

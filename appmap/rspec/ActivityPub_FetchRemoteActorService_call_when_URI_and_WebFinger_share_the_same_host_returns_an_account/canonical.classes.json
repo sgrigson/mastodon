@@ -1,0 +1,14 @@
+[
+  "app/helpers/ActivityPub::TagManager",
+  "app/helpers/DomainControlHelper",
+  "app/helpers/JsonLdHelper",
+  "app/lib/Request",
+  "app/lib/Request::ClientLimit",
+  "app/lib/TagManager",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "app/models/Account",
+  "app/models/DomainBlock",
+  "lib/mastodon/Mastodon::Version",
+  "openssl/OpenSSL::PKey::PKey",
+  "ruby/Array"
+]

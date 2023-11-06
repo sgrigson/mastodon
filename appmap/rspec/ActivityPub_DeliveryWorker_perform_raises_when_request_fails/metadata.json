@@ -1,0 +1,47 @@
+{
+  "app": "mastodon",
+  "language": {
+    "name": "ruby",
+    "engine": "ruby",
+    "version": "3.2.2"
+  },
+  "client": {
+    "name": "appmap",
+    "url": "https://github.com/applandinc/appmap-ruby",
+    "version": "0.102.1"
+  },
+  "frameworks": [
+    {
+      "name": "rails",
+      "version": "7.1.1"
+    },
+    {
+      "name": "rspec",
+      "version": "3.12.2"
+    }
+  ],
+  "git": {
+    "repository": "https://github.com/sgrigson/mastodon.git",
+    "branch": "appmap-config",
+    "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+    "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+    "git_last_tag": "v4.2.0",
+    "git_commits_since_last_annotated_tag": 0,
+    "git_commits_since_last_tag": 0
+  },
+  "name": "ActivityPub::DeliveryWorker perform raises when request fails",
+  "source_location": "spec/workers/activitypub/delivery_worker_spec.rb",
+  "recorder": {
+    "name": "rspec",
+    "type": "tests"
+  },
+  "test_status": "failed",
+  "test_failure": {
+    "message": "expected Mastodon::UnexpectedResponseError, got #<HTTP::StateError: body has already been consumed> with backtrace:\n  # ./app/lib/request.rb:217:in `truncated_body'\n  # ./app/lib/request.rb:230:in `body_with_limit'\n  # ./app/lib/request.rb:118:in `perform'\n  # ./app/workers/activitypub/delivery_worker.rb:64:in `block (2 levels) in perform_request'\n  # ./app/lib/request_pool.rb:54:in `use'\n  # ./app/lib/request_pool.rb:109:in `block (2 levels) in with'\n  # ./app/lib/request_pool.rb:108:in `block in with'\n  # ./app/lib/connection_pool/shared_connection_pool.rb:21:in `block (2 levels) in with'\n  # ./app/lib/connection_pool/shared_connection_pool.rb:20:in `handle_interrupt'\n  # ./app/lib/connection_pool/shared_connection_pool.rb:20:in `block in with'\n  # ./app/lib/connection_pool/shared_connection_pool.rb:16:in `handle_interrupt'\n  # ./app/lib/connection_pool/shared_connection_pool.rb:16:in `with'\n  # ./app/lib/request_pool.rb:107:in `with'\n  # ./app/workers/activitypub/delivery_worker.rb:63:in `block in perform_request'\n  # ./app/workers/activitypub/delivery_worker.rb:74:in `perform_request'\n  # ./app/workers/activitypub/delivery_worker.rb:36:in `perform'\n  # ./spec/workers/activitypub/delivery_worker_spec.rb:26:in `block (4 levels) in <top (required)>'\n  # ./spec/workers/activitypub/delivery_worker_spec.rb:26:in `block (3 levels) in <top (required)>'",
+    "location": "spec/workers/activitypub/delivery_worker_spec.rb:26"
+  },
+  "exception": {
+    "class": "RSpec::Expectations::ExpectationNotMetError",
+    "message": "expected Mastodon::UnexpectedResponseError, got #<HTTP::StateError: body has already been consumed>  (...1270 more characters)"
+  }
+}

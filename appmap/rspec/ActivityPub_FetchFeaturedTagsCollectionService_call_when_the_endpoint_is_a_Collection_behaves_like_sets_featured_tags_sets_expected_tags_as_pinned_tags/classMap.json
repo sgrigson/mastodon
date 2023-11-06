@@ -1,0 +1,34 @@
+[
+  {
+    "name": "app/models",
+    "type": "package",
+    "children": [
+      {
+        "name": "FeaturedTag",
+        "type": "class",
+        "children": [
+          {
+            "name": "display_name",
+            "type": "function",
+            "static": false,
+            "location": "app/models/featured_tag.rb:39"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"featured_tags\".* FROM \"featured_tags\" WHERE \"featured_tags\".\"account_id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"tags\".* FROM \"tags\" WHERE \"tags\".\"id\" IN ($1, $2, $3)"
+      }
+    ]
+  }
+]

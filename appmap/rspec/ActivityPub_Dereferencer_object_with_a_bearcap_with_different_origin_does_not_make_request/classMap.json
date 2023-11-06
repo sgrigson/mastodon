@@ -1,0 +1,56 @@
+[
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "lib/activitypub",
+        "type": "package",
+        "children": [
+          {
+            "name": "ActivityPub",
+            "type": "class",
+            "children": [
+              {
+                "name": "Dereferencer",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "object",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/lib/activitypub/dereferencer.rb:12"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "helpers",
+        "type": "package",
+        "children": [
+          {
+            "name": "JsonLdHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "non_matching_uri_hosts?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/jsonld_helper.rb:66"
+              },
+              {
+                "name": "unsupported_uri_scheme?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/jsonld_helper.rb:62"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
