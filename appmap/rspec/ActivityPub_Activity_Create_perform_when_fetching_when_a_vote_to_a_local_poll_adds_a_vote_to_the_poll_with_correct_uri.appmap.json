@@ -1,1 +1,94 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"ActivityPub::Activity::Create #perform when fetching when a vote to a local poll adds a vote to the poll with correct uri","source_location":"spec/lib/activitypub/activity/create_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[],"events":[{"id":1685068,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"poll_votes\".* FROM \"poll_votes\" WHERE \"poll_votes\".\"poll_id\" = $1 ORDER BY \"poll_votes\".\"id\" ASC LIMIT $2","database_type":"postgres"}},{"id":1685069,"event":"return","thread_id":9160,"parent_id":1685068,"elapsed":0.000708066,"elapsed_instrumentation":0.00010705902241170406},{"id":1685070,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"polls\".* FROM \"polls\" WHERE \"polls\".\"id\" = $1 LIMIT $2","database_type":"postgres"}},{"id":1685071,"event":"return","thread_id":9160,"parent_id":1685070,"elapsed":0.000435495,"elapsed_instrumentation":9.693799074739218e-05}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"poll_votes\".* FROM \"poll_votes\" WHERE \"poll_votes\".\"poll_id\" = $1 ORDER BY \"poll_votes\".\"id\" ASC LIMIT $2",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 2,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.000708066,
+      "elapsed_instrumentation": 0.00010705902241170406
+    },
+    {
+      "id": 3,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"polls\".* FROM \"polls\" WHERE \"polls\".\"id\" = $1 LIMIT $2",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 4,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 3,
+      "elapsed": 0.000435495,
+      "elapsed_instrumentation": 0.00009693799074739218
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "ActivityPub::Activity::Create #perform when fetching when a vote to a local poll adds a vote to the poll with correct uri",
+    "source_location": "spec/lib/activitypub/activity/create_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT \"poll_votes\".* FROM \"poll_votes\" WHERE \"poll_votes\".\"poll_id\" = $1 ORDER BY \"poll_votes\".\"id\" ASC LIMIT $2"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"polls\".* FROM \"polls\" WHERE \"polls\".\"id\" = $1 LIMIT $2"
+        }
+      ]
+    }
+  ]
+}

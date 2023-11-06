@@ -1,0 +1,4 @@
+[
+  "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"account_id\" = $? ORDER BY \"statuses\".\"id\" DESC LIMIT $?",
+  "SELECT \"tags\".* FROM \"tags\" INNER JOIN \"statuses_tags\" ON \"tags\".\"id\" = \"statuses_tags\".\"tag_id\" WHERE \"statuses_tags\".\"status_id\" = $?"
+]

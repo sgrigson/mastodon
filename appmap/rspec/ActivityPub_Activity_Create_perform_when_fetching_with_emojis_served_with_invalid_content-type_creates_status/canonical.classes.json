@@ -1,0 +1,7 @@
+[
+  "app/lib/EntityCache",
+  "app/models/CustomEmoji",
+  "app/models/Status",
+  "logger/Logger::LogDevice",
+  "ruby/Marshal"
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"id\" = $1 ORDER BY \"statuses\".\"id\" DESC LIMIT $2"
+      }
+    ]
+  }
+]

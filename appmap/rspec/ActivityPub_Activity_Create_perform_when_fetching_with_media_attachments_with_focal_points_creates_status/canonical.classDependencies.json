@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "app/models/MediaAttachment",
+    "callee": "lib/paperclip/Paperclip"
+  },
+  {
+    "caller": "lib/paperclip/Paperclip",
+    "callee": "json/JSON"
+  }
+]

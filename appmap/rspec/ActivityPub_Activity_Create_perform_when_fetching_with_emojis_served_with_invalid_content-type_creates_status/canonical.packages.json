@@ -1,0 +1,6 @@
+[
+  "app/lib",
+  "app/models",
+  "logger",
+  "ruby"
+]

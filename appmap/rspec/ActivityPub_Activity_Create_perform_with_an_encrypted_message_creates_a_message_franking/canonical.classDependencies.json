@@ -1,0 +1,14 @@
+[
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "openssl/OpenSSL"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "app/models/SystemKey",
+    "callee": "SELECT \"system_keys\".* FROM \"system_keys\" ORDER BY \"system_keys\".\"id\" DESC LIMIT $1"
+  }
+]

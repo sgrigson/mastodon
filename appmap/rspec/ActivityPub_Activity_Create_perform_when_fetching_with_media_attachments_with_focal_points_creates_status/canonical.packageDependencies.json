@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "app/models",
+    "callee": "lib/paperclip"
+  },
+  {
+    "caller": "lib/paperclip",
+    "callee": "json"
+  }
+]

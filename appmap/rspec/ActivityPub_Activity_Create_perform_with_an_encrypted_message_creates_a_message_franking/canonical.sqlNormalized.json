@@ -1,0 +1,4 @@
+[
+  "SELECT \"encrypted_messages\".* FROM \"encrypted_messages\" WHERE \"encrypted_messages\".\"device_id\" = $?",
+  "SELECT \"system_keys\".* FROM \"system_keys\" ORDER BY \"system_keys\".\"id\" DESC LIMIT $?"
+]

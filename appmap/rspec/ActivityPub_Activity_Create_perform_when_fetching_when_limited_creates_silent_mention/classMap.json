@@ -1,0 +1,16 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses\".\"account_id\" = $1 ORDER BY \"statuses\".\"id\" DESC LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"mentions\".* FROM \"mentions\" WHERE \"mentions\".\"status_id\" = $1 ORDER BY \"mentions\".\"id\" ASC LIMIT $2"
+      }
+    ]
+  }
+]

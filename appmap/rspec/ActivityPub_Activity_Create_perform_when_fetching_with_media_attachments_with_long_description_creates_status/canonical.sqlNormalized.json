@@ -1,0 +1,4 @@
+[
+  "SELECT \"media_attachments\".* FROM \"media_attachments\" WHERE \"media_attachments\".\"status_id\" = $? ORDER BY \"media_attachments\".\"id\" ASC",
+  "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"account_id\" = $? ORDER BY \"statuses\".\"id\" DESC LIMIT $?"
+]

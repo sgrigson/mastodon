@@ -1,0 +1,6 @@
+[
+  "activesupport/ActiveSupport::MessageEncryptor",
+  "app/models/SystemKey",
+  "openssl/OpenSSL::Cipher",
+  "ruby/String"
+]

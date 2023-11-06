@@ -1,1 +1,518 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"ActivityPub::Activity::Create #perform when fetching with emojis served with invalid content-type creates status","source_location":"spec/lib/activitypub/activity/create_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[{"name":"app","type":"package","children":[{"name":"models","type":"package","children":[{"name":"Status","type":"class","children":[{"name":"emojis","type":"function","location":"app/models/status.rb:262","static":false}]},{"name":"CustomEmoji","type":"class","children":[{"name":"from_text","type":"function","location":"app/models/custom_emoji.rb:78","static":true}]}]},{"name":"lib","type":"package","children":[{"name":"EntityCache","type":"class","children":[{"name":"emoji","type":"function","location":"app/lib/entity_cache.rb:18","static":false},{"name":"to_key","type":"function","location":"app/lib/entity_cache.rb:37","static":false}]}]}]},{"name":"logger","type":"package","children":[{"name":"Logger","type":"class","children":[{"name":"LogDevice","type":"class","children":[{"name":"write","type":"function","location":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31","static":false,"labels":["log"]}]}]}]},{"name":"ruby","type":"package","children":[{"name":"Marshal","type":"class","children":[{"name":"load","type":"function","location":"<internal:marshal>:33","static":true,"labels":["deserialize.unsafe"]}]}]}],"events":[{"id":1685082,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses\".\"account_id\" = $1 ORDER BY \"statuses\".\"id\" DESC LIMIT $2","database_type":"postgres"}},{"id":1685083,"event":"return","thread_id":9160,"parent_id":1685082,"elapsed":0.000677916,"elapsed_instrumentation":9.717099601402879e-05},{"id":1685084,"event":"call","thread_id":9160,"defined_class":"Status","method_id":"emojis","path":"app/models/status.rb","lineno":262,"static":false,"parameters":[],"receiver":{"class":"Status","object_id":9087360,"value":"#<Status:0x00007fc9180ef540>"}},{"id":1685085,"event":"call","thread_id":9160,"defined_class":"CustomEmoji","method_id":"from_text","path":"app/models/custom_emoji.rb","lineno":78,"static":true,"parameters":[{"name":"text","class":"String","object_id":9087380,"value":" Lorem ipsum :tinkong:","kind":"req"},{"name":"domain","class":"String","object_id":9087400,"value":"example.com","kind":"opt"}],"receiver":{"class":"Class","object_id":58120,"value":"CustomEmoji"}},{"id":1685086,"event":"call","thread_id":9160,"defined_class":"EntityCache","method_id":"emoji","path":"app/lib/entity_cache.rb","lineno":18,"static":false,"parameters":[{"name":"shortcodes","class":"Array","object_id":9087420,"value":"[tinkong]","kind":"req","size":1},{"name":"domain","class":"String","object_id":9087400,"value":"example.com","kind":"req"}],"receiver":{"class":"EntityCache","object_id":2397840,"value":"#<EntityCache:0x00007fc932c7c8d0>"}},{"id":1685087,"event":"call","thread_id":9160,"defined_class":"EntityCache","method_id":"to_key","path":"app/lib/entity_cache.rb","lineno":37,"static":false,"parameters":[{"name":"type","class":"Symbol","object_id":15425948,"value":":emoji","kind":"req"},{"name":"ids","class":"Array","object_id":9087440,"value":"[tinkong, example.com]","kind":"rest","size":2}],"receiver":{"class":"EntityCache","object_id":2397840,"value":"#<EntityCache:0x00007fc932c7c8d0>"}},{"id":1685088,"event":"return","thread_id":9160,"parent_id":1685087,"elapsed":8.218048606067896e-06,"elapsed_instrumentation":0.00011182099115103483,"return_value":{"class":"String","value":"emoji:tinkong:example.com","object_id":9087460}},{"id":1685089,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":9087480,"value":"Cache read_multi: 1 key(s) specified ({:compress=>false, :compress_threshold=>1024})\n","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":1685090,"event":"return","thread_id":9160,"parent_id":1685089,"elapsed":0.0007450040429830551,"elapsed_instrumentation":0.00011425401316955686,"return_value":{"class":"Integer","value":"85","object_id":171}},{"id":1685091,"event":"call","thread_id":9160,"defined_class":"Marshal","method_id":"load","path":"<internal:marshal>","lineno":33,"static":true,"parameters":[{"name":"source","class":"String","object_id":9087500,"value":"\u0004\bo:\u0010CustomEmoji\u001e:\u0010@new_recordF:\u0010@attributeso:\"ActiveModel::LazyAttributeSet\f;\u0007{\u0000:\f@values{\u0014I\"\u0007id\u0006:\u0006 (...1836 more characters)","kind":"req"},{"name":"arg","class":"Array","object_id":9087520,"value":"[]","kind":"rest","size":0}],"receiver":{"class":"Module","object_id":318180,"value":"Marshal"}},{"id":1685092,"event":"return","thread_id":9160,"parent_id":1685091,"elapsed":0.00020973000209778547,"elapsed_instrumentation":0.0001724769826978445,"return_value":{"class":"CustomEmoji","value":"#<CustomEmoji:0x00007fc91a40d4a0>","object_id":9087540}},{"id":1685093,"event":"call","thread_id":9160,"defined_class":"EntityCache","method_id":"to_key","path":"app/lib/entity_cache.rb","lineno":37,"static":false,"parameters":[{"name":"type","class":"Symbol","object_id":15425948,"value":":emoji","kind":"req"},{"name":"ids","class":"Array","object_id":9087560,"value":"[tinkong, example.com]","kind":"rest","size":2}],"receiver":{"class":"EntityCache","object_id":2397840,"value":"#<EntityCache:0x00007fc932c7c8d0>"}},{"id":1685094,"event":"return","thread_id":9160,"parent_id":1685093,"elapsed":7.836963050067425e-06,"elapsed_instrumentation":0.00014152901712805033,"return_value":{"class":"String","value":"emoji:tinkong:example.com","object_id":9087580}},{"id":1685095,"event":"call","thread_id":9160,"defined_class":"EntityCache","method_id":"to_key","path":"app/lib/entity_cache.rb","lineno":37,"static":false,"parameters":[{"name":"type","class":"Symbol","object_id":15425948,"value":":emoji","kind":"req"},{"name":"ids","class":"Array","object_id":9087600,"value":"[tinkong, example.com]","kind":"rest","size":2}],"receiver":{"class":"EntityCache","object_id":2397840,"value":"#<EntityCache:0x00007fc932c7c8d0>"}},{"id":1685096,"event":"return","thread_id":9160,"parent_id":1685095,"elapsed":5.9740268625319e-06,"elapsed_instrumentation":0.00010079896310344338,"return_value":{"class":"String","value":"emoji:tinkong:example.com","object_id":9087620}},{"id":1685097,"event":"return","thread_id":9160,"parent_id":1685086,"elapsed":0.0020735689904540777,"elapsed_instrumentation":0.00011785898823291063,"return_value":{"class":"Array","value":"[#<CustomEmoji:0x00007fc91a40d4a0>]","object_id":9087640,"size":1}},{"id":1685098,"event":"return","thread_id":9160,"parent_id":1685085,"elapsed":0.002227432036306709,"elapsed_instrumentation":0.0001351269311271608,"return_value":{"class":"Array","value":"[#<CustomEmoji:0x00007fc91a40d4a0>]","object_id":9087640,"size":1}},{"id":1685099,"event":"return","thread_id":9160,"parent_id":1685084,"elapsed":0.0024666430545039475,"elapsed_instrumentation":0.00014169496716931462,"return_value":{"class":"Array","value":"[#<CustomEmoji:0x00007fc91a40d4a0>]","object_id":9087640,"size":1}}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses\".\"account_id\" = $1 ORDER BY \"statuses\".\"id\" DESC LIMIT $2",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 2,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.000677916,
+      "elapsed_instrumentation": 0.00009717099601402879
+    },
+    {
+      "id": 3,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Status",
+      "method_id": "emojis",
+      "path": "app/models/status.rb",
+      "lineno": 262,
+      "static": false,
+      "receiver": {
+        "class": "Status",
+        "object_id": 9087360,
+        "value": "#<Status:0x00007fc9180ef540>"
+      }
+    },
+    {
+      "id": 4,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "CustomEmoji",
+      "method_id": "from_text",
+      "path": "app/models/custom_emoji.rb",
+      "lineno": 78,
+      "static": true,
+      "parameters": [
+        {
+          "name": "text",
+          "class": "String",
+          "object_id": 9087380,
+          "value": " Lorem ipsum :tinkong:",
+          "kind": "req"
+        },
+        {
+          "name": "domain",
+          "class": "String",
+          "object_id": 9087400,
+          "value": "example.com",
+          "kind": "opt"
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 58120,
+        "value": "CustomEmoji"
+      }
+    },
+    {
+      "id": 5,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "EntityCache",
+      "method_id": "emoji",
+      "path": "app/lib/entity_cache.rb",
+      "lineno": 18,
+      "static": false,
+      "parameters": [
+        {
+          "name": "shortcodes",
+          "class": "Array",
+          "object_id": 9087420,
+          "value": "[tinkong]",
+          "kind": "req",
+          "size": 1
+        },
+        {
+          "name": "domain",
+          "class": "String",
+          "object_id": 9087400,
+          "value": "example.com",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "EntityCache",
+        "object_id": 2397840,
+        "value": "#<EntityCache:0x00007fc932c7c8d0>"
+      }
+    },
+    {
+      "id": 6,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "EntityCache",
+      "method_id": "to_key",
+      "path": "app/lib/entity_cache.rb",
+      "lineno": 37,
+      "static": false,
+      "parameters": [
+        {
+          "name": "type",
+          "class": "Symbol",
+          "object_id": 15425948,
+          "value": ":emoji",
+          "kind": "req"
+        },
+        {
+          "name": "ids",
+          "class": "Array",
+          "object_id": 9087440,
+          "value": "[tinkong, example.com]",
+          "kind": "rest",
+          "size": 2
+        }
+      ],
+      "receiver": {
+        "class": "EntityCache",
+        "object_id": 2397840,
+        "value": "#<EntityCache:0x00007fc932c7c8d0>"
+      }
+    },
+    {
+      "id": 7,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 6,
+      "elapsed": 0.000008218048606067896,
+      "elapsed_instrumentation": 0.00011182099115103483,
+      "return_value": {
+        "class": "String",
+        "value": "emoji:tinkong:example.com",
+        "object_id": 9087460
+      }
+    },
+    {
+      "id": 8,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 9087480,
+          "value": "Cache read_multi: 1 key(s) specified ({:compress=>false, :compress_threshold=>1024})\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 9,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 8,
+      "elapsed": 0.0007450040429830551,
+      "elapsed_instrumentation": 0.00011425401316955686,
+      "return_value": {
+        "class": "Integer",
+        "value": "85",
+        "object_id": 171
+      }
+    },
+    {
+      "id": 10,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Marshal",
+      "method_id": "load",
+      "path": "<internal:marshal>",
+      "lineno": 33,
+      "static": true,
+      "parameters": [
+        {
+          "name": "source",
+          "class": "String",
+          "object_id": 9087500,
+          "value": "\u0004\bo:\u0010CustomEmoji\u001e:\u0010@new_recordF:\u0010@attributeso:\"ActiveModel::LazyAttributeSet\f;\u0007{\u0000:\f@values{\u0014I\"\u0007id\u0006:\u0006 (...1836 more characters)",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 9087520,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 318180,
+        "value": "Marshal"
+      }
+    },
+    {
+      "id": 11,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 10,
+      "elapsed": 0.00020973000209778547,
+      "elapsed_instrumentation": 0.0001724769826978445,
+      "return_value": {
+        "class": "CustomEmoji",
+        "value": "#<CustomEmoji:0x00007fc91a40d4a0>",
+        "object_id": 9087540
+      }
+    },
+    {
+      "id": 12,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "EntityCache",
+      "method_id": "to_key",
+      "path": "app/lib/entity_cache.rb",
+      "lineno": 37,
+      "static": false,
+      "parameters": [
+        {
+          "name": "type",
+          "class": "Symbol",
+          "object_id": 15425948,
+          "value": ":emoji",
+          "kind": "req"
+        },
+        {
+          "name": "ids",
+          "class": "Array",
+          "object_id": 9087560,
+          "value": "[tinkong, example.com]",
+          "kind": "rest",
+          "size": 2
+        }
+      ],
+      "receiver": {
+        "class": "EntityCache",
+        "object_id": 2397840,
+        "value": "#<EntityCache:0x00007fc932c7c8d0>"
+      }
+    },
+    {
+      "id": 13,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 12,
+      "elapsed": 0.000007836963050067425,
+      "elapsed_instrumentation": 0.00014152901712805033,
+      "return_value": {
+        "class": "String",
+        "value": "emoji:tinkong:example.com",
+        "object_id": 9087580
+      }
+    },
+    {
+      "id": 14,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "EntityCache",
+      "method_id": "to_key",
+      "path": "app/lib/entity_cache.rb",
+      "lineno": 37,
+      "static": false,
+      "parameters": [
+        {
+          "name": "type",
+          "class": "Symbol",
+          "object_id": 15425948,
+          "value": ":emoji",
+          "kind": "req"
+        },
+        {
+          "name": "ids",
+          "class": "Array",
+          "object_id": 9087600,
+          "value": "[tinkong, example.com]",
+          "kind": "rest",
+          "size": 2
+        }
+      ],
+      "receiver": {
+        "class": "EntityCache",
+        "object_id": 2397840,
+        "value": "#<EntityCache:0x00007fc932c7c8d0>"
+      }
+    },
+    {
+      "id": 15,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 14,
+      "elapsed": 0.0000059740268625319,
+      "elapsed_instrumentation": 0.00010079896310344338,
+      "return_value": {
+        "class": "String",
+        "value": "emoji:tinkong:example.com",
+        "object_id": 9087620
+      }
+    },
+    {
+      "id": 16,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 5,
+      "elapsed": 0.0020735689904540777,
+      "elapsed_instrumentation": 0.00011785898823291063,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<CustomEmoji:0x00007fc91a40d4a0>]",
+        "object_id": 9087640,
+        "size": 1
+      }
+    },
+    {
+      "id": 17,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 4,
+      "elapsed": 0.002227432036306709,
+      "elapsed_instrumentation": 0.0001351269311271608,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<CustomEmoji:0x00007fc91a40d4a0>]",
+        "object_id": 9087640,
+        "size": 1
+      }
+    },
+    {
+      "id": 18,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 3,
+      "elapsed": 0.0024666430545039475,
+      "elapsed_instrumentation": 0.00014169496716931462,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<CustomEmoji:0x00007fc91a40d4a0>]",
+        "object_id": 9087640,
+        "size": 1
+      }
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "ActivityPub::Activity::Create #perform when fetching with emojis served with invalid content-type creates status",
+    "source_location": "spec/lib/activitypub/activity/create_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "name": "app",
+      "type": "package",
+      "children": [
+        {
+          "name": "models",
+          "type": "package",
+          "children": [
+            {
+              "name": "Status",
+              "type": "class",
+              "children": [
+                {
+                  "name": "emojis",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/models/status.rb:262"
+                }
+              ]
+            },
+            {
+              "name": "CustomEmoji",
+              "type": "class",
+              "children": [
+                {
+                  "name": "from_text",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/models/custom_emoji.rb:78"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lib",
+          "type": "package",
+          "children": [
+            {
+              "name": "EntityCache",
+              "type": "class",
+              "children": [
+                {
+                  "name": "emoji",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/entity_cache.rb:18"
+                },
+                {
+                  "name": "to_key",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/entity_cache.rb:37"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "type": "package",
+      "children": [
+        {
+          "name": "Logger",
+          "type": "class",
+          "children": [
+            {
+              "name": "LogDevice",
+              "type": "class",
+              "children": [
+                {
+                  "name": "write",
+                  "type": "function",
+                  "labels": [
+                    "log"
+                  ],
+                  "static": false,
+                  "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ruby",
+      "type": "package",
+      "children": [
+        {
+          "name": "Marshal",
+          "type": "class",
+          "children": [
+            {
+              "name": "load",
+              "type": "function",
+              "labels": [
+                "deserialize.unsafe"
+              ],
+              "static": true,
+              "location": "<internal:marshal>:33"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses\".\"account_id\" = $1 ORDER BY \"statuses\".\"id\" DESC LIMIT $2"
+        }
+      ]
+    }
+  ]
+}
