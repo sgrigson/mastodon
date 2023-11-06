@@ -1,0 +1,20 @@
+[
+  {
+    "name": "app/helpers",
+    "type": "package",
+    "children": [
+      {
+        "name": "ApplicationHelper",
+        "type": "class",
+        "children": [
+          {
+            "name": "show_landing_strip?",
+            "type": "function",
+            "static": false,
+            "location": "app/helpers/application_helper.rb:35"
+          }
+        ]
+      }
+    ]
+  }
+]
