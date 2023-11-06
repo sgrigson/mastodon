@@ -1,0 +1,21 @@
+[
+  {
+    "class": "ActionController::RoutingError",
+    "message": "No route matches login",
+    "stack": [
+      "/workspaces/mastodon/app/controllers/application_controller.rb:53",
+      "app/controllers/application_controller.rb:52",
+      "app/controllers/concerns/localized.rb:10"
+    ],
+    "location": "/workspaces/mastodon/app/controllers/application_controller.rb:53"
+  },
+  {
+    "class": "ActionController::RoutingError",
+    "message": "No route matches login",
+    "stack": [
+      "/workspaces/mastodon/app/controllers/application_controller.rb:53",
+      "app/controllers/concerns/localized.rb:10"
+    ],
+    "location": "/workspaces/mastodon/app/controllers/application_controller.rb:53"
+  }
+]

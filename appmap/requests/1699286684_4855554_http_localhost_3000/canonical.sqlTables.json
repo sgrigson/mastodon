@@ -1,0 +1,10 @@
+[
+  "ip_blocks",
+  "pg_attrdef",
+  "pg_attribute",
+  "pg_collation",
+  "pg_range",
+  "pg_type",
+  "settings",
+  "site_uploads"
+]

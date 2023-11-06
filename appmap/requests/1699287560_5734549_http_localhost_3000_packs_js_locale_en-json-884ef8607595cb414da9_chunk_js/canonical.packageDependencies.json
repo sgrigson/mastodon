@@ -1,0 +1,22 @@
+[
+  {
+    "caller": "HTTP server requests",
+    "callee": "activesupport"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "lib/chewy/strategy"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "logger"
+  },
+  {
+    "caller": "HTTP server requests",
+    "callee": "ruby"
+  },
+  {
+    "caller": "lib/chewy/strategy",
+    "callee": "app/lib"
+  }
+]

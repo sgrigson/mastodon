@@ -1,0 +1,3958 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 31240,
+      "http_server_request": {
+        "request_method": "GET",
+        "path_info": "/login",
+        "normalized_path_info": "/*unmatched_route",
+        "headers": {
+          "Host": "localhost:3000",
+          "Connection": "keep-alive",
+          "Sec-Ch-Ua": "\"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "Sec-Ch-Ua-Platform": "\"macOS\"",
+          "Dnt": "1",
+          "Upgrade-Insecure-Requests": "1",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+          "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+          "Sec-Fetch-Site": "none",
+          "Sec-Fetch-Mode": "navigate",
+          "Sec-Fetch-User": "?1",
+          "Sec-Fetch-Dest": "document",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9",
+          "Cookie": "csrf=43115cd0c5160286014b6df35d9103311f89f3bd97283682e72098d981a8; ServerName=test.oliphant.social; AuthToken=6c25f8064505ff5470c3ea16e1d5f1a0e8e1a94c730a1d2f41e4ab3a6513",
+          "Version": "HTTP/1.1"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 165220,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 127000,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007f595164f238>"
+      }
+    },
+    {
+      "id": 3,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 2,
+      "elapsed": 0.0028517559985630214,
+      "elapsed_instrumentation": 0.0009712009923532605,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007f5951439160 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5951439390 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5951439598 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5951439728 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f59514399a8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 127080,
+        "size": 5
+      }
+    },
+    {
+      "id": 4,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 165220,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 127000,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007f595164f238>"
+      }
+    },
+    {
+      "id": 5,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 4,
+      "elapsed": 0.000002689019311219454,
+      "elapsed_instrumentation": 0.00009242998203262687,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 127100,
+        "size": 0
+      }
+    },
+    {
+      "id": 6,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "String",
+      "method_id": "unpack",
+      "path": "<internal:pack>",
+      "lineno": 19,
+      "static": false,
+      "parameters": [
+        {
+          "name": "fmt",
+          "class": "String",
+          "object_id": 127120,
+          "value": "NnnnnN",
+          "kind": "req"
+        },
+        {
+          "name": "offset",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "String",
+        "object_id": 165240,
+        "value": "m_1ZD\\___/______"
+      }
+    },
+    {
+      "id": 7,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 6,
+      "elapsed": 0.000006402959115803242,
+      "elapsed_instrumentation": 0.0005773450247943401,
+      "return_value": {
+        "class": "Array",
+        "value": "[1843016026, 17500, 57488, 39727, 51373, 3620438748]",
+        "object_id": 165260,
+        "size": 6
+      }
+    },
+    {
+      "id": 8,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 165280,
+          "value": "Started GET \"/login\" for 192.168.65.1 at 2023-11-06 16:18:06 +0000\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 9,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 8,
+      "elapsed": 0.00025588698917999864,
+      "elapsed_instrumentation": 0.00015873002121225,
+      "return_value": {
+        "class": "Integer",
+        "value": "67",
+        "object_id": 135
+      }
+    },
+    {
+      "id": 10,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "IpBlock",
+      "method_id": "blocked?",
+      "path": "app/models/ip_block.rb",
+      "lineno": 38,
+      "static": true,
+      "parameters": [
+        {
+          "name": "remote_ip",
+          "class": "String",
+          "object_id": 165300,
+          "value": "192.168.65.1",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 127900,
+        "value": "IpBlock"
+      }
+    },
+    {
+      "id": 11,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 165320,
+          "value": "Cache read: blocked_ips ({:compress=>true, :compress_threshold=>1024})\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 12,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 11,
+      "elapsed": 0.00007432303391397,
+      "elapsed_instrumentation": 0.00012506602797657251,
+      "return_value": {
+        "class": "Integer",
+        "value": "71",
+        "object_id": 143
+      }
+    },
+    {
+      "id": 13,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 165340,
+          "value": "Cache generate: blocked_ips ({:compress=>true, :compress_threshold=>1024})\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 14,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 13,
+      "elapsed": 0.00012177700409665704,
+      "elapsed_instrumentation": 0.0003248749999329448,
+      "return_value": {
+        "class": "Integer",
+        "value": "75",
+        "object_id": 151
+      }
+    },
+    {
+      "id": 15,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 165360,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 127620,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007f595217a108>"
+      }
+    },
+    {
+      "id": 16,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 15,
+      "elapsed": 0.000003569992259144783,
+      "elapsed_instrumentation": 0.00031148403650149703,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 127640,
+        "size": 0
+      }
+    },
+    {
+      "id": 17,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 165360,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 127620,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007f595217a108>"
+      }
+    },
+    {
+      "id": 18,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 17,
+      "elapsed": 0.00003265897976234555,
+      "elapsed_instrumentation": 0.0002019489766098559,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007f5952c8d590 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 127660,
+        "size": 1
+      }
+    },
+    {
+      "id": 19,
+      "event": "call",
+      "thread_id": 31240,
+      "sql_query": {
+        "sql": "SELECT \"ip_blocks\".\"ip\" FROM \"ip_blocks\" WHERE \"ip_blocks\".\"severity\" = $1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 20,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 19,
+      "elapsed": 0.001199769,
+      "elapsed_instrumentation": 0.00022621796233579516
+    },
+    {
+      "id": 21,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 165380,
+          "value": "  \u001b[1m\u001b[36mIpBlock Pluck (1.5ms)\u001b[0m  \u001b[1m\u001b[34mSELECT \"ip_blocks\".\"ip\" FROM \"ip_blocks\" WHERE \"ip_bl (...48 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 22,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 21,
+      "elapsed": 0.0000641189981251955,
+      "elapsed_instrumentation": 0.00017068098532035947,
+      "return_value": {
+        "class": "Integer",
+        "value": "148",
+        "object_id": 297
+      }
+    },
+    {
+      "id": 23,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 165400,
+          "value": "  ↳ app/models/ip_block.rb:39:in `block in blocked?'\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 24,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 23,
+      "elapsed": 0.0002131899818778038,
+      "elapsed_instrumentation": 0.0001755080302245915,
+      "return_value": {
+        "class": "Integer",
+        "value": "55",
+        "object_id": 111
+      }
+    },
+    {
+      "id": 25,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 165420,
+          "value": "Cache write: blocked_ips ({:compress=>true, :compress_threshold=>1024})\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 26,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 25,
+      "elapsed": 0.0001328660291619599,
+      "elapsed_instrumentation": 0.00013514200691133738,
+      "return_value": {
+        "class": "Integer",
+        "value": "72",
+        "object_id": 145
+      }
+    },
+    {
+      "id": 27,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Marshal",
+      "method_id": "dump",
+      "path": "Marshal.dump",
+      "static": true,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 165440,
+          "value": "[#<FastIpMap:0x00007f5929b584a0>]",
+          "kind": "rest",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 128140,
+        "value": "Marshal"
+      }
+    },
+    {
+      "id": 28,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 27,
+      "elapsed": 0.001251775014679879,
+      "elapsed_instrumentation": 0.00025942892534658313,
+      "return_value": {
+        "class": "String",
+        "value": "\u0004\bo:\u000eFastIpMap\u0007:\u0011@fast_lookup{\u0000:\f@ranges[\u0000",
+        "object_id": 165460
+      }
+    },
+    {
+      "id": 29,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Marshal",
+      "method_id": "dump",
+      "path": "Marshal.dump",
+      "static": true,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 165480,
+          "value": "[#<ActiveSupport::Cache::Entry:0x00007f592a3cb330>]",
+          "kind": "rest",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 128140,
+        "value": "Marshal"
+      }
+    },
+    {
+      "id": 30,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 29,
+      "elapsed": 0.00044866895768791437,
+      "elapsed_instrumentation": 0.000140278076287359,
+      "return_value": {
+        "class": "String",
+        "value": "\u0004\bo: ActiveSupport::Cache::Entry\t:\u000b@valueo:\u000eFastIpMap\u0007:\u0011@fast_lookup{\u0000:\f@ranges[\u0000:\r@version0:\u0010@creat (...22 more characters)",
+        "object_id": 165500
+      }
+    },
+    {
+      "id": 31,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "FastIpMap",
+      "method_id": "include?",
+      "path": "app/lib/fast_ip_map.rb",
+      "lineno": 29,
+      "static": false,
+      "parameters": [
+        {
+          "name": "address",
+          "class": "String",
+          "object_id": 165300,
+          "value": "192.168.65.1",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "FastIpMap",
+        "object_id": 165520,
+        "value": "#<FastIpMap:0x00007f5929b584a0>"
+      }
+    },
+    {
+      "id": 32,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 31,
+      "elapsed": 0.0000032469979487359524,
+      "elapsed_instrumentation": 0.00008056400110945106
+    },
+    {
+      "id": 33,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 10,
+      "elapsed": 0.025063264998607337,
+      "elapsed_instrumentation": 0.00018704298418015242
+    },
+    {
+      "id": 34,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 165560,
+          "value": "Processing by ApplicationController#raise_not_found as HTML\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 35,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 34,
+      "elapsed": 0.0001124989939853549,
+      "elapsed_instrumentation": 0.00017924298299476504,
+      "return_value": {
+        "class": "Integer",
+        "value": "60",
+        "object_id": 121
+      }
+    },
+    {
+      "id": 36,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 165580,
+          "value": "  Parameters: {\"unmatched_route\"=>\"login\"}\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 37,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 36,
+      "elapsed": 0.00006493402179330587,
+      "elapsed_instrumentation": 0.00009955704445019364,
+      "return_value": {
+        "class": "Integer",
+        "value": "43",
+        "object_id": 87
+      }
+    },
+    {
+      "id": 38,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 165600,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 165620,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007f592a409568>"
+      }
+    },
+    {
+      "id": 39,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 38,
+      "elapsed": 0.0046628660056740046,
+      "elapsed_instrumentation": 0.00031978898914530873,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007f5929b3d4e8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 165640,
+        "size": 1
+      }
+    },
+    {
+      "id": 40,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Localized",
+      "method_id": "set_locale",
+      "path": "app/controllers/concerns/localized.rb",
+      "lineno": 10,
+      "static": false,
+      "parameters": [
+        {
+          "name": "block",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "block"
+        }
+      ],
+      "receiver": {
+        "class": "ApplicationController",
+        "object_id": 165660,
+        "value": "#<ApplicationController:0x00007f592a409ab8>"
+      }
+    },
+    {
+      "id": 41,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ActionDispatch::Request::Session",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/request/session.rb",
+      "lineno": 112,
+      "static": false,
+      "parameters": [
+        {
+          "name": "key",
+          "class": "String",
+          "object_id": 165680,
+          "value": "warden.user.user.key",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Request::Session",
+        "object_id": 165700,
+        "value": "#<ActionDispatch::Request::Session:0x00007f592a384250>"
+      }
+    },
+    {
+      "id": 42,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 41,
+      "elapsed": 0.02044881001347676,
+      "elapsed_instrumentation": 0.0008072820492088795
+    },
+    {
+      "id": 43,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 165600,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 165720,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007f592a4095b8>"
+      }
+    },
+    {
+      "id": 44,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ApplicationController",
+      "method_id": "current_session",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 153,
+      "static": false,
+      "receiver": {
+        "class": "ApplicationController",
+        "object_id": 165660,
+        "value": "#<ApplicationController:0x00007f592a409ab8>"
+      }
+    },
+    {
+      "id": 45,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 44,
+      "elapsed": 0.001167371985502541,
+      "elapsed_instrumentation": 0.0005489650066010654
+    },
+    {
+      "id": 46,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ApplicationController",
+      "method_id": "check_self_destruct!",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 176,
+      "static": false,
+      "receiver": {
+        "class": "ApplicationController",
+        "object_id": 165660,
+        "value": "#<ApplicationController:0x00007f592a409ab8>"
+      }
+    },
+    {
+      "id": 47,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "SelfDestructHelper",
+      "method_id": "self_destruct?",
+      "path": "app/helpers/self_destruct_helper.rb",
+      "lineno": 11,
+      "static": false,
+      "receiver": {
+        "class": "ApplicationController",
+        "object_id": 165660,
+        "value": "#<ApplicationController:0x00007f592a409ab8>"
+      }
+    },
+    {
+      "id": 48,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 47,
+      "elapsed": 0.0003494580159895122,
+      "elapsed_instrumentation": 0.000052842951845377684
+    },
+    {
+      "id": 49,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 46,
+      "elapsed": 0.00042307499097660184,
+      "elapsed_instrumentation": 0.00008196703856810927
+    },
+    {
+      "id": 50,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ApplicationController",
+      "method_id": "set_cache_control_defaults",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 185,
+      "static": false,
+      "receiver": {
+        "class": "ApplicationController",
+        "object_id": 165660,
+        "value": "#<ApplicationController:0x00007f592a409ab8>"
+      }
+    },
+    {
+      "id": 51,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 50,
+      "elapsed": 0.00014845700934529305,
+      "elapsed_instrumentation": 0.0001218170509673655,
+      "return_value": {
+        "class": "Hash",
+        "value": "{:private=>true, :no_store=>true}",
+        "object_id": 165740,
+        "size": 2
+      }
+    },
+    {
+      "id": 52,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 43,
+      "elapsed": 0.004058354999870062,
+      "elapsed_instrumentation": 0.000266268034465611,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007f5929b3d948 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5929b3da88 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5929b3dd08 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5929b3de48 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5929b3e118 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5929b3e2f8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 165760,
+        "size": 6
+      }
+    },
+    {
+      "id": 53,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ApplicationController",
+      "method_id": "raise_not_found",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 52,
+      "static": false,
+      "receiver": {
+        "class": "ApplicationController",
+        "object_id": 165660,
+        "value": "#<ApplicationController:0x00007f592a409ab8>"
+      }
+    },
+    {
+      "id": 54,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 53,
+      "elapsed": 0.007880806981120259,
+      "elapsed_instrumentation": 0.0012758440570905805,
+      "exceptions": [
+        {
+          "class": "ActionController::RoutingError",
+          "message": "No route matches login",
+          "object_id": 165780,
+          "path": "/workspaces/mastodon/app/controllers/application_controller.rb",
+          "lineno": 53
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 40,
+      "elapsed": 0.05289046699181199,
+      "elapsed_instrumentation": 0.00015587202506139874,
+      "exceptions": [
+        {
+          "class": "ActionController::RoutingError",
+          "message": "No route matches login",
+          "object_id": 165780,
+          "path": "/workspaces/mastodon/app/controllers/application_controller.rb",
+          "lineno": 53
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ApplicationController",
+      "method_id": "not_found",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 99,
+      "static": false,
+      "receiver": {
+        "class": "ApplicationController",
+        "object_id": 165660,
+        "value": "#<ApplicationController:0x00007f592a409ab8>"
+      }
+    },
+    {
+      "id": 57,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ApplicationController",
+      "method_id": "respond_with_error",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 169,
+      "static": false,
+      "parameters": [
+        {
+          "name": "code",
+          "class": "Integer",
+          "object_id": 809,
+          "value": "404",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ApplicationController",
+        "object_id": 165660,
+        "value": "#<ApplicationController:0x00007f592a409ab8>"
+      }
+    },
+    {
+      "id": 58,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "app_views_errors_404_html_haml",
+      "method_id": "render",
+      "path": "app/views/errors/404.html.haml",
+      "static": true,
+      "receiver": {
+        "class": "ActionView::TemplateRenderer",
+        "object_id": 168660,
+        "value": "#<ActionView::TemplateRenderer:0x00007f5929b189e0>"
+      }
+    },
+    {
+      "id": 59,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ActionView::Resolver",
+      "method_id": "find_all",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/action_view/template/resolver.rb",
+      "lineno": 63,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 165800,
+          "value": "404",
+          "kind": "req"
+        },
+        {
+          "name": "prefix",
+          "class": "String",
+          "object_id": 165820,
+          "value": "errors",
+          "kind": "opt"
+        },
+        {
+          "name": "partial",
+          "class": "FalseClass",
+          "object_id": 0,
+          "value": "false",
+          "kind": "opt"
+        },
+        {
+          "name": "details",
+          "class": "Hash",
+          "object_id": 165840,
+          "value": "{:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :haml]}",
+          "kind": "opt",
+          "size": 4
+        },
+        {
+          "name": "key",
+          "class": "ActionView::TemplateDetails::Requested",
+          "object_id": 129640,
+          "value": "#<ActionView::TemplateDetails::Requested:0x00007f5951d0cfd0>",
+          "kind": "opt"
+        },
+        {
+          "name": "locals",
+          "class": "Array",
+          "object_id": 165860,
+          "value": "[]",
+          "kind": "opt",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "ActionView::FileSystemResolver",
+        "object_id": 29780,
+        "value": "/workspaces/mastodon/app/views"
+      }
+    },
+    {
+      "id": 60,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 59,
+      "elapsed": 0.013248330971691757,
+      "elapsed_instrumentation": 0.002501601993571967,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<ActionView::Template:0x00007f592a20bcc0>]",
+        "object_id": 165880,
+        "size": 1
+      }
+    },
+    {
+      "id": 61,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "ActionView::Resolver",
+      "method_id": "find_all",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/action_view/template/resolver.rb",
+      "lineno": 63,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 165900,
+          "value": "error",
+          "kind": "req"
+        },
+        {
+          "name": "prefix",
+          "class": "String",
+          "object_id": 165920,
+          "value": "layouts",
+          "kind": "opt"
+        },
+        {
+          "name": "partial",
+          "class": "FalseClass",
+          "object_id": 0,
+          "value": "false",
+          "kind": "opt"
+        },
+        {
+          "name": "details",
+          "class": "Hash",
+          "object_id": 165940,
+          "value": "{:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :haml]}",
+          "kind": "opt",
+          "size": 4
+        },
+        {
+          "name": "key",
+          "class": "ActionView::TemplateDetails::Requested",
+          "object_id": 129640,
+          "value": "#<ActionView::TemplateDetails::Requested:0x00007f5951d0cfd0>",
+          "kind": "opt"
+        },
+        {
+          "name": "locals",
+          "class": "Array",
+          "object_id": 165960,
+          "value": "[]",
+          "kind": "opt",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "ActionView::FileSystemResolver",
+        "object_id": 29780,
+        "value": "/workspaces/mastodon/app/views"
+      }
+    },
+    {
+      "id": 62,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 61,
+      "elapsed": 0.010927801951766014,
+      "elapsed_instrumentation": 0.000549121992662549,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<ActionView::Template:0x00007f592a20b720>]",
+        "object_id": 165980,
+        "size": 1
+      }
+    },
+    {
+      "id": 63,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 166000,
+          "value": "  Rendering layout layouts/error.html.haml\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 64,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 63,
+      "elapsed": 0.00007376901339739561,
+      "elapsed_instrumentation": 0.0001398160238750279,
+      "return_value": {
+        "class": "Integer",
+        "value": "43",
+        "object_id": 87
+      }
+    },
+    {
+      "id": 65,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 166020,
+          "value": "  Rendering errors/404.html.haml within layouts/error\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 66,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 65,
+      "elapsed": 0.00017969904001802206,
+      "elapsed_instrumentation": 0.00012443901505321264,
+      "return_value": {
+        "class": "Integer",
+        "value": "54",
+        "object_id": 109
+      }
+    },
+    {
+      "id": 67,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166040,
+          "value": "proc {|v| ::Temple::Utils.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166060,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::Escape",
+        "object_id": 166080,
+        "value": "#<Haml::Escape:0x00007f592a402fd8>"
+      }
+    },
+    {
+      "id": 68,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 67,
+      "elapsed": 0.006379711965564638,
+      "elapsed_instrumentation": 0.00034705002326518297,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929b09648 (eval):1>",
+        "object_id": 166100
+      }
+    },
+    {
+      "id": 69,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166120,
+          "value": "proc {|v| ::Haml::Util.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166140,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::Escape",
+        "object_id": 166080,
+        "value": "#<Haml::Escape:0x00007f592a402fd8>"
+      }
+    },
+    {
+      "id": 70,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 69,
+      "elapsed": 0.0014201650046743453,
+      "elapsed_instrumentation": 0.0001823370112106204,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929b05138 (eval):1>",
+        "object_id": 166160
+      }
+    },
+    {
+      "id": 71,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166180,
+          "value": "proc {|v| ::Temple::Utils.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166200,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::EscapeAny",
+        "object_id": 166220,
+        "value": "#<Haml::EscapeAny:0x00007f592a48bcc0>"
+      }
+    },
+    {
+      "id": 72,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 71,
+      "elapsed": 0.0016531810397282243,
+      "elapsed_instrumentation": 0.0003527450026012957,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929b003e0 (eval):1>",
+        "object_id": 166240
+      }
+    },
+    {
+      "id": 73,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166260,
+          "value": "proc {|v| ::Haml::Util.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166280,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::EscapeAny",
+        "object_id": 166220,
+        "value": "#<Haml::EscapeAny:0x00007f592a48bcc0>"
+      }
+    },
+    {
+      "id": 74,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 73,
+      "elapsed": 0.0005089599872007966,
+      "elapsed_instrumentation": 0.0001906219986267388,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929afbea8 (eval):1>",
+        "object_id": 166300
+      }
+    },
+    {
+      "id": 75,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166320,
+          "value": "proc {|v| ::Temple::Utils.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166340,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::ForceEscape",
+        "object_id": 166360,
+        "value": "#<Haml::ForceEscape:0x00007f592a484920>"
+      }
+    },
+    {
+      "id": 76,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 75,
+      "elapsed": 0.00046557001769542694,
+      "elapsed_instrumentation": 0.0002953140065073967,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929af7100 (eval):1>",
+        "object_id": 166380
+      }
+    },
+    {
+      "id": 77,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166400,
+          "value": "proc {|v| ::Haml::Util.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166420,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::ForceEscape",
+        "object_id": 166360,
+        "value": "#<Haml::ForceEscape:0x00007f592a484920>"
+      }
+    },
+    {
+      "id": 78,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 77,
+      "elapsed": 0.0003674449981190264,
+      "elapsed_instrumentation": 0.0004116739728488028,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929af2bc8 (eval):1>",
+        "object_id": 166440
+      }
+    },
+    {
+      "id": 79,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166460,
+          "value": "proc {|v| ::Haml::Util.escape_html((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166480,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::ForceEscape",
+        "object_id": 166360,
+        "value": "#<Haml::ForceEscape:0x00007f592a484920>"
+      }
+    },
+    {
+      "id": 80,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 79,
+      "elapsed": 0.0003849579952657223,
+      "elapsed_instrumentation": 0.00013892102288082242,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929aee6e0 (eval):1>",
+        "object_id": 166500
+      }
+    },
+    {
+      "id": 81,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 166540,
+          "value": "  Rendered errors/404.html.haml within layouts/error (Duration: 56.2ms | Allocations: 7326)\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 82,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 81,
+      "elapsed": 0.00012662302469834685,
+      "elapsed_instrumentation": 0.00018585094949230552,
+      "return_value": {
+        "class": "Integer",
+        "value": "92",
+        "object_id": 185
+      }
+    },
+    {
+      "id": 83,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166560,
+          "value": "proc {|v| ::Temple::Utils.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166580,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::Escape",
+        "object_id": 166600,
+        "value": "#<Haml::Escape:0x00007f5952443a38>"
+      }
+    },
+    {
+      "id": 84,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 83,
+      "elapsed": 0.00038357399171218276,
+      "elapsed_instrumentation": 0.00039751804433763027,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929ad51e0 (eval):1>",
+        "object_id": 166620
+      }
+    },
+    {
+      "id": 85,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166640,
+          "value": "proc {|v| ::Haml::Util.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166660,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::Escape",
+        "object_id": 166600,
+        "value": "#<Haml::Escape:0x00007f5952443a38>"
+      }
+    },
+    {
+      "id": 86,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 85,
+      "elapsed": 0.0009104760247282684,
+      "elapsed_instrumentation": 0.00016310706268996,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929ad0e60 (eval):1>",
+        "object_id": 166680
+      }
+    },
+    {
+      "id": 87,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166700,
+          "value": "proc {|v| ::Temple::Utils.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166720,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::EscapeAny",
+        "object_id": 166740,
+        "value": "#<Haml::EscapeAny:0x00007f595250a430>"
+      }
+    },
+    {
+      "id": 88,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 87,
+      "elapsed": 0.0007775669801048934,
+      "elapsed_instrumentation": 0.0006198880146257579,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929acc270 (eval):1>",
+        "object_id": 166760
+      }
+    },
+    {
+      "id": 89,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166780,
+          "value": "proc {|v| ::Haml::Util.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166800,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::EscapeAny",
+        "object_id": 166740,
+        "value": "#<Haml::EscapeAny:0x00007f595250a430>"
+      }
+    },
+    {
+      "id": 90,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 89,
+      "elapsed": 0.00026366201927885413,
+      "elapsed_instrumentation": 0.00019529194105416536,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929ac7ef0 (eval):1>",
+        "object_id": 166820
+      }
+    },
+    {
+      "id": 91,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166840,
+          "value": "proc {|v| ::Temple::Utils.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166860,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::ForceEscape",
+        "object_id": 166880,
+        "value": "#<Haml::ForceEscape:0x00007f5952501e20>"
+      }
+    },
+    {
+      "id": 92,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 91,
+      "elapsed": 0.0006532410043291748,
+      "elapsed_instrumentation": 0.0001945460680872202,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929ac32d8 (eval):1>",
+        "object_id": 166900
+      }
+    },
+    {
+      "id": 93,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166920,
+          "value": "proc {|v| ::Haml::Util.escape_html_safe((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 166940,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::ForceEscape",
+        "object_id": 166880,
+        "value": "#<Haml::ForceEscape:0x00007f5952501e20>"
+      }
+    },
+    {
+      "id": 94,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 93,
+      "elapsed": 0.0009599230252206326,
+      "elapsed_instrumentation": 0.00014887098222970963,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929abef08 (eval):1>",
+        "object_id": 166960
+      }
+    },
+    {
+      "id": 95,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 166980,
+          "value": "proc {|v| ::Haml::Util.escape_html((v)) }",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167000,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::ForceEscape",
+        "object_id": 166880,
+        "value": "#<Haml::ForceEscape:0x00007f5952501e20>"
+      }
+    },
+    {
+      "id": 96,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 95,
+      "elapsed": 0.0005238210433162749,
+      "elapsed_instrumentation": 0.00019835395505651832,
+      "return_value": {
+        "class": "Proc",
+        "value": "#<Proc:0x00007f5929ababd8 (eval):1>",
+        "object_id": 167020
+      }
+    },
+    {
+      "id": 97,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167040,
+          "value": "'content'",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167060,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::Parser",
+        "object_id": 167080,
+        "value": "#<Haml::Parser:0x00007f592a231c40>"
+      }
+    },
+    {
+      "id": 98,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 97,
+      "elapsed": 0.0004461539792828262,
+      "elapsed_instrumentation": 0.00032454001484438777,
+      "return_value": {
+        "class": "String",
+        "value": "content",
+        "object_id": 167100
+      }
+    },
+    {
+      "id": 99,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167120,
+          "value": "'text/html; charset=UTF-8'",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167140,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::Parser",
+        "object_id": 167080,
+        "value": "#<Haml::Parser:0x00007f592a231c40>"
+      }
+    },
+    {
+      "id": 100,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 99,
+      "elapsed": 0.0003528459928929806,
+      "elapsed_instrumentation": 0.00017802597722038627,
+      "return_value": {
+        "class": "String",
+        "value": "text/html; charset=UTF-8",
+        "object_id": 167160
+      }
+    },
+    {
+      "id": 101,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167180,
+          "value": "'http-equiv'",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167200,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::Parser",
+        "object_id": 167080,
+        "value": "#<Haml::Parser:0x00007f592a231c40>"
+      }
+    },
+    {
+      "id": 102,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 101,
+      "elapsed": 0.0016264760051853955,
+      "elapsed_instrumentation": 0.0002396529889665544,
+      "return_value": {
+        "class": "String",
+        "value": "http-equiv",
+        "object_id": 167220
+      }
+    },
+    {
+      "id": 103,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167240,
+          "value": "'Content-Type'",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167260,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::Parser",
+        "object_id": 167080,
+        "value": "#<Haml::Parser:0x00007f592a231c40>"
+      }
+    },
+    {
+      "id": 104,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 103,
+      "elapsed": 0.0006070369854569435,
+      "elapsed_instrumentation": 0.00014977401588112116,
+      "return_value": {
+        "class": "String",
+        "value": "Content-Type",
+        "object_id": 167280
+      }
+    },
+    {
+      "id": 105,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167300,
+          "value": "::Haml::AttributeBuilder.build_class(true, \"error\".freeze)",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167320,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::AttributeCompiler",
+        "object_id": 167340,
+        "value": "#<Haml::AttributeCompiler:0x00007f5952443b78>"
+      }
+    },
+    {
+      "id": 106,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 105,
+      "elapsed": 0.0013221470289863646,
+      "elapsed_instrumentation": 0.00028952397406101227,
+      "return_value": {
+        "class": "String",
+        "value": "error",
+        "object_id": 167360
+      }
+    },
+    {
+      "id": 107,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167380,
+          "value": "::Haml::AttributeBuilder.build_class(true, \"dialog\".freeze)",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167400,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::AttributeCompiler",
+        "object_id": 167340,
+        "value": "#<Haml::AttributeCompiler:0x00007f5952443b78>"
+      }
+    },
+    {
+      "id": 108,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 107,
+      "elapsed": 0.0005690659745596349,
+      "elapsed_instrumentation": 0.00023221399169415236,
+      "return_value": {
+        "class": "String",
+        "value": "dialog",
+        "object_id": 167420
+      }
+    },
+    {
+      "id": 109,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167440,
+          "value": "::Haml::AttributeBuilder.build_class(true, \"dialog__illustration\".freeze)",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167460,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::AttributeCompiler",
+        "object_id": 167340,
+        "value": "#<Haml::AttributeCompiler:0x00007f5952443b78>"
+      }
+    },
+    {
+      "id": 110,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 109,
+      "elapsed": 0.0011256920406594872,
+      "elapsed_instrumentation": 0.0001665569725446403,
+      "return_value": {
+        "class": "String",
+        "value": "dialog__illustration",
+        "object_id": 167480
+      }
+    },
+    {
+      "id": 111,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167500,
+          "value": "::Haml::AttributeBuilder.build_class(true, \"dialog__message\".freeze)",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167520,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Haml::AttributeCompiler",
+        "object_id": 167340,
+        "value": "#<Haml::AttributeCompiler:0x00007f5952443b78>"
+      }
+    },
+    {
+      "id": 112,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 111,
+      "elapsed": 0.0004884600057266653,
+      "elapsed_instrumentation": 0.00036305293906480074,
+      "return_value": {
+        "class": "String",
+        "value": "dialog__message",
+        "object_id": 167540
+      }
+    },
+    {
+      "id": 113,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167560,
+          "value": "'utf-8'",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167580,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 130820,
+        "value": "Haml::StringSplitter"
+      }
+    },
+    {
+      "id": 114,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 113,
+      "elapsed": 0.003861456993035972,
+      "elapsed_instrumentation": 0.00027556304121389985,
+      "return_value": {
+        "class": "String",
+        "value": "utf-8",
+        "object_id": 167600
+      }
+    },
+    {
+      "id": 115,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167620,
+          "value": "'width=device-width,initial-scale=1'",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167640,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 130820,
+        "value": "Haml::StringSplitter"
+      }
+    },
+    {
+      "id": 116,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 115,
+      "elapsed": 0.001376053027343005,
+      "elapsed_instrumentation": 0.00023087195586413145,
+      "return_value": {
+        "class": "String",
+        "value": "width=device-width,initial-scale=1",
+        "object_id": 167660
+      }
+    },
+    {
+      "id": 117,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167680,
+          "value": "'viewport'",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167700,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 130820,
+        "value": "Haml::StringSplitter"
+      }
+    },
+    {
+      "id": 118,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 117,
+      "elapsed": 0.0010146840359084308,
+      "elapsed_instrumentation": 0.00026935001369565725,
+      "return_value": {
+        "class": "String",
+        "value": "viewport",
+        "object_id": 167720
+      }
+    },
+    {
+      "id": 119,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Kernel",
+      "method_id": "eval",
+      "path": "Kernel#eval",
+      "static": false,
+      "parameters": [
+        {
+          "name": "string",
+          "class": "String",
+          "object_id": 167740,
+          "value": "'/oops.png'",
+          "kind": "req"
+        },
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 167760,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 130820,
+        "value": "Haml::StringSplitter"
+      }
+    },
+    {
+      "id": 120,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 119,
+      "elapsed": 0.0007865290390327573,
+      "elapsed_instrumentation": 0.00017179094720631838,
+      "return_value": {
+        "class": "String",
+        "value": "/oops.png",
+        "object_id": 167780
+      }
+    },
+    {
+      "id": 121,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Setting",
+      "method_id": "default_settings",
+      "path": "app/models/setting.rb",
+      "lineno": 55,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 132380,
+        "value": "Setting"
+      }
+    },
+    {
+      "id": 122,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 121,
+      "elapsed": 0.0010897319880314171,
+      "elapsed_instrumentation": 0.0003544790670275688,
+      "return_value": {
+        "class": "RailsSettings::Default",
+        "value": "{site_title=>Mastodon, site_short_description=>, site_description=>, site_extended_description=>, site_terms=>, site_contact_username=>, site_contact_email=>, registrations_mode=>open, profile_directory=>true, closed_registrations_message=> (...18 more entries)}",
+        "object_id": 132680,
+        "size": 28
+      }
+    },
+    {
+      "id": 123,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Webpacker::HelperExtensions",
+      "method_id": "stylesheet_pack_tag",
+      "path": "lib/webpacker/helper_extensions.rb",
+      "lineno": 9,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 167820,
+          "value": "common",
+          "kind": "req"
+        },
+        {
+          "name": "options",
+          "class": "Hash",
+          "object_id": 167840,
+          "value": "{:media=>all, :crossorigin=>anonymous}",
+          "kind": "keyrest",
+          "size": 2
+        }
+      ],
+      "receiver": {
+        "class": "ActionView::Base",
+        "object_id": 167860,
+        "value": "#<#<Class:0x00007f59500c5980>:0x00007f59525cde80>"
+      }
+    },
+    {
+      "id": 124,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Webpacker::ManifestExtensions",
+      "method_id": "lookup",
+      "path": "lib/webpacker/manifest_extensions.rb",
+      "lineno": 4,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 167820,
+          "value": "common",
+          "kind": "req"
+        },
+        {
+          "name": "pack_type",
+          "class": "Hash",
+          "object_id": 167880,
+          "value": "{:type=>:stylesheet, :with_integrity=>true}",
+          "kind": "opt",
+          "size": 2
+        }
+      ],
+      "receiver": {
+        "class": "Webpacker::Manifest",
+        "object_id": 137540,
+        "value": "#<Webpacker::Manifest:0x00007f5952d86a78>"
+      }
+    },
+    {
+      "id": 125,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 167900,
+          "value": "[Webpacker] Everything's up-to-date. Nothing to do\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 126,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 125,
+      "elapsed": 0.00006456900155171752,
+      "elapsed_instrumentation": 0.0001901319483295083,
+      "return_value": {
+        "class": "Integer",
+        "value": "51",
+        "object_id": 103
+      }
+    },
+    {
+      "id": 127,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "JSON::Ext::Parser",
+      "method_id": "parse",
+      "path": "JSON::Ext::Parser#parse",
+      "static": false,
+      "receiver": {
+        "class": "JSON::Ext::Parser",
+        "object_id": 167920,
+        "value": "#<JSON::Ext::Parser:0x00007f59299a6850>"
+      }
+    },
+    {
+      "id": 128,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 127,
+      "elapsed": 0.002275340026244521,
+      "elapsed_instrumentation": 0.00045059697004035115,
+      "return_value": {
+        "class": "Hash",
+        "value": "{admin.js=>{src=>/packs/js/admin-3bb7fc97541aa6606eaf.chunk.js, integrity=>sha256-caLJqqowXUuKstfBxPkWJvpLj4hLP9I4mr27eyny1QQ=}, application.js=>{src=>/packs/js/application-de0059e0fc9fdb989658.chunk.js, integrity=>sha256-hqBAklk8+LOWcEWWNXbs8qwIjDMzY/9kzNvrrK3Cn6M=}, arrow-key-navigation.js=>{src=>/packs/js/arrow-key-navigation-d55dacd7b656733a76d5.chunk.js, integrity=>sha256-wH/9WxnYMQe7QOfy69nYxR2JZoh8HswR1sEGcTCu3JY=}, common.css=>{src=>/packs/css/common-7a4d34a9.css, integrity=>sha256-LfVYu8f8S9n9/EimKLHGq+reJ4yBMCnONep6PpT6gq0=}, common.js=>{src=>/packs/js/common-78a7f2ccae13a5ba9f77.js, integrity=>sha256-PF0ijmU1dOwPdFPV7YQn/K7DOlof7jXCsKIcS/hTxNM=}, containers/media_container.js=>{src=>/packs/js/containers/media_container-f21722992b2ec1807556.chunk.js, integrity=>sha256-BA8n+i+q+MO/xL1eN0HeprI5Ya3hsQJaMA9SgfboHDY=}, contrast.css=>{src=>/packs/css/contrast-7a358dfa.chunk.css, integrity=>sha256-DdTFyDkfwAMDEm8GVsi6l84c7fA4+JWyQGaPrLxqbpM=}, contrast.js=>{src=>/packs/js/contrast-17615805fccff2b7f836.chunk.js, integrity=>sha256-LpSbfkKUXwem0Ya6HJ7b/AZqpufsQIB2ug78Nui3vsw=}, default.css=>{src=>/packs/css/default-06ed8ea0.chunk.css, integrity=>sha256-RRuHSlkFjclCMshRI89+MxP7lacDjyai4HjlbUY0sck=}, default.js=>{src=>/packs/js/default-ef14aa83758303f4de11.chunk.js, integrity=>sha256-2uanmrM3RcVE9lO8GrV/BhbXhcmOQRZAu3g8RQbIETg=} (...756 more entries)}",
+        "object_id": 167940,
+        "size": 766
+      }
+    },
+    {
+      "id": 129,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 124,
+      "elapsed": 3.297060179989785,
+      "elapsed_instrumentation": 0.00011990801431238651,
+      "return_value": {
+        "class": "Array",
+        "value": "[/packs/css/common-7a4d34a9.css, sha256-LfVYu8f8S9n9/EimKLHGq+reJ4yBMCnONep6PpT6gq0=]",
+        "object_id": 167960,
+        "size": 2
+      }
+    },
+    {
+      "id": 130,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 123,
+      "elapsed": 3.298102436005138,
+      "elapsed_instrumentation": 0.00023016601335257292,
+      "return_value": {
+        "class": "ActiveSupport::SafeBuffer",
+        "value": "<link rel=\"stylesheet\" crossorigin=\"anonymous\" href=\"/packs/css/common-7a4d34a9.css\" media=\"all\" />",
+        "object_id": 167980
+      }
+    },
+    {
+      "id": 131,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Setting",
+      "method_id": "default_settings",
+      "path": "app/models/setting.rb",
+      "lineno": 55,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 132380,
+        "value": "Setting"
+      }
+    },
+    {
+      "id": 132,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 131,
+      "elapsed": 0.0008504060097038746,
+      "elapsed_instrumentation": 0.00023621803848072886,
+      "return_value": {
+        "class": "RailsSettings::Default",
+        "value": "{site_title=>Mastodon, site_short_description=>, site_description=>, site_extended_description=>, site_terms=>, site_contact_username=>, site_contact_email=>, registrations_mode=>open, profile_directory=>true, closed_registrations_message=> (...18 more entries)}",
+        "object_id": 132680,
+        "size": 28
+      }
+    },
+    {
+      "id": 133,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Webpacker::HelperExtensions",
+      "method_id": "stylesheet_pack_tag",
+      "path": "lib/webpacker/helper_extensions.rb",
+      "lineno": 9,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 147160,
+          "value": "default",
+          "kind": "req"
+        },
+        {
+          "name": "options",
+          "class": "Hash",
+          "object_id": 168000,
+          "value": "{:media=>all, :crossorigin=>anonymous}",
+          "kind": "keyrest",
+          "size": 2
+        }
+      ],
+      "receiver": {
+        "class": "ActionView::Base",
+        "object_id": 167860,
+        "value": "#<#<Class:0x00007f59500c5980>:0x00007f59525cde80>"
+      }
+    },
+    {
+      "id": 134,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Webpacker::ManifestExtensions",
+      "method_id": "lookup",
+      "path": "lib/webpacker/manifest_extensions.rb",
+      "lineno": 4,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 147160,
+          "value": "default",
+          "kind": "req"
+        },
+        {
+          "name": "pack_type",
+          "class": "Hash",
+          "object_id": 168020,
+          "value": "{:type=>:stylesheet, :with_integrity=>true}",
+          "kind": "opt",
+          "size": 2
+        }
+      ],
+      "receiver": {
+        "class": "Webpacker::Manifest",
+        "object_id": 137540,
+        "value": "#<Webpacker::Manifest:0x00007f5952d86a78>"
+      }
+    },
+    {
+      "id": 135,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 168040,
+          "value": "[Webpacker] Everything's up-to-date. Nothing to do\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 136,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 135,
+      "elapsed": 0.00025904696667566895,
+      "elapsed_instrumentation": 0.0002276790328323841,
+      "return_value": {
+        "class": "Integer",
+        "value": "51",
+        "object_id": 103
+      }
+    },
+    {
+      "id": 137,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "JSON::Ext::Parser",
+      "method_id": "parse",
+      "path": "JSON::Ext::Parser#parse",
+      "static": false,
+      "receiver": {
+        "class": "JSON::Ext::Parser",
+        "object_id": 168060,
+        "value": "#<JSON::Ext::Parser:0x00007f5929913b68>"
+      }
+    },
+    {
+      "id": 138,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 137,
+      "elapsed": 0.0032206010073423386,
+      "elapsed_instrumentation": 0.0011979370028711855,
+      "return_value": {
+        "class": "Hash",
+        "value": "{admin.js=>{src=>/packs/js/admin-3bb7fc97541aa6606eaf.chunk.js, integrity=>sha256-caLJqqowXUuKstfBxPkWJvpLj4hLP9I4mr27eyny1QQ=}, application.js=>{src=>/packs/js/application-de0059e0fc9fdb989658.chunk.js, integrity=>sha256-hqBAklk8+LOWcEWWNXbs8qwIjDMzY/9kzNvrrK3Cn6M=}, arrow-key-navigation.js=>{src=>/packs/js/arrow-key-navigation-d55dacd7b656733a76d5.chunk.js, integrity=>sha256-wH/9WxnYMQe7QOfy69nYxR2JZoh8HswR1sEGcTCu3JY=}, common.css=>{src=>/packs/css/common-7a4d34a9.css, integrity=>sha256-LfVYu8f8S9n9/EimKLHGq+reJ4yBMCnONep6PpT6gq0=}, common.js=>{src=>/packs/js/common-78a7f2ccae13a5ba9f77.js, integrity=>sha256-PF0ijmU1dOwPdFPV7YQn/K7DOlof7jXCsKIcS/hTxNM=}, containers/media_container.js=>{src=>/packs/js/containers/media_container-f21722992b2ec1807556.chunk.js, integrity=>sha256-BA8n+i+q+MO/xL1eN0HeprI5Ya3hsQJaMA9SgfboHDY=}, contrast.css=>{src=>/packs/css/contrast-7a358dfa.chunk.css, integrity=>sha256-DdTFyDkfwAMDEm8GVsi6l84c7fA4+JWyQGaPrLxqbpM=}, contrast.js=>{src=>/packs/js/contrast-17615805fccff2b7f836.chunk.js, integrity=>sha256-LpSbfkKUXwem0Ya6HJ7b/AZqpufsQIB2ug78Nui3vsw=}, default.css=>{src=>/packs/css/default-06ed8ea0.chunk.css, integrity=>sha256-RRuHSlkFjclCMshRI89+MxP7lacDjyai4HjlbUY0sck=}, default.js=>{src=>/packs/js/default-ef14aa83758303f4de11.chunk.js, integrity=>sha256-2uanmrM3RcVE9lO8GrV/BhbXhcmOQRZAu3g8RQbIETg=} (...756 more entries)}",
+        "object_id": 168080,
+        "size": 766
+      }
+    },
+    {
+      "id": 139,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 134,
+      "elapsed": 3.145799463032745,
+      "elapsed_instrumentation": 0.00048774294555187225,
+      "return_value": {
+        "class": "Array",
+        "value": "[/packs/css/default-06ed8ea0.chunk.css, sha256-RRuHSlkFjclCMshRI89+MxP7lacDjyai4HjlbUY0sck=]",
+        "object_id": 168100,
+        "size": 2
+      }
+    },
+    {
+      "id": 140,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 133,
+      "elapsed": 3.1466717830044217,
+      "elapsed_instrumentation": 0.00019687798339873552,
+      "return_value": {
+        "class": "ActiveSupport::SafeBuffer",
+        "value": "<link rel=\"stylesheet\" crossorigin=\"anonymous\" href=\"/packs/css/default-06ed8ea0.chunk.css\" media=\"a (...6 more characters)",
+        "object_id": 168120
+      }
+    },
+    {
+      "id": 141,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Webpacker::HelperExtensions",
+      "method_id": "javascript_pack_tag",
+      "path": "lib/webpacker/helper_extensions.rb",
+      "lineno": 4,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 168140,
+          "value": "common",
+          "kind": "req"
+        },
+        {
+          "name": "options",
+          "class": "Hash",
+          "object_id": 168160,
+          "value": "{:crossorigin=>anonymous}",
+          "kind": "keyrest",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "ActionView::Base",
+        "object_id": 167860,
+        "value": "#<#<Class:0x00007f59500c5980>:0x00007f59525cde80>"
+      }
+    },
+    {
+      "id": 142,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Webpacker::ManifestExtensions",
+      "method_id": "lookup",
+      "path": "lib/webpacker/manifest_extensions.rb",
+      "lineno": 4,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 168140,
+          "value": "common",
+          "kind": "req"
+        },
+        {
+          "name": "pack_type",
+          "class": "Hash",
+          "object_id": 168180,
+          "value": "{:type=>:javascript, :with_integrity=>true}",
+          "kind": "opt",
+          "size": 2
+        }
+      ],
+      "receiver": {
+        "class": "Webpacker::Manifest",
+        "object_id": 137540,
+        "value": "#<Webpacker::Manifest:0x00007f5952d86a78>"
+      }
+    },
+    {
+      "id": 143,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 168200,
+          "value": "[Webpacker] Everything's up-to-date. Nothing to do\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 144,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 143,
+      "elapsed": 0.00011211697710677981,
+      "elapsed_instrumentation": 0.00020949298050254583,
+      "return_value": {
+        "class": "Integer",
+        "value": "51",
+        "object_id": 103
+      }
+    },
+    {
+      "id": 145,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "JSON::Ext::Parser",
+      "method_id": "parse",
+      "path": "JSON::Ext::Parser#parse",
+      "static": false,
+      "receiver": {
+        "class": "JSON::Ext::Parser",
+        "object_id": 168220,
+        "value": "#<JSON::Ext::Parser:0x00007f59298737d0>"
+      }
+    },
+    {
+      "id": 146,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 145,
+      "elapsed": 0.0020288240048103034,
+      "elapsed_instrumentation": 0.0006488599465228617,
+      "return_value": {
+        "class": "Hash",
+        "value": "{admin.js=>{src=>/packs/js/admin-3bb7fc97541aa6606eaf.chunk.js, integrity=>sha256-caLJqqowXUuKstfBxPkWJvpLj4hLP9I4mr27eyny1QQ=}, application.js=>{src=>/packs/js/application-de0059e0fc9fdb989658.chunk.js, integrity=>sha256-hqBAklk8+LOWcEWWNXbs8qwIjDMzY/9kzNvrrK3Cn6M=}, arrow-key-navigation.js=>{src=>/packs/js/arrow-key-navigation-d55dacd7b656733a76d5.chunk.js, integrity=>sha256-wH/9WxnYMQe7QOfy69nYxR2JZoh8HswR1sEGcTCu3JY=}, common.css=>{src=>/packs/css/common-7a4d34a9.css, integrity=>sha256-LfVYu8f8S9n9/EimKLHGq+reJ4yBMCnONep6PpT6gq0=}, common.js=>{src=>/packs/js/common-78a7f2ccae13a5ba9f77.js, integrity=>sha256-PF0ijmU1dOwPdFPV7YQn/K7DOlof7jXCsKIcS/hTxNM=}, containers/media_container.js=>{src=>/packs/js/containers/media_container-f21722992b2ec1807556.chunk.js, integrity=>sha256-BA8n+i+q+MO/xL1eN0HeprI5Ya3hsQJaMA9SgfboHDY=}, contrast.css=>{src=>/packs/css/contrast-7a358dfa.chunk.css, integrity=>sha256-DdTFyDkfwAMDEm8GVsi6l84c7fA4+JWyQGaPrLxqbpM=}, contrast.js=>{src=>/packs/js/contrast-17615805fccff2b7f836.chunk.js, integrity=>sha256-LpSbfkKUXwem0Ya6HJ7b/AZqpufsQIB2ug78Nui3vsw=}, default.css=>{src=>/packs/css/default-06ed8ea0.chunk.css, integrity=>sha256-RRuHSlkFjclCMshRI89+MxP7lacDjyai4HjlbUY0sck=}, default.js=>{src=>/packs/js/default-ef14aa83758303f4de11.chunk.js, integrity=>sha256-2uanmrM3RcVE9lO8GrV/BhbXhcmOQRZAu3g8RQbIETg=} (...756 more entries)}",
+        "object_id": 168240,
+        "size": 766
+      }
+    },
+    {
+      "id": 147,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 142,
+      "elapsed": 2.663033730990719,
+      "elapsed_instrumentation": 0.0002570530050434172,
+      "return_value": {
+        "class": "Array",
+        "value": "[/packs/js/common-78a7f2ccae13a5ba9f77.js, sha256-PF0ijmU1dOwPdFPV7YQn/K7DOlof7jXCsKIcS/hTxNM=]",
+        "object_id": 168260,
+        "size": 2
+      }
+    },
+    {
+      "id": 148,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 141,
+      "elapsed": 2.6635472259949893,
+      "elapsed_instrumentation": 0.0002580020227469504,
+      "return_value": {
+        "class": "ActiveSupport::SafeBuffer",
+        "value": "<script src=\"/packs/js/common-78a7f2ccae13a5ba9f77.js\" crossorigin=\"anonymous\"></script>",
+        "object_id": 168280
+      }
+    },
+    {
+      "id": 149,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Webpacker::HelperExtensions",
+      "method_id": "javascript_pack_tag",
+      "path": "lib/webpacker/helper_extensions.rb",
+      "lineno": 4,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 168300,
+          "value": "error",
+          "kind": "req"
+        },
+        {
+          "name": "options",
+          "class": "Hash",
+          "object_id": 168320,
+          "value": "{:crossorigin=>anonymous}",
+          "kind": "keyrest",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "ActionView::Base",
+        "object_id": 167860,
+        "value": "#<#<Class:0x00007f59500c5980>:0x00007f59525cde80>"
+      }
+    },
+    {
+      "id": 150,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Webpacker::ManifestExtensions",
+      "method_id": "lookup",
+      "path": "lib/webpacker/manifest_extensions.rb",
+      "lineno": 4,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 168300,
+          "value": "error",
+          "kind": "req"
+        },
+        {
+          "name": "pack_type",
+          "class": "Hash",
+          "object_id": 168340,
+          "value": "{:type=>:javascript, :with_integrity=>true}",
+          "kind": "opt",
+          "size": 2
+        }
+      ],
+      "receiver": {
+        "class": "Webpacker::Manifest",
+        "object_id": 137540,
+        "value": "#<Webpacker::Manifest:0x00007f5952d86a78>"
+      }
+    },
+    {
+      "id": 151,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 168360,
+          "value": "[Webpacker] Everything's up-to-date. Nothing to do\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 152,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 151,
+      "elapsed": 0.0001792099792510271,
+      "elapsed_instrumentation": 0.00019943900406360626,
+      "return_value": {
+        "class": "Integer",
+        "value": "51",
+        "object_id": 103
+      }
+    },
+    {
+      "id": 153,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "JSON::Ext::Parser",
+      "method_id": "parse",
+      "path": "JSON::Ext::Parser#parse",
+      "static": false,
+      "receiver": {
+        "class": "JSON::Ext::Parser",
+        "object_id": 168380,
+        "value": "#<JSON::Ext::Parser:0x00007f5955fae1b8>"
+      }
+    },
+    {
+      "id": 154,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 153,
+      "elapsed": 0.007250713009852916,
+      "elapsed_instrumentation": 0.0006275660125538707,
+      "return_value": {
+        "class": "Hash",
+        "value": "{admin.js=>{src=>/packs/js/admin-3bb7fc97541aa6606eaf.chunk.js, integrity=>sha256-caLJqqowXUuKstfBxPkWJvpLj4hLP9I4mr27eyny1QQ=}, application.js=>{src=>/packs/js/application-de0059e0fc9fdb989658.chunk.js, integrity=>sha256-hqBAklk8+LOWcEWWNXbs8qwIjDMzY/9kzNvrrK3Cn6M=}, arrow-key-navigation.js=>{src=>/packs/js/arrow-key-navigation-d55dacd7b656733a76d5.chunk.js, integrity=>sha256-wH/9WxnYMQe7QOfy69nYxR2JZoh8HswR1sEGcTCu3JY=}, common.css=>{src=>/packs/css/common-7a4d34a9.css, integrity=>sha256-LfVYu8f8S9n9/EimKLHGq+reJ4yBMCnONep6PpT6gq0=}, common.js=>{src=>/packs/js/common-78a7f2ccae13a5ba9f77.js, integrity=>sha256-PF0ijmU1dOwPdFPV7YQn/K7DOlof7jXCsKIcS/hTxNM=}, containers/media_container.js=>{src=>/packs/js/containers/media_container-f21722992b2ec1807556.chunk.js, integrity=>sha256-BA8n+i+q+MO/xL1eN0HeprI5Ya3hsQJaMA9SgfboHDY=}, contrast.css=>{src=>/packs/css/contrast-7a358dfa.chunk.css, integrity=>sha256-DdTFyDkfwAMDEm8GVsi6l84c7fA4+JWyQGaPrLxqbpM=}, contrast.js=>{src=>/packs/js/contrast-17615805fccff2b7f836.chunk.js, integrity=>sha256-LpSbfkKUXwem0Ya6HJ7b/AZqpufsQIB2ug78Nui3vsw=}, default.css=>{src=>/packs/css/default-06ed8ea0.chunk.css, integrity=>sha256-RRuHSlkFjclCMshRI89+MxP7lacDjyai4HjlbUY0sck=}, default.js=>{src=>/packs/js/default-ef14aa83758303f4de11.chunk.js, integrity=>sha256-2uanmrM3RcVE9lO8GrV/BhbXhcmOQRZAu3g8RQbIETg=} (...756 more entries)}",
+        "object_id": 168400,
+        "size": 766
+      }
+    },
+    {
+      "id": 155,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 150,
+      "elapsed": 2.755452932033222,
+      "elapsed_instrumentation": 0.00013255496742203832,
+      "return_value": {
+        "class": "Array",
+        "value": "[/packs/js/error-842808a4d0e3cb74ff88.chunk.js, sha256-0d9Swpkv+ayMe/MuDlA6zTXi7uMnmlIQzR2L8/1kfwQ=]",
+        "object_id": 168420,
+        "size": 2
+      }
+    },
+    {
+      "id": 156,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 149,
+      "elapsed": 2.7558698339853436,
+      "elapsed_instrumentation": 0.00015696394257247448,
+      "return_value": {
+        "class": "ActiveSupport::SafeBuffer",
+        "value": "<script src=\"/packs/js/error-842808a4d0e3cb74ff88.chunk.js\" crossorigin=\"anonymous\"></script>",
+        "object_id": 168440
+      }
+    },
+    {
+      "id": 157,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Setting",
+      "method_id": "default_settings",
+      "path": "app/models/setting.rb",
+      "lineno": 55,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 132380,
+        "value": "Setting"
+      }
+    },
+    {
+      "id": 158,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 157,
+      "elapsed": 0.0005972640356048942,
+      "elapsed_instrumentation": 0.0002712549758143723,
+      "return_value": {
+        "class": "RailsSettings::Default",
+        "value": "{site_title=>Mastodon, site_short_description=>, site_description=>, site_extended_description=>, site_terms=>, site_contact_username=>, site_contact_email=>, registrations_mode=>open, profile_directory=>true, closed_registrations_message=> (...18 more entries)}",
+        "object_id": 132680,
+        "size": 28
+      }
+    },
+    {
+      "id": 159,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 168460,
+          "value": "  Rendered layout layouts/error.html.haml (Duration: 11974.8ms | Allocations: 84446)\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 160,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 159,
+      "elapsed": 0.0000664490507915616,
+      "elapsed_instrumentation": 0.00011509691830724478,
+      "return_value": {
+        "class": "Integer",
+        "value": "85",
+        "object_id": 171
+      }
+    },
+    {
+      "id": 161,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 58,
+      "elapsed": 12.004311014025006,
+      "elapsed_instrumentation": 0.0000851019867695868
+    },
+    {
+      "id": 162,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 57,
+      "elapsed": 12.023858182015829,
+      "elapsed_instrumentation": 0.00018870097119361162,
+      "return_value": {
+        "class": "ActiveSupport::SafeBuffer",
+        "value": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n<meta content='text/html; charset=UTF-8' http-equiv='Content (...805 more characters)",
+        "object_id": 168480
+      }
+    },
+    {
+      "id": 163,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 56,
+      "elapsed": 12.024419585010037,
+      "elapsed_instrumentation": 0.00016667699674144387,
+      "return_value": {
+        "class": "ActiveSupport::SafeBuffer",
+        "value": "<!DOCTYPE html>\n<html lang='en'>\n<head>\n<meta content='text/html; charset=UTF-8' http-equiv='Content (...805 more characters)",
+        "object_id": 168480
+      }
+    },
+    {
+      "id": 164,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 168500,
+          "value": "Completed 404 Not Found in 12092ms (Views: 12015.6ms | ActiveRecord: 0.0ms | Allocations: 89731)\n\n\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 165,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 164,
+      "elapsed": 0.00012138899182900786,
+      "elapsed_instrumentation": 0.0006360389525070786,
+      "return_value": {
+        "class": "Integer",
+        "value": "99",
+        "object_id": 199
+      }
+    },
+    {
+      "id": 166,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Array",
+      "method_id": "pack",
+      "path": "<internal:pack>",
+      "lineno": 7,
+      "static": false,
+      "parameters": [
+        {
+          "name": "fmt",
+          "class": "String",
+          "object_id": 152400,
+          "value": "m0",
+          "kind": "req"
+        },
+        {
+          "name": "buffer",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "Array",
+        "object_id": 168520,
+        "value": "[_0_R\u000e__Ac_\u0011___\u0012p]"
+      }
+    },
+    {
+      "id": 167,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 166,
+      "elapsed": 0.000008984003216028214,
+      "elapsed_instrumentation": 0.00011656101560220122,
+      "return_value": {
+        "class": "String",
+        "value": "wjDIUg7f8kFjqxHUy88ScA==",
+        "object_id": 168540
+      }
+    },
+    {
+      "id": 168,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "Chewy::Strategy::Mastodon",
+      "method_id": "leave",
+      "path": "lib/chewy/strategy/mastodon.rb",
+      "lineno": 16,
+      "static": false,
+      "receiver": {
+        "class": "Chewy::Strategy::Mastodon",
+        "object_id": 168560,
+        "value": "#<Chewy::Strategy::Mastodon:0x00007f5929b81058>"
+      }
+    },
+    {
+      "id": 169,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "RedisConfiguration",
+      "method_id": "with",
+      "path": "app/lib/redis_configuration.rb",
+      "lineno": 10,
+      "static": true,
+      "parameters": [
+        {
+          "name": "*",
+          "class": "Array",
+          "object_id": 168580,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        },
+        {
+          "name": "**",
+          "class": "Hash",
+          "object_id": 168600,
+          "value": "{}",
+          "kind": "keyrest",
+          "size": 0
+        },
+        {
+          "name": "&",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "block"
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 28200,
+        "value": "RedisConfiguration"
+      }
+    },
+    {
+      "id": 170,
+      "event": "call",
+      "thread_id": 31240,
+      "defined_class": "RedisConfiguration",
+      "method_id": "pool",
+      "path": "app/lib/redis_configuration.rb",
+      "lineno": 12,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 28200,
+        "value": "RedisConfiguration"
+      }
+    },
+    {
+      "id": 171,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 170,
+      "elapsed": 0.00000266998540610075,
+      "elapsed_instrumentation": 0.00005722598871216178,
+      "return_value": {
+        "class": "ConnectionPool",
+        "value": "#<ConnectionPool:0x00007f592a3e1bd0>",
+        "object_id": 153100
+      }
+    },
+    {
+      "id": 172,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 169,
+      "elapsed": 0.00013100402429699898,
+      "elapsed_instrumentation": 0.00009358598617836833,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 168620,
+        "size": 0
+      }
+    },
+    {
+      "id": 173,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 168,
+      "elapsed": 0.00024319696240127087,
+      "elapsed_instrumentation": 0.00006890407530590892,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 168620,
+        "size": 0
+      }
+    },
+    {
+      "id": 174,
+      "event": "return",
+      "thread_id": 31240,
+      "parent_id": 1,
+      "elapsed": 14.654180373996496,
+      "elapsed_instrumentation": 0.04403706901939586,
+      "http_server_response": {
+        "status_code": 404,
+        "headers": {
+          "X-Frame-Options": "SAMEORIGIN",
+          "X-XSS-Protection": "0",
+          "X-Content-Type-Options": "nosniff",
+          "X-Download-Options": "noopen",
+          "X-Permitted-Cross-Domain-Policies": "none",
+          "Referrer-Policy": "strict-origin-when-cross-origin",
+          "Content-Type": "text/html; charset=utf-8",
+          "Cache-Control": "private, no-store",
+          "Content-Security-Policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' http://localhost:3000; img-src 'self' https: data: blob: http://localhost:3000; style-src 'self' http://localhost:3000 'nonce-wjDIUg7f8kFjqxHUy88ScA=='; media-src 'self' https: data: http://localhost:3000; frame-src 'self' https:; manifest-src 'self' http://localhost:3000; form-action 'self'; child-src 'self' blob: http://localhost:3000; worker-src 'self' blob: http://localhost:3000; connect-src 'self' data: blob: http://localhost:3000 http://localhost:3000 ws://localhost:4000 ws://localhost:3035 http://localhost:3035; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:3000",
+          "X-Request-Id": "6dda315a-445c-4090-9b2f-c8add7cb82dc",
+          "X-Runtime": "14.648784",
+          "Server-Timing": "cache_read.active_support;dur=0.04, sql.active_record;dur=1.51, cache_generate.active_support;dur=21.19, cache_write.active_support;dur=2.22, start_processing.action_controller;dur=0.03, render_template.action_view;dur=56.16, render_layout.action_view;dur=11974.85, process_action.action_controller;dur=12092.40"
+        }
+      }
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "eb40c44aa4cc167c578b31636099970acdb7daad",
+      "git_last_annotated_tag": "0.1.2-14648-geb40c44aa4cc167c578b31636099970acdb7daad",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "GET /login (404) - 16:18:06.541",
+    "timestamp": 1699287486.5418136,
+    "recorder": {
+      "name": "rack",
+      "type": "requests"
+    }
+  },
+  "classMap": [
+    {
+      "name": "activesupport",
+      "type": "package",
+      "children": [
+        {
+          "name": "ActiveSupport",
+          "type": "class",
+          "children": [
+            {
+              "name": "Callbacks",
+              "type": "class",
+              "children": [
+                {
+                  "name": "CallbackSequence",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "invoke_before",
+                      "type": "function",
+                      "labels": [
+                        "mvc.before_action"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                    },
+                    {
+                      "name": "invoke_after",
+                      "type": "function",
+                      "labels": [
+                        "mvc.after_action"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ruby",
+      "type": "package",
+      "children": [
+        {
+          "name": "String",
+          "type": "class",
+          "children": [
+            {
+              "name": "unpack",
+              "type": "function",
+              "labels": [
+                "string.unpack"
+              ],
+              "static": false,
+              "location": "<internal:pack>:19"
+            }
+          ]
+        },
+        {
+          "name": "Marshal",
+          "type": "class",
+          "children": [
+            {
+              "name": "dump",
+              "type": "function",
+              "labels": [
+                "serialize"
+              ],
+              "static": true,
+              "location": "Marshal.dump"
+            }
+          ]
+        },
+        {
+          "name": "Kernel",
+          "type": "class",
+          "children": [
+            {
+              "name": "eval",
+              "type": "function",
+              "labels": [
+                "lang.eval"
+              ],
+              "static": false,
+              "location": "Kernel#eval"
+            }
+          ]
+        },
+        {
+          "name": "Array",
+          "type": "class",
+          "children": [
+            {
+              "name": "pack",
+              "type": "function",
+              "labels": [
+                "array.pack"
+              ],
+              "static": false,
+              "location": "<internal:pack>:7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "type": "package",
+      "children": [
+        {
+          "name": "Logger",
+          "type": "class",
+          "children": [
+            {
+              "name": "LogDevice",
+              "type": "class",
+              "children": [
+                {
+                  "name": "write",
+                  "type": "function",
+                  "labels": [
+                    "log"
+                  ],
+                  "static": false,
+                  "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "app",
+      "type": "package",
+      "children": [
+        {
+          "name": "models",
+          "type": "package",
+          "children": [
+            {
+              "name": "IpBlock",
+              "type": "class",
+              "children": [
+                {
+                  "name": "blocked?",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/models/ip_block.rb:38"
+                }
+              ]
+            },
+            {
+              "name": "Setting",
+              "type": "class",
+              "children": [
+                {
+                  "name": "default_settings",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/models/setting.rb:55"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lib",
+          "type": "package",
+          "children": [
+            {
+              "name": "FastIpMap",
+              "type": "class",
+              "children": [
+                {
+                  "name": "include?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/fast_ip_map.rb:29"
+                }
+              ]
+            },
+            {
+              "name": "RedisConfiguration",
+              "type": "class",
+              "children": [
+                {
+                  "name": "with",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/lib/redis_configuration.rb:10"
+                },
+                {
+                  "name": "pool",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/lib/redis_configuration.rb:12"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "controllers",
+          "type": "package",
+          "children": [
+            {
+              "name": "concerns",
+              "type": "package",
+              "children": [
+                {
+                  "name": "Localized",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "set_locale",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/controllers/concerns/localized.rb:10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ApplicationController",
+              "type": "class",
+              "children": [
+                {
+                  "name": "current_session",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:153"
+                },
+                {
+                  "name": "check_self_destruct!",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:176"
+                },
+                {
+                  "name": "set_cache_control_defaults",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:185"
+                },
+                {
+                  "name": "raise_not_found",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:52"
+                },
+                {
+                  "name": "not_found",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:99"
+                },
+                {
+                  "name": "respond_with_error",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:169"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "helpers",
+          "type": "package",
+          "children": [
+            {
+              "name": "SelfDestructHelper",
+              "type": "class",
+              "children": [
+                {
+                  "name": "self_destruct?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/helpers/self_destruct_helper.rb:11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "views",
+          "type": "package",
+          "children": [
+            {
+              "name": "app_views_errors_404_html_haml",
+              "type": "class",
+              "children": [
+                {
+                  "name": "render",
+                  "type": "function",
+                  "labels": [
+                    "mvc.template"
+                  ],
+                  "static": true,
+                  "location": "app/views/errors/404.html.haml"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "actionpack",
+      "type": "package",
+      "children": [
+        {
+          "name": "ActionDispatch",
+          "type": "class",
+          "children": [
+            {
+              "name": "Request",
+              "type": "class",
+              "children": [
+                {
+                  "name": "Session",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "[]",
+                      "type": "function",
+                      "labels": [
+                        "http.session.read"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/request/session.rb:112"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "actionview",
+      "type": "package",
+      "children": [
+        {
+          "name": "ActionView",
+          "type": "class",
+          "children": [
+            {
+              "name": "Resolver",
+              "type": "class",
+              "children": [
+                {
+                  "name": "find_all",
+                  "type": "function",
+                  "labels": [
+                    "mvc.template.resolver"
+                  ],
+                  "static": false,
+                  "location": "vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/action_view/template/resolver.rb:63"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lib",
+      "type": "package",
+      "children": [
+        {
+          "name": "webpacker",
+          "type": "package",
+          "children": [
+            {
+              "name": "Webpacker",
+              "type": "class",
+              "children": [
+                {
+                  "name": "HelperExtensions",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "stylesheet_pack_tag",
+                      "type": "function",
+                      "static": false,
+                      "location": "lib/webpacker/helper_extensions.rb:9"
+                    },
+                    {
+                      "name": "javascript_pack_tag",
+                      "type": "function",
+                      "static": false,
+                      "location": "lib/webpacker/helper_extensions.rb:4"
+                    }
+                  ]
+                },
+                {
+                  "name": "ManifestExtensions",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "lookup",
+                      "type": "function",
+                      "static": false,
+                      "location": "lib/webpacker/manifest_extensions.rb:4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "chewy/strategy",
+          "type": "package",
+          "children": [
+            {
+              "name": "Chewy",
+              "type": "class",
+              "children": [
+                {
+                  "name": "Strategy",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "Mastodon",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "leave",
+                          "type": "function",
+                          "static": false,
+                          "location": "lib/chewy/strategy/mastodon.rb:16"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "json",
+      "type": "package",
+      "children": [
+        {
+          "name": "JSON",
+          "type": "class",
+          "children": [
+            {
+              "name": "Ext",
+              "type": "class",
+              "children": [
+                {
+                  "name": "Parser",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "parse",
+                      "type": "function",
+                      "labels": [
+                        "format.json.parse",
+                        "deserialize.safe"
+                      ],
+                      "static": false,
+                      "location": "JSON::Ext::Parser#parse"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /*unmatched_route"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT \"ip_blocks\".\"ip\" FROM \"ip_blocks\" WHERE \"ip_blocks\".\"severity\" = $1"
+        }
+      ]
+    }
+  ]
+}

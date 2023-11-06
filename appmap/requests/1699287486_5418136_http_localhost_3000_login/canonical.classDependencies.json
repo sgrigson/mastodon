@@ -1,0 +1,102 @@
+[
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "app/models"
+  },
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "lib/chewy/strategy"
+  },
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "actionpack/ActionDispatch"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/views"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"ip_blocks\".\"ip\" FROM \"ip_blocks\" WHERE \"ip_blocks\".\"severity\" = $1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/models",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "app/models",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/models",
+    "callee": "ruby/Marshal"
+  },
+  {
+    "caller": "app/views",
+    "callee": "actionview/ActionView"
+  },
+  {
+    "caller": "app/views",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/views",
+    "callee": "lib/webpacker"
+  },
+  {
+    "caller": "app/views",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/views",
+    "callee": "ruby/Kernel"
+  },
+  {
+    "caller": "lib/chewy/strategy",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "lib/webpacker",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "lib/webpacker",
+    "callee": "logger/Logger"
+  }
+]

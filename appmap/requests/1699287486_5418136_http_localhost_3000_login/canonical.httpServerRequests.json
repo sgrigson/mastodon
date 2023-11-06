@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /*unmatched_route",
+    "parameters": "()",
+    "status": 404
+  }
+]

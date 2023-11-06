@@ -1,0 +1,25 @@
+{
+  "app": "mastodon",
+  "language": {
+    "name": "ruby",
+    "engine": "ruby",
+    "version": "3.2.2"
+  },
+  "client": {
+    "name": "appmap",
+    "url": "https://github.com/applandinc/appmap-ruby",
+    "version": "0.102.1"
+  },
+  "frameworks": [
+    {
+      "name": "rails",
+      "version": "7.1.1"
+    }
+  ],
+  "name": "GET / (200) - 16:06:14.284",
+  "timestamp": 1699286774.2846882,
+  "recorder": {
+    "name": "rack",
+    "type": "requests"
+  }
+}

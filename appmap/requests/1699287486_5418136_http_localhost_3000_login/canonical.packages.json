@@ -1,0 +1,16 @@
+[
+  "actionpack",
+  "actionview",
+  "activesupport",
+  "app/controllers",
+  "app/controllers/concerns",
+  "app/helpers",
+  "app/lib",
+  "app/models",
+  "app/views",
+  "json",
+  "lib/chewy/strategy",
+  "lib/webpacker",
+  "logger",
+  "ruby"
+]

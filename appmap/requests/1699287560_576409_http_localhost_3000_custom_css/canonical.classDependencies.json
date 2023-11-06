@@ -1,0 +1,94 @@
+[
+  {
+    "caller": "GET /custom.css",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "GET /custom.css",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "GET /custom.css",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "GET /custom.css",
+    "callee": "app/models"
+  },
+  {
+    "caller": "GET /custom.css",
+    "callee": "lib/chewy/strategy/Chewy"
+  },
+  {
+    "caller": "GET /custom.css",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "GET /custom.css",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "GET /custom.css",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/views"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"ip_blocks\".\"ip\" FROM \"ip_blocks\" WHERE \"ip_blocks\".\"severity\" = $1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"settings\".* FROM \"settings\" WHERE (thing_type is NULL and thing_id is NULL) AND \"settings\".\"var\" = $1 ORDER BY \"settings\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/models",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/models",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "app/models",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/models",
+    "callee": "ruby/Marshal"
+  },
+  {
+    "caller": "app/views",
+    "callee": "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"highlighted\" = $1"
+  },
+  {
+    "caller": "app/views",
+    "callee": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"user_roles\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
+  },
+  {
+    "caller": "app/views",
+    "callee": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"user_roles\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
+  },
+  {
+    "caller": "app/views",
+    "callee": "SHOW max_identifier_length"
+  },
+  {
+    "caller": "app/views",
+    "callee": "actionview/ActionView"
+  },
+  {
+    "caller": "app/views",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/views",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "lib/chewy/strategy/Chewy",
+    "callee": "app/lib"
+  }
+]
