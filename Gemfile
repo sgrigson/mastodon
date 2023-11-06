@@ -3,8 +3,6 @@
 source 'https://rubygems.org'
 ruby '>= 3.0.0'
 
-gem 'appmap', groups: [:development, :test]
-
 gem 'puma', '~> 6.3'
 gem 'rails', '~> 7.1.1'
 gem 'sprockets', '~> 3.7.2'
@@ -185,6 +183,9 @@ group :development, :test do
 
   # RSpec runner for rails
   gem 'rspec-rails', '~> 6.0'
+
+  # AppMap
+  gem 'appmap'
 end
 
 group :production do
