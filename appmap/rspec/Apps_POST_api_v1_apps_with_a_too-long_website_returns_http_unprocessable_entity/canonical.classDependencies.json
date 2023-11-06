@@ -1,0 +1,86 @@
+[
+  {
+    "caller": "POST /api/v1/apps",
+    "callee": "actionpack/ActionController"
+  },
+  {
+    "caller": "POST /api/v1/apps",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "POST /api/v1/apps",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "POST /api/v1/apps",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "POST /api/v1/apps",
+    "callee": "lib/chewy/strategy/Chewy"
+  },
+  {
+    "caller": "POST /api/v1/apps",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "POST /api/v1/apps",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "POST /api/v1/apps",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT 1 AS one FROM \"oauth_applications\" WHERE \"oauth_applications\".\"uid\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/validators"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "ROLLBACK TO SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "actionpack/ActionDispatch"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "lib/chewy/strategy/Chewy",
+    "callee": "app/lib"
+  }
+]

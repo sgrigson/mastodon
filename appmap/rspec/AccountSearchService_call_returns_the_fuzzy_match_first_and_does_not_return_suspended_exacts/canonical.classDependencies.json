@@ -21,11 +21,23 @@
   },
   {
     "caller": "activesupport/ActiveSupport",
+    "callee": "app/workers"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
     "callee": "lib/paperclip"
   },
   {
     "caller": "activesupport/ActiveSupport",
-    "callee": "sidekiq/Sidekiq"
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "ruby/String"
   },
   {
     "caller": "app/helpers",
@@ -92,6 +104,10 @@
     "callee": "lib/paperclip"
   },
   {
+    "caller": "app/serializers/rest",
+    "callee": "logger/Logger"
+  },
+  {
     "caller": "app/validators",
     "callee": "SAVEPOINT active_record_1"
   },
@@ -106,6 +122,10 @@
   {
     "caller": "app/validators",
     "callee": "app/models"
+  },
+  {
+    "caller": "app/validators",
+    "callee": "logger/Logger"
   },
   {
     "caller": "app/workers",
@@ -136,15 +156,7 @@
     "callee": "json/JSON"
   },
   {
-    "caller": "sidekiq/Sidekiq",
-    "callee": "app/workers"
-  },
-  {
-    "caller": "sidekiq/Sidekiq",
-    "callee": "json/JSON"
-  },
-  {
-    "caller": "sidekiq/Sidekiq",
-    "callee": "ruby/String"
+    "caller": "app/workers",
+    "callee": "logger/Logger"
   }
 ]

@@ -9,11 +9,19 @@
   },
   {
     "caller": "activesupport",
+    "callee": "json"
+  },
+  {
+    "caller": "activesupport",
     "callee": "lib"
   },
   {
     "caller": "activesupport",
-    "callee": "sidekiq"
+    "callee": "logger"
+  },
+  {
+    "caller": "activesupport",
+    "callee": "ruby"
   },
   {
     "caller": "app",
@@ -37,18 +45,6 @@
   },
   {
     "caller": "app",
-    "callee": "ruby"
-  },
-  {
-    "caller": "sidekiq",
-    "callee": "app"
-  },
-  {
-    "caller": "sidekiq",
-    "callee": "json"
-  },
-  {
-    "caller": "sidekiq",
     "callee": "ruby"
   }
 ]

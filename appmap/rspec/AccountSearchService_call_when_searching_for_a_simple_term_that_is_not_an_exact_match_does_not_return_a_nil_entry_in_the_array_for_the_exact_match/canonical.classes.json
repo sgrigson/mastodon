@@ -3,12 +3,9 @@
   "app/helpers/ActivityPub::TagManager",
   "app/helpers/FormattingHelper",
   "app/helpers/RoutingHelper",
-  "app/lib/RequestPool",
   "app/lib/TagManager",
   "app/lib/UserSettingsSerializer",
   "app/lib/activitypub/ActivityPub::TagManager",
-  "app/lib/connection_pool/ConnectionPool::SharedConnectionPool",
-  "app/lib/connection_pool/ConnectionPool::SharedTimedStack",
   "app/models/Account",
   "app/models/AccountStat",
   "app/models/CustomEmoji",
@@ -39,6 +36,5 @@
   "logger/Logger::LogDevice",
   "openssl/OpenSSL::Random",
   "ruby/Marshal",
-  "ruby/String",
-  "sidekiq/Sidekiq::Client"
+  "ruby/String"
 ]

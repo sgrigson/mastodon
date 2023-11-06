@@ -533,72 +533,6 @@
         "type": "package",
         "children": [
           {
-            "name": "RequestPool",
-            "type": "class",
-            "children": [
-              {
-                "name": "flush",
-                "type": "function",
-                "static": false,
-                "location": "app/lib/request_pool.rb:114"
-              },
-              {
-                "name": "Connection",
-                "type": "class",
-                "children": [
-                  {
-                    "name": "seconds_idle",
-                    "type": "function",
-                    "static": false,
-                    "location": "app/lib/request_pool.rb:81"
-                  },
-                  {
-                    "name": "close",
-                    "type": "function",
-                    "static": false,
-                    "location": "app/lib/request_pool.rb:85"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "name": "connection_pool",
-            "type": "package",
-            "children": [
-              {
-                "name": "ConnectionPool",
-                "type": "class",
-                "children": [
-                  {
-                    "name": "SharedConnectionPool",
-                    "type": "class",
-                    "children": [
-                      {
-                        "name": "flush",
-                        "type": "function",
-                        "static": false,
-                        "location": "app/lib/connection_pool/shared_connection_pool.rb:13"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "SharedTimedStack",
-                    "type": "class",
-                    "children": [
-                      {
-                        "name": "flush",
-                        "type": "function",
-                        "static": false,
-                        "location": "app/lib/connection_pool/shared_timed_stack.rb:51"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "name": "UserSettingsSerializer",
             "type": "class",
             "children": [
@@ -1237,33 +1171,6 @@
                     "location": "lib/chewy/settings_extensions.rb:5"
                   }
                 ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "sidekiq",
-    "type": "package",
-    "children": [
-      {
-        "name": "Sidekiq",
-        "type": "class",
-        "children": [
-          {
-            "name": "Client",
-            "type": "class",
-            "children": [
-              {
-                "name": "push",
-                "type": "function",
-                "labels": [
-                  "job.create"
-                ],
-                "static": false,
-                "location": "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
               }
             ]
           }
