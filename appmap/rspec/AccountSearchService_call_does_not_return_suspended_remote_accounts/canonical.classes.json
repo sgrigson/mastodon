@@ -1,0 +1,17 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/lib/RedisConfiguration",
+  "app/lib/RequestPool",
+  "app/lib/TagManager",
+  "app/lib/connection_pool/ConnectionPool::SharedConnectionPool",
+  "app/lib/connection_pool/ConnectionPool::SharedTimedStack",
+  "app/models/Account",
+  "app/models/Instance",
+  "app/models/concerns/AccountFinderConcern::AccountFinder",
+  "app/models/concerns/DomainMaterializable",
+  "app/models/concerns/Redisable",
+  "app/services/AccountSearchService::QueryBuilder",
+  "app/validators/UniqueUsernameValidator",
+  "lib/chewy/Chewy::SettingsExtensions",
+  "lib/paperclip/Paperclip::AttachmentExtensions"
+]

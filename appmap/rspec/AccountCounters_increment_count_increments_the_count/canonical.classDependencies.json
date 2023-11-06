@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "app/models/concerns",
+    "callee": "INSERT INTO account_stats(account_id, followers_count, created_at, updated_at) VALUES (111361310919922121, 1, now(), now()) ON CONFLICT (account_id) DO UPDATE SET followers_count = account_stats.followers_count + 1, updated_at = now() RETURNING id;"
+  },
+  {
+    "caller": "app/models/concerns",
+    "callee": "SELECT \"account_stats\".\"id\", \"account_stats\".\"account_id\", \"account_stats\".\"statuses_count\", \"account_stats\".\"following_count\", \"account_stats\".\"followers_count\", \"account_stats\".\"created_at\", \"account_stats\".\"updated_at\", \"account_stats\".\"last_status_at\" FROM \"account_stats\" WHERE \"account_stats\".\"account_id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/models/concerns",
+    "callee": "SELECT \"account_stats\".\"id\", \"account_stats\".\"account_id\", \"account_stats\".\"statuses_count\", \"account_stats\".\"following_count\", \"account_stats\".\"followers_count\", \"account_stats\".\"created_at\", \"account_stats\".\"updated_at\", \"account_stats\".\"last_status_at\" FROM \"account_stats\" WHERE \"account_stats\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/models/concerns",
+    "callee": "app/models/AccountStat"
+  }
+]

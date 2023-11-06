@@ -1,0 +1,30 @@
+[
+  {
+    "caller": "app/lib/activitypub",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "app/lib/activitypub",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/models",
+    "callee": "lib/active_record/ActiveRecord"
+  },
+  {
+    "caller": "app/models",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/models",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "lib/active_record/ActiveRecord",
+    "callee": "SELECT \"accounts\".\"id\", \"accounts\".\"username\" FROM \"accounts\" INNER JOIN \"follows\" ON \"accounts\".\"id\" = \"follows\".\"account_id\" WHERE \"follows\".\"target_account_id\" = $1 AND \"accounts\".\"domain\" IS NULL ORDER BY \"accounts\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "lib/active_record/ActiveRecord",
+    "callee": "app/lib/activitypub"
+  }
+]

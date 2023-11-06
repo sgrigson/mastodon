@@ -1,0 +1,8 @@
+[
+  "activesupport",
+  "app/helpers",
+  "app/lib/activitypub",
+  "app/models",
+  "app/models/concerns",
+  "app/validators"
+]

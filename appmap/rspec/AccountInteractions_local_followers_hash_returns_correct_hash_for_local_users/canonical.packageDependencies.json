@@ -1,0 +1,22 @@
+[
+  {
+    "caller": "app",
+    "callee": "lib/active_record"
+  },
+  {
+    "caller": "app",
+    "callee": "logger"
+  },
+  {
+    "caller": "app",
+    "callee": "ruby"
+  },
+  {
+    "caller": "lib/active_record",
+    "callee": "Database"
+  },
+  {
+    "caller": "lib/active_record",
+    "callee": "app"
+  }
+]

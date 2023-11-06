@@ -1,0 +1,6 @@
+[
+  "activesupport",
+  "app/models",
+  "app/models/concerns",
+  "lib/mastodon"
+]

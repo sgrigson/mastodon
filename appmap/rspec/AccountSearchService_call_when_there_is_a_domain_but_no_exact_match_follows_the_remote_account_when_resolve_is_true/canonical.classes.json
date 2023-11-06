@@ -1,0 +1,5 @@
+[
+  "app/lib/TagManager",
+  "app/services/AccountSearchService::QueryBuilder",
+  "lib/chewy/Chewy::SettingsExtensions"
+]

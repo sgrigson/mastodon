@@ -1,0 +1,6 @@
+[
+  "INSERT INTO \"account_statuses_cleanup_policies\" (\"account_id\", \"enabled\", \"min_status_age\", \"keep_direct\", \"keep_pinned\", \"keep_polls\", \"keep_media\", \"keep_self_fav\", \"keep_self_bookmark\", \"min_favs\", \"min_reblogs\", \"created_at\", \"updated_at\") VALUES ($?, $?, $?, $?, $?, $?, $?, $?, $?, $?, $?, $?, $?) RETURNING \"id\"",
+  "RELEASE SAVEPOINT active_record_1",
+  "SAVEPOINT active_record_1",
+  "SELECT MAX(id) FROM (SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"account_id\" = ? AND \"statuses\".\"id\" BETWEEN ? AND ? ORDER BY \"statuses\".\"id\" ASC LIMIT ?) t"
+]

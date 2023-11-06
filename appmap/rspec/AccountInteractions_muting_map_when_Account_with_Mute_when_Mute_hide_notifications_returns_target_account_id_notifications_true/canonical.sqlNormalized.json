@@ -1,0 +1,3 @@
+[
+  "SELECT \"mutes\".* FROM \"mutes\" WHERE \"mutes\".\"target_account_id\" = $? AND \"mutes\".\"account_id\" = $?"
+]

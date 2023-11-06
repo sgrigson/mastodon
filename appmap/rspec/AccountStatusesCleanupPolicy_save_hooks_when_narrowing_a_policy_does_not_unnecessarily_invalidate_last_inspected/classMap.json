@@ -1,0 +1,116 @@
+[
+  {
+    "name": "app/models",
+    "type": "package",
+    "children": [
+      {
+        "name": "AccountStatusesCleanupPolicy",
+        "type": "class",
+        "children": [
+          {
+            "name": "record_last_inspected",
+            "type": "function",
+            "static": false,
+            "location": "app/models/account_statuses_cleanup_policy.rb:93"
+          },
+          {
+            "name": "last_inspected",
+            "type": "function",
+            "static": false,
+            "location": "app/models/account_statuses_cleanup_policy.rb:97"
+          }
+        ]
+      },
+      {
+        "name": "concerns",
+        "type": "package",
+        "children": [
+          {
+            "name": "Redisable",
+            "type": "class",
+            "children": [
+              {
+                "name": "redis",
+                "type": "function",
+                "static": false,
+                "location": "app/models/concerns/redisable.rb:4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Account",
+        "type": "class",
+        "children": [
+          {
+            "name": "local?",
+            "type": "function",
+            "static": false,
+            "location": "app/models/account.rb:163"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "activesupport",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActiveSupport",
+        "type": "class",
+        "children": [
+          {
+            "name": "Callbacks",
+            "type": "class",
+            "children": [
+              {
+                "name": "CallbackSequence",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "invoke_before",
+                    "type": "function",
+                    "labels": [
+                      "mvc.before_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                  },
+                  {
+                    "name": "invoke_after",
+                    "type": "function",
+                    "labels": [
+                      "mvc.after_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "UPDATE \"account_statuses_cleanup_policies\" SET \"keep_direct\" = $1, \"keep_pinned\" = $2, \"keep_polls\" = $3, \"keep_media\" = $4, \"keep_self_fav\" = $5, \"keep_self_bookmark\" = $6, \"min_favs\" = $7, \"min_reblogs\" = $8, \"updated_at\" = $9 WHERE \"account_statuses_cleanup_policies\".\"id\" = $10"
+      },
+      {
+        "type": "query",
+        "name": "RELEASE SAVEPOINT active_record_1"
+      }
+    ]
+  }
+]

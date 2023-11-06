@@ -41,7 +41,7 @@
         "rule": "update-in-get-request"
       }
     ],
-    "timestampMs": 1699224752738.405
+    "timestampMs": 1699243455668.3164
   },
   "appMapMetadata": {
     "/workspaces/mastodon/tmp/appmap/rspec/Reports_GET_api_v1_admin_reports_when_there_are_reports_with_resolved_param_returns_only_the_resolved_reports.appmap.json": {
@@ -84,7 +84,7 @@
             "Version": "HTTP/1.0",
             "Host": "www.example.com",
             "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-            "Authorization": "Bearer WPG9BtSSMYjgRhB-9RCGVKg6MNpcQnRpxYwet8kfjDc",
+            "Authorization": "Bearer YCujY5RBCyINEaXnWzTepontMCfM6_LN_JPhO2Y5UR4",
             "Content-Length": "0"
           }
         },
@@ -93,7 +93,7 @@
             "name": "resolved",
             "class": "String",
             "value": "true",
-            "object_id": 459960
+            "object_id": 7290560
           }
         ]
       },
@@ -120,7 +120,7 @@
               "Version": "HTTP/1.0",
               "Host": "www.example.com",
               "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-              "Authorization": "Bearer WPG9BtSSMYjgRhB-9RCGVKg6MNpcQnRpxYwet8kfjDc",
+              "Authorization": "Bearer YCujY5RBCyINEaXnWzTepontMCfM6_LN_JPhO2Y5UR4",
               "Content-Length": "0"
             }
           },
@@ -129,7 +129,7 @@
               "name": "resolved",
               "class": "String",
               "value": "true",
-              "object_id": 459960
+              "object_id": 7290560
             }
           ]
         }
@@ -148,7 +148,7 @@
               "Version": "HTTP/1.0",
               "Host": "www.example.com",
               "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-              "Authorization": "Bearer WPG9BtSSMYjgRhB-9RCGVKg6MNpcQnRpxYwet8kfjDc",
+              "Authorization": "Bearer YCujY5RBCyINEaXnWzTepontMCfM6_LN_JPhO2Y5UR4",
               "Content-Length": "0"
             }
           },
@@ -157,7 +157,7 @@
               "name": "resolved",
               "class": "String",
               "value": "true",
-              "object_id": 459960
+              "object_id": 7290560
             }
           ]
         }
@@ -571,12 +571,11 @@
         {
           "repository": "https://github.com/sgrigson/mastodon.git",
           "branch": "appmap-config",
-          "commit": "743782bd299fd54e12a4a5829872efc505132ab3",
+          "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
           "status": [
-            "M .husky/pre-commit",
-            "?? sql_warning.txt"
+            "M .husky/pre-commit"
           ],
-          "git_last_annotated_tag": "0.1.2-14597-g743782bd299fd54e12a4a5829872efc505132ab3",
+          "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
           "git_last_tag": "v4.2.0",
           "git_commits_since_last_annotated_tag": 0,
           "git_commits_since_last_tag": 0

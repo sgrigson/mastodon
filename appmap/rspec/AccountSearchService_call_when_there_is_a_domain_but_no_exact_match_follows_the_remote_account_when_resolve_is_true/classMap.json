@@ -1,0 +1,74 @@
+[
+  {
+    "name": "lib/chewy",
+    "type": "package",
+    "children": [
+      {
+        "name": "Chewy",
+        "type": "class",
+        "children": [
+          {
+            "name": "SettingsExtensions",
+            "type": "class",
+            "children": [
+              {
+                "name": "enabled?",
+                "type": "function",
+                "static": true,
+                "location": "lib/chewy/settings_extensions.rb:5"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "TagManager",
+            "type": "class",
+            "children": [
+              {
+                "name": "local_domain?",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/tag_manager.rb:13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "services",
+        "type": "package",
+        "children": [
+          {
+            "name": "AccountSearchService",
+            "type": "class",
+            "children": [
+              {
+                "name": "QueryBuilder",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "build",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/services/account_search_service.rb:18"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

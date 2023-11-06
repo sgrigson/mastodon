@@ -1,0 +1,7 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/models/Account",
+  "app/models/AccountStatusesCleanupPolicy",
+  "app/models/concerns/Redisable",
+  "lib/mastodon/Mastodon::Snowflake"
+]

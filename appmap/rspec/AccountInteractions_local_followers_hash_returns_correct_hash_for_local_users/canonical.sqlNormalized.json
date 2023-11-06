@@ -1,0 +1,3 @@
+[
+  "SELECT \"accounts\".\"id\", \"accounts\".\"username\" FROM \"accounts\" INNER JOIN \"follows\" ON \"accounts\".\"id\" = \"follows\".\"account_id\" WHERE \"follows\".\"target_account_id\" = $? AND \"accounts\".\"domain\" IS ? ORDER BY \"accounts\".\"id\" ASC LIMIT $?"
+]

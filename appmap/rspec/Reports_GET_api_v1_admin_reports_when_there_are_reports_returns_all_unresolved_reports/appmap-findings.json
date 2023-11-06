@@ -41,7 +41,7 @@
         "rule": "update-in-get-request"
       }
     ],
-    "timestampMs": 1699224752738.405
+    "timestampMs": 1699243455668.3164
   },
   "appMapMetadata": {
     "/workspaces/mastodon/tmp/appmap/rspec/Reports_GET_api_v1_admin_reports_when_there_are_reports_returns_all_unresolved_reports.appmap.json": {
@@ -57,7 +57,7 @@
       "ruleId": "n-plus-one-query",
       "ruleTitle": "N plus 1 SQL query",
       "event": {
-        "id": 759,
+        "id": 757,
         "event": "call",
         "thread_id": 9160,
         "sql_query": {
@@ -84,17 +84,17 @@
             "Version": "HTTP/1.0",
             "Host": "www.example.com",
             "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-            "Authorization": "Bearer DG-Pl5WeBMRgDUd2cSQXTe6JKRqvfboN9wHByBC-Ejk",
+            "Authorization": "Bearer 3OlKaP1SiMCiNPixStlM48sPw4dDZVW2nQ1jSi66llI",
             "Content-Length": "0"
           }
         }
       },
-      "message": "ActionController::Renderers#render_to_body[742] contains 6 occurrences of SQL: SELECT \"rules\".* FROM \"rules\" WHERE \"rules\".\"id\" IS ?",
+      "message": "ActionController::Renderers#render_to_body[740] contains 6 occurrences of SQL: SELECT \"rules\".* FROM \"rules\" WHERE \"rules\".\"id\" IS ?",
       "groupMessage": "SELECT \"rules\".* FROM \"rules\" WHERE \"rules\".\"id\" IS ?",
       "occurranceCount": 6,
       "relatedEvents": [
         {
-          "id": 759,
+          "id": 757,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -103,7 +103,7 @@
           }
         },
         {
-          "id": 769,
+          "id": 767,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -112,7 +112,7 @@
           }
         },
         {
-          "id": 779,
+          "id": 777,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -121,7 +121,7 @@
           }
         },
         {
-          "id": 1421,
+          "id": 1419,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -130,7 +130,7 @@
           }
         },
         {
-          "id": 2047,
+          "id": 2045,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -139,7 +139,7 @@
           }
         },
         {
-          "id": 2689,
+          "id": 2687,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -148,7 +148,7 @@
           }
         },
         {
-          "id": 742,
+          "id": 740,
           "event": "call",
           "thread_id": 9160,
           "defined_class": "ActionController::Renderers",
@@ -160,23 +160,23 @@
             {
               "name": "options",
               "class": "Hash",
-              "object_id": 417040,
-              "value": "{:json=>[#<Report:0x00007fdc072b6408>, #<Report:0x00007fdc072b62c8>, #<Report:0x00007fdc072b6188>], :each_serializer=>REST::Admin::ReportSerializer, :prefixes=>[api/v1/admin/reports, api/base, application], :template=>index, :layout=>#<Proc:0x00007fdc09217b30 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/ac}",
+              "object_id": 7275900,
+              "value": "{:json=>[#<Report:0x00007fc919ac0280>, #<Report:0x00007fc919ac0140>, #<Report:0x00007fc91a39f8d8>], :each_serializer=>REST::Admin::ReportSerializer, :prefixes=>[api/v1/admin/reports, api/base, application], :template=>index, :layout=>#<Proc:0x00007fc932dfa5b8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/ac}",
               "kind": "req",
               "size": 5
             }
           ],
           "receiver": {
             "class": "Api::V1::Admin::ReportsController",
-            "object_id": 416260,
-            "value": "#<Api::V1::Admin::ReportsController:0x00007fdc072b71c8>"
+            "object_id": 7275180,
+            "value": "#<Api::V1::Admin::ReportsController:0x00007fc919ac1180>"
           }
         }
       ],
       "impactDomain": "Performance",
       "participatingEvents": {
         "commonAncestor": {
-          "id": 742,
+          "id": 740,
           "event": "call",
           "thread_id": 9160,
           "defined_class": "ActionController::Renderers",
@@ -188,16 +188,16 @@
             {
               "name": "options",
               "class": "Hash",
-              "object_id": 417040,
-              "value": "{:json=>[#<Report:0x00007fdc072b6408>, #<Report:0x00007fdc072b62c8>, #<Report:0x00007fdc072b6188>], :each_serializer=>REST::Admin::ReportSerializer, :prefixes=>[api/v1/admin/reports, api/base, application], :template=>index, :layout=>#<Proc:0x00007fdc09217b30 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/ac}",
+              "object_id": 7275900,
+              "value": "{:json=>[#<Report:0x00007fc919ac0280>, #<Report:0x00007fc919ac0140>, #<Report:0x00007fc91a39f8d8>], :each_serializer=>REST::Admin::ReportSerializer, :prefixes=>[api/v1/admin/reports, api/base, application], :template=>index, :layout=>#<Proc:0x00007fc932dfa5b8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/ac}",
               "kind": "req",
               "size": 5
             }
           ],
           "receiver": {
             "class": "Api::V1::Admin::ReportsController",
-            "object_id": 416260,
-            "value": "#<Api::V1::Admin::ReportsController:0x00007fdc072b71c8>"
+            "object_id": 7275180,
+            "value": "#<Api::V1::Admin::ReportsController:0x00007fc919ac1180>"
           }
         }
       },
@@ -237,7 +237,7 @@
             "Version": "HTTP/1.0",
             "Host": "www.example.com",
             "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-            "Authorization": "Bearer DG-Pl5WeBMRgDUd2cSQXTe6JKRqvfboN9wHByBC-Ejk",
+            "Authorization": "Bearer 3OlKaP1SiMCiNPixStlM48sPw4dDZVW2nQ1jSi66llI",
             "Content-Length": "0"
           }
         }
@@ -265,7 +265,7 @@
               "Version": "HTTP/1.0",
               "Host": "www.example.com",
               "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-              "Authorization": "Bearer DG-Pl5WeBMRgDUd2cSQXTe6JKRqvfboN9wHByBC-Ejk",
+              "Authorization": "Bearer 3OlKaP1SiMCiNPixStlM48sPw4dDZVW2nQ1jSi66llI",
               "Content-Length": "0"
             }
           }
@@ -285,7 +285,7 @@
               "Version": "HTTP/1.0",
               "Host": "www.example.com",
               "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-              "Authorization": "Bearer DG-Pl5WeBMRgDUd2cSQXTe6JKRqvfboN9wHByBC-Ejk",
+              "Authorization": "Bearer 3OlKaP1SiMCiNPixStlM48sPw4dDZVW2nQ1jSi66llI",
               "Content-Length": "0"
             }
           }
@@ -300,7 +300,7 @@
       "ruleId": "n-plus-one-query",
       "ruleTitle": "N plus 1 SQL query",
       "event": {
-        "id": 1070,
+        "id": 1068,
         "event": "call",
         "thread_id": 9160,
         "sql_query": {
@@ -330,17 +330,17 @@
             "Version": "HTTP/1.0",
             "Host": "www.example.com",
             "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-            "Authorization": "Bearer DG-Pl5WeBMRgDUd2cSQXTe6JKRqvfboN9wHByBC-Ejk",
+            "Authorization": "Bearer 3OlKaP1SiMCiNPixStlM48sPw4dDZVW2nQ1jSi66llI",
             "Content-Length": "0"
           }
         }
       },
-      "message": "ActionController::Renderers#render_to_body[742] contains 6 occurrences of SQL: SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $? LIMIT $?",
+      "message": "ActionController::Renderers#render_to_body[740] contains 6 occurrences of SQL: SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $? LIMIT $?",
       "groupMessage": "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $? LIMIT $?",
       "occurranceCount": 6,
       "relatedEvents": [
         {
-          "id": 1070,
+          "id": 1068,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -349,7 +349,7 @@
           }
         },
         {
-          "id": 1384,
+          "id": 1382,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -358,7 +358,7 @@
           }
         },
         {
-          "id": 1712,
+          "id": 1710,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -367,7 +367,7 @@
           }
         },
         {
-          "id": 2010,
+          "id": 2008,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -376,7 +376,7 @@
           }
         },
         {
-          "id": 2338,
+          "id": 2336,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -385,7 +385,7 @@
           }
         },
         {
-          "id": 2652,
+          "id": 2650,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -394,7 +394,7 @@
           }
         },
         {
-          "id": 742,
+          "id": 740,
           "event": "call",
           "thread_id": 9160,
           "defined_class": "ActionController::Renderers",
@@ -406,23 +406,23 @@
             {
               "name": "options",
               "class": "Hash",
-              "object_id": 417040,
-              "value": "{:json=>[#<Report:0x00007fdc072b6408>, #<Report:0x00007fdc072b62c8>, #<Report:0x00007fdc072b6188>], :each_serializer=>REST::Admin::ReportSerializer, :prefixes=>[api/v1/admin/reports, api/base, application], :template=>index, :layout=>#<Proc:0x00007fdc09217b30 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/ac}",
+              "object_id": 7275900,
+              "value": "{:json=>[#<Report:0x00007fc919ac0280>, #<Report:0x00007fc919ac0140>, #<Report:0x00007fc91a39f8d8>], :each_serializer=>REST::Admin::ReportSerializer, :prefixes=>[api/v1/admin/reports, api/base, application], :template=>index, :layout=>#<Proc:0x00007fc932dfa5b8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/ac}",
               "kind": "req",
               "size": 5
             }
           ],
           "receiver": {
             "class": "Api::V1::Admin::ReportsController",
-            "object_id": 416260,
-            "value": "#<Api::V1::Admin::ReportsController:0x00007fdc072b71c8>"
+            "object_id": 7275180,
+            "value": "#<Api::V1::Admin::ReportsController:0x00007fc919ac1180>"
           }
         }
       ],
       "impactDomain": "Performance",
       "participatingEvents": {
         "commonAncestor": {
-          "id": 742,
+          "id": 740,
           "event": "call",
           "thread_id": 9160,
           "defined_class": "ActionController::Renderers",
@@ -434,16 +434,16 @@
             {
               "name": "options",
               "class": "Hash",
-              "object_id": 417040,
-              "value": "{:json=>[#<Report:0x00007fdc072b6408>, #<Report:0x00007fdc072b62c8>, #<Report:0x00007fdc072b6188>], :each_serializer=>REST::Admin::ReportSerializer, :prefixes=>[api/v1/admin/reports, api/base, application], :template=>index, :layout=>#<Proc:0x00007fdc09217b30 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/ac}",
+              "object_id": 7275900,
+              "value": "{:json=>[#<Report:0x00007fc919ac0280>, #<Report:0x00007fc919ac0140>, #<Report:0x00007fc91a39f8d8>], :each_serializer=>REST::Admin::ReportSerializer, :prefixes=>[api/v1/admin/reports, api/base, application], :template=>index, :layout=>#<Proc:0x00007fc932dfa5b8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/ac}",
               "kind": "req",
               "size": 5
             }
           ],
           "receiver": {
             "class": "Api::V1::Admin::ReportsController",
-            "object_id": 416260,
-            "value": "#<Api::V1::Admin::ReportsController:0x00007fdc072b71c8>"
+            "object_id": 7275180,
+            "value": "#<Api::V1::Admin::ReportsController:0x00007fc919ac1180>"
           }
         }
       },
@@ -856,8 +856,11 @@
         {
           "repository": "https://github.com/sgrigson/mastodon.git",
           "branch": "appmap-config",
-          "commit": "743782bd299fd54e12a4a5829872efc505132ab3",
-          "git_last_annotated_tag": "0.1.2-14597-g743782bd299fd54e12a4a5829872efc505132ab3",
+          "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+          "status": [
+            "M .husky/pre-commit"
+          ],
+          "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
           "git_last_tag": "v4.2.0",
           "git_commits_since_last_annotated_tag": 0,
           "git_commits_since_last_tag": 0

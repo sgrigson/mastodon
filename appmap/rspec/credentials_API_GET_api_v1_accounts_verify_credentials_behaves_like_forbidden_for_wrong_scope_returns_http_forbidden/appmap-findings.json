@@ -41,7 +41,7 @@
         "rule": "update-in-get-request"
       }
     ],
-    "timestampMs": 1699224752738.405
+    "timestampMs": 1699243455668.3164
   },
   "appMapMetadata": {
     "/workspaces/mastodon/tmp/appmap/rspec/credentials_API_GET_api_v1_accounts_verify_credentials_behaves_like_forbidden_for_wrong_scope_returns_http_forbidden.appmap.json": {
@@ -57,7 +57,7 @@
       "ruleId": "update-in-get-request",
       "ruleTitle": "Data update performed in GET or HEAD request",
       "event": {
-        "id": 707,
+        "id": 713,
         "event": "call",
         "thread_id": 9160,
         "sql_query": {
@@ -73,7 +73,7 @@
         "app/controllers/concerns/localized.rb:10"
       ],
       "scope": {
-        "id": 637,
+        "id": 643,
         "event": "call",
         "thread_id": 9160,
         "http_server_request": {
@@ -84,7 +84,7 @@
             "Version": "HTTP/1.0",
             "Host": "www.example.com",
             "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-            "Authorization": "Bearer aLEC2qiJx7gvrudTC7jzOsfqwIFdnMN_EEgoBvXDS7Q",
+            "Authorization": "Bearer 1quS0g5lHnusq3rDTNhTsh8tGOWJPf_c6IKh4TURpbY",
             "Content-Length": "0"
           }
         }
@@ -92,7 +92,7 @@
       "message": "Data update performed in HTTP request GET /api/v1/accounts/verify_credentials: UPDATE \"oauth_access_tokens\" SET \"last_used_at\" = $1, \"last_used_ip\" = $2 WHERE \"oauth_access_tokens\".\"id\" = $3",
       "relatedEvents": [
         {
-          "id": 707,
+          "id": 713,
           "event": "call",
           "thread_id": 9160,
           "sql_query": {
@@ -101,7 +101,7 @@
           }
         },
         {
-          "id": 637,
+          "id": 643,
           "event": "call",
           "thread_id": 9160,
           "http_server_request": {
@@ -112,7 +112,7 @@
               "Version": "HTTP/1.0",
               "Host": "www.example.com",
               "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-              "Authorization": "Bearer aLEC2qiJx7gvrudTC7jzOsfqwIFdnMN_EEgoBvXDS7Q",
+              "Authorization": "Bearer 1quS0g5lHnusq3rDTNhTsh8tGOWJPf_c6IKh4TURpbY",
               "Content-Length": "0"
             }
           }
@@ -121,7 +121,7 @@
       "impactDomain": "Maintainability",
       "participatingEvents": {
         "request": {
-          "id": 637,
+          "id": 643,
           "event": "call",
           "thread_id": 9160,
           "http_server_request": {
@@ -132,7 +132,7 @@
               "Version": "HTTP/1.0",
               "Host": "www.example.com",
               "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
-              "Authorization": "Bearer aLEC2qiJx7gvrudTC7jzOsfqwIFdnMN_EEgoBvXDS7Q",
+              "Authorization": "Bearer 1quS0g5lHnusq3rDTNhTsh8tGOWJPf_c6IKh4TURpbY",
               "Content-Length": "0"
             }
           }
@@ -547,12 +547,11 @@
         {
           "repository": "https://github.com/sgrigson/mastodon.git",
           "branch": "appmap-config",
-          "commit": "743782bd299fd54e12a4a5829872efc505132ab3",
+          "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
           "status": [
-            "M .husky/pre-commit",
-            "?? sql_warning.txt"
+            "M .husky/pre-commit"
           ],
-          "git_last_annotated_tag": "0.1.2-14597-g743782bd299fd54e12a4a5829872efc505132ab3",
+          "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
           "git_last_tag": "v4.2.0",
           "git_commits_since_last_annotated_tag": 0,
           "git_commits_since_last_tag": 0

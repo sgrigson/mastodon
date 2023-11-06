@@ -1,0 +1,50 @@
+[
+  {
+    "caller": "activesupport",
+    "callee": "Database"
+  },
+  {
+    "caller": "activesupport",
+    "callee": "app"
+  },
+  {
+    "caller": "activesupport",
+    "callee": "sidekiq"
+  },
+  {
+    "caller": "app",
+    "callee": "Database"
+  },
+  {
+    "caller": "app",
+    "callee": "activesupport"
+  },
+  {
+    "caller": "app",
+    "callee": "json"
+  },
+  {
+    "caller": "app",
+    "callee": "logger"
+  },
+  {
+    "caller": "lib/mastodon",
+    "callee": "Database"
+  },
+  {
+    "caller": "lib/mastodon",
+    "callee": "activesupport"
+  },
+  {
+    "caller": "sidekiq",
+    "callee": "app"
+  },
+  {
+    "caller": "sidekiq",
+    "callee": "json"
+  },
+  {
+    "caller": "sidekiq",
+    "callee": "ruby"
+  }
+]

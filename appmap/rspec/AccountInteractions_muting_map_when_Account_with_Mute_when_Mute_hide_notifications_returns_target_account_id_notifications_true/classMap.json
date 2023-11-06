@@ -1,0 +1,12 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"mutes\".* FROM \"mutes\" WHERE \"mutes\".\"target_account_id\" = $1 AND \"mutes\".\"account_id\" = $2"
+      }
+    ]
+  }
+]

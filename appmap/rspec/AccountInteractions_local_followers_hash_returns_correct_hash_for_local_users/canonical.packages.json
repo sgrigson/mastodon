@@ -1,0 +1,9 @@
+[
+  "app/helpers",
+  "app/lib/activitypub",
+  "app/models",
+  "app/models/concerns",
+  "lib/active_record",
+  "logger",
+  "ruby"
+]

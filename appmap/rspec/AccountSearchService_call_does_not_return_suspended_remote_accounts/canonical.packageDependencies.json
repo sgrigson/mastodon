@@ -1,0 +1,14 @@
+[
+  {
+    "caller": "activesupport",
+    "callee": "app"
+  },
+  {
+    "caller": "activesupport",
+    "callee": "lib"
+  },
+  {
+    "caller": "app",
+    "callee": "Database"
+  }
+]

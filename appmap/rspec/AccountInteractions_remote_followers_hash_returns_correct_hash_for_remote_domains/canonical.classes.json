@@ -1,0 +1,6 @@
+[
+  "app/models/concerns/AccountInteractions",
+  "lib/active_record/ActiveRecord::Batches",
+  "logger/Logger::LogDevice",
+  "ruby/String"
+]

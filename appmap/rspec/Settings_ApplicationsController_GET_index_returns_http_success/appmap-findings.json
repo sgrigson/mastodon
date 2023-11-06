@@ -41,7 +41,7 @@
         "rule": "update-in-get-request"
       }
     ],
-    "timestampMs": 1699224752738.405
+    "timestampMs": 1699243455668.3164
   },
   "appMapMetadata": {
     "/workspaces/mastodon/tmp/appmap/rspec/Settings_ApplicationsController_GET_index_returns_http_success.appmap.json": {
@@ -456,8 +456,11 @@
         {
           "repository": "https://github.com/sgrigson/mastodon.git",
           "branch": "appmap-config",
-          "commit": "0b36437555e9cff0bca8d1dda3997ad008f8d669",
-          "git_last_annotated_tag": "0.1.2-14596-g0b36437555e9cff0bca8d1dda3997ad008f8d669",
+          "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+          "status": [
+            "M .husky/pre-commit"
+          ],
+          "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
           "git_last_tag": "v4.2.0",
           "git_commits_since_last_annotated_tag": 0,
           "git_commits_since_last_tag": 0
