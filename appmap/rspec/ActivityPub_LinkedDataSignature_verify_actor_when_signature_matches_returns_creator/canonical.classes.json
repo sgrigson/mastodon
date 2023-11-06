@@ -1,0 +1,11 @@
+[
+  "app/helpers/JsonLdHelper",
+  "app/lib/TagManager",
+  "app/lib/activitypub/ActivityPub::LinkedDataSignature",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "app/lib/ostatus/OStatus::TagManager",
+  "app/models/Account",
+  "openssl/OpenSSL::PKey::PKey",
+  "ruby/Array",
+  "ruby/String"
+]

@@ -1,0 +1,22 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/helpers/DomainControlHelper",
+  "app/helpers/JsonLdHelper",
+  "app/lib/RedisConfiguration",
+  "app/lib/TagManager",
+  "app/models/Account",
+  "app/models/DomainBlock",
+  "app/models/Instance",
+  "app/models/account/Account::Field",
+  "app/models/concerns/Account",
+  "app/models/concerns/AccountCounters",
+  "app/models/concerns/AccountFinderConcern::AccountFinder",
+  "app/models/concerns/DomainMaterializable",
+  "app/models/concerns/Lockable",
+  "app/models/concerns/Redisable",
+  "app/validators/UniqueUsernameValidator",
+  "json/JSON::Ext::Generator::State",
+  "json/JSON::Ext::Parser",
+  "lib/paperclip/Paperclip::AttachmentExtensions",
+  "ruby/String"
+]

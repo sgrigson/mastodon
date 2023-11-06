@@ -1,0 +1,26 @@
+[
+  {
+    "name": "app/lib/activitypub",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActivityPub",
+        "type": "class",
+        "children": [
+          {
+            "name": "LinkedDataSignature",
+            "type": "class",
+            "children": [
+              {
+                "name": "verify_actor!",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/activitypub/linked_data_signature.rb:12"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

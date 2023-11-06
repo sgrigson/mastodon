@@ -1,0 +1,70 @@
+[
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/models"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "lib/paperclip/Paperclip"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "app/models",
+    "callee": "RELEASE SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") != '' AND LOWER(\"accounts\".\"username\") = 'alice' AND LOWER(\"accounts\".\"domain\") = 'example.com' ORDER BY \"accounts\".\"id\" ASC LIMIT $1"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"domain_blocks\".* FROM \"domain_blocks\" WHERE \"domain_blocks\".\"domain\" IN ($1, $2) ORDER BY char_length(domain) desc LIMIT $3"
+  },
+  {
+    "caller": "app/models",
+    "callee": "UPDATE \"accounts\" SET \"updated_at\" = $1, \"uri\" = $2, \"url\" = $3, \"last_webfingered_at\" = $4, \"inbox_url\" = $5, \"protocol\" = $6, \"actor_type\" = $7 WHERE \"accounts\".\"id\" = $8"
+  },
+  {
+    "caller": "app/models",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/models",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "app/workers/activitypub",
+    "callee": "SELECT \"accounts\".\"id\" FROM \"accounts\" WHERE \"accounts\".\"domain\" = $1 AND \"accounts\".\"protocol\" = $2 AND \"accounts\".\"last_webfingered_at\" IS NOT NULL ORDER BY \"accounts\".\"id\" ASC LIMIT $3"
+  },
+  {
+    "caller": "sidekiq/Sidekiq",
+    "callee": "app/workers/activitypub"
+  },
+  {
+    "caller": "sidekiq/Sidekiq",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "sidekiq/Sidekiq",
+    "callee": "ruby/String"
+  }
+]

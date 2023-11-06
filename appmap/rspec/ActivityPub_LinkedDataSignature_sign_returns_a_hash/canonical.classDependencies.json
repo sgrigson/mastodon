@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "app/lib/activitypub",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "app/lib/activitypub",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/lib/activitypub",
+    "callee": "openssl/OpenSSL"
+  },
+  {
+    "caller": "app/lib/activitypub",
+    "callee": "ruby/Array"
+  }
+]
