@@ -1687,7 +1687,7 @@
       },
       {
         "type": "query",
-        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'britt193' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
+        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'tyrone1722' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
       },
       {
         "type": "query",

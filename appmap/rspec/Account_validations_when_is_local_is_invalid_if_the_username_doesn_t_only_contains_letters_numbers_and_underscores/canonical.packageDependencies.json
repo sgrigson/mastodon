@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "activesupport",
+    "callee": "app"
+  },
+  {
+    "caller": "app",
+    "callee": "Database"
+  },
+  {
+    "caller": "app",
+    "callee": "logger"
+  },
+  {
+    "caller": "app",
+    "callee": "ruby"
+  }
+]

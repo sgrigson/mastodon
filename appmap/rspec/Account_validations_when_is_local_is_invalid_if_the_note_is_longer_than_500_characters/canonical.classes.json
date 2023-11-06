@@ -1,0 +1,11 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/models/Account",
+  "app/models/Setting",
+  "app/validators/NoteLengthValidator",
+  "app/validators/UniqueUsernameValidator",
+  "app/validators/UnreservedUsernameValidator",
+  "logger/Logger::LogDevice",
+  "openssl/OpenSSL::Random",
+  "ruby/Marshal"
+]

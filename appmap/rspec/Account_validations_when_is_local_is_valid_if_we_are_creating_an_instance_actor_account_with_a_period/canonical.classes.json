@@ -1,0 +1,6 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/models/Account",
+  "app/validators/UniqueUsernameValidator",
+  "openssl/OpenSSL::Random"
+]

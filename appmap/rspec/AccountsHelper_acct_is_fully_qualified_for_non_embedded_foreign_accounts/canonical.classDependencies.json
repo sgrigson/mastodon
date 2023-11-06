@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "app/helpers",
+    "callee": "app/models"
+  }
+]

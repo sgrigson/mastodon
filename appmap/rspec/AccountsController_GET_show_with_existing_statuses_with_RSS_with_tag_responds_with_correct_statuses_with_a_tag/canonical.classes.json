@@ -1,0 +1,6 @@
+[
+  "app/helpers/ActivityPub::TagManager",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "app/models/Account",
+  "app/models/Status"
+]

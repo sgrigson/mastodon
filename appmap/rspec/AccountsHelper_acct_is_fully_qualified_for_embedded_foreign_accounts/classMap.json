@@ -1,0 +1,50 @@
+[
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "helpers",
+        "type": "package",
+        "children": [
+          {
+            "name": "AccountsHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "acct",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/accounts_helper.rb:14"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "Account",
+            "type": "class",
+            "children": [
+              {
+                "name": "local?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:163"
+              },
+              {
+                "name": "pretty_acct",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:195"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

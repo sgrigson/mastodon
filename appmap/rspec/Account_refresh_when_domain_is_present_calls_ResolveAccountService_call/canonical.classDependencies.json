@@ -1,0 +1,38 @@
+[
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/models"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/validators"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "lib/paperclip/Paperclip"
+  },
+  {
+    "caller": "app/models",
+    "callee": "REFRESH MATERIALIZED VIEW CONCURRENTLY \"instances\";"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT 1 AS one FROM \"instances\" WHERE \"instances\".\"domain\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/models",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "app/validators",
+    "callee": "SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/validators",
+    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'denver_haag2217' AND LOWER(\"accounts\".\"domain\") = 'example.com' LIMIT $1"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  "activesupport",
+  "app/models",
+  "app/models/concerns",
+  "app/validators",
+  "lib/paperclip",
+  "logger",
+  "ruby"
+]

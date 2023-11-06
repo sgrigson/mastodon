@@ -1,0 +1,12 @@
+[
+  "account_stats",
+  "accounts",
+  "follows",
+  "instances",
+  "settings",
+  "user_invite_requests",
+  "user_ips",
+  "user_roles",
+  "users",
+  "webhooks"
+]

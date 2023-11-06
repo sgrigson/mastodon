@@ -1,0 +1,19 @@
+[
+  "account_stats",
+  "accounts",
+  "conversations",
+  "media_attachments",
+  "mentions",
+  "preview_cards",
+  "preview_cards_statuses",
+  "settings",
+  "status_stats",
+  "statuses",
+  "statuses_tags",
+  "tags",
+  "user_invite_requests",
+  "user_ips",
+  "user_roles",
+  "users",
+  "webhooks"
+]

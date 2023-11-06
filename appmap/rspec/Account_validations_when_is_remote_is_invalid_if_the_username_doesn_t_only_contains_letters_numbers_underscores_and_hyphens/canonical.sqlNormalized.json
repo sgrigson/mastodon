@@ -1,0 +1,3 @@
+[
+  "SELECT ? AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = ? AND LOWER(\"accounts\".\"domain\") = ? LIMIT $?"
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "caller": "activesupport",
+    "callee": "app"
+  },
+  {
+    "caller": "activesupport",
+    "callee": "lib/paperclip"
+  },
+  {
+    "caller": "app",
+    "callee": "Database"
+  },
+  {
+    "caller": "app",
+    "callee": "logger"
+  },
+  {
+    "caller": "app",
+    "callee": "ruby"
+  }
+]
