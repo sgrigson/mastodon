@@ -11,8 +11,8 @@
       "static": false,
       "receiver": {
         "class": "ActionView::Base",
-        "object_id": 15501820,
-        "value": "#<#<Class:0x00007fc919b551f0>:0x00007fc8e178a788>"
+        "object_id": 15501760,
+        "value": "#<#<Class:0x00007fc919b551f0>:0x00007fc8e178c1c8>"
       }
     },
     {
@@ -20,8 +20,8 @@
       "event": "return",
       "thread_id": 9160,
       "parent_id": 1,
-      "elapsed": 0.000044271990191191435,
-      "elapsed_instrumentation": 0.0003068739897571504,
+      "elapsed": 0.000036581011954694986,
+      "elapsed_instrumentation": 0.00033396598882973194,
       "return_value": {
         "class": "TrueClass",
         "value": "true",
@@ -61,7 +61,7 @@
       "git_commits_since_last_annotated_tag": 0,
       "git_commits_since_last_tag": 0
     },
-    "name": "ApplicationHelper storage_host? when S3 alias is present returns true",
+    "name": "ApplicationHelper storage_host? when S3 cloudfront is present returns true",
     "source_location": "spec/helpers/application_helper_spec.rb",
     "recorder": {
       "name": "rspec",
