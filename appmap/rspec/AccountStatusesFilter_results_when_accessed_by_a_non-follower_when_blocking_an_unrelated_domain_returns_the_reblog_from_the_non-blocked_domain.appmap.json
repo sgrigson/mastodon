@@ -1,1 +1,794 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"AccountStatusesFilter #results when accessed by a non-follower when blocking an unrelated domain returns the reblog from the non-blocked domain","source_location":"spec/lib/account_statuses_filter_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[{"name":"app","type":"package","children":[{"name":"lib","type":"package","children":[{"name":"AccountStatusesFilter","type":"class","children":[{"name":"results","type":"function","location":"app/lib/account_statuses_filter.rb:20","static":false}]}]},{"name":"models","type":"package","children":[{"name":"Account","type":"class","children":[{"name":"suspended?","type":"function","location":"app/models/account.rb:237","static":false},{"name":"excluded_from_timeline_domains","type":"function","location":"app/models/account.rb:401","static":false},{"name":"excluded_from_timeline_account_ids","type":"function","location":"app/models/account.rb:397","static":false}]},{"name":"concerns","type":"package","children":[{"name":"AccountInteractions","type":"class","children":[{"name":"blocking?","type":"function","location":"app/models/concerns/account_interactions.rb:214","static":false},{"name":"following?","type":"function","location":"app/models/concerns/account_interactions.rb:198","static":false}]}]}]}]},{"name":"logger","type":"package","children":[{"name":"Logger","type":"class","children":[{"name":"LogDevice","type":"class","children":[{"name":"write","type":"function","location":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31","static":false,"labels":["log"]}]}]}]},{"name":"ruby","type":"package","children":[{"name":"Marshal","type":"class","children":[{"name":"dump","type":"function","location":"Marshal.dump","static":true,"labels":["serialize"]}]}]}],"events":[{"id":1974631,"event":"call","thread_id":9160,"defined_class":"AccountStatusesFilter","method_id":"results","path":"app/lib/account_statuses_filter.rb","lineno":20,"static":false,"parameters":[],"receiver":{"class":"AccountStatusesFilter","object_id":10453960,"value":"#<AccountStatusesFilter:0x00007fc8e29d6e78>"}},{"id":1974632,"event":"call","thread_id":9160,"defined_class":"Account","method_id":"suspended?","path":"app/models/account.rb","lineno":237,"static":false,"parameters":[],"receiver":{"class":"Account","object_id":10453020,"value":"#<Account:0x00007fc91a39d718>"}},{"id":1974633,"event":"return","thread_id":9160,"parent_id":1974632,"elapsed":1.979799708351493e-05,"elapsed_instrumentation":6.497406866401434e-05},{"id":1974634,"event":"call","thread_id":9160,"defined_class":"AccountInteractions","method_id":"blocking?","path":"app/models/concerns/account_interactions.rb","lineno":214,"static":false,"parameters":[{"name":"other_account","class":"Account","object_id":10453900,"value":"#<Account:0x00007fc91a4971c8>","kind":"req"}],"receiver":{"class":"Account","object_id":10453020,"value":"#<Account:0x00007fc91a39d718>"}},{"id":1974635,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT 1 AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1 AND \"blocks\".\"target_account_id\" = $2 LIMIT $3","database_type":"postgres"}},{"id":1974636,"event":"return","thread_id":9160,"parent_id":1974635,"elapsed":0.000395734,"elapsed_instrumentation":7.950799772515893e-05},{"id":1974637,"event":"return","thread_id":9160,"parent_id":1974634,"elapsed":0.001932543993461877,"elapsed_instrumentation":7.777009159326553e-05},{"id":1974638,"event":"call","thread_id":9160,"defined_class":"AccountInteractions","method_id":"following?","path":"app/models/concerns/account_interactions.rb","lineno":198,"static":false,"parameters":[{"name":"other_account","class":"Account","object_id":10453020,"value":"#<Account:0x00007fc91a39d718>","kind":"req"}],"receiver":{"class":"Account","object_id":10453900,"value":"#<Account:0x00007fc91a4971c8>"}},{"id":1974639,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT 1 AS one FROM \"follows\" WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2 LIMIT $3","database_type":"postgres"}},{"id":1974640,"event":"return","thread_id":9160,"parent_id":1974639,"elapsed":0.000398981,"elapsed_instrumentation":6.684800609946251e-05},{"id":1974641,"event":"return","thread_id":9160,"parent_id":1974638,"elapsed":0.0014580030110664666,"elapsed_instrumentation":0.00010904198279604316},{"id":1974642,"event":"call","thread_id":9160,"defined_class":"Account","method_id":"excluded_from_timeline_domains","path":"app/models/account.rb","lineno":401,"static":false,"parameters":[],"receiver":{"class":"Account","object_id":10453900,"value":"#<Account:0x00007fc91a4971c8>"}},{"id":1974643,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":10453980,"value":"Cache read: exclude_domains_for:111361404186075432 ({:compress=>false, :compress_threshold=>1024})\n","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":1974644,"event":"return","thread_id":9160,"parent_id":1974643,"elapsed":0.0004641630221158266,"elapsed_instrumentation":0.00010591099271550775,"return_value":{"class":"Integer","value":"99","object_id":199}},{"id":1974645,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":10454000,"value":"Cache generate: exclude_domains_for:111361404186075432 ({:compress=>false, :compress_threshold=>1024 (...3 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":1974646,"event":"return","thread_id":9160,"parent_id":1974645,"elapsed":0.0004878650070168078,"elapsed_instrumentation":0.000115533999633044,"return_value":{"class":"Integer","value":"103","object_id":207}},{"id":1974647,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"account_domain_blocks\".\"domain\" FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $1","database_type":"postgres"}},{"id":1974648,"event":"return","thread_id":9160,"parent_id":1974647,"elapsed":0.000359239,"elapsed_instrumentation":7.943500531837344e-05},{"id":1974649,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":10454020,"value":"Cache write: exclude_domains_for:111361404186075432 ({:compress=>false, :compress_threshold=>1024})\n","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":1974650,"event":"return","thread_id":9160,"parent_id":1974649,"elapsed":0.0004730290384031832,"elapsed_instrumentation":0.00013377598952502012,"return_value":{"class":"Integer","value":"100","object_id":201}},{"id":1974651,"event":"call","thread_id":9160,"defined_class":"Marshal","method_id":"dump","path":"Marshal.dump","static":true,"parameters":[{"name":"arg","class":"Array","object_id":10454040,"value":"[[example.com]]","kind":"rest","size":1}],"receiver":{"class":"Module","object_id":318180,"value":"Marshal"}},{"id":1974652,"event":"return","thread_id":9160,"parent_id":1974651,"elapsed":1.079897629097104e-05,"elapsed_instrumentation":0.00012586201773956418,"return_value":{"class":"String","value":"\u0004\b[\u0006I\"\u0010example.com\u0006:\u0006ET","object_id":10454060}},{"id":1974653,"event":"return","thread_id":9160,"parent_id":1974642,"elapsed":0.003470657975412905,"elapsed_instrumentation":9.035103721544147e-05,"return_value":{"class":"Array","value":"[example.com]","object_id":10454080,"size":1}},{"id":1974654,"event":"call","thread_id":9160,"defined_class":"Account","method_id":"excluded_from_timeline_account_ids","path":"app/models/account.rb","lineno":397,"static":false,"parameters":[],"receiver":{"class":"Account","object_id":10453900,"value":"#<Account:0x00007fc91a4971c8>"}},{"id":1974655,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":10454100,"value":"Cache read: exclude_account_ids_for:111361404186075432 ({:compress=>false, :compress_threshold=>1024 (...3 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":1974656,"event":"return","thread_id":9160,"parent_id":1974655,"elapsed":0.0004654439981095493,"elapsed_instrumentation":0.00010761304292827845,"return_value":{"class":"Integer","value":"103","object_id":207}},{"id":1974657,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":10454120,"value":"Cache generate: exclude_account_ids_for:111361404186075432 ({:compress=>false, :compress_threshold=> (...7 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":1974658,"event":"return","thread_id":9160,"parent_id":1974657,"elapsed":0.0004267430049367249,"elapsed_instrumentation":0.00012241903459653258,"return_value":{"class":"Integer","value":"107","object_id":215}},{"id":1974659,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"blocks\".\"target_account_id\" FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1","database_type":"postgres"}},{"id":1974660,"event":"return","thread_id":9160,"parent_id":1974659,"elapsed":0.000345382,"elapsed_instrumentation":7.730000652372837e-05},{"id":1974661,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"blocks\".\"account_id\" FROM \"blocks\" WHERE \"blocks\".\"target_account_id\" = $1","database_type":"postgres"}},{"id":1974662,"event":"return","thread_id":9160,"parent_id":1974661,"elapsed":0.0002636,"elapsed_instrumentation":5.8519013691693544e-05},{"id":1974663,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"mutes\".\"target_account_id\" FROM \"mutes\" WHERE \"mutes\".\"account_id\" = $1","database_type":"postgres"}},{"id":1974664,"event":"return","thread_id":9160,"parent_id":1974663,"elapsed":0.000260422,"elapsed_instrumentation":6.520404713228345e-05},{"id":1974665,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":10454140,"value":"Cache write: exclude_account_ids_for:111361404186075432 ({:compress=>false, :compress_threshold=>102 (...4 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":1974666,"event":"return","thread_id":9160,"parent_id":1974665,"elapsed":0.00045125599717721343,"elapsed_instrumentation":0.0001245590392500162,"return_value":{"class":"Integer","value":"104","object_id":209}},{"id":1974667,"event":"call","thread_id":9160,"defined_class":"Marshal","method_id":"dump","path":"Marshal.dump","static":true,"parameters":[{"name":"arg","class":"Array","object_id":10454160,"value":"[[]]","kind":"rest","size":1}],"receiver":{"class":"Module","object_id":318180,"value":"Marshal"}},{"id":1974668,"event":"return","thread_id":9160,"parent_id":1974667,"elapsed":7.709953933954239e-06,"elapsed_instrumentation":0.000174128042999655,"return_value":{"class":"String","value":"\u0004\b[\u0000","object_id":10454180}},{"id":1974669,"event":"return","thread_id":9160,"parent_id":1974654,"elapsed":0.006345228001009673,"elapsed_instrumentation":8.59279534779489e-05,"return_value":{"class":"Array","value":"[]","object_id":10454200,"size":0}},{"id":1974670,"event":"return","thread_id":9160,"parent_id":1974631,"elapsed":0.016849133011419326,"elapsed_instrumentation":0.0001445150119252503,"return_value":{"class":"ActiveRecord::AssociationRelation","value":"#<Status::ActiveRecord_AssociationRelation:0x00007fc91a491b88>","object_id":10454220}},{"id":1974671,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"statuses\".\"id\" FROM \"statuses\" LEFT OUTER JOIN \"mentions\" ON \"mentions\".\"status_id\" = \"statuses\".\"id\" LEFT OUTER JOIN \"statuses\" \"reblog\" ON \"reblog\".\"deleted_at\" IS NULL AND \"reblog\".\"id\" = \"statuses\".\"reblog_of_id\" LEFT OUTER JOIN \"accounts\" ON \"accounts\".\"id\" = \"reblog\".\"account_id\" WHERE \"statuses\".\"account_id\" = $1 AND (\"statuses\".\"visibility\" IN ($2, $3) OR \"mentions\".\"account_id\" = $4) AND \"statuses\".\"deleted_at\" IS NULL AND (\"statuses\".\"reblog_of_id\" IS NULL OR (\"accounts\".\"domain\" IS NULL OR \"accounts\".\"domain\" != $5) AND 1=1) GROUP BY \"statuses\".\"id\" ORDER BY \"statuses\".\"id\" DESC","database_type":"postgres"}},{"id":1974672,"event":"return","thread_id":9160,"parent_id":1974671,"elapsed":0.001741213,"elapsed_instrumentation":6.60700025036931e-05}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "AccountStatusesFilter",
+      "method_id": "results",
+      "path": "app/lib/account_statuses_filter.rb",
+      "lineno": 20,
+      "static": false,
+      "receiver": {
+        "class": "AccountStatusesFilter",
+        "object_id": 10453960,
+        "value": "#<AccountStatusesFilter:0x00007fc8e29d6e78>"
+      }
+    },
+    {
+      "id": 2,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Account",
+      "method_id": "suspended?",
+      "path": "app/models/account.rb",
+      "lineno": 237,
+      "static": false,
+      "receiver": {
+        "class": "Account",
+        "object_id": 10453020,
+        "value": "#<Account:0x00007fc91a39d718>"
+      }
+    },
+    {
+      "id": 3,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 2,
+      "elapsed": 0.00001979799708351493,
+      "elapsed_instrumentation": 0.00006497406866401434
+    },
+    {
+      "id": 4,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "AccountInteractions",
+      "method_id": "blocking?",
+      "path": "app/models/concerns/account_interactions.rb",
+      "lineno": 214,
+      "static": false,
+      "parameters": [
+        {
+          "name": "other_account",
+          "class": "Account",
+          "object_id": 10453900,
+          "value": "#<Account:0x00007fc91a4971c8>",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Account",
+        "object_id": 10453020,
+        "value": "#<Account:0x00007fc91a39d718>"
+      }
+    },
+    {
+      "id": 5,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT 1 AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1 AND \"blocks\".\"target_account_id\" = $2 LIMIT $3",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 6,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 5,
+      "elapsed": 0.000395734,
+      "elapsed_instrumentation": 0.00007950799772515893
+    },
+    {
+      "id": 7,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 4,
+      "elapsed": 0.001932543993461877,
+      "elapsed_instrumentation": 0.00007777009159326553
+    },
+    {
+      "id": 8,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "AccountInteractions",
+      "method_id": "following?",
+      "path": "app/models/concerns/account_interactions.rb",
+      "lineno": 198,
+      "static": false,
+      "parameters": [
+        {
+          "name": "other_account",
+          "class": "Account",
+          "object_id": 10453020,
+          "value": "#<Account:0x00007fc91a39d718>",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Account",
+        "object_id": 10453900,
+        "value": "#<Account:0x00007fc91a4971c8>"
+      }
+    },
+    {
+      "id": 9,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT 1 AS one FROM \"follows\" WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2 LIMIT $3",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 10,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 9,
+      "elapsed": 0.000398981,
+      "elapsed_instrumentation": 0.00006684800609946251
+    },
+    {
+      "id": 11,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 8,
+      "elapsed": 0.0014580030110664666,
+      "elapsed_instrumentation": 0.00010904198279604316
+    },
+    {
+      "id": 12,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Account",
+      "method_id": "excluded_from_timeline_domains",
+      "path": "app/models/account.rb",
+      "lineno": 401,
+      "static": false,
+      "receiver": {
+        "class": "Account",
+        "object_id": 10453900,
+        "value": "#<Account:0x00007fc91a4971c8>"
+      }
+    },
+    {
+      "id": 13,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 10453980,
+          "value": "Cache read: exclude_domains_for:111361404186075432 ({:compress=>false, :compress_threshold=>1024})\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 14,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 13,
+      "elapsed": 0.0004641630221158266,
+      "elapsed_instrumentation": 0.00010591099271550775,
+      "return_value": {
+        "class": "Integer",
+        "value": "99",
+        "object_id": 199
+      }
+    },
+    {
+      "id": 15,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 10454000,
+          "value": "Cache generate: exclude_domains_for:111361404186075432 ({:compress=>false, :compress_threshold=>1024 (...3 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 16,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 15,
+      "elapsed": 0.0004878650070168078,
+      "elapsed_instrumentation": 0.000115533999633044,
+      "return_value": {
+        "class": "Integer",
+        "value": "103",
+        "object_id": 207
+      }
+    },
+    {
+      "id": 17,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"account_domain_blocks\".\"domain\" FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 18,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 17,
+      "elapsed": 0.000359239,
+      "elapsed_instrumentation": 0.00007943500531837344
+    },
+    {
+      "id": 19,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 10454020,
+          "value": "Cache write: exclude_domains_for:111361404186075432 ({:compress=>false, :compress_threshold=>1024})\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 20,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 19,
+      "elapsed": 0.0004730290384031832,
+      "elapsed_instrumentation": 0.00013377598952502012,
+      "return_value": {
+        "class": "Integer",
+        "value": "100",
+        "object_id": 201
+      }
+    },
+    {
+      "id": 21,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Marshal",
+      "method_id": "dump",
+      "path": "Marshal.dump",
+      "static": true,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 10454040,
+          "value": "[[example.com]]",
+          "kind": "rest",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 318180,
+        "value": "Marshal"
+      }
+    },
+    {
+      "id": 22,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 21,
+      "elapsed": 0.00001079897629097104,
+      "elapsed_instrumentation": 0.00012586201773956418,
+      "return_value": {
+        "class": "String",
+        "value": "\u0004\b[\u0006I\"\u0010example.com\u0006:\u0006ET",
+        "object_id": 10454060
+      }
+    },
+    {
+      "id": 23,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 12,
+      "elapsed": 0.003470657975412905,
+      "elapsed_instrumentation": 0.00009035103721544147,
+      "return_value": {
+        "class": "Array",
+        "value": "[example.com]",
+        "object_id": 10454080,
+        "size": 1
+      }
+    },
+    {
+      "id": 24,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Account",
+      "method_id": "excluded_from_timeline_account_ids",
+      "path": "app/models/account.rb",
+      "lineno": 397,
+      "static": false,
+      "receiver": {
+        "class": "Account",
+        "object_id": 10453900,
+        "value": "#<Account:0x00007fc91a4971c8>"
+      }
+    },
+    {
+      "id": 25,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 10454100,
+          "value": "Cache read: exclude_account_ids_for:111361404186075432 ({:compress=>false, :compress_threshold=>1024 (...3 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 26,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 25,
+      "elapsed": 0.0004654439981095493,
+      "elapsed_instrumentation": 0.00010761304292827845,
+      "return_value": {
+        "class": "Integer",
+        "value": "103",
+        "object_id": 207
+      }
+    },
+    {
+      "id": 27,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 10454120,
+          "value": "Cache generate: exclude_account_ids_for:111361404186075432 ({:compress=>false, :compress_threshold=> (...7 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 28,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 27,
+      "elapsed": 0.0004267430049367249,
+      "elapsed_instrumentation": 0.00012241903459653258,
+      "return_value": {
+        "class": "Integer",
+        "value": "107",
+        "object_id": 215
+      }
+    },
+    {
+      "id": 29,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"blocks\".\"target_account_id\" FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 30,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 29,
+      "elapsed": 0.000345382,
+      "elapsed_instrumentation": 0.00007730000652372837
+    },
+    {
+      "id": 31,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"blocks\".\"account_id\" FROM \"blocks\" WHERE \"blocks\".\"target_account_id\" = $1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 32,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 31,
+      "elapsed": 0.0002636,
+      "elapsed_instrumentation": 0.000058519013691693544
+    },
+    {
+      "id": 33,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"mutes\".\"target_account_id\" FROM \"mutes\" WHERE \"mutes\".\"account_id\" = $1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 34,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 33,
+      "elapsed": 0.000260422,
+      "elapsed_instrumentation": 0.00006520404713228345
+    },
+    {
+      "id": 35,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 10454140,
+          "value": "Cache write: exclude_account_ids_for:111361404186075432 ({:compress=>false, :compress_threshold=>102 (...4 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 36,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 35,
+      "elapsed": 0.00045125599717721343,
+      "elapsed_instrumentation": 0.0001245590392500162,
+      "return_value": {
+        "class": "Integer",
+        "value": "104",
+        "object_id": 209
+      }
+    },
+    {
+      "id": 37,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Marshal",
+      "method_id": "dump",
+      "path": "Marshal.dump",
+      "static": true,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "Array",
+          "object_id": 10454160,
+          "value": "[[]]",
+          "kind": "rest",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "Module",
+        "object_id": 318180,
+        "value": "Marshal"
+      }
+    },
+    {
+      "id": 38,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 37,
+      "elapsed": 0.000007709953933954239,
+      "elapsed_instrumentation": 0.000174128042999655,
+      "return_value": {
+        "class": "String",
+        "value": "\u0004\b[\u0000",
+        "object_id": 10454180
+      }
+    },
+    {
+      "id": 39,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 24,
+      "elapsed": 0.006345228001009673,
+      "elapsed_instrumentation": 0.0000859279534779489,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 10454200,
+        "size": 0
+      }
+    },
+    {
+      "id": 40,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.016849133011419326,
+      "elapsed_instrumentation": 0.0001445150119252503,
+      "return_value": {
+        "class": "ActiveRecord::AssociationRelation",
+        "value": "#<Status::ActiveRecord_AssociationRelation:0x00007fc91a491b88>",
+        "object_id": 10454220
+      }
+    },
+    {
+      "id": 41,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"statuses\".\"id\" FROM \"statuses\" LEFT OUTER JOIN \"mentions\" ON \"mentions\".\"status_id\" = \"statuses\".\"id\" LEFT OUTER JOIN \"statuses\" \"reblog\" ON \"reblog\".\"deleted_at\" IS NULL AND \"reblog\".\"id\" = \"statuses\".\"reblog_of_id\" LEFT OUTER JOIN \"accounts\" ON \"accounts\".\"id\" = \"reblog\".\"account_id\" WHERE \"statuses\".\"account_id\" = $1 AND (\"statuses\".\"visibility\" IN ($2, $3) OR \"mentions\".\"account_id\" = $4) AND \"statuses\".\"deleted_at\" IS NULL AND (\"statuses\".\"reblog_of_id\" IS NULL OR (\"accounts\".\"domain\" IS NULL OR \"accounts\".\"domain\" != $5) AND 1=1) GROUP BY \"statuses\".\"id\" ORDER BY \"statuses\".\"id\" DESC",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 42,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 41,
+      "elapsed": 0.001741213,
+      "elapsed_instrumentation": 0.0000660700025036931
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "AccountStatusesFilter #results when accessed by a non-follower when blocking an unrelated domain returns the reblog from the non-blocked domain",
+    "source_location": "spec/lib/account_statuses_filter_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "name": "app",
+      "type": "package",
+      "children": [
+        {
+          "name": "lib",
+          "type": "package",
+          "children": [
+            {
+              "name": "AccountStatusesFilter",
+              "type": "class",
+              "children": [
+                {
+                  "name": "results",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/account_statuses_filter.rb:20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "models",
+          "type": "package",
+          "children": [
+            {
+              "name": "Account",
+              "type": "class",
+              "children": [
+                {
+                  "name": "suspended?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/models/account.rb:237"
+                },
+                {
+                  "name": "excluded_from_timeline_domains",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/models/account.rb:401"
+                },
+                {
+                  "name": "excluded_from_timeline_account_ids",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/models/account.rb:397"
+                }
+              ]
+            },
+            {
+              "name": "concerns",
+              "type": "package",
+              "children": [
+                {
+                  "name": "AccountInteractions",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "blocking?",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/models/concerns/account_interactions.rb:214"
+                    },
+                    {
+                      "name": "following?",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/models/concerns/account_interactions.rb:198"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "type": "package",
+      "children": [
+        {
+          "name": "Logger",
+          "type": "class",
+          "children": [
+            {
+              "name": "LogDevice",
+              "type": "class",
+              "children": [
+                {
+                  "name": "write",
+                  "type": "function",
+                  "labels": [
+                    "log"
+                  ],
+                  "static": false,
+                  "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ruby",
+      "type": "package",
+      "children": [
+        {
+          "name": "Marshal",
+          "type": "class",
+          "children": [
+            {
+              "name": "dump",
+              "type": "function",
+              "labels": [
+                "serialize"
+              ],
+              "static": true,
+              "location": "Marshal.dump"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT 1 AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1 AND \"blocks\".\"target_account_id\" = $2 LIMIT $3"
+        },
+        {
+          "type": "query",
+          "name": "SELECT 1 AS one FROM \"follows\" WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2 LIMIT $3"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"account_domain_blocks\".\"domain\" FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $1"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"blocks\".\"target_account_id\" FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"blocks\".\"account_id\" FROM \"blocks\" WHERE \"blocks\".\"target_account_id\" = $1"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"mutes\".\"target_account_id\" FROM \"mutes\" WHERE \"mutes\".\"account_id\" = $1"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"statuses\".\"id\" FROM \"statuses\" LEFT OUTER JOIN \"mentions\" ON \"mentions\".\"status_id\" = \"statuses\".\"id\" LEFT OUTER JOIN \"statuses\" \"reblog\" ON \"reblog\".\"deleted_at\" IS NULL AND \"reblog\".\"id\" = \"statuses\".\"reblog_of_id\" LEFT OUTER JOIN \"accounts\" ON \"accounts\".\"id\" = \"reblog\".\"account_id\" WHERE \"statuses\".\"account_id\" = $1 AND (\"statuses\".\"visibility\" IN ($2, $3) OR \"mentions\".\"account_id\" = $4) AND \"statuses\".\"deleted_at\" IS NULL AND (\"statuses\".\"reblog_of_id\" IS NULL OR (\"accounts\".\"domain\" IS NULL OR \"accounts\".\"domain\" != $5) AND 1=1) GROUP BY \"statuses\".\"id\" ORDER BY \"statuses\".\"id\" DESC"
+        }
+      ]
+    }
+  ]
+}
