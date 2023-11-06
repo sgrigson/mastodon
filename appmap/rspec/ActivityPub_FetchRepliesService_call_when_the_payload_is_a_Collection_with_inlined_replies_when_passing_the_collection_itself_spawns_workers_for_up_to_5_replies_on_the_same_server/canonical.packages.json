@@ -1,0 +1,10 @@
+[
+  "activesupport",
+  "app/helpers",
+  "app/lib",
+  "app/models",
+  "app/models/concerns",
+  "app/validators",
+  "lib/mastodon",
+  "lib/paperclip"
+]

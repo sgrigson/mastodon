@@ -1,0 +1,4 @@
+[
+  "app/lib",
+  "app/lib/connection_pool"
+]

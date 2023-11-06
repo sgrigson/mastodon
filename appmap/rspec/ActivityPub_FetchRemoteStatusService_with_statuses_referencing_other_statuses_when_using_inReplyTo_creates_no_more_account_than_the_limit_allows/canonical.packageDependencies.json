@@ -1,0 +1,62 @@
+[
+  {
+    "caller": "activesupport",
+    "callee": "Database"
+  },
+  {
+    "caller": "activesupport",
+    "callee": "app"
+  },
+  {
+    "caller": "activesupport",
+    "callee": "lib"
+  },
+  {
+    "caller": "app",
+    "callee": "Database"
+  },
+  {
+    "caller": "app",
+    "callee": "activesupport"
+  },
+  {
+    "caller": "app",
+    "callee": "lib"
+  },
+  {
+    "caller": "app",
+    "callee": "logger"
+  },
+  {
+    "caller": "app",
+    "callee": "openssl"
+  },
+  {
+    "caller": "app",
+    "callee": "ruby"
+  },
+  {
+    "caller": "app",
+    "callee": "sidekiq"
+  },
+  {
+    "caller": "lib",
+    "callee": "Database"
+  },
+  {
+    "caller": "lib",
+    "callee": "activesupport"
+  },
+  {
+    "caller": "sidekiq",
+    "callee": "app"
+  },
+  {
+    "caller": "sidekiq",
+    "callee": "json"
+  },
+  {
+    "caller": "sidekiq",
+    "callee": "ruby"
+  }
+]

@@ -1,0 +1,604 @@
+[
+  {
+    "name": "activesupport",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActiveSupport",
+        "type": "class",
+        "children": [
+          {
+            "name": "Callbacks",
+            "type": "class",
+            "children": [
+              {
+                "name": "CallbackSequence",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "invoke_before",
+                    "type": "function",
+                    "labels": [
+                      "mvc.before_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                  },
+                  {
+                    "name": "invoke_after",
+                    "type": "function",
+                    "labels": [
+                      "mvc.after_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "Account",
+            "type": "class",
+            "children": [
+              {
+                "name": "local?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:163"
+              },
+              {
+                "name": "ensure_keys!",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:478"
+              },
+              {
+                "name": "keypair",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:293"
+              },
+              {
+                "name": "object_type",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:385"
+              },
+              {
+                "name": "instance_actor?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:175"
+              }
+            ]
+          },
+          {
+            "name": "concerns",
+            "type": "package",
+            "children": [
+              {
+                "name": "DomainMaterializable",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "refresh_instances_view",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/domain_materializable.rb:12"
+                  },
+                  {
+                    "name": "count_unique_subdomains!",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/domain_materializable.rb:19"
+                  }
+                ]
+              },
+              {
+                "name": "Redisable",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "with_redis",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/redisable.rb:8"
+                  }
+                ]
+              },
+              {
+                "name": "RateLimitable",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "rate_limit?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/rate_limitable.rb:10"
+                  }
+                ]
+              },
+              {
+                "name": "AccountCounters",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "increment_count!",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_counters.rb:23"
+                  },
+                  {
+                    "name": "update_count!",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_counters.rb:34"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Instance",
+            "type": "class",
+            "children": [
+              {
+                "name": "refresh",
+                "type": "function",
+                "static": true,
+                "location": "app/models/instance.rb:28"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "type": "class",
+            "children": [
+              {
+                "name": "local?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/status.rb:188"
+              },
+              {
+                "name": "reblog?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/status.rb:196"
+              },
+              {
+                "name": "reply?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/status.rb:184"
+              },
+              {
+                "name": "with_media?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/status.rb:242"
+              },
+              {
+                "name": "ordered_media_attachments",
+                "type": "function",
+                "static": false,
+                "location": "app/models/status.rb:271"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "TagManager",
+            "type": "class",
+            "children": [
+              {
+                "name": "normalize_domain",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/tag_manager.rb:17"
+              }
+            ]
+          },
+          {
+            "name": "RedisConfiguration",
+            "type": "class",
+            "children": [
+              {
+                "name": "with",
+                "type": "function",
+                "static": true,
+                "location": "app/lib/redis_configuration.rb:10"
+              },
+              {
+                "name": "pool",
+                "type": "function",
+                "static": true,
+                "location": "app/lib/redis_configuration.rb:12"
+              }
+            ]
+          },
+          {
+            "name": "Request",
+            "type": "class",
+            "children": [
+              {
+                "name": "on_behalf_of",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/request.rb:91"
+              },
+              {
+                "name": "add_headers",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/request.rb:100"
+              },
+              {
+                "name": "perform",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/request.rb:105"
+              },
+              {
+                "name": "http_client",
+                "type": "function",
+                "static": true,
+                "location": "app/lib/request.rb:141"
+              },
+              {
+                "name": "headers",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/request.rb:126"
+              },
+              {
+                "name": "ClientLimit",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "body_with_limit",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/lib/request.rb:227"
+                  },
+                  {
+                    "name": "truncated_body",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/lib/request.rb:204"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "activitypub",
+            "type": "package",
+            "children": [
+              {
+                "name": "ActivityPub",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "TagManager",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "key_uri_for",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/activitypub/tag_manager.rb:53"
+                      },
+                      {
+                        "name": "uri_for",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/activitypub/tag_manager.rb:36"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "validators",
+        "type": "package",
+        "children": [
+          {
+            "name": "UniqueUsernameValidator",
+            "type": "class",
+            "children": [
+              {
+                "name": "validate",
+                "type": "function",
+                "static": false,
+                "location": "app/validators/unique_username_validator.rb:6"
+              }
+            ]
+          },
+          {
+            "name": "StatusLengthValidator",
+            "type": "class",
+            "children": [
+              {
+                "name": "validate",
+                "type": "function",
+                "static": false,
+                "location": "app/validators/status_length_validator.rb:8"
+              }
+            ]
+          },
+          {
+            "name": "DisallowedHashtagsValidator",
+            "type": "class",
+            "children": [
+              {
+                "name": "validate",
+                "type": "function",
+                "static": false,
+                "location": "app/validators/disallowed_hashtags_validator.rb:4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "helpers",
+        "type": "package",
+        "children": [
+          {
+            "name": "JsonLdHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "non_matching_uri_hosts?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/jsonld_helper.rb:66"
+              },
+              {
+                "name": "unsupported_uri_scheme?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/jsonld_helper.rb:62"
+              },
+              {
+                "name": "fetch_resource_without_id_validation",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/jsonld_helper.rb:171"
+              },
+              {
+                "name": "build_request",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/jsonld_helper.rb:207"
+              },
+              {
+                "name": "response_successful?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/jsonld_helper.rb:199"
+              }
+            ]
+          },
+          {
+            "name": "ActivityPub",
+            "type": "class",
+            "children": [
+              {
+                "name": "TagManager",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "default_url_options",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/helpers/routing_helper.rb:12"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lib",
+    "type": "package",
+    "children": [
+      {
+        "name": "paperclip",
+        "type": "package",
+        "children": [
+          {
+            "name": "Paperclip",
+            "type": "class",
+            "children": [
+              {
+                "name": "AttachmentExtensions",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "save",
+                    "type": "function",
+                    "static": false,
+                    "location": "lib/paperclip/attachment_extensions.rb:83"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "mastodon",
+        "type": "package",
+        "children": [
+          {
+            "name": "Mastodon",
+            "type": "class",
+            "children": [
+              {
+                "name": "Snowflake",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "Callbacks",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "around_create",
+                        "type": "function",
+                        "static": true,
+                        "location": "lib/mastodon/snowflake.rb:7"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Version",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "user_agent",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:67"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "openssl",
+    "type": "package",
+    "children": [
+      {
+        "name": "OpenSSL",
+        "type": "class",
+        "children": [
+          {
+            "name": "PKey",
+            "type": "class",
+            "children": [
+              {
+                "name": "PKey",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "sign",
+                    "type": "function",
+                    "labels": [
+                      "crypto.pkey"
+                    ],
+                    "static": false,
+                    "location": "OpenSSL::PKey::PKey#sign"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "type": "package",
+    "children": [
+      {
+        "name": "Array",
+        "type": "class",
+        "children": [
+          {
+            "name": "pack",
+            "type": "function",
+            "labels": [
+              "array.pack"
+            ],
+            "static": false,
+            "location": "<internal:pack>:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'gregorio1679' AND LOWER(\"accounts\".\"domain\") = 'example.com' LIMIT $1"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"accounts\" (\"username\", \"domain\", \"private_key\", \"public_key\", \"created_at\", \"updated_at\", \"note\", \"display_name\", \"uri\", \"url\", \"avatar_file_name\", \"avatar_content_type\", \"avatar_file_size\", \"avatar_updated_at\", \"header_file_name\", \"header_content_type\", \"header_file_size\", \"header_updated_at\", \"avatar_remote_url\", \"locked\", \"header_remote_url\", \"last_webfingered_at\", \"inbox_url\", \"outbox_url\", \"shared_inbox_url\", \"followers_url\", \"protocol\", \"memorial\", \"moved_to_account_id\", \"featured_collection_url\", \"fields\", \"actor_type\", \"discoverable\", \"also_known_as\", \"silenced_at\", \"suspended_at\", \"hide_collections\", \"avatar_storage_schema_version\", \"header_storage_schema_version\", \"devices_url\", \"suspension_origin\", \"sensitized_at\", \"trendable\", \"reviewed_at\", \"requested_review_at\", \"indexable\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22, $23, $24, $25, $26, $27, $28, $29, $30, $31, $32, $33, $34, $35, $36, $37, $38, $39, $40, $41, $42, $43, $44, $45, $46) RETURNING \"id\""
+      },
+      {
+        "type": "query",
+        "name": "RELEASE SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"instances\" WHERE \"instances\".\"domain\" = $1 LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "REFRESH MATERIALIZED VIEW CONCURRENTLY \"instances\";"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"statuses\" WHERE \"statuses\".\"uri\" = $1 LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"conversations\" (\"uri\", \"created_at\", \"updated_at\") VALUES ($1, $2, $3) RETURNING \"id\""
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"statuses\" (\"uri\", \"text\", \"created_at\", \"updated_at\", \"in_reply_to_id\", \"reblog_of_id\", \"url\", \"sensitive\", \"visibility\", \"spoiler_text\", \"reply\", \"language\", \"conversation_id\", \"local\", \"account_id\", \"application_id\", \"in_reply_to_account_id\", \"poll_id\", \"deleted_at\", \"edited_at\", \"trendable\", \"ordered_media_attachment_ids\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22) RETURNING \"id\""
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO account_stats(account_id, statuses_count, created_at, updated_at, last_status_at) VALUES (111361337883272878, 1, now(), now(), now()) ON CONFLICT (account_id) DO UPDATE SET statuses_count = account_stats.statuses_count + 1, last_status_at = now(), updated_at = now() RETURNING id;"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" WHERE \"accounts\".\"id\" = $1 LIMIT $2"
+      }
+    ]
+  }
+]
