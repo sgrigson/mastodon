@@ -1,0 +1,23 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/helpers/JsonLdHelper",
+  "app/lib/RedisConfiguration",
+  "app/lib/TagManager",
+  "app/lib/activitypub/ActivityPub::Activity",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "app/lib/activitypub/activity/ActivityPub::Activity::Add",
+  "app/lib/ostatus/OStatus::TagManager",
+  "app/models/Account",
+  "app/models/Instance",
+  "app/models/Status",
+  "app/models/concerns/AccountCounters",
+  "app/models/concerns/AccountInteractions",
+  "app/models/concerns/DomainMaterializable",
+  "app/models/concerns/RateLimitable",
+  "app/models/concerns/Redisable",
+  "app/validators/DisallowedHashtagsValidator",
+  "app/validators/StatusLengthValidator",
+  "app/validators/UniqueUsernameValidator",
+  "lib/mastodon/Mastodon::Snowflake::Callbacks",
+  "lib/paperclip/Paperclip::AttachmentExtensions"
+]

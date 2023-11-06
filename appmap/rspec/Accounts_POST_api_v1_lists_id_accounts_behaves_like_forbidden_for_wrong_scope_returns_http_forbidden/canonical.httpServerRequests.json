@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /api/v1/lists/{list_id}/accounts",
+    "parameters": "(account_ids)",
+    "status": 403
+  }
+]

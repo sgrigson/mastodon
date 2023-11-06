@@ -1,0 +1,98 @@
+[
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "INSERT INTO \"conversations\" (\"uri\", \"created_at\", \"updated_at\") VALUES ($1, $2, $3) RETURNING \"id\""
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT 1 AS one FROM \"statuses\" WHERE \"statuses\".\"uri\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/models"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/validators"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "lib/paperclip"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "INSERT INTO \"status_pins\" (\"account_id\", \"status_id\", \"created_at\", \"updated_at\") VALUES ($1, $2, $3, $4) RETURNING \"id\", \"created_at\", \"updated_at\""
+  },
+  {
+    "caller": "app/lib",
+    "callee": "RELEASE SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses\".\"uri\" = $1 ORDER BY \"statuses\".\"id\" DESC LIMIT $2"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/models",
+    "callee": "INSERT INTO account_stats(account_id, statuses_count, created_at, updated_at, last_status_at) VALUES (111361340554248930, 1, now(), now(), now()) ON CONFLICT (account_id) DO UPDATE SET statuses_count = account_stats.statuses_count + 1, last_status_at = now(), updated_at = now() RETURNING id;"
+  },
+  {
+    "caller": "app/models",
+    "callee": "REFRESH MATERIALIZED VIEW CONCURRENTLY \"instances\";"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT 1 AS one FROM \"instances\" WHERE \"instances\".\"domain\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT 1 AS one FROM \"status_pins\" WHERE \"status_pins\".\"account_id\" = $1 AND \"status_pins\".\"status_id\" = $2 LIMIT $3"
+  },
+  {
+    "caller": "app/models",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "app/validators",
+    "callee": "SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/validators",
+    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'althea_lind1830' AND LOWER(\"accounts\".\"domain\") = 'example.com' LIMIT $1"
+  },
+  {
+    "caller": "app/validators",
+    "callee": "SELECT COUNT(*) FROM \"status_pins\" WHERE \"status_pins\".\"account_id\" = $1"
+  },
+  {
+    "caller": "app/validators",
+    "callee": "app/models"
+  },
+  {
+    "caller": "lib/mastodon",
+    "callee": "INSERT INTO \"statuses\" (\"uri\", \"text\", \"created_at\", \"updated_at\", \"in_reply_to_id\", \"reblog_of_id\", \"url\", \"sensitive\", \"visibility\", \"spoiler_text\", \"reply\", \"language\", \"conversation_id\", \"local\", \"account_id\", \"application_id\", \"in_reply_to_account_id\", \"poll_id\", \"deleted_at\", \"edited_at\", \"trendable\", \"ordered_media_attachment_ids\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22) RETURNING \"id\""
+  },
+  {
+    "caller": "lib/mastodon",
+    "callee": "activesupport/ActiveSupport"
+  }
+]

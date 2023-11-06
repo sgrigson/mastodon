@@ -1,0 +1,7 @@
+[
+  {
+    "route": "DELETE /api/v1/admin/accounts/{id}",
+    "parameters": "()",
+    "status": 403
+  }
+]

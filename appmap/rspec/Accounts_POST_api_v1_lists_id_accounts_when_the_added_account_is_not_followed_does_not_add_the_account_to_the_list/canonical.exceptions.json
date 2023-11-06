@@ -1,0 +1,62 @@
+[
+  {
+    "class": "ActiveRecord::RecordNotFound",
+    "message": "Couldn't find Follow with [WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2]",
+    "stack": [
+      "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413",
+      "app/controllers/api/v1/lists/accounts_controller.rb:17",
+      "app/controllers/concerns/localized.rb:10"
+    ],
+    "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413"
+  },
+  {
+    "class": "ActiveRecord::RecordNotFound",
+    "message": "Couldn't find Follow with [WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2]",
+    "stack": [
+      "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413",
+      "app/controllers/concerns/localized.rb:10"
+    ],
+    "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413"
+  },
+  {
+    "class": "ActiveRecord::RecordNotFound",
+    "message": "Couldn't find Follow with [WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2]",
+    "stack": [
+      "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413",
+      "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597",
+      "app/controllers/api/v1/lists/accounts_controller.rb:17",
+      "app/controllers/concerns/localized.rb:10"
+    ],
+    "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413"
+  },
+  {
+    "class": "ActiveRecord::RecordNotFound",
+    "message": "Couldn't find FollowRequest with [WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"t (...23 more characters)",
+    "stack": [
+      "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413",
+      "app/controllers/api/v1/lists/accounts_controller.rb:17",
+      "app/controllers/concerns/localized.rb:10"
+    ],
+    "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413"
+  },
+  {
+    "class": "ActiveRecord::RecordNotFound",
+    "message": "Couldn't find FollowRequest with [WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"t (...23 more characters)",
+    "stack": [
+      "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413",
+      "app/controllers/concerns/localized.rb:10"
+    ],
+    "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413"
+  },
+  {
+    "class": "ActiveRecord::RecordNotFound",
+    "message": "Couldn't find FollowRequest with [WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"t (...23 more characters)",
+    "stack": [
+      "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413",
+      "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597",
+      "app/controllers/api/v1/lists/accounts_controller.rb:17",
+      "app/controllers/concerns/localized.rb:10"
+    ],
+    "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activerecord-7.1.1/lib/active_record/relation/finder_methods.rb:413"
+  }
+]

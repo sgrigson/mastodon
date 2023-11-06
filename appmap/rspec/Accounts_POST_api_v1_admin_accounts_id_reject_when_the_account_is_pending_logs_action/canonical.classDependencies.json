@@ -1,0 +1,486 @@
+[
+  {
+    "caller": "POST /api/v1/admin/accounts/{id}/reject",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "POST /api/v1/admin/accounts/{id}/reject",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "POST /api/v1/admin/accounts/{id}/reject",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "POST /api/v1/admin/accounts/{id}/reject",
+    "callee": "lib/chewy"
+  },
+  {
+    "caller": "POST /api/v1/admin/accounts/{id}/reject",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "POST /api/v1/admin/accounts/{id}/reject",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "POST /api/v1/admin/accounts/{id}/reject",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "DELETE FROM \"bulk_imports\" WHERE \"bulk_imports\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT 1 AS one FROM \"oauth_access_tokens\" WHERE \"oauth_access_tokens\".\"token\" = $1 AND \"oauth_access_tokens\".\"id\" != $2 LIMIT $3"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_aliases\".* FROM \"account_aliases\" WHERE \"account_aliases\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_conversations\".* FROM \"account_conversations\" WHERE \"account_conversations\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_deletion_requests\".* FROM \"account_deletion_requests\" WHERE \"account_deletion_requests\".\"account_id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_domain_blocks\".* FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_migrations\".* FROM \"account_migrations\" WHERE \"account_migrations\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_moderation_notes\".* FROM \"account_moderation_notes\" WHERE \"account_moderation_notes\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_moderation_notes\".* FROM \"account_moderation_notes\" WHERE \"account_moderation_notes\".\"target_account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_notes\".* FROM \"account_notes\" WHERE \"account_notes\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_pins\".* FROM \"account_pins\" WHERE \"account_pins\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_statuses_cleanup_policies\".* FROM \"account_statuses_cleanup_policies\" WHERE \"account_statuses_cleanup_policies\".\"account_id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_warnings\".* FROM \"account_warnings\" WHERE \"account_warnings\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"account_warnings\".* FROM \"account_warnings\" WHERE \"account_warnings\".\"target_account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" WHERE \"accounts\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"announcement_mutes\".* FROM \"announcement_mutes\" WHERE \"announcement_mutes\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"blocks\".* FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"blocks\".* FROM \"blocks\" WHERE \"blocks\".\"target_account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"bookmarks\".* FROM \"bookmarks\" WHERE \"bookmarks\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"conversation_mutes\".* FROM \"conversation_mutes\" WHERE \"conversation_mutes\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"custom_filters\".\"id\", \"custom_filters\".\"account_id\", \"custom_filters\".\"expires_at\", \"custom_filters\".\"phrase\", \"custom_filters\".\"context\", \"custom_filters\".\"created_at\", \"custom_filters\".\"updated_at\", \"custom_filters\".\"action\" FROM \"custom_filters\" WHERE \"custom_filters\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"devices\".* FROM \"devices\" WHERE \"devices\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"favourites\".* FROM \"favourites\" WHERE \"favourites\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"featured_tags\".* FROM \"featured_tags\" WHERE \"featured_tags\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"follow_recommendation_suppressions\".* FROM \"follow_recommendation_suppressions\" WHERE \"follow_recommendation_suppressions\".\"account_id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"follow_requests\".* FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"follows\".* FROM \"follows\" WHERE \"follows\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"follows\".* FROM \"follows\" WHERE \"follows\".\"target_account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"list_accounts\".* FROM \"list_accounts\" WHERE \"list_accounts\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"lists\".* FROM \"lists\" WHERE \"lists\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"markers\".* FROM \"markers\" WHERE \"markers\".\"user_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"media_attachments\".* FROM \"media_attachments\" WHERE \"media_attachments\".\"account_id\" = $1 ORDER BY \"media_attachments\".\"id\" ASC"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"mentions\".* FROM \"mentions\" WHERE \"mentions\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"mutes\".* FROM \"mutes\" WHERE \"mutes\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"mutes\".* FROM \"mutes\" WHERE \"mutes\".\"target_account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"notifications\".* FROM \"notifications\" WHERE \"notifications\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"polls\".* FROM \"polls\" WHERE \"polls\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"report_notes\".* FROM \"report_notes\" WHERE \"report_notes\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"reports\".\"id\", \"reports\".\"status_ids\", \"reports\".\"comment\", \"reports\".\"created_at\", \"reports\".\"updated_at\", \"reports\".\"account_id\", \"reports\".\"action_taken_by_account_id\", \"reports\".\"target_account_id\", \"reports\".\"assigned_account_id\", \"reports\".\"uri\", \"reports\".\"forwarded\", \"reports\".\"category\", \"reports\".\"action_taken_at\", \"reports\".\"rule_ids\" FROM \"reports\" WHERE \"reports\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"reports\".\"id\", \"reports\".\"status_ids\", \"reports\".\"comment\", \"reports\".\"created_at\", \"reports\".\"updated_at\", \"reports\".\"account_id\", \"reports\".\"action_taken_by_account_id\", \"reports\".\"target_account_id\", \"reports\".\"assigned_account_id\", \"reports\".\"uri\", \"reports\".\"forwarded\", \"reports\".\"category\", \"reports\".\"action_taken_at\", \"reports\".\"rule_ids\" FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"scheduled_statuses\".* FROM \"scheduled_statuses\" WHERE \"scheduled_statuses\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"session_activations\".* FROM \"session_activations\" WHERE \"session_activations\".\"user_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"status_pins\".* FROM \"status_pins\" WHERE \"status_pins\".\"account_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses\".\"account_id\" = $1 ORDER BY \"statuses\".\"id\" DESC"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"user_invite_requests\".* FROM \"user_invite_requests\" WHERE \"user_invite_requests\".\"user_id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"users\".\"id\", \"users\".\"email\", \"users\".\"created_at\", \"users\".\"updated_at\", \"users\".\"encrypted_password\", \"users\".\"reset_password_token\", \"users\".\"reset_password_sent_at\", \"users\".\"sign_in_count\", \"users\".\"current_sign_in_at\", \"users\".\"last_sign_in_at\", \"users\".\"admin\", \"users\".\"confirmation_token\", \"users\".\"confirmed_at\", \"users\".\"confirmation_sent_at\", \"users\".\"unconfirmed_email\", \"users\".\"locale\", \"users\".\"encrypted_otp_secret\", \"users\".\"encrypted_otp_secret_iv\", \"users\".\"encrypted_otp_secret_salt\", \"users\".\"consumed_timestep\", \"users\".\"otp_required_for_login\", \"users\".\"last_emailed_at\", \"users\".\"otp_backup_codes\", \"users\".\"account_id\", \"users\".\"disabled\", \"users\".\"moderator\", \"users\".\"invite_id\", \"users\".\"chosen_languages\", \"users\".\"created_by_application_id\", \"users\".\"approved\", \"users\".\"sign_in_token\", \"users\".\"sign_in_token_sent_at\", \"users\".\"webauthn_id\", \"users\".\"sign_up_ip\", \"users\".\"role_id\", \"users\".\"settings\", \"users\".\"time_zone\" FROM \"users\" WHERE \"users\".\"account_id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT \"webauthn_credentials\".* FROM \"webauthn_credentials\" WHERE \"webauthn_credentials\".\"user_id\" = $1"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/models"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "lib/chewy"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "DELETE FROM \"accounts\" WHERE \"accounts\".\"id\" = $1"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "DELETE FROM \"accounts_tags\" WHERE \"accounts_tags\".\"account_id\" = $1"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "DELETE FROM \"users\" WHERE \"users\".\"id\" = $1"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "INSERT INTO \"admin_action_logs\" (\"account_id\", \"action\", \"target_type\", \"target_id\", \"created_at\", \"updated_at\", \"human_identifier\", \"route_param\", \"permalink\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING \"id\""
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "RELEASE SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"account_aliases\".\"id\" FROM \"account_aliases\" WHERE \"account_aliases\".\"account_id\" = $1 ORDER BY \"account_aliases\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"account_conversations\".\"id\" FROM \"account_conversations\" WHERE \"account_conversations\".\"account_id\" = $1 ORDER BY \"account_conversations\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"account_domain_blocks\".\"id\" FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $1 ORDER BY \"account_domain_blocks\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"account_migrations\".\"id\" FROM \"account_migrations\" WHERE \"account_migrations\".\"account_id\" = $1 ORDER BY \"account_migrations\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"account_moderation_notes\".\"id\" FROM \"account_moderation_notes\" WHERE \"account_moderation_notes\".\"target_account_id\" = $1 ORDER BY \"account_moderation_notes\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"account_notes\".\"id\" FROM \"account_notes\" WHERE \"account_notes\".\"account_id\" = $1 ORDER BY \"account_notes\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"account_pins\".\"id\" FROM \"account_pins\" WHERE \"account_pins\".\"account_id\" = $1 ORDER BY \"account_pins\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" WHERE \"accounts\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"blocks\".\"id\" FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1 ORDER BY \"blocks\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"blocks\".\"id\" FROM \"blocks\" WHERE \"blocks\".\"target_account_id\" = $1 ORDER BY \"blocks\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"bookmarks\".\"id\" FROM \"bookmarks\" WHERE \"bookmarks\".\"account_id\" = $1 ORDER BY \"bookmarks\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"conversation_mutes\".\"id\" FROM \"conversation_mutes\" WHERE \"conversation_mutes\".\"account_id\" = $1 ORDER BY \"conversation_mutes\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"custom_filters\".\"id\" FROM \"custom_filters\" WHERE \"custom_filters\".\"account_id\" = $1 ORDER BY \"custom_filters\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"devices\".\"id\" FROM \"devices\" WHERE \"devices\".\"account_id\" = $1 ORDER BY \"devices\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"favourites\".\"id\" FROM \"favourites\" WHERE \"favourites\".\"account_id\" = $1 ORDER BY \"favourites\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"featured_tags\".\"id\" FROM \"featured_tags\" LEFT OUTER JOIN \"tags\" ON \"tags\".\"id\" = \"featured_tags\".\"tag_id\" WHERE \"featured_tags\".\"account_id\" = $1 GROUP BY \"featured_tags\".\"id\" ORDER BY \"featured_tags\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"follow_requests\".\"id\" FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $1 ORDER BY \"follow_requests\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"follows\".\"id\" FROM \"follows\" WHERE \"follows\".\"account_id\" = $1 ORDER BY \"follows\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"follows\".\"id\" FROM \"follows\" WHERE \"follows\".\"target_account_id\" = $1 ORDER BY \"follows\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"list_accounts\".\"id\" FROM \"list_accounts\" WHERE \"list_accounts\".\"account_id\" = $1 ORDER BY \"list_accounts\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"lists\".\"id\" FROM \"lists\" WHERE \"lists\".\"account_id\" = $1 ORDER BY \"lists\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"lists\".\"id\" FROM \"lists\" WHERE \"lists\".\"account_id\" = $1"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"media_attachments\".* FROM \"media_attachments\" WHERE \"media_attachments\".\"account_id\" = $1 ORDER BY \"media_attachments\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"mentions\".\"id\" FROM \"mentions\" WHERE \"mentions\".\"account_id\" = $1 AND 1=1 ORDER BY \"mentions\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"mutes\".\"id\" FROM \"mutes\" WHERE \"mutes\".\"account_id\" = $1 ORDER BY \"mutes\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"mutes\".\"id\" FROM \"mutes\" WHERE \"mutes\".\"target_account_id\" = $1 ORDER BY \"mutes\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"notifications\".\"id\" FROM \"notifications\" WHERE \"notifications\".\"account_id\" = $1 ORDER BY \"notifications\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"notifications\".\"id\" FROM \"notifications\" WHERE \"notifications\".\"from_account_id\" = $1 ORDER BY \"notifications\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"oauth_access_tokens\".* FROM \"oauth_access_tokens\" WHERE \"oauth_access_tokens\".\"token\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"polls\".\"id\" FROM \"polls\" WHERE \"polls\".\"account_id\" = $1 AND 1=1 ORDER BY \"polls\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"report_notes\".\"id\" FROM \"report_notes\" WHERE \"report_notes\".\"account_id\" = $1 ORDER BY \"report_notes\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"reports\".\"id\" FROM \"reports\" WHERE \"reports\".\"account_id\" = $1 ORDER BY \"reports\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"reports\".\"id\" FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $1 ORDER BY \"reports\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"reports\".\"status_ids\" FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $1 AND \"reports\".\"action_taken_at\" IS NULL"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"scheduled_statuses\".\"id\" FROM \"scheduled_statuses\" WHERE \"scheduled_statuses\".\"account_id\" = $1 ORDER BY \"scheduled_statuses\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"status_pins\".\"id\" FROM \"status_pins\" WHERE \"status_pins\".\"account_id\" = $1 ORDER BY \"status_pins\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses\".\"account_id\" = $1 AND 1=1 ORDER BY \"statuses\".\"id\" ASC LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "SELECT \"users\".\"id\", \"users\".\"email\", \"users\".\"created_at\", \"users\".\"updated_at\", \"users\".\"encrypted_password\", \"users\".\"reset_password_token\", \"users\".\"reset_password_sent_at\", \"users\".\"sign_in_count\", \"users\".\"current_sign_in_at\", \"users\".\"last_sign_in_at\", \"users\".\"admin\", \"users\".\"confirmation_token\", \"users\".\"confirmed_at\", \"users\".\"confirmation_sent_at\", \"users\".\"unconfirmed_email\", \"users\".\"locale\", \"users\".\"encrypted_otp_secret\", \"users\".\"encrypted_otp_secret_iv\", \"users\".\"encrypted_otp_secret_salt\", \"users\".\"consumed_timestep\", \"users\".\"otp_required_for_login\", \"users\".\"last_emailed_at\", \"users\".\"otp_backup_codes\", \"users\".\"account_id\", \"users\".\"disabled\", \"users\".\"moderator\", \"users\".\"invite_id\", \"users\".\"chosen_languages\", \"users\".\"created_by_application_id\", \"users\".\"approved\", \"users\".\"sign_in_token\", \"users\".\"sign_in_token_sent_at\", \"users\".\"webauthn_id\", \"users\".\"sign_up_ip\", \"users\".\"role_id\", \"users\".\"settings\", \"users\".\"time_zone\" FROM \"users\" WHERE \"users\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "actionpack/ActionController"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "actionpack/ActionDispatch"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/policies"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "RELEASE SAVEPOINT active_record_1"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "UPDATE \"oauth_access_tokens\" SET \"last_used_at\" = $1, \"last_used_ip\" = $2 WHERE \"oauth_access_tokens\".\"id\" = $3"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/policies",
+    "callee": "app/models"
+  },
+  {
+    "caller": "lib/chewy",
+    "callee": "app/lib"
+  }
+]

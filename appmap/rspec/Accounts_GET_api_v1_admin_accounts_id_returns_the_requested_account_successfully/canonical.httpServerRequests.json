@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/v1/admin/accounts/{id}",
+    "parameters": "()",
+    "status": 200
+  }
+]
