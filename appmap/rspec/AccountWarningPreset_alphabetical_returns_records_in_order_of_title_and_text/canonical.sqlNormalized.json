@@ -1,0 +1,7 @@
+[
+  "INSERT INTO \"account_warning_presets\" (\"text\", \"created_at\", \"updated_at\", \"title\") VALUES ($?, $?, $?, $?) RETURNING \"id\"",
+  "RELEASE SAVEPOINT active_record_1",
+  "SAVEPOINT active_record_1",
+  "SELECT \"account_warning_presets\".* FROM \"account_warning_presets\" ORDER BY \"account_warning_presets\".\"title\" ASC, \"account_warning_presets\".\"text\" ASC",
+  "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, ?) idx\n           FROM pg_index\n          WHERE indrelid = ?::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
+]

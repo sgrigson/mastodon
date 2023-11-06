@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "app/lib",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT 1 AS one FROM \"media_attachments\" WHERE \"media_attachments\".\"status_id\" = $1 LIMIT $2"
+  }
+]

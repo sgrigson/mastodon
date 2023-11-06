@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "app/lib",
+    "callee": "app/models"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT 1 AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1 AND \"blocks\".\"target_account_id\" = $2 LIMIT $3"
+  }
+]

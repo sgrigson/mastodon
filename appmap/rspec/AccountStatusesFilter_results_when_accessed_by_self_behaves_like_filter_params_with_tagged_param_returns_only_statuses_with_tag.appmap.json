@@ -1,1 +1,441 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"AccountStatusesFilter #results when accessed by self behaves like filter params with tagged param returns only statuses with tag","source_location":"spec/lib/account_statuses_filter_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[{"name":"app","type":"package","children":[{"name":"lib","type":"package","children":[{"name":"AccountStatusesFilter","type":"class","children":[{"name":"results","type":"function","location":"app/lib/account_statuses_filter.rb:20","static":false}]},{"name":"HashtagNormalizer","type":"class","children":[{"name":"normalize","type":"function","location":"app/lib/hashtag_normalizer.rb:4","static":false}]},{"name":"ASCIIFolding","type":"class","children":[{"name":"fold","type":"function","location":"app/lib/ascii_folding.rb:7","static":false}]}]},{"name":"models","type":"package","children":[{"name":"Account","type":"class","children":[{"name":"suspended?","type":"function","location":"app/models/account.rb:237","static":false}]},{"name":"Tag","type":"class","children":[{"name":"find_normalized","type":"function","location":"app/models/tag.rb:138","static":true},{"name":"matching_name","type":"function","location":"app/models/tag.rb:146","static":true},{"name":"normalize","type":"function","location":"app/models/tag.rb:156","static":true}]}]}]}],"events":[{"id":1972863,"event":"call","thread_id":9160,"defined_class":"AccountStatusesFilter","method_id":"results","path":"app/lib/account_statuses_filter.rb","lineno":20,"static":false,"parameters":[],"receiver":{"class":"AccountStatusesFilter","object_id":10438900,"value":"#<AccountStatusesFilter:0x00007fc8e19a01a8>"}},{"id":1972864,"event":"call","thread_id":9160,"defined_class":"Account","method_id":"suspended?","path":"app/models/account.rb","lineno":237,"static":false,"parameters":[],"receiver":{"class":"Account","object_id":10438160,"value":"#<Account:0x00007fc919ac3fc0>"}},{"id":1972865,"event":"return","thread_id":9160,"parent_id":1972864,"elapsed":2.649304224178195e-05,"elapsed_instrumentation":7.501599611714482e-05},{"id":1972866,"event":"call","thread_id":9160,"defined_class":"Tag","method_id":"find_normalized","path":"app/models/tag.rb","lineno":138,"static":true,"parameters":[{"name":"name","class":"String","object_id":10438920,"value":"nihil74","kind":"req"}],"receiver":{"class":"Class","object_id":37120,"value":"Tag"}},{"id":1972867,"event":"call","thread_id":9160,"defined_class":"Tag","method_id":"matching_name","path":"app/models/tag.rb","lineno":146,"static":true,"parameters":[{"name":"name_or_names","class":"String","object_id":10438920,"value":"nihil74","kind":"req"}],"receiver":{"class":"Class","object_id":37120,"value":"Tag"}},{"id":1972868,"event":"call","thread_id":9160,"defined_class":"Tag","method_id":"normalize","path":"app/models/tag.rb","lineno":156,"static":true,"parameters":[{"name":"str","class":"String","object_id":10438920,"value":"nihil74","kind":"req"}],"receiver":{"class":"Class","object_id":37120,"value":"Tag"}},{"id":1972869,"event":"call","thread_id":9160,"defined_class":"HashtagNormalizer","method_id":"normalize","path":"app/lib/hashtag_normalizer.rb","lineno":4,"static":false,"parameters":[{"name":"str","class":"String","object_id":10438920,"value":"nihil74","kind":"req"}],"receiver":{"class":"HashtagNormalizer","object_id":10438940,"value":"#<HashtagNormalizer:0x00007fc8e1969d88>"}},{"id":1972870,"event":"call","thread_id":9160,"defined_class":"ASCIIFolding","method_id":"fold","path":"app/lib/ascii_folding.rb","lineno":7,"static":false,"parameters":[{"name":"str","class":"String","object_id":10438960,"value":"nihil74","kind":"req"}],"receiver":{"class":"ASCIIFolding","object_id":10438980,"value":"#<ASCIIFolding:0x00007fc8e1969158>"}},{"id":1972871,"event":"return","thread_id":9160,"parent_id":1972870,"elapsed":0.00019094301387667656,"elapsed_instrumentation":9.81119810603559e-05,"return_value":{"class":"String","value":"nihil74","object_id":10439000}},{"id":1972872,"event":"return","thread_id":9160,"parent_id":1972869,"elapsed":0.00035370897967368364,"elapsed_instrumentation":7.141701644286513e-05,"return_value":{"class":"String","value":"nihil74","object_id":10439020}},{"id":1972873,"event":"return","thread_id":9160,"parent_id":1972868,"elapsed":0.0004438019823282957,"elapsed_instrumentation":6.40800572000444e-05,"return_value":{"class":"String","value":"nihil74","object_id":10439020}},{"id":1972874,"event":"return","thread_id":9160,"parent_id":1972867,"elapsed":0.0006187770050019026,"elapsed_instrumentation":8.814700413495302e-05,"return_value":{"class":"ActiveRecord::Relation","value":"#<Tag::ActiveRecord_Relation:0x00007fc919f89d98>","object_id":10439040}},{"id":1972875,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"tags\".* FROM \"tags\" WHERE LOWER(\"tags\".\"name\") = LOWER('nihil74') ORDER BY \"tags\".\"id\" ASC LIMIT $1","database_type":"postgres"}},{"id":1972876,"event":"return","thread_id":9160,"parent_id":1972875,"elapsed":0.000658907,"elapsed_instrumentation":0.00010184000711888075},{"id":1972877,"event":"return","thread_id":9160,"parent_id":1972866,"elapsed":0.0033946510520763695,"elapsed_instrumentation":0.00017057295190170407,"return_value":{"class":"Tag","value":"#<Tag:0x00007fc91a4594e0>","object_id":10439060}},{"id":1972878,"event":"return","thread_id":9160,"parent_id":1972863,"elapsed":0.0057423030375503,"elapsed_instrumentation":0.00020369701087474823,"return_value":{"class":"ActiveRecord::AssociationRelation","value":"#<Status::ActiveRecord_AssociationRelation:0x00007fc91a459760>","object_id":10439080}},{"id":1972879,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT \"statuses\".* FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses_tags\".\"status_id\" = \"statuses\".\"id\" WHERE \"statuses\".\"account_id\" = $1 AND \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $2 ORDER BY \"statuses\".\"id\" DESC","database_type":"postgres"}},{"id":1972880,"event":"return","thread_id":9160,"parent_id":1972879,"elapsed":0.000827351,"elapsed_instrumentation":7.890496635809541e-05},{"id":1972881,"event":"call","thread_id":9160,"sql_query":{"sql":"SELECT 1 AS one FROM \"tags\" INNER JOIN \"statuses_tags\" ON \"tags\".\"id\" = \"statuses_tags\".\"tag_id\" WHERE \"statuses_tags\".\"status_id\" = $1 AND \"tags\".\"id\" = $2 LIMIT $3","database_type":"postgres"}},{"id":1972882,"event":"return","thread_id":9160,"parent_id":1972881,"elapsed":0.000798921,"elapsed_instrumentation":9.573798161000013e-05}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "AccountStatusesFilter",
+      "method_id": "results",
+      "path": "app/lib/account_statuses_filter.rb",
+      "lineno": 20,
+      "static": false,
+      "receiver": {
+        "class": "AccountStatusesFilter",
+        "object_id": 10438900,
+        "value": "#<AccountStatusesFilter:0x00007fc8e19a01a8>"
+      }
+    },
+    {
+      "id": 2,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Account",
+      "method_id": "suspended?",
+      "path": "app/models/account.rb",
+      "lineno": 237,
+      "static": false,
+      "receiver": {
+        "class": "Account",
+        "object_id": 10438160,
+        "value": "#<Account:0x00007fc919ac3fc0>"
+      }
+    },
+    {
+      "id": 3,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 2,
+      "elapsed": 0.00002649304224178195,
+      "elapsed_instrumentation": 0.00007501599611714482
+    },
+    {
+      "id": 4,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Tag",
+      "method_id": "find_normalized",
+      "path": "app/models/tag.rb",
+      "lineno": 138,
+      "static": true,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 10438920,
+          "value": "nihil74",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 37120,
+        "value": "Tag"
+      }
+    },
+    {
+      "id": 5,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Tag",
+      "method_id": "matching_name",
+      "path": "app/models/tag.rb",
+      "lineno": 146,
+      "static": true,
+      "parameters": [
+        {
+          "name": "name_or_names",
+          "class": "String",
+          "object_id": 10438920,
+          "value": "nihil74",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 37120,
+        "value": "Tag"
+      }
+    },
+    {
+      "id": 6,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Tag",
+      "method_id": "normalize",
+      "path": "app/models/tag.rb",
+      "lineno": 156,
+      "static": true,
+      "parameters": [
+        {
+          "name": "str",
+          "class": "String",
+          "object_id": 10438920,
+          "value": "nihil74",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 37120,
+        "value": "Tag"
+      }
+    },
+    {
+      "id": 7,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "HashtagNormalizer",
+      "method_id": "normalize",
+      "path": "app/lib/hashtag_normalizer.rb",
+      "lineno": 4,
+      "static": false,
+      "parameters": [
+        {
+          "name": "str",
+          "class": "String",
+          "object_id": 10438920,
+          "value": "nihil74",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "HashtagNormalizer",
+        "object_id": 10438940,
+        "value": "#<HashtagNormalizer:0x00007fc8e1969d88>"
+      }
+    },
+    {
+      "id": 8,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ASCIIFolding",
+      "method_id": "fold",
+      "path": "app/lib/ascii_folding.rb",
+      "lineno": 7,
+      "static": false,
+      "parameters": [
+        {
+          "name": "str",
+          "class": "String",
+          "object_id": 10438960,
+          "value": "nihil74",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ASCIIFolding",
+        "object_id": 10438980,
+        "value": "#<ASCIIFolding:0x00007fc8e1969158>"
+      }
+    },
+    {
+      "id": 9,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 8,
+      "elapsed": 0.00019094301387667656,
+      "elapsed_instrumentation": 0.0000981119810603559,
+      "return_value": {
+        "class": "String",
+        "value": "nihil74",
+        "object_id": 10439000
+      }
+    },
+    {
+      "id": 10,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 7,
+      "elapsed": 0.00035370897967368364,
+      "elapsed_instrumentation": 0.00007141701644286513,
+      "return_value": {
+        "class": "String",
+        "value": "nihil74",
+        "object_id": 10439020
+      }
+    },
+    {
+      "id": 11,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 6,
+      "elapsed": 0.0004438019823282957,
+      "elapsed_instrumentation": 0.0000640800572000444,
+      "return_value": {
+        "class": "String",
+        "value": "nihil74",
+        "object_id": 10439020
+      }
+    },
+    {
+      "id": 12,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 5,
+      "elapsed": 0.0006187770050019026,
+      "elapsed_instrumentation": 0.00008814700413495302,
+      "return_value": {
+        "class": "ActiveRecord::Relation",
+        "value": "#<Tag::ActiveRecord_Relation:0x00007fc919f89d98>",
+        "object_id": 10439040
+      }
+    },
+    {
+      "id": 13,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"tags\".* FROM \"tags\" WHERE LOWER(\"tags\".\"name\") = LOWER('nihil74') ORDER BY \"tags\".\"id\" ASC LIMIT $1",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 14,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 13,
+      "elapsed": 0.000658907,
+      "elapsed_instrumentation": 0.00010184000711888075
+    },
+    {
+      "id": 15,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 4,
+      "elapsed": 0.0033946510520763695,
+      "elapsed_instrumentation": 0.00017057295190170407,
+      "return_value": {
+        "class": "Tag",
+        "value": "#<Tag:0x00007fc91a4594e0>",
+        "object_id": 10439060
+      }
+    },
+    {
+      "id": 16,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.0057423030375503,
+      "elapsed_instrumentation": 0.00020369701087474823,
+      "return_value": {
+        "class": "ActiveRecord::AssociationRelation",
+        "value": "#<Status::ActiveRecord_AssociationRelation:0x00007fc91a459760>",
+        "object_id": 10439080
+      }
+    },
+    {
+      "id": 17,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT \"statuses\".* FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses_tags\".\"status_id\" = \"statuses\".\"id\" WHERE \"statuses\".\"account_id\" = $1 AND \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $2 ORDER BY \"statuses\".\"id\" DESC",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 18,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 17,
+      "elapsed": 0.000827351,
+      "elapsed_instrumentation": 0.00007890496635809541
+    },
+    {
+      "id": 19,
+      "event": "call",
+      "thread_id": 9160,
+      "sql_query": {
+        "sql": "SELECT 1 AS one FROM \"tags\" INNER JOIN \"statuses_tags\" ON \"tags\".\"id\" = \"statuses_tags\".\"tag_id\" WHERE \"statuses_tags\".\"status_id\" = $1 AND \"tags\".\"id\" = $2 LIMIT $3",
+        "database_type": "postgres"
+      }
+    },
+    {
+      "id": 20,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 19,
+      "elapsed": 0.000798921,
+      "elapsed_instrumentation": 0.00009573798161000013
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "AccountStatusesFilter #results when accessed by self behaves like filter params with tagged param returns only statuses with tag",
+    "source_location": "spec/lib/account_statuses_filter_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "name": "app",
+      "type": "package",
+      "children": [
+        {
+          "name": "lib",
+          "type": "package",
+          "children": [
+            {
+              "name": "AccountStatusesFilter",
+              "type": "class",
+              "children": [
+                {
+                  "name": "results",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/account_statuses_filter.rb:20"
+                }
+              ]
+            },
+            {
+              "name": "HashtagNormalizer",
+              "type": "class",
+              "children": [
+                {
+                  "name": "normalize",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/hashtag_normalizer.rb:4"
+                }
+              ]
+            },
+            {
+              "name": "ASCIIFolding",
+              "type": "class",
+              "children": [
+                {
+                  "name": "fold",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/ascii_folding.rb:7"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "models",
+          "type": "package",
+          "children": [
+            {
+              "name": "Account",
+              "type": "class",
+              "children": [
+                {
+                  "name": "suspended?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/models/account.rb:237"
+                }
+              ]
+            },
+            {
+              "name": "Tag",
+              "type": "class",
+              "children": [
+                {
+                  "name": "find_normalized",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/models/tag.rb:138"
+                },
+                {
+                  "name": "matching_name",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/models/tag.rb:146"
+                },
+                {
+                  "name": "normalize",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/models/tag.rb:156"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "children": [
+        {
+          "type": "query",
+          "name": "SELECT \"tags\".* FROM \"tags\" WHERE LOWER(\"tags\".\"name\") = LOWER('nihil74') ORDER BY \"tags\".\"id\" ASC LIMIT $1"
+        },
+        {
+          "type": "query",
+          "name": "SELECT \"statuses\".* FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses_tags\".\"status_id\" = \"statuses\".\"id\" WHERE \"statuses\".\"account_id\" = $1 AND \"statuses\".\"deleted_at\" IS NULL AND \"statuses_tags\".\"tag_id\" = $2 ORDER BY \"statuses\".\"id\" DESC"
+        },
+        {
+          "type": "query",
+          "name": "SELECT 1 AS one FROM \"tags\" INNER JOIN \"statuses_tags\" ON \"tags\".\"id\" = \"statuses_tags\".\"tag_id\" WHERE \"statuses_tags\".\"status_id\" = $1 AND \"tags\".\"id\" = $2 LIMIT $3"
+        }
+      ]
+    }
+  ]
+}

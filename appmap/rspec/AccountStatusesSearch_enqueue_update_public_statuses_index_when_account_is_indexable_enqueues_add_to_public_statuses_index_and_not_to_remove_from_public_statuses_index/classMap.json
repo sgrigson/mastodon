@@ -1,0 +1,20 @@
+[
+  {
+    "name": "app/models/concerns",
+    "type": "package",
+    "children": [
+      {
+        "name": "AccountStatusesSearch",
+        "type": "class",
+        "children": [
+          {
+            "name": "enqueue_update_public_statuses_index",
+            "type": "function",
+            "static": false,
+            "location": "app/models/concerns/account_statuses_search.rb:11"
+          }
+        ]
+      }
+    ]
+  }
+]

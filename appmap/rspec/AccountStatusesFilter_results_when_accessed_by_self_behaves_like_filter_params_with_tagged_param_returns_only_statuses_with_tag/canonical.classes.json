@@ -1,0 +1,7 @@
+[
+  "app/lib/ASCIIFolding",
+  "app/lib/AccountStatusesFilter",
+  "app/lib/HashtagNormalizer",
+  "app/models/Account",
+  "app/models/Tag"
+]
