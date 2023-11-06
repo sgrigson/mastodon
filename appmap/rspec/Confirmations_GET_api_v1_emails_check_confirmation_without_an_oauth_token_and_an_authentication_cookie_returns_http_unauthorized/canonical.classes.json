@@ -1,0 +1,16 @@
+[
+  "actionpack/ActionController::Renderers",
+  "actionpack/ActionDispatch::Cookies::CookieJar",
+  "actionpack/ActionDispatch::Request::Session",
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/controllers/ApplicationController",
+  "app/controllers/api/Api::BaseController",
+  "app/controllers/concerns/Localized",
+  "app/helpers/SelfDestructHelper",
+  "app/lib/RedisConfiguration",
+  "json/JSON::Ext::Generator::State",
+  "lib/chewy/strategy/Chewy::Strategy::Mastodon",
+  "logger/Logger::LogDevice",
+  "ruby/Array",
+  "ruby/String"
+]
