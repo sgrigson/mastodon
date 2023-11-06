@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /api/v1/emails/confirmations",
+    "parameters": "(email)",
+    "status": 422
+  }
+]

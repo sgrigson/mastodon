@@ -1,0 +1,11 @@
+[
+  "actionview",
+  "activesupport",
+  "app/controllers",
+  "app/lib",
+  "app/models",
+  "app/views",
+  "lib/chewy/strategy",
+  "logger",
+  "ruby"
+]

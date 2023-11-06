@@ -1,0 +1,34 @@
+{
+  "app": "mastodon",
+  "language": {
+    "name": "ruby",
+    "engine": "ruby",
+    "version": "3.2.2"
+  },
+  "client": {
+    "name": "appmap",
+    "url": "https://github.com/applandinc/appmap-ruby",
+    "version": "0.102.1"
+  },
+  "frameworks": [
+    {
+      "name": "rails",
+      "version": "7.1.1"
+    }
+  ],
+  "git": {
+    "repository": "https://github.com/sgrigson/mastodon.git",
+    "branch": "appmap-config",
+    "commit": "eb40c44aa4cc167c578b31636099970acdb7daad",
+    "git_last_annotated_tag": "0.1.2-14648-geb40c44aa4cc167c578b31636099970acdb7daad",
+    "git_last_tag": "v4.2.0",
+    "git_commits_since_last_annotated_tag": 0,
+    "git_commits_since_last_tag": 0
+  },
+  "name": "GET /packs/js/application-de0059e0fc9fdb989658.chunk.js (200) - 17:20:24.965",
+  "timestamp": 1699291224.9656553,
+  "recorder": {
+    "name": "rack",
+    "type": "requests"
+  }
+}

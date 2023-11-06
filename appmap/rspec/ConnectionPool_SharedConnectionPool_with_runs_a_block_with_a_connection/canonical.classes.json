@@ -1,0 +1,4 @@
+[
+  "app/lib/connection_pool/ConnectionPool::SharedConnectionPool",
+  "app/lib/connection_pool/ConnectionPool::SharedTimedStack"
+]

@@ -25,9 +25,9 @@ services:
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
     ports:
-      - '3000:3000'
-      - '3035:3035'
-      - '4000:4000'
+      - '0.0.0.0:3000:3000'
+      - '0.0.0.0:3035:3035'
+      - '0.0.0.0:4000:4000'
     networks:
       - external_network
       - internal_network

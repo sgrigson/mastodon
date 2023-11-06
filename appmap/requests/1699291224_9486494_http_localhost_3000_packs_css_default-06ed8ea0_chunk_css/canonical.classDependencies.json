@@ -1,0 +1,26 @@
+[
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "lib/chewy/strategy/Chewy"
+  },
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "GET /*unmatched_route",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "lib/chewy/strategy/Chewy",
+    "callee": "app/lib/RedisConfiguration"
+  }
+]

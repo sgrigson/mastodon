@@ -1,0 +1,70 @@
+[
+  {
+    "caller": "POST /api/v1/emails/confirmations",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "POST /api/v1/emails/confirmations",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "POST /api/v1/emails/confirmations",
+    "callee": "app/lib"
+  },
+  {
+    "caller": "POST /api/v1/emails/confirmations",
+    "callee": "lib/chewy/strategy/Chewy"
+  },
+  {
+    "caller": "POST /api/v1/emails/confirmations",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "POST /api/v1/emails/confirmations",
+    "callee": "ruby/Array"
+  },
+  {
+    "caller": "POST /api/v1/emails/confirmations",
+    "callee": "ruby/String"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "actionpack/ActionController",
+    "callee": "json/JSON"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "actionpack/ActionController"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "app/controllers"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "actionpack/ActionDispatch"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/helpers"
+  },
+  {
+    "caller": "lib/chewy/strategy/Chewy",
+    "callee": "app/lib"
+  }
+]

@@ -1,0 +1,14 @@
+[
+  "SELECT \"ip_blocks\".\"ip\" FROM \"ip_blocks\" WHERE \"ip_blocks\".\"severity\" = $?",
+  "SELECT \"settings\".* FROM \"settings\" WHERE (thing_type is ? and thing_id is ?) AND \"settings\".\"var\" = $? ORDER BY \"settings\".\"id\" ASC LIMIT $?",
+  "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"highlighted\" = $?",
+  "SELECT t.oid, t.typname, t.typelem, t.typdelim, t.typinput, r.rngsubtype, t.typtype, t.typbasetype\nFROM pg_type as t\nLEFT JOIN pg_range as r ON oid = rngtypid\nWHERE\n  t.typelem IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)\n",
+  "SELECT t.oid, t.typname, t.typelem, t.typdelim, t.typinput, r.rngsubtype, t.typtype, t.typbasetype\nFROM pg_type as t\nLEFT JOIN pg_range as r ON oid = rngtypid\nWHERE\n  t.typname IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)\n",
+  "SELECT t.oid, t.typname, t.typelem, t.typdelim, t.typinput, r.rngsubtype, t.typtype, t.typbasetype\nFROM pg_type as t\nLEFT JOIN pg_range as r ON oid = rngtypid\nWHERE\n  t.typtype IN (?, ?, ?)\n",
+  "SELECT t.oid, t.typname\nFROM pg_type as t\nWHERE t.typname IN (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)\n",
+  "SET SESSION timezone TO ?",
+  "SET client_min_messages TO ?",
+  "SET intervalstyle = iso_8601",
+  "SET standard_conforming_strings = on",
+  "SHOW search_path"
+]

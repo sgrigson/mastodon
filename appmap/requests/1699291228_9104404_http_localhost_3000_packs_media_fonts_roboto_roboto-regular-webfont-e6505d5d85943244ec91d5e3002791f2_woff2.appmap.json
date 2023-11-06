@@ -1,0 +1,576 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 169720,
+      "http_server_request": {
+        "request_method": "GET",
+        "path_info": "/packs/media/fonts/roboto/roboto-regular-webfont-e6505d5d85943244ec91d5e3002791f2.woff2",
+        "normalized_path_info": "/*unmatched_route",
+        "headers": {
+          "Host": "localhost:3000",
+          "Connection": "keep-alive",
+          "Pragma": "no-cache",
+          "Cache-Control": "no-cache",
+          "Sec-Ch-Ua": "\"Chromium\";v=\"119\", \"Not?A_Brand\";v=\"24\"",
+          "Origin": "http://localhost:3000",
+          "Dnt": "1",
+          "Sec-Ch-Ua-Mobile": "?0",
+          "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+          "Sec-Ch-Ua-Platform": "\"macOS\"",
+          "Accept": "*/*",
+          "Sec-Fetch-Site": "same-origin",
+          "Sec-Fetch-Mode": "cors",
+          "Sec-Fetch-Dest": "font",
+          "Referer": "http://localhost:3000/packs/css/default-06ed8ea0.chunk.css",
+          "Accept-Encoding": "gzip, deflate, br",
+          "Accept-Language": "en-US,en;q=0.9",
+          "Cookie": "csrf=43115cd0c5160286014b6df35d9103311f89f3bd97283682e72098d981a8; ServerName=test.oliphant.social; AuthToken=6c25f8064505ff5470c3ea16e1d5f1a0e8e1a94c730a1d2f41e4ab3a6513",
+          "Version": "HTTP/1.1"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "event": "call",
+      "thread_id": 169720,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 209540,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 127000,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007f595164f238>"
+      }
+    },
+    {
+      "id": 3,
+      "event": "return",
+      "thread_id": 169720,
+      "parent_id": 2,
+      "elapsed": 0.00010526395635679364,
+      "elapsed_instrumentation": 0.00028612196911126375,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007f5951439160 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5951439390 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5951439598 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f5951439728 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007f59514399a8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 127080,
+        "size": 5
+      }
+    },
+    {
+      "id": 4,
+      "event": "call",
+      "thread_id": 169720,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 209540,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 127000,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007f595164f238>"
+      }
+    },
+    {
+      "id": 5,
+      "event": "return",
+      "thread_id": 169720,
+      "parent_id": 4,
+      "elapsed": 0.0000023549655452370644,
+      "elapsed_instrumentation": 0.00007125106640160084,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 127100,
+        "size": 0
+      }
+    },
+    {
+      "id": 6,
+      "event": "call",
+      "thread_id": 169720,
+      "defined_class": "String",
+      "method_id": "unpack",
+      "path": "<internal:pack>",
+      "lineno": 19,
+      "static": false,
+      "parameters": [
+        {
+          "name": "fmt",
+          "class": "String",
+          "object_id": 127120,
+          "value": "NnnnnN",
+          "kind": "req"
+        },
+        {
+          "name": "offset",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "String",
+        "object_id": 209560,
+        "value": "__*__u_X_\fr_nn__"
+      }
+    },
+    {
+      "id": 7,
+      "event": "return",
+      "thread_id": 169720,
+      "parent_id": 6,
+      "elapsed": 0.00000474101398140192,
+      "elapsed_instrumentation": 0.00009812996722757816,
+      "return_value": {
+        "class": "Array",
+        "value": "[4036504205, 41077, 63320, 36364, 29392, 1852763579]",
+        "object_id": 209580,
+        "size": 6
+      }
+    },
+    {
+      "id": 8,
+      "event": "call",
+      "thread_id": 169720,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 209600,
+          "value": "Started GET \"/packs/media/fonts/roboto/roboto-regular-webfont-e6505d5d85943244ec91d5e3002791f2.woff2 (...48 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 13720,
+        "value": "#<Logger::LogDevice:0x00007f5952041958>"
+      }
+    },
+    {
+      "id": 9,
+      "event": "return",
+      "thread_id": 169720,
+      "parent_id": 8,
+      "elapsed": 0.00002936599776148796,
+      "elapsed_instrumentation": 0.00034809799399226904,
+      "return_value": {
+        "class": "Integer",
+        "value": "148",
+        "object_id": 297
+      }
+    },
+    {
+      "id": 10,
+      "event": "call",
+      "thread_id": 169720,
+      "defined_class": "Array",
+      "method_id": "pack",
+      "path": "<internal:pack>",
+      "lineno": 7,
+      "static": false,
+      "parameters": [
+        {
+          "name": "fmt",
+          "class": "String",
+          "object_id": 152400,
+          "value": "m0",
+          "kind": "req"
+        },
+        {
+          "name": "buffer",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "Array",
+        "object_id": 209740,
+        "value": "[__}-__G_%_i_G_\u0000_]"
+      }
+    },
+    {
+      "id": 11,
+      "event": "return",
+      "thread_id": 169720,
+      "parent_id": 10,
+      "elapsed": 0.000007626018486917019,
+      "elapsed_instrumentation": 0.00014719698810949922,
+      "return_value": {
+        "class": "String",
+        "value": "6sd9LfLER4YlmmmyR7kAiQ==",
+        "object_id": 209760
+      }
+    },
+    {
+      "id": 12,
+      "event": "call",
+      "thread_id": 169720,
+      "defined_class": "Chewy::Strategy::Mastodon",
+      "method_id": "leave",
+      "path": "lib/chewy/strategy/mastodon.rb",
+      "lineno": 16,
+      "static": false,
+      "receiver": {
+        "class": "Chewy::Strategy::Mastodon",
+        "object_id": 209780,
+        "value": "#<Chewy::Strategy::Mastodon:0x00007f592ba33708>"
+      }
+    },
+    {
+      "id": 13,
+      "event": "call",
+      "thread_id": 169720,
+      "defined_class": "RedisConfiguration",
+      "method_id": "with",
+      "path": "app/lib/redis_configuration.rb",
+      "lineno": 10,
+      "static": true,
+      "parameters": [
+        {
+          "name": "*",
+          "class": "Array",
+          "object_id": 209800,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        },
+        {
+          "name": "**",
+          "class": "Hash",
+          "object_id": 209820,
+          "value": "{}",
+          "kind": "keyrest",
+          "size": 0
+        },
+        {
+          "name": "&",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "block"
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 28200,
+        "value": "RedisConfiguration"
+      }
+    },
+    {
+      "id": 14,
+      "event": "call",
+      "thread_id": 169720,
+      "defined_class": "RedisConfiguration",
+      "method_id": "pool",
+      "path": "app/lib/redis_configuration.rb",
+      "lineno": 12,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 28200,
+        "value": "RedisConfiguration"
+      }
+    },
+    {
+      "id": 15,
+      "event": "return",
+      "thread_id": 169720,
+      "parent_id": 14,
+      "elapsed": 0.00000441097654402256,
+      "elapsed_instrumentation": 0.00015454599633812904,
+      "return_value": {
+        "class": "ConnectionPool",
+        "value": "#<ConnectionPool:0x00007f592a3e1bd0>",
+        "object_id": 153100
+      }
+    },
+    {
+      "id": 16,
+      "event": "return",
+      "thread_id": 169720,
+      "parent_id": 13,
+      "elapsed": 0.00022886699298396707,
+      "elapsed_instrumentation": 0.00019909703405573964,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 209840,
+        "size": 0
+      }
+    },
+    {
+      "id": 17,
+      "event": "return",
+      "thread_id": 169720,
+      "parent_id": 12,
+      "elapsed": 0.0004494889872148633,
+      "elapsed_instrumentation": 0.00007005996303632855,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 209840,
+        "size": 0
+      }
+    },
+    {
+      "id": 18,
+      "event": "return",
+      "thread_id": 169720,
+      "parent_id": 1,
+      "elapsed": 2.04756425996311,
+      "elapsed_instrumentation": 0.00059441605117172,
+      "http_server_response": {
+        "status_code": 200,
+        "headers": {
+          "Last-Modified": "Mon, 06 Nov 2023 16:27:41 GMT",
+          "Content-Type": "application/font-woff2",
+          "Content-Length": "191468",
+          "Cache-Control": "public, max-age=2419200, must-revalidate",
+          "X-Content-Type-Options": "nosniff",
+          "Content-Security-Policy": "base-uri 'none'; default-src 'none'; frame-ancestors 'none'; font-src 'self' http://localhost:3000; img-src 'self' https: data: blob: http://localhost:3000; style-src 'self' http://localhost:3000 'nonce-6sd9LfLER4YlmmmyR7kAiQ=='; media-src 'self' https: data: http://localhost:3000; frame-src 'self' https:; manifest-src 'self' http://localhost:3000; form-action 'self'; child-src 'self' blob: http://localhost:3000; worker-src 'self' blob: http://localhost:3000; connect-src 'self' data: blob: http://localhost:3000 http://localhost:3000 ws://localhost:4000 ws://localhost:3035 http://localhost:3035; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://localhost:3000",
+          "X-Request-Id": "f0982a8d-a075-4758-8e0c-72d06e6eedbb",
+          "X-Runtime": "2.046960",
+          "Server-Timing": ""
+        }
+      }
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "eb40c44aa4cc167c578b31636099970acdb7daad",
+      "git_last_annotated_tag": "0.1.2-14648-geb40c44aa4cc167c578b31636099970acdb7daad",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "GET /packs/media/fonts/roboto/roboto-regular-webfont-e6505d5d85943244ec91d5e3002791f2.woff2 (200) - 17:20:28.910",
+    "timestamp": 1699291228.9104404,
+    "recorder": {
+      "name": "rack",
+      "type": "requests"
+    }
+  },
+  "classMap": [
+    {
+      "name": "activesupport",
+      "type": "package",
+      "children": [
+        {
+          "name": "ActiveSupport",
+          "type": "class",
+          "children": [
+            {
+              "name": "Callbacks",
+              "type": "class",
+              "children": [
+                {
+                  "name": "CallbackSequence",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "invoke_before",
+                      "type": "function",
+                      "labels": [
+                        "mvc.before_action"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                    },
+                    {
+                      "name": "invoke_after",
+                      "type": "function",
+                      "labels": [
+                        "mvc.after_action"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ruby",
+      "type": "package",
+      "children": [
+        {
+          "name": "String",
+          "type": "class",
+          "children": [
+            {
+              "name": "unpack",
+              "type": "function",
+              "labels": [
+                "string.unpack"
+              ],
+              "static": false,
+              "location": "<internal:pack>:19"
+            }
+          ]
+        },
+        {
+          "name": "Array",
+          "type": "class",
+          "children": [
+            {
+              "name": "pack",
+              "type": "function",
+              "labels": [
+                "array.pack"
+              ],
+              "static": false,
+              "location": "<internal:pack>:7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "type": "package",
+      "children": [
+        {
+          "name": "Logger",
+          "type": "class",
+          "children": [
+            {
+              "name": "LogDevice",
+              "type": "class",
+              "children": [
+                {
+                  "name": "write",
+                  "type": "function",
+                  "labels": [
+                    "log"
+                  ],
+                  "static": false,
+                  "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lib/chewy/strategy",
+      "type": "package",
+      "children": [
+        {
+          "name": "Chewy",
+          "type": "class",
+          "children": [
+            {
+              "name": "Strategy",
+              "type": "class",
+              "children": [
+                {
+                  "name": "Mastodon",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "leave",
+                      "type": "function",
+                      "static": false,
+                      "location": "lib/chewy/strategy/mastodon.rb:16"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "app/lib",
+      "type": "package",
+      "children": [
+        {
+          "name": "RedisConfiguration",
+          "type": "class",
+          "children": [
+            {
+              "name": "with",
+              "type": "function",
+              "static": true,
+              "location": "app/lib/redis_configuration.rb:10"
+            },
+            {
+              "name": "pool",
+              "type": "function",
+              "static": true,
+              "location": "app/lib/redis_configuration.rb:12"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /*unmatched_route"
+        }
+      ]
+    }
+  ]
+}
