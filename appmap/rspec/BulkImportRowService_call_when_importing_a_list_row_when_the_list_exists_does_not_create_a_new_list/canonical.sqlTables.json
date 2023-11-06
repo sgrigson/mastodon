@@ -1,0 +1,16 @@
+[
+  "account_domain_blocks",
+  "account_stats",
+  "accounts",
+  "blocks",
+  "bulk_import_rows",
+  "bulk_imports",
+  "follows",
+  "list_accounts",
+  "lists",
+  "user_invite_requests",
+  "user_ips",
+  "user_roles",
+  "users",
+  "webhooks"
+]

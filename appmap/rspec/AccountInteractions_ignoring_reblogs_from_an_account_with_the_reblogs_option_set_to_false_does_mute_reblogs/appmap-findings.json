@@ -41,7 +41,7 @@
         "rule": "update-in-get-request"
       }
     ],
-    "timestampMs": 1699243455668.3164
+    "timestampMs": 1699257310678.2083
   },
   "appMapMetadata": {
     "/workspaces/mastodon/tmp/appmap/rspec/AccountInteractions_ignoring_reblogs_from_an_account_with_the_reblogs_option_set_to_false_does_mute_reblogs.appmap.json": {

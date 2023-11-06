@@ -1,6 +1,5 @@
 [
   "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "activesupport/ActiveSupport::LazyLoadHooks",
   "app/helpers/ActivityPub::TagManager",
   "app/helpers/FormattingHelper",
   "app/helpers/RoutingHelper",
@@ -8,7 +7,6 @@
   "app/lib/activitypub/ActivityPub::TagManager",
   "app/models/Account",
   "app/models/AccountStat",
-  "app/models/ApplicationRecord",
   "app/models/CustomEmoji",
   "app/models/Setting",
   "app/models/User",
@@ -32,13 +30,9 @@
   "app/workers/TriggerWebhookWorker",
   "json/JSON::Ext::Generator::State",
   "json/JSON::Ext::Parser",
-  "lib/chewy/Chewy::SettingsExtensions",
   "lib/paperclip/Paperclip::AttachmentExtensions",
   "logger/Logger::LogDevice",
   "openssl/OpenSSL::Random",
-  "psych/Psych",
-  "ruby/ERB",
-  "ruby/Kernel",
   "ruby/Marshal",
   "ruby/String",
   "sidekiq/Sidekiq::Client"

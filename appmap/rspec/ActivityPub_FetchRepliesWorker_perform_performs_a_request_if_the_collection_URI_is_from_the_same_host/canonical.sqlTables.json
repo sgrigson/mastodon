@@ -3,5 +3,10 @@
   "accounts",
   "conversations",
   "instances",
+  "pg_attrdef",
+  "pg_attribute",
+  "pg_collation",
+  "pg_index",
+  "pg_type",
   "statuses"
 ]

@@ -9,6 +9,7 @@
   "app/models/Account",
   "app/models/DomainBlock",
   "lib/mastodon/Mastodon::Version",
+  "logger/Logger::LogDevice",
   "openssl/OpenSSL::PKey::PKey",
   "ruby/Array"
 ]

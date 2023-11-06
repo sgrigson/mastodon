@@ -1,0 +1,7 @@
+[
+  {
+    "route": "GET /api/v1/blocks",
+    "parameters": "(max_id)",
+    "status": 200
+  }
+]

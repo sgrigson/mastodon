@@ -1,0 +1,4 @@
+[
+  "app/models/Account",
+  "app/models/concerns/AccountFinderConcern::AccountFinder"
+]

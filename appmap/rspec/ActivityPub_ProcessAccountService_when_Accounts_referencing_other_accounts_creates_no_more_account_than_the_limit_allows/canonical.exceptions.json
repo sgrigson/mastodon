@@ -5,8 +5,7 @@
     "stack": [
       "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67",
       "app/helpers/jsonld_helper.rb:158",
-      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8",
-      "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
+      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8"
     ],
     "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67"
   },
@@ -17,8 +16,7 @@
       "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67",
       "app/helpers/jsonld_helper.rb:171",
       "app/helpers/jsonld_helper.rb:158",
-      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8",
-      "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
+      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8"
     ],
     "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67"
   },
@@ -30,8 +28,7 @@
       "app/lib/request.rb:105",
       "app/helpers/jsonld_helper.rb:171",
       "app/helpers/jsonld_helper.rb:158",
-      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8",
-      "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
+      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8"
     ],
     "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67"
   },
@@ -45,8 +42,7 @@
       "app/lib/request.rb:105",
       "app/helpers/jsonld_helper.rb:171",
       "app/helpers/jsonld_helper.rb:158",
-      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8",
-      "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
+      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8"
     ],
     "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67"
   },
@@ -59,8 +55,7 @@
       "app/lib/request.rb:105",
       "app/helpers/jsonld_helper.rb:171",
       "app/helpers/jsonld_helper.rb:158",
-      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8",
-      "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
+      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8"
     ],
     "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67"
   },
@@ -69,17 +64,7 @@
     "message": "body has already been consumed",
     "stack": [
       "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67",
-      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8",
-      "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
-    ],
-    "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67"
-  },
-  {
-    "class": "HTTP::StateError",
-    "message": "body has already been consumed",
-    "stack": [
-      "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67",
-      "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
+      "app/workers/activitypub/synchronize_featured_collection_worker.rb:8"
     ],
     "location": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb:67"
   }

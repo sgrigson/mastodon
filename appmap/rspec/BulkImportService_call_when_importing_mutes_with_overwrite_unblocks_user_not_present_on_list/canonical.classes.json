@@ -1,0 +1,13 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/lib/PotentialFriendshipTracker",
+  "app/models/Account",
+  "app/models/concerns/AccountInteractions",
+  "app/models/concerns/Mute",
+  "app/models/concerns/Redisable",
+  "json/JSON::Ext::Generator::State",
+  "json/JSON::Ext::Parser",
+  "logger/Logger::LogDevice",
+  "ruby/String",
+  "sidekiq/Sidekiq::Client"
+]

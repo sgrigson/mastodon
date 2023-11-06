@@ -450,6 +450,33 @@
     ]
   },
   {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "lib",
     "type": "package",
     "children": [
@@ -518,6 +545,66 @@
             ]
           }
         ]
+      },
+      {
+        "name": "chewy",
+        "type": "package",
+        "children": [
+          {
+            "name": "Chewy",
+            "type": "class",
+            "children": [
+              {
+                "name": "IndexExtensions",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "index_preset",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/chewy/index_extensions.rb:5"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "type": "package",
+    "children": [
+      {
+        "name": "Kernel",
+        "type": "class",
+        "children": [
+          {
+            "name": "eval",
+            "type": "function",
+            "labels": [
+              "lang.eval"
+            ],
+            "static": true,
+            "location": "Kernel.eval"
+          }
+        ]
+      },
+      {
+        "name": "Array",
+        "type": "class",
+        "children": [
+          {
+            "name": "pack",
+            "type": "function",
+            "labels": [
+              "array.pack"
+            ],
+            "static": false,
+            "location": "<internal:pack>:7"
+          }
+        ]
       }
     ]
   },
@@ -555,27 +642,6 @@
     ]
   },
   {
-    "name": "ruby",
-    "type": "package",
-    "children": [
-      {
-        "name": "Array",
-        "type": "class",
-        "children": [
-          {
-            "name": "pack",
-            "type": "function",
-            "labels": [
-              "array.pack"
-            ],
-            "static": false,
-            "location": "<internal:pack>:7"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "type": "database",
     "name": "Database",
     "children": [
@@ -585,7 +651,7 @@
       },
       {
         "type": "query",
-        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'donovan_wintheiser3480' AND LOWER(\"accounts\".\"domain\") = 'example.com' LIMIT $1"
+        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'yevette_will2' AND LOWER(\"accounts\".\"domain\") = 'example.com' LIMIT $1"
       },
       {
         "type": "query",
@@ -597,6 +663,10 @@
       },
       {
         "type": "query",
+        "name": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"instances\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
+      },
+      {
+        "type": "query",
         "name": "SELECT 1 AS one FROM \"instances\" WHERE \"instances\".\"domain\" = $1 LIMIT $2"
       },
       {
@@ -605,7 +675,31 @@
       },
       {
         "type": "query",
+        "name": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"statuses\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
+      },
+      {
+        "type": "query",
+        "name": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"statuses\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
+      },
+      {
+        "type": "query",
+        "name": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"conversations\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
+      },
+      {
+        "type": "query",
+        "name": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"conversations\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
+      },
+      {
+        "type": "query",
         "name": "SELECT 1 AS one FROM \"statuses\" WHERE \"statuses\".\"uri\" = $1 LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"media_attachments\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
+      },
+      {
+        "type": "query",
+        "name": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"media_attachments\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
       },
       {
         "type": "query",
@@ -617,7 +711,15 @@
       },
       {
         "type": "query",
-        "name": "INSERT INTO account_stats(account_id, statuses_count, created_at, updated_at, last_status_at) VALUES (111361376841125741, 1, now(), now(), now()) ON CONFLICT (account_id) DO UPDATE SET statuses_count = account_stats.statuses_count + 1, last_status_at = now(), updated_at = now() RETURNING id;"
+        "name": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"polls\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
+      },
+      {
+        "type": "query",
+        "name": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"polls\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO account_stats(account_id, statuses_count, created_at, updated_at, last_status_at) VALUES (111362556645914248, 1, now(), now(), now()) ON CONFLICT (account_id) DO UPDATE SET statuses_count = account_stats.statuses_count + 1, last_status_at = now(), updated_at = now() RETURNING id;"
       },
       {
         "type": "query",

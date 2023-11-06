@@ -1,0 +1,264 @@
+[
+  {
+    "name": "json",
+    "type": "package",
+    "children": [
+      {
+        "name": "JSON",
+        "type": "class",
+        "children": [
+          {
+            "name": "Ext",
+            "type": "class",
+            "children": [
+              {
+                "name": "Parser",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "parse",
+                    "type": "function",
+                    "labels": [
+                      "format.json.parse",
+                      "deserialize.safe"
+                    ],
+                    "static": false,
+                    "location": "JSON::Ext::Parser#parse"
+                  }
+                ]
+              },
+              {
+                "name": "Generator",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "State",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "generate",
+                        "type": "function",
+                        "labels": [
+                          "format.json.generate",
+                          "serialize"
+                        ],
+                        "static": false,
+                        "location": "JSON::Ext::Generator::State#generate"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "models/concerns",
+        "type": "package",
+        "children": [
+          {
+            "name": "AccountInteractions",
+            "type": "class",
+            "children": [
+              {
+                "name": "unblock_domain!",
+                "type": "function",
+                "static": false,
+                "location": "app/models/concerns/account_interactions.rb:193"
+              },
+              {
+                "name": "block_domain!",
+                "type": "function",
+                "static": false,
+                "location": "app/models/concerns/account_interactions.rb:169"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "TagManager",
+            "type": "class",
+            "children": [
+              {
+                "name": "normalize_domain",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/tag_manager.rb:17"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "validators",
+        "type": "package",
+        "children": [
+          {
+            "name": "DomainValidator",
+            "type": "class",
+            "children": [
+              {
+                "name": "validate_each",
+                "type": "function",
+                "static": false,
+                "location": "app/validators/domain_validator.rb:4"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "activesupport",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActiveSupport",
+        "type": "class",
+        "children": [
+          {
+            "name": "Callbacks",
+            "type": "class",
+            "children": [
+              {
+                "name": "CallbackSequence",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "invoke_before",
+                    "type": "function",
+                    "labels": [
+                      "mvc.before_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                  },
+                  {
+                    "name": "invoke_after",
+                    "type": "function",
+                    "labels": [
+                      "mvc.after_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "type": "package",
+    "children": [
+      {
+        "name": "String",
+        "type": "class",
+        "children": [
+          {
+            "name": "unpack1",
+            "type": "function",
+            "labels": [
+              "string.unpack"
+            ],
+            "static": false,
+            "location": "<internal:pack>:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"bulk_import_rows\".* FROM \"bulk_import_rows\" WHERE \"bulk_import_rows\".\"bulk_import_id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"account_domain_blocks\".* FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $1 ORDER BY \"account_domain_blocks\".\"id\" ASC LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"account_domain_blocks\".* FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $1 AND \"account_domain_blocks\".\"domain\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "DELETE FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "RELEASE SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "DELETE FROM \"bulk_import_rows\" WHERE \"bulk_import_rows\".\"bulk_import_id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"domain\" = $1 AND \"account_domain_blocks\".\"account_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"account_domain_blocks\" (\"domain\", \"created_at\", \"updated_at\", \"account_id\") VALUES ($1, $2, $3, $4) RETURNING \"id\""
+      },
+      {
+        "type": "query",
+        "name": "UPDATE \"bulk_imports\" SET \"state\" = $1, \"finished_at\" = $2, \"updated_at\" = $3 WHERE \"bulk_imports\".\"id\" = $4"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"bulk_imports\".* FROM \"bulk_imports\" WHERE \"bulk_imports\".\"id\" = $1 LIMIT $2"
+      }
+    ]
+  }
+]

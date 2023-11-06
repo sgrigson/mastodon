@@ -23,8 +23,10 @@
   "json/JSON::Ext::Parser",
   "lib/mastodon/Mastodon::Version",
   "lib/paperclip/Paperclip::AttachmentExtensions",
+  "logger/Logger::LogDevice",
   "openssl/OpenSSL::PKey::PKey",
   "ruby/Array",
-  "ruby/String",
-  "sidekiq/Sidekiq::Client"
+  "ruby/ERB",
+  "ruby/Kernel",
+  "ruby/String"
 ]

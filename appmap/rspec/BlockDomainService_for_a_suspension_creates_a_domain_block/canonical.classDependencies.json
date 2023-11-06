@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "app/models/DomainBlock",
+    "callee": "SELECT \"domain_blocks\".* FROM \"domain_blocks\" WHERE \"domain_blocks\".\"domain\" IN ($1, $2) ORDER BY char_length(domain) desc LIMIT $3"
+  }
+]

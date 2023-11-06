@@ -69,7 +69,7 @@
   },
   {
     "caller": "app/models",
-    "callee": "INSERT INTO account_stats(account_id, statuses_count, created_at, updated_at, last_status_at) VALUES (111360434470582624, 1, now(), now(), now()) ON CONFLICT (account_id) DO UPDATE SET statuses_count = account_stats.statuses_count + 1, last_status_at = now(), updated_at = now() RETURNING id;"
+    "callee": "INSERT INTO account_stats(account_id, statuses_count, created_at, updated_at, last_status_at) VALUES (111361340267990179, 1, now(), now(), now()) ON CONFLICT (account_id) DO UPDATE SET statuses_count = account_stats.statuses_count + 1, last_status_at = now(), updated_at = now() RETURNING id;"
   },
   {
     "caller": "app/models",
@@ -133,11 +133,11 @@
   },
   {
     "caller": "app/validators",
-    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'emmitt259' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
+    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'jason_swaniawski1818' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
   },
   {
     "caller": "app/validators",
-    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'jesse_harber260' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
+    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'kennith1817' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
   },
   {
     "caller": "app/validators",

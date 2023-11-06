@@ -12,12 +12,20 @@
     "callee": "lib"
   },
   {
+    "caller": "activesupport",
+    "callee": "logger"
+  },
+  {
     "caller": "app",
     "callee": "Database"
   },
   {
     "caller": "app",
     "callee": "lib"
+  },
+  {
+    "caller": "app",
+    "callee": "logger"
   },
   {
     "caller": "app",
@@ -34,5 +42,9 @@
   {
     "caller": "lib",
     "callee": "activesupport"
+  },
+  {
+    "caller": "lib",
+    "callee": "logger"
   }
 ]

@@ -9,14 +9,6 @@
   },
   {
     "caller": "activesupport/ActiveSupport",
-    "callee": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"account_stats\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
-  },
-  {
-    "caller": "activesupport/ActiveSupport",
-    "callee": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"invites\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
-  },
-  {
-    "caller": "activesupport/ActiveSupport",
     "callee": "app/lib"
   },
   {
@@ -29,15 +21,11 @@
   },
   {
     "caller": "activesupport/ActiveSupport",
-    "callee": "lib/paperclip"
+    "callee": "lib/paperclip/Paperclip"
   },
   {
     "caller": "activesupport/ActiveSupport",
     "callee": "sidekiq/Sidekiq"
-  },
-  {
-    "caller": "app/helpers",
-    "callee": "activesupport/ActiveSupport"
   },
   {
     "caller": "app/helpers",
@@ -69,15 +57,7 @@
   },
   {
     "caller": "app/models",
-    "callee": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"settings\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
-  },
-  {
-    "caller": "app/models",
     "callee": "app/lib"
-  },
-  {
-    "caller": "app/models",
-    "callee": "lib/chewy"
   },
   {
     "caller": "app/models",
@@ -85,19 +65,11 @@
   },
   {
     "caller": "app/models",
-    "callee": "psych/Psych"
-  },
-  {
-    "caller": "app/models",
-    "callee": "ruby/ERB"
-  },
-  {
-    "caller": "app/models",
     "callee": "ruby/Marshal"
   },
   {
     "caller": "app/policies",
-    "callee": "SELECT COUNT(*) FROM \"backups\" WHERE \"backups\".\"user_id\" = $1 AND (created_at >= '2023-10-30 23:01:31.544361')"
+    "callee": "SELECT COUNT(*) FROM \"backups\" WHERE \"backups\".\"user_id\" = $1 AND (created_at >= '2023-10-31 03:09:09.968779')"
   },
   {
     "caller": "app/serializers/rest",
@@ -106,18 +78,6 @@
   {
     "caller": "app/serializers/rest",
     "callee": "SELECT \"user_ips\".* FROM \"user_ips\" WHERE \"user_ips\".\"user_id\" = $1 ORDER BY \"user_ips\".\"user_id\" ASC LIMIT $2"
-  },
-  {
-    "caller": "app/serializers/rest",
-    "callee": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"user_invite_requests\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
-  },
-  {
-    "caller": "app/serializers/rest",
-    "callee": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"user_ips\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
-  },
-  {
-    "caller": "app/serializers/rest",
-    "callee": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"user_invite_requests\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
   },
   {
     "caller": "app/serializers/rest",
@@ -137,7 +97,7 @@
   },
   {
     "caller": "app/validators",
-    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'dong0' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
+    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'gavin4783' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
   },
   {
     "caller": "app/validators",
@@ -170,10 +130,6 @@
   {
     "caller": "app/workers",
     "callee": "json/JSON"
-  },
-  {
-    "caller": "ruby/ERB",
-    "callee": "ruby/Kernel"
   },
   {
     "caller": "sidekiq/Sidekiq",

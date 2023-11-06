@@ -12,12 +12,20 @@
     "callee": "lib"
   },
   {
+    "caller": "activesupport",
+    "callee": "logger"
+  },
+  {
     "caller": "app",
     "callee": "Database"
   },
   {
     "caller": "app",
     "callee": "activesupport"
+  },
+  {
+    "caller": "app",
+    "callee": "json"
   },
   {
     "caller": "app",
@@ -36,10 +44,6 @@
     "callee": "ruby"
   },
   {
-    "caller": "app",
-    "callee": "sidekiq"
-  },
-  {
     "caller": "lib",
     "callee": "Database"
   },
@@ -48,15 +52,7 @@
     "callee": "activesupport"
   },
   {
-    "caller": "sidekiq",
-    "callee": "app"
-  },
-  {
-    "caller": "sidekiq",
-    "callee": "json"
-  },
-  {
-    "caller": "sidekiq",
-    "callee": "ruby"
+    "caller": "lib",
+    "callee": "logger"
   }
 ]

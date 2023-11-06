@@ -1,0 +1,12 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT COUNT(*) FROM \"session_activations\" WHERE \"session_activations\".\"user_id\" = $1"
+      }
+    ]
+  }
+]

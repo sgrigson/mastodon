@@ -1,5 +1,4 @@
 [
-  "actionpack",
   "activesupport",
   "app/controllers",
   "app/controllers/api",
@@ -8,5 +7,6 @@
   "app/lib",
   "app/lib/translation_service",
   "lib/mastodon",
-  "logger"
+  "logger",
+  "openssl"
 ]

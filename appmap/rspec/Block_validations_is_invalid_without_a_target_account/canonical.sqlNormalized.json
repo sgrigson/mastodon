@@ -1,0 +1,3 @@
+[
+  "SELECT ? AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" IS ? AND \"blocks\".\"target_account_id\" IS ? LIMIT $?"
+]

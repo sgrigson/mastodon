@@ -1,0 +1,22 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/lib/PotentialFriendshipTracker",
+  "app/lib/RedisConfiguration",
+  "app/lib/TagManager",
+  "app/models/Account",
+  "app/models/BulkImport",
+  "app/models/Instance",
+  "app/models/concerns/AccountInteractions",
+  "app/models/concerns/DomainMaterializable",
+  "app/models/concerns/Mute",
+  "app/models/concerns/Redisable",
+  "app/services/BulkImportRowService",
+  "app/validators/UniqueUsernameValidator",
+  "app/workers/import/Import::RowWorker",
+  "json/JSON::Ext::Generator::State",
+  "json/JSON::Ext::Parser",
+  "lib/paperclip/Paperclip::AttachmentExtensions",
+  "logger/Logger::LogDevice",
+  "ruby/String",
+  "sidekiq/Sidekiq::Client"
+]

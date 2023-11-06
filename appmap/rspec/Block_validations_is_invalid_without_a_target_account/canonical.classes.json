@@ -1,0 +1,7 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/helpers/ActivityPub::TagManager",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "openssl/OpenSSL::Random",
+  "ruby/String"
+]

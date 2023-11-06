@@ -1,4 +1,5 @@
 [
   "array.pack",
-  "crypto.pkey"
+  "crypto.pkey",
+  "log"
 ]

@@ -12,6 +12,10 @@
     "callee": "lib"
   },
   {
+    "caller": "activesupport",
+    "callee": "logger"
+  },
+  {
     "caller": "app",
     "callee": "Database"
   },
@@ -29,22 +33,14 @@
   },
   {
     "caller": "app",
+    "callee": "logger"
+  },
+  {
+    "caller": "app",
     "callee": "openssl"
   },
   {
     "caller": "app",
-    "callee": "ruby"
-  },
-  {
-    "caller": "sidekiq",
-    "callee": "app"
-  },
-  {
-    "caller": "sidekiq",
-    "callee": "json"
-  },
-  {
-    "caller": "sidekiq",
     "callee": "ruby"
   }
 ]

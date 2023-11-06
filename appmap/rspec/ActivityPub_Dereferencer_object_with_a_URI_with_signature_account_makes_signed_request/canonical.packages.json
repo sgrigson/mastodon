@@ -15,6 +15,5 @@
   "lib/paperclip",
   "logger",
   "openssl",
-  "ruby",
-  "sidekiq"
+  "ruby"
 ]

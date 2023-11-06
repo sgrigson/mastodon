@@ -1,5 +1,32 @@
 [
   {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "app",
     "type": "package",
     "children": [
@@ -478,6 +505,33 @@
         ]
       },
       {
+        "name": "ERB",
+        "type": "class",
+        "children": [
+          {
+            "name": "result",
+            "type": "function",
+            "static": false,
+            "location": "/usr/local/lib/ruby/3.2.0/erb.rb:425"
+          }
+        ]
+      },
+      {
+        "name": "Kernel",
+        "type": "class",
+        "children": [
+          {
+            "name": "eval",
+            "type": "function",
+            "labels": [
+              "lang.eval"
+            ],
+            "static": true,
+            "location": "Kernel.eval"
+          }
+        ]
+      },
+      {
         "name": "Array",
         "type": "class",
         "children": [
@@ -647,33 +701,6 @@
     ]
   },
   {
-    "name": "sidekiq",
-    "type": "package",
-    "children": [
-      {
-        "name": "Sidekiq",
-        "type": "class",
-        "children": [
-          {
-            "name": "Client",
-            "type": "class",
-            "children": [
-              {
-                "name": "push",
-                "type": "function",
-                "labels": [
-                  "job.create"
-                ],
-                "static": false,
-                "location": "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "openssl",
     "type": "package",
     "children": [
@@ -713,6 +740,10 @@
       {
         "type": "query",
         "name": "SELECT COUNT(*) FROM \"accounts\" WHERE \"accounts\".\"domain\" IS NOT NULL"
+      },
+      {
+        "type": "query",
+        "name": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"domain_blocks\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
       },
       {
         "type": "query",

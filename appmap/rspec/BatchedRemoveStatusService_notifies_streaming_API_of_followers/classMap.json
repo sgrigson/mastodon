@@ -1,0 +1,20 @@
+[
+  {
+    "name": "app/models/concerns",
+    "type": "package",
+    "children": [
+      {
+        "name": "Redisable",
+        "type": "class",
+        "children": [
+          {
+            "name": "redis",
+            "type": "function",
+            "static": false,
+            "location": "app/models/concerns/redisable.rb:4"
+          }
+        ]
+      }
+    ]
+  }
+]

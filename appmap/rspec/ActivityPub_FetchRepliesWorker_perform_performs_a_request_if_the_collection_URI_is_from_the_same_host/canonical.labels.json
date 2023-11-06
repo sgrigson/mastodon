@@ -1,6 +1,8 @@
 [
   "array.pack",
   "crypto.pkey",
+  "lang.eval",
+  "log",
   "mvc.after_action",
   "mvc.before_action"
 ]

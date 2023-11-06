@@ -1,0 +1,14 @@
+[
+  "activesupport",
+  "app/lib",
+  "app/models",
+  "app/models/concerns",
+  "app/services",
+  "app/validators",
+  "app/workers/import",
+  "json",
+  "lib/paperclip",
+  "logger",
+  "ruby",
+  "sidekiq"
+]

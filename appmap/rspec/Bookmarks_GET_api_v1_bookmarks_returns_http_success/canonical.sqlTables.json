@@ -1,0 +1,20 @@
+[
+  "account_stats",
+  "accounts",
+  "bookmarks",
+  "conversation_mutes",
+  "conversations",
+  "custom_filter_keywords",
+  "custom_filter_statuses",
+  "custom_filters",
+  "favourites",
+  "media_attachments",
+  "mentions",
+  "oauth_access_tokens",
+  "preview_cards_statuses",
+  "status_stats",
+  "statuses",
+  "statuses_tags",
+  "user_roles",
+  "users"
+]

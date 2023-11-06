@@ -41,7 +41,7 @@
         "rule": "update-in-get-request"
       }
     ],
-    "timestampMs": 1699243455668.3164
+    "timestampMs": 1699257310678.2083
   },
   "appMapMetadata": {
     "/workspaces/mastodon/tmp/appmap/rspec/AccountFinderConcern_remote_finders_find_remote_returns_nil_for_regex_style_domain_value.appmap.json": {

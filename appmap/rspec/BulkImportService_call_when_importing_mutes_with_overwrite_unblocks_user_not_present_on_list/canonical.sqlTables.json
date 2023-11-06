@@ -1,0 +1,11 @@
+[
+  "accounts",
+  "bulk_import_rows",
+  "bulk_imports",
+  "follows",
+  "mutes",
+  "pg_attribute",
+  "pg_class",
+  "pg_index",
+  "pg_namespace"
+]

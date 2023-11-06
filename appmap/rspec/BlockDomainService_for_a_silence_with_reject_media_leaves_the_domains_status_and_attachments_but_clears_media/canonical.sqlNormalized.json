@@ -1,0 +1,4 @@
+[
+  "SELECT \"media_attachments\".* FROM \"media_attachments\" WHERE \"media_attachments\".\"id\" = $? LIMIT $?",
+  "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"id\" = $? LIMIT $?"
+]

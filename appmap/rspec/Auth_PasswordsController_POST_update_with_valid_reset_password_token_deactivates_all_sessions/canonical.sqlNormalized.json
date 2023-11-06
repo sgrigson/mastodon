@@ -1,0 +1,3 @@
+[
+  "SELECT COUNT(*) FROM \"session_activations\" WHERE \"session_activations\".\"user_id\" = $?"
+]

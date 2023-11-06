@@ -1,0 +1,13 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/helpers/DomainControlHelper",
+  "app/lib/PotentialFriendshipTracker",
+  "app/lib/TagManager",
+  "app/models/Account",
+  "app/models/concerns/AccountFinderConcern::AccountFinder",
+  "app/models/concerns/AccountInteractions",
+  "app/models/concerns/Redisable",
+  "app/services/BulkImportRowService",
+  "json/JSON::Ext::Generator::State",
+  "json/JSON::Ext::Parser"
+]

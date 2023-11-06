@@ -1,0 +1,10 @@
+[
+  "app/lib/CacheBuster",
+  "app/lib/Request",
+  "app/lib/Request::ClientLimit",
+  "app/lib/RequestPool",
+  "app/lib/RequestPool::Connection",
+  "app/lib/connection_pool/ConnectionPool::SharedConnectionPool",
+  "app/lib/connection_pool/ConnectionPool::SharedTimedStack",
+  "lib/mastodon/Mastodon::Version"
+]

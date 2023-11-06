@@ -1,0 +1,256 @@
+[
+  {
+    "name": "activesupport",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActiveSupport",
+        "type": "class",
+        "children": [
+          {
+            "name": "Callbacks",
+            "type": "class",
+            "children": [
+              {
+                "name": "CallbackSequence",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "invoke_before",
+                    "type": "function",
+                    "labels": [
+                      "mvc.before_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                  },
+                  {
+                    "name": "invoke_after",
+                    "type": "function",
+                    "labels": [
+                      "mvc.after_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "Account",
+            "type": "class",
+            "children": [
+              {
+                "name": "acct",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:191"
+              },
+              {
+                "name": "local?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:163"
+              }
+            ]
+          },
+          {
+            "name": "concerns",
+            "type": "package",
+            "children": [
+              {
+                "name": "AccountFinderConcern",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "AccountFinder",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "account",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/models/concerns/account_finder_concern.rb:40"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "services",
+        "type": "package",
+        "children": [
+          {
+            "name": "BulkImportRowService",
+            "type": "class",
+            "children": [
+              {
+                "name": "domain",
+                "type": "function",
+                "static": false,
+                "location": "app/services/bulk_import_row_service.rb:49"
+              },
+              {
+                "name": "stoplight_wrap_request",
+                "type": "function",
+                "static": false,
+                "location": "app/services/bulk_import_row_service.rb:54"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "TagManager",
+            "type": "class",
+            "children": [
+              {
+                "name": "local_domain?",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/tag_manager.rb:13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "helpers",
+        "type": "package",
+        "children": [
+          {
+            "name": "DomainControlHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "domain_not_allowed?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/domain_control_helper.rb:4"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "json",
+    "type": "package",
+    "children": [
+      {
+        "name": "JSON",
+        "type": "class",
+        "children": [
+          {
+            "name": "Ext",
+            "type": "class",
+            "children": [
+              {
+                "name": "Generator",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "State",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "generate",
+                        "type": "function",
+                        "labels": [
+                          "format.json.generate",
+                          "serialize"
+                        ],
+                        "static": false,
+                        "location": "JSON::Ext::Generator::State#generate"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Parser",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "parse",
+                    "type": "function",
+                    "labels": [
+                      "format.json.parse",
+                      "deserialize.safe"
+                    ],
+                    "static": false,
+                    "location": "JSON::Ext::Parser#parse"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"list_accounts\" INNER JOIN \"lists\" \"list\" ON \"list\".\"id\" = \"list_accounts\".\"list_id\" WHERE \"list_accounts\".\"account_id\" = $1 AND \"list\".\"title\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"bulk_imports\" (\"type\", \"state\", \"total_items\", \"imported_items\", \"processed_items\", \"finished_at\", \"overwrite\", \"likely_mismatched\", \"original_filename\", \"account_id\", \"created_at\", \"updated_at\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING \"id\""
+      },
+      {
+        "type": "query",
+        "name": "RELEASE SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"bulk_import_rows\" (\"bulk_import_id\", \"data\", \"created_at\", \"updated_at\") VALUES ($1, $2, $3, $4) RETURNING \"id\""
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") != '' AND LOWER(\"accounts\".\"username\") = 'byron_bernhard2063' AND LOWER(\"accounts\".\"domain\") IS NULL ORDER BY \"accounts\".\"id\" ASC LIMIT $1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"lists\".* FROM \"lists\" WHERE \"lists\".\"account_id\" = $1 AND \"lists\".\"title\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"list_accounts\" WHERE \"list_accounts\".\"account_id\" = $1 AND \"list_accounts\".\"list_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO \"list_accounts\" (\"list_id\", \"account_id\", \"follow_id\", \"follow_request_id\") VALUES ($1, $2, $3, $4) RETURNING \"id\""
+      }
+    ]
+  }
+]

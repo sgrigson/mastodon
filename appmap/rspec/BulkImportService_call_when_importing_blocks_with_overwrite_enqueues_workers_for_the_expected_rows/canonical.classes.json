@@ -1,0 +1,22 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/helpers/ActivityPub::TagManager",
+  "app/helpers/ContextHelper",
+  "app/lib/PotentialFriendshipTracker",
+  "app/lib/activitypub/ActivityPub::Adapter",
+  "app/lib/activitypub/ActivityPub::CaseTransform",
+  "app/lib/activitypub/ActivityPub::Serializer",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "app/models/Account",
+  "app/models/Block",
+  "app/models/concerns/AccountInteractions",
+  "app/models/concerns/Redisable",
+  "app/serializers/activitypub/ActivityPub::BlockSerializer",
+  "app/serializers/activitypub/ActivityPub::UndoBlockSerializer",
+  "app/services/concerns/Payloadable",
+  "json/JSON::Ext::Generator::State",
+  "json/JSON::Ext::Parser",
+  "logger/Logger::LogDevice",
+  "ruby/String",
+  "sidekiq/Sidekiq::Client"
+]

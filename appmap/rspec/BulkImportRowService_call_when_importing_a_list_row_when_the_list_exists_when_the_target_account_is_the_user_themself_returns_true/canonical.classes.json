@@ -1,0 +1,10 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/helpers/DomainControlHelper",
+  "app/lib/TagManager",
+  "app/models/Account",
+  "app/models/concerns/AccountFinderConcern::AccountFinder",
+  "app/services/BulkImportRowService",
+  "json/JSON::Ext::Generator::State",
+  "json/JSON::Ext::Parser"
+]

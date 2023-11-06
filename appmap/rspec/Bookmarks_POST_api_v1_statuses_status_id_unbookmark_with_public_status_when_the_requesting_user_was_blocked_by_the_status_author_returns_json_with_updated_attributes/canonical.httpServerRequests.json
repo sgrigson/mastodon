@@ -1,0 +1,7 @@
+[
+  {
+    "route": "POST /api/v1/statuses/{status_id}/unbookmark",
+    "parameters": "()",
+    "status": 200
+  }
+]

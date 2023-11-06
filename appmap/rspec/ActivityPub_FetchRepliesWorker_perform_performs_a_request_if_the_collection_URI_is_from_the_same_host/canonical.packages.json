@@ -7,8 +7,10 @@
   "app/models/concerns",
   "app/validators",
   "app/workers/activitypub",
+  "lib/chewy",
   "lib/mastodon",
   "lib/paperclip",
+  "logger",
   "openssl",
   "ruby"
 ]

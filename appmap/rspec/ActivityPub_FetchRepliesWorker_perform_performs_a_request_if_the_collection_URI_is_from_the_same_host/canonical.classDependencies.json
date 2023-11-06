@@ -13,6 +13,22 @@
   },
   {
     "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"conversations\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"polls\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"conversations\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"polls\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
     "callee": "app/lib"
   },
   {
@@ -25,7 +41,15 @@
   },
   {
     "caller": "activesupport/ActiveSupport",
+    "callee": "lib/chewy"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
     "callee": "lib/paperclip"
+  },
+  {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "logger/Logger"
   },
   {
     "caller": "app/helpers",
@@ -42,6 +66,10 @@
   {
     "caller": "app/helpers",
     "callee": "lib/mastodon"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "logger/Logger"
   },
   {
     "caller": "app/lib",
@@ -61,7 +89,7 @@
   },
   {
     "caller": "app/models",
-    "callee": "INSERT INTO account_stats(account_id, statuses_count, created_at, updated_at, last_status_at) VALUES (111361376841125741, 1, now(), now(), now()) ON CONFLICT (account_id) DO UPDATE SET statuses_count = account_stats.statuses_count + 1, last_status_at = now(), updated_at = now() RETURNING id;"
+    "callee": "INSERT INTO account_stats(account_id, statuses_count, created_at, updated_at, last_status_at) VALUES (111362556645914248, 1, now(), now(), now()) ON CONFLICT (account_id) DO UPDATE SET statuses_count = account_stats.statuses_count + 1, last_status_at = now(), updated_at = now() RETURNING id;"
   },
   {
     "caller": "app/models",
@@ -73,7 +101,27 @@
   },
   {
     "caller": "app/models",
+    "callee": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"instances\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"media_attachments\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"media_attachments\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
+  },
+  {
+    "caller": "app/models",
     "callee": "app/lib"
+  },
+  {
+    "caller": "app/models",
+    "callee": "logger/Logger"
+  },
+  {
+    "caller": "app/models",
+    "callee": "ruby/Kernel"
   },
   {
     "caller": "app/validators",
@@ -81,11 +129,15 @@
   },
   {
     "caller": "app/validators",
-    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'donovan_wintheiser3480' AND LOWER(\"accounts\".\"domain\") = 'example.com' LIMIT $1"
+    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'yevette_will2' AND LOWER(\"accounts\".\"domain\") = 'example.com' LIMIT $1"
   },
   {
     "caller": "app/validators",
     "callee": "app/models"
+  },
+  {
+    "caller": "app/validators",
+    "callee": "logger/Logger"
   },
   {
     "caller": "app/workers/activitypub",
@@ -100,11 +152,19 @@
     "callee": "app/helpers"
   },
   {
+    "caller": "app/workers/activitypub",
+    "callee": "logger/Logger"
+  },
+  {
     "caller": "lib/mastodon",
     "callee": "INSERT INTO \"statuses\" (\"uri\", \"text\", \"created_at\", \"updated_at\", \"in_reply_to_id\", \"reblog_of_id\", \"url\", \"sensitive\", \"visibility\", \"spoiler_text\", \"reply\", \"language\", \"conversation_id\", \"local\", \"account_id\", \"application_id\", \"in_reply_to_account_id\", \"poll_id\", \"deleted_at\", \"edited_at\", \"trendable\", \"ordered_media_attachment_ids\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19, $20, $21, $22) RETURNING \"id\""
   },
   {
     "caller": "lib/mastodon",
     "callee": "activesupport/ActiveSupport"
+  },
+  {
+    "caller": "lib/mastodon",
+    "callee": "logger/Logger"
   }
 ]

@@ -1,5 +1,4 @@
 [
-  "actionpack/ActionDispatch::Cookies::CookieJar",
   "activesupport/ActiveSupport::Callbacks::CallbackSequence",
   "app/controllers/ApplicationController",
   "app/controllers/api/Api::BaseController",
@@ -9,5 +8,6 @@
   "app/lib/TranslationService",
   "app/lib/translation_service/TranslationService::LibreTranslate",
   "lib/mastodon/Mastodon::Version",
-  "logger/Logger::LogDevice"
+  "logger/Logger::LogDevice",
+  "openssl/OpenSSL::PKCS5"
 ]

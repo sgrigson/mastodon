@@ -16,6 +16,10 @@
     "callee": "lib/mastodon/Mastodon"
   },
   {
+    "caller": "app/helpers",
+    "callee": "logger/Logger"
+  },
+  {
     "caller": "app/lib",
     "callee": "app/helpers"
   },

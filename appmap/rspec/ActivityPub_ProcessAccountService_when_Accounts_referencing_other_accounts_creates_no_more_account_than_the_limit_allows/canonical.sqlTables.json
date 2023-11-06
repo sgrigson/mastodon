@@ -3,5 +3,9 @@
   "accounts",
   "domain_blocks",
   "follows",
-  "instances"
+  "instances",
+  "pg_attrdef",
+  "pg_attribute",
+  "pg_collation",
+  "pg_type"
 ]

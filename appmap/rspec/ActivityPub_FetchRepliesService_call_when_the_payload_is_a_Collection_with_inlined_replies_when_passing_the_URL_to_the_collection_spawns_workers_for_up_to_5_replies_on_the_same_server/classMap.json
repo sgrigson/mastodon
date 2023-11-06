@@ -426,6 +426,33 @@
     ]
   },
   {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "lib",
     "type": "package",
     "children": [
@@ -561,7 +588,7 @@
       },
       {
         "type": "query",
-        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'gregorio1679' AND LOWER(\"accounts\".\"domain\") = 'example.com' LIMIT $1"
+        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'miyoko218' AND LOWER(\"accounts\".\"domain\") = 'example.com' LIMIT $1"
       },
       {
         "type": "query",
@@ -593,7 +620,7 @@
       },
       {
         "type": "query",
-        "name": "INSERT INTO account_stats(account_id, statuses_count, created_at, updated_at, last_status_at) VALUES (111361337883272878, 1, now(), now(), now()) ON CONFLICT (account_id) DO UPDATE SET statuses_count = account_stats.statuses_count + 1, last_status_at = now(), updated_at = now() RETURNING id;"
+        "name": "INSERT INTO account_stats(account_id, statuses_count, created_at, updated_at, last_status_at) VALUES (111362565071731388, 1, now(), now(), now()) ON CONFLICT (account_id) DO UPDATE SET statuses_count = account_stats.statuses_count + 1, last_status_at = now(), updated_at = now() RETURNING id;"
       },
       {
         "type": "query",

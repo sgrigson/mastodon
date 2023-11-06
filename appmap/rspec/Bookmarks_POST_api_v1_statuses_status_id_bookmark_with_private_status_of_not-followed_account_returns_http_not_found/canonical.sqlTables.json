@@ -1,0 +1,8 @@
+[
+  "accounts",
+  "follows",
+  "mentions",
+  "oauth_access_tokens",
+  "statuses",
+  "users"
+]

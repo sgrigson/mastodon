@@ -63,22 +63,6 @@
                 ]
               }
             ]
-          },
-          {
-            "name": "LazyLoadHooks",
-            "type": "class",
-            "children": [
-              {
-                "name": "run_load_hooks",
-                "type": "function",
-                "labels": [
-                  "deserialize.safe",
-                  "lang.eval.safe"
-                ],
-                "static": true,
-                "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/lazy_load_hooks.rb:75"
-              }
-            ]
           }
         ]
       }
@@ -305,18 +289,6 @@
                 "type": "function",
                 "static": false,
                 "location": "app/models/user_settings.rb:60"
-              }
-            ]
-          },
-          {
-            "name": "ApplicationRecord",
-            "type": "class",
-            "children": [
-              {
-                "name": "update_index",
-                "type": "function",
-                "static": true,
-                "location": "app/models/application_record.rb:11"
               }
             ]
           },
@@ -1039,36 +1011,36 @@
     ]
   },
   {
-    "name": "ruby",
+    "name": "logger",
     "type": "package",
     "children": [
       {
-        "name": "ERB",
+        "name": "Logger",
         "type": "class",
         "children": [
           {
-            "name": "result",
-            "type": "function",
-            "static": false,
-            "location": "/usr/local/lib/ruby/3.2.0/erb.rb:425"
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
           }
         ]
-      },
-      {
-        "name": "Kernel",
-        "type": "class",
-        "children": [
-          {
-            "name": "eval",
-            "type": "function",
-            "labels": [
-              "lang.eval"
-            ],
-            "static": true,
-            "location": "Kernel.eval"
-          }
-        ]
-      },
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "type": "package",
+    "children": [
       {
         "name": "Marshal",
         "type": "class",
@@ -1111,127 +1083,22 @@
     ]
   },
   {
-    "name": "psych",
+    "name": "lib/paperclip",
     "type": "package",
     "children": [
       {
-        "name": "Psych",
+        "name": "Paperclip",
         "type": "class",
         "children": [
           {
-            "name": "load",
-            "type": "function",
-            "labels": [
-              "deserialize.unsafe"
-            ],
-            "static": true,
-            "location": "vendor/bundle/ruby/3.2.0/gems/psych-5.1.1/lib/psych.rb:368"
-          },
-          {
-            "name": "safe_load",
-            "type": "function",
-            "labels": [
-              "deserialize.safe"
-            ],
-            "static": true,
-            "location": "vendor/bundle/ruby/3.2.0/gems/psych-5.1.1/lib/psych.rb:322"
-          },
-          {
-            "name": "parse",
-            "type": "function",
-            "labels": [
-              "format.yaml.parse"
-            ],
-            "static": true,
-            "location": "vendor/bundle/ruby/3.2.0/gems/psych-5.1.1/lib/psych.rb:398"
-          },
-          {
-            "name": "parse_stream",
-            "type": "function",
-            "labels": [
-              "format.yaml.parse"
-            ],
-            "static": true,
-            "location": "vendor/bundle/ruby/3.2.0/gems/psych-5.1.1/lib/psych.rb:452"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "logger",
-    "type": "package",
-    "children": [
-      {
-        "name": "Logger",
-        "type": "class",
-        "children": [
-          {
-            "name": "LogDevice",
+            "name": "AttachmentExtensions",
             "type": "class",
             "children": [
               {
-                "name": "write",
+                "name": "save",
                 "type": "function",
-                "labels": [
-                  "log"
-                ],
                 "static": false,
-                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "lib",
-    "type": "package",
-    "children": [
-      {
-        "name": "paperclip",
-        "type": "package",
-        "children": [
-          {
-            "name": "Paperclip",
-            "type": "class",
-            "children": [
-              {
-                "name": "AttachmentExtensions",
-                "type": "class",
-                "children": [
-                  {
-                    "name": "save",
-                    "type": "function",
-                    "static": false,
-                    "location": "lib/paperclip/attachment_extensions.rb:83"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "name": "chewy",
-        "type": "package",
-        "children": [
-          {
-            "name": "Chewy",
-            "type": "class",
-            "children": [
-              {
-                "name": "SettingsExtensions",
-                "type": "class",
-                "children": [
-                  {
-                    "name": "enabled?",
-                    "type": "function",
-                    "static": true,
-                    "location": "lib/chewy/settings_extensions.rb:5"
-                  }
-                ]
+                "location": "lib/paperclip/attachment_extensions.rb:83"
               }
             ]
           }
@@ -1332,11 +1199,7 @@
       },
       {
         "type": "query",
-        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'dong0' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
-      },
-      {
-        "type": "query",
-        "name": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"settings\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
+        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'gavin4783' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
       },
       {
         "type": "query",
@@ -1360,14 +1223,6 @@
       },
       {
         "type": "query",
-        "name": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"invites\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
-      },
-      {
-        "type": "query",
-        "name": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"account_stats\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
-      },
-      {
-        "type": "query",
         "name": "RELEASE SAVEPOINT active_record_1"
       },
       {
@@ -1380,19 +1235,7 @@
       },
       {
         "type": "query",
-        "name": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"user_ips\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
-      },
-      {
-        "type": "query",
         "name": "SELECT \"user_ips\".* FROM \"user_ips\" WHERE \"user_ips\".\"user_id\" = $1 ORDER BY \"user_ips\".\"user_id\" ASC LIMIT $2"
-      },
-      {
-        "type": "query",
-        "name": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"user_invite_requests\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
-      },
-      {
-        "type": "query",
-        "name": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"user_invite_requests\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
       },
       {
         "type": "query",
@@ -1412,15 +1255,11 @@
       },
       {
         "type": "query",
-        "name": "SELECT a.attname\n  FROM (\n         SELECT indrelid, indkey, generate_subscripts(indkey, 1) idx\n           FROM pg_index\n          WHERE indrelid = '\"backups\"'::regclass\n            AND indisprimary\n       ) i\n  JOIN pg_attribute a\n    ON a.attrelid = i.indrelid\n   AND a.attnum = i.indkey[i.idx]\n ORDER BY i.idx\n"
-      },
-      {
-        "type": "query",
         "name": "INSERT INTO \"backups\" (\"user_id\", \"dump_file_name\", \"dump_content_type\", \"dump_updated_at\", \"processed\", \"created_at\", \"updated_at\", \"dump_file_size\") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING \"id\""
       },
       {
         "type": "query",
-        "name": "SELECT COUNT(*) FROM \"backups\" WHERE \"backups\".\"user_id\" = $1 AND (created_at >= '2023-10-30 23:01:31.544361')"
+        "name": "SELECT COUNT(*) FROM \"backups\" WHERE \"backups\".\"user_id\" = $1 AND (created_at >= '2023-10-31 03:09:09.968779')"
       }
     ]
   }

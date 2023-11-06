@@ -6,6 +6,7 @@
   "app/lib/activitypub/ActivityPub::TagManager",
   "app/models/Account",
   "lib/mastodon/Mastodon::Version",
+  "logger/Logger::LogDevice",
   "openssl/OpenSSL::PKey::PKey",
   "ruby/Array"
 ]

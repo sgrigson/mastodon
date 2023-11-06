@@ -1,0 +1,3 @@
+[
+  "SELECT COUNT(*) FROM \"oauth_access_tokens\" WHERE \"oauth_access_tokens\".\"resource_owner_id\" = $? AND \"oauth_access_tokens\".\"revoked_at\" IS ?"
+]

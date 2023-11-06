@@ -1,0 +1,12 @@
+[
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT COUNT(*) FROM \"oauth_access_tokens\" WHERE \"oauth_access_tokens\".\"resource_owner_id\" = $1 AND \"oauth_access_tokens\".\"revoked_at\" IS NULL"
+      }
+    ]
+  }
+]

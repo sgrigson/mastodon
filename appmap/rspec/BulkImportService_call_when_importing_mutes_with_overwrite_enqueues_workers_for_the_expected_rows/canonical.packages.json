@@ -1,0 +1,10 @@
+[
+  "activesupport",
+  "app/lib",
+  "app/models",
+  "app/models/concerns",
+  "json",
+  "logger",
+  "ruby",
+  "sidekiq"
+]

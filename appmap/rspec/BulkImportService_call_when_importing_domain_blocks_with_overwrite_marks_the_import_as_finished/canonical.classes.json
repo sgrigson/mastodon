@@ -1,0 +1,10 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/lib/TagManager",
+  "app/models/concerns/AccountInteractions",
+  "app/validators/DomainValidator",
+  "json/JSON::Ext::Generator::State",
+  "json/JSON::Ext::Parser",
+  "logger/Logger::LogDevice",
+  "ruby/String"
+]

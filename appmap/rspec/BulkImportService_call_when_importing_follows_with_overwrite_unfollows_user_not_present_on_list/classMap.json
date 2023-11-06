@@ -1,0 +1,736 @@
+[
+  {
+    "name": "json",
+    "type": "package",
+    "children": [
+      {
+        "name": "JSON",
+        "type": "class",
+        "children": [
+          {
+            "name": "Ext",
+            "type": "class",
+            "children": [
+              {
+                "name": "Parser",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "parse",
+                    "type": "function",
+                    "labels": [
+                      "format.json.parse",
+                      "deserialize.safe"
+                    ],
+                    "static": false,
+                    "location": "JSON::Ext::Parser#parse"
+                  }
+                ]
+              },
+              {
+                "name": "Generator",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "State",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "generate",
+                        "type": "function",
+                        "labels": [
+                          "format.json.generate",
+                          "serialize"
+                        ],
+                        "static": false,
+                        "location": "JSON::Ext::Generator::State#generate"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "Account",
+            "type": "class",
+            "children": [
+              {
+                "name": "acct",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:191"
+              },
+              {
+                "name": "local?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:163"
+              },
+              {
+                "name": "suspended?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:237"
+              },
+              {
+                "name": "moved?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:167"
+              },
+              {
+                "name": "synchronization_uri_prefix",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:409"
+              },
+              {
+                "name": "object_type",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:385"
+              },
+              {
+                "name": "instance_actor?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:175"
+              },
+              {
+                "name": "to_param",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:389"
+              }
+            ]
+          },
+          {
+            "name": "DomainBlock",
+            "type": "class",
+            "children": [
+              {
+                "name": "blocked?",
+                "type": "function",
+                "static": true,
+                "location": "app/models/domain_block.rb:49"
+              },
+              {
+                "name": "rule_for",
+                "type": "function",
+                "static": true,
+                "location": "app/models/domain_block.rb:67"
+              }
+            ]
+          },
+          {
+            "name": "concerns",
+            "type": "package",
+            "children": [
+              {
+                "name": "AccountInteractions",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "blocking?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:214"
+                  },
+                  {
+                    "name": "domain_blocking?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:218"
+                  },
+                  {
+                    "name": "following?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:198"
+                  },
+                  {
+                    "name": "follow!",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:115"
+                  }
+                ]
+              },
+              {
+                "name": "Redisable",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "redis",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/redisable.rb:4"
+                  },
+                  {
+                    "name": "with_redis",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/redisable.rb:8"
+                  }
+                ]
+              },
+              {
+                "name": "Lockable",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "with_redis_lock",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/lockable.rb:8"
+                  }
+                ]
+              },
+              {
+                "name": "AccountCounters",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "decrement_count!",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_counters.rb:28"
+                  },
+                  {
+                    "name": "update_count!",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_counters.rb:34"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Follow",
+            "type": "class",
+            "children": [
+              {
+                "name": "local?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/follow.rb:36"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "helpers",
+        "type": "package",
+        "children": [
+          {
+            "name": "DomainControlHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "domain_not_allowed?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/domain_control_helper.rb:4"
+              },
+              {
+                "name": "limited_federation_mode?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/domain_control_helper.rb:20"
+              }
+            ]
+          },
+          {
+            "name": "LanguagesHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "valid_locale?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/languages_helper.rb:293"
+              }
+            ]
+          },
+          {
+            "name": "ActivityPub",
+            "type": "class",
+            "children": [
+              {
+                "name": "TagManager",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "default_url_options",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/helpers/routing_helper.rb:12"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "ContextHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "serialized_context",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/context_helper.rb:41"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "validators",
+        "type": "package",
+        "children": [
+          {
+            "name": "LanguageValidator",
+            "type": "class",
+            "children": [
+              {
+                "name": "validate_each",
+                "type": "function",
+                "static": false,
+                "location": "app/validators/language_validator.rb:6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "PotentialFriendshipTracker",
+            "type": "class",
+            "children": [
+              {
+                "name": "remove",
+                "type": "function",
+                "static": true,
+                "location": "app/lib/potential_friendship_tracker.rb:27"
+              }
+            ]
+          },
+          {
+            "name": "RedisConfiguration",
+            "type": "class",
+            "children": [
+              {
+                "name": "with",
+                "type": "function",
+                "static": true,
+                "location": "app/lib/redis_configuration.rb:10"
+              },
+              {
+                "name": "pool",
+                "type": "function",
+                "static": true,
+                "location": "app/lib/redis_configuration.rb:12"
+              }
+            ]
+          },
+          {
+            "name": "activitypub",
+            "type": "package",
+            "children": [
+              {
+                "name": "ActivityPub",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "Serializer",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "inherited",
+                        "type": "function",
+                        "static": true,
+                        "location": "app/lib/activitypub/serializer.rb:12"
+                      },
+                      {
+                        "name": "serializable_hash",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/activitypub/serializer.rb:31"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Adapter",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "serializable_hash",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/activitypub/adapter.rb:14"
+                      },
+                      {
+                        "name": "transform_key_casing!",
+                        "type": "function",
+                        "static": true,
+                        "location": "app/lib/activitypub/adapter.rb:10"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "TagManager",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "uri_for",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/activitypub/tag_manager.rb:36"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "CaseTransform",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "camel_lower",
+                        "type": "function",
+                        "static": true,
+                        "location": "app/lib/activitypub/case_transform.rb:9"
+                      },
+                      {
+                        "name": "camel_lower_cache",
+                        "type": "function",
+                        "static": true,
+                        "location": "app/lib/activitypub/case_transform.rb:5"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "services/concerns",
+        "type": "package",
+        "children": [
+          {
+            "name": "Payloadable",
+            "type": "class",
+            "children": [
+              {
+                "name": "serialize_payload",
+                "type": "function",
+                "static": false,
+                "location": "app/services/concerns/payloadable.rb:13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "serializers/activitypub",
+        "type": "package",
+        "children": [
+          {
+            "name": "ActivityPub",
+            "type": "class",
+            "children": [
+              {
+                "name": "UndoFollowSerializer",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "id",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/undo_follow_serializer.rb:8"
+                  },
+                  {
+                    "name": "type",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/undo_follow_serializer.rb:12"
+                  },
+                  {
+                    "name": "actor",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/undo_follow_serializer.rb:16"
+                  }
+                ]
+              },
+              {
+                "name": "FollowSerializer",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "id",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/follow_serializer.rb:7"
+                  },
+                  {
+                    "name": "type",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/follow_serializer.rb:11"
+                  },
+                  {
+                    "name": "actor",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/follow_serializer.rb:15"
+                  },
+                  {
+                    "name": "virtual_object",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/follow_serializer.rb:19"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "activesupport",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActiveSupport",
+        "type": "class",
+        "children": [
+          {
+            "name": "Callbacks",
+            "type": "class",
+            "children": [
+              {
+                "name": "CallbackSequence",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "invoke_before",
+                    "type": "function",
+                    "labels": [
+                      "mvc.before_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                  },
+                  {
+                    "name": "invoke_after",
+                    "type": "function",
+                    "labels": [
+                      "mvc.after_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "type": "package",
+    "children": [
+      {
+        "name": "String",
+        "type": "class",
+        "children": [
+          {
+            "name": "unpack",
+            "type": "function",
+            "labels": [
+              "string.unpack"
+            ],
+            "static": false,
+            "location": "<internal:pack>:19"
+          },
+          {
+            "name": "unpack1",
+            "type": "function",
+            "labels": [
+              "string.unpack"
+            ],
+            "static": false,
+            "location": "<internal:pack>:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "sidekiq",
+    "type": "package",
+    "children": [
+      {
+        "name": "Sidekiq",
+        "type": "class",
+        "children": [
+          {
+            "name": "Client",
+            "type": "class",
+            "children": [
+              {
+                "name": "push",
+                "type": "function",
+                "labels": [
+                  "job.create"
+                ],
+                "static": false,
+                "location": "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"bulk_import_rows\".* FROM \"bulk_import_rows\" WHERE \"bulk_import_rows\".\"bulk_import_id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" INNER JOIN \"follows\" ON \"accounts\".\"id\" = \"follows\".\"target_account_id\" WHERE \"follows\".\"account_id\" = $1 ORDER BY \"accounts\".\"id\" ASC LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "DELETE FROM \"bulk_import_rows\" WHERE \"bulk_import_rows\".\"id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "RELEASE SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"domain_blocks\".* FROM \"domain_blocks\" WHERE \"domain_blocks\".\"domain\" IN ($1, $2) ORDER BY char_length(domain) desc LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1 AND \"blocks\".\"target_account_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $1 AND \"account_domain_blocks\".\"domain\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"follows\" WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"follows\".* FROM \"follows\" WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" WHERE \"accounts\".\"id\" = $1 LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid,\n                pg_catalog.obj_description(i.oid, 'pg_class') AS comment, d.indisvalid\nFROM pg_class t\nINNER JOIN pg_index d ON t.oid = d.indrelid\nINNER JOIN pg_class i ON d.indexrelid = i.oid\nLEFT JOIN pg_namespace n ON n.oid = t.relnamespace\nWHERE i.relkind IN ('i', 'I')\n  AND d.indisprimary = 'f'\n  AND t.relname = 'follows'\n  AND n.nspname = ANY (current_schemas(false))\nORDER BY i.relname\n"
+      },
+      {
+        "type": "query",
+        "name": "SELECT a.attnum, a.attname\nFROM pg_attribute a\nWHERE a.attrelid = 279184\nAND a.attnum IN (4, 5)\n"
+      },
+      {
+        "type": "query",
+        "name": "SELECT a.attnum, a.attname\nFROM pg_attribute a\nWHERE a.attrelid = 279184\nAND a.attnum IN (5)\n"
+      },
+      {
+        "type": "query",
+        "name": "UPDATE \"follows\" SET \"updated_at\" = $1, \"show_reblogs\" = $2, \"notify\" = $3, \"languages\" = $4 WHERE \"follows\".\"id\" = $5"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"notifications\".* FROM \"notifications\" WHERE \"notifications\".\"activity_id\" = $1 AND \"notifications\".\"activity_type\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "DELETE FROM \"follows\" WHERE \"follows\".\"id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "DELETE FROM \"account_pins\" WHERE \"account_pins\".\"target_account_id\" = $1 AND \"account_pins\".\"account_id\" = $2"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO account_stats(account_id, following_count, created_at, updated_at) VALUES (111361339998380283, 0, now(), now()) ON CONFLICT (account_id) DO UPDATE SET following_count = account_stats.following_count + -1, updated_at = now() RETURNING id;"
+      },
+      {
+        "type": "query",
+        "name": "INSERT INTO account_stats(account_id, followers_count, created_at, updated_at) VALUES (111361339998380285, 0, now(), now()) ON CONFLICT (account_id) DO UPDATE SET followers_count = account_stats.followers_count + -1, updated_at = now() RETURNING id;"
+      },
+      {
+        "type": "query",
+        "name": "UPDATE \"bulk_imports\" SET \"imported_items\" = $1, \"processed_items\" = $2, \"updated_at\" = $3 WHERE \"bulk_imports\".\"id\" = $4"
+      }
+    ]
+  }
+]

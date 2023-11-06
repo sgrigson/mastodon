@@ -4,6 +4,7 @@
   "app/lib/activitypub",
   "app/models",
   "lib/mastodon",
+  "logger",
   "openssl",
   "ruby"
 ]

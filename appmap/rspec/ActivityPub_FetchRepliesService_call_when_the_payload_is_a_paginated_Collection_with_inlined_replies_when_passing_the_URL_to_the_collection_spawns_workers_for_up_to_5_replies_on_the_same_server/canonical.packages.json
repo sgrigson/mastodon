@@ -8,6 +8,7 @@
   "app/validators",
   "lib/mastodon",
   "lib/paperclip",
+  "logger",
   "openssl",
   "ruby"
 ]

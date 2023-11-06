@@ -750,12 +750,6 @@
             "type": "class",
             "children": [
               {
-                "name": "http_client",
-                "type": "function",
-                "static": true,
-                "location": "app/lib/request.rb:141"
-              },
-              {
                 "name": "on_behalf_of",
                 "type": "function",
                 "static": false,
@@ -1377,33 +1371,6 @@
     ]
   },
   {
-    "name": "sidekiq",
-    "type": "package",
-    "children": [
-      {
-        "name": "Sidekiq",
-        "type": "class",
-        "children": [
-          {
-            "name": "Client",
-            "type": "class",
-            "children": [
-              {
-                "name": "push",
-                "type": "function",
-                "labels": [
-                  "job.create"
-                ],
-                "static": false,
-                "location": "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "json",
     "type": "package",
     "children": [
@@ -1469,7 +1436,7 @@
       },
       {
         "type": "query",
-        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'rashad_brakus4380' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
+        "name": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'euna31' AND LOWER(\"accounts\".\"domain\") IS NULL LIMIT $1"
       },
       {
         "type": "query",

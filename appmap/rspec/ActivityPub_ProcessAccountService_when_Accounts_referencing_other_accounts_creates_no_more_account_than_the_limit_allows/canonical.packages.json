@@ -10,7 +10,7 @@
   "json",
   "lib/mastodon",
   "lib/paperclip",
+  "logger",
   "openssl",
-  "ruby",
-  "sidekiq"
+  "ruby"
 ]

@@ -12,11 +12,9 @@
   "app/validators",
   "app/workers",
   "json",
-  "lib/chewy",
   "lib/paperclip",
   "logger",
   "openssl",
-  "psych",
   "ruby",
   "sidekiq"
 ]

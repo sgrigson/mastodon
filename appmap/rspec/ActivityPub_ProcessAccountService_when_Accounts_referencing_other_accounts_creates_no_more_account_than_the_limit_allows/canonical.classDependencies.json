@@ -24,8 +24,16 @@
     "callee": "lib/paperclip"
   },
   {
+    "caller": "activesupport/ActiveSupport",
+    "callee": "logger/Logger"
+  },
+  {
     "caller": "app/helpers",
     "callee": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" WHERE \"accounts\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "SELECT a.attname, format_type(a.atttypid, a.atttypmod),\n       pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod,\n       c.collname, col_description(a.attrelid, a.attnum) AS comment,\n       a.attidentity AS identity,\n       attgenerated as attgenerated\n  FROM pg_attribute a\n  LEFT JOIN pg_attrdef d ON a.attrelid = d.adrelid AND a.attnum = d.adnum\n  LEFT JOIN pg_type t ON a.atttypid = t.oid\n  LEFT JOIN pg_collation c ON a.attcollation = c.oid AND a.attcollation <> t.typcollation\n WHERE a.attrelid = '\"domain_blocks\"'::regclass\n   AND a.attnum > 0 AND NOT a.attisdropped\n ORDER BY a.attnum\n"
   },
   {
     "caller": "app/helpers",
@@ -38,6 +46,10 @@
   {
     "caller": "app/helpers",
     "callee": "lib/mastodon"
+  },
+  {
+    "caller": "app/helpers",
+    "callee": "logger/Logger"
   },
   {
     "caller": "app/lib",
@@ -58,6 +70,10 @@
   {
     "caller": "app/lib",
     "callee": "app/models"
+  },
+  {
+    "caller": "app/lib",
+    "callee": "logger/Logger"
   },
   {
     "caller": "app/lib",
@@ -112,12 +128,20 @@
     "callee": "json/JSON"
   },
   {
+    "caller": "app/models",
+    "callee": "logger/Logger"
+  },
+  {
     "caller": "app/validators",
     "callee": "SAVEPOINT active_record_1"
   },
   {
     "caller": "app/validators",
     "callee": "SELECT 1 AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = 'user1' AND LOWER(\"accounts\".\"domain\") = 'foo.test' LIMIT $1"
+  },
+  {
+    "caller": "app/validators",
+    "callee": "logger/Logger"
   },
   {
     "caller": "app/workers/activitypub",
@@ -136,15 +160,15 @@
     "callee": "app/models"
   },
   {
-    "caller": "sidekiq/Sidekiq",
-    "callee": "app/workers/activitypub"
+    "caller": "app/workers/activitypub",
+    "callee": "logger/Logger"
   },
   {
-    "caller": "sidekiq/Sidekiq",
-    "callee": "json/JSON"
+    "caller": "ruby/ERB",
+    "callee": "ruby/Kernel"
   },
   {
-    "caller": "sidekiq/Sidekiq",
-    "callee": "ruby/String"
+    "caller": "ruby/Kernel",
+    "callee": "ruby/ERB"
   }
 ]

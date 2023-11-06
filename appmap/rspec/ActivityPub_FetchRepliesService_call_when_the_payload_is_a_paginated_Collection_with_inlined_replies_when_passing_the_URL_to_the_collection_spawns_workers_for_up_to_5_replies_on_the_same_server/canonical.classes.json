@@ -20,6 +20,7 @@
   "lib/mastodon/Mastodon::Snowflake::Callbacks",
   "lib/mastodon/Mastodon::Version",
   "lib/paperclip/Paperclip::AttachmentExtensions",
+  "logger/Logger::LogDevice",
   "openssl/OpenSSL::PKey::PKey",
   "ruby/Array"
 ]

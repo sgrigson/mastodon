@@ -1,0 +1,9 @@
+[
+  "activesupport",
+  "app/helpers",
+  "app/lib",
+  "app/models",
+  "app/models/concerns",
+  "app/services",
+  "json"
+]

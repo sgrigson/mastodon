@@ -1,0 +1,11 @@
+[
+  "DELETE FROM \"bulk_import_rows\" WHERE \"bulk_import_rows\".\"bulk_import_id\" = $?",
+  "INSERT INTO \"account_domain_blocks\" (\"domain\", \"created_at\", \"updated_at\", \"account_id\") VALUES ($?, $?, $?, $?) RETURNING \"id\"",
+  "RELEASE SAVEPOINT active_record_1",
+  "SAVEPOINT active_record_1",
+  "SELECT ? AS one FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"domain\" = $? AND \"account_domain_blocks\".\"account_id\" = $? LIMIT $?",
+  "SELECT \"account_domain_blocks\".* FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $? AND \"account_domain_blocks\".\"domain\" = $? LIMIT $?",
+  "SELECT \"account_domain_blocks\".\"domain\" FROM \"account_domain_blocks\" WHERE \"account_domain_blocks\".\"account_id\" = $?",
+  "SELECT \"bulk_import_rows\".* FROM \"bulk_import_rows\" WHERE \"bulk_import_rows\".\"bulk_import_id\" = $?",
+  "UPDATE \"bulk_imports\" SET \"state\" = $?, \"finished_at\" = $?, \"updated_at\" = $? WHERE \"bulk_imports\".\"id\" = $?"
+]

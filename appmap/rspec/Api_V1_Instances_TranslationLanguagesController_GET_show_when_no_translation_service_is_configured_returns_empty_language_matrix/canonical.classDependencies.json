@@ -1,10 +1,6 @@
 [
   {
     "caller": "GET /api/v1/instance/translation_languages",
-    "callee": "actionpack/ActionDispatch"
-  },
-  {
-    "caller": "GET /api/v1/instance/translation_languages",
     "callee": "activesupport/ActiveSupport"
   },
   {
@@ -29,15 +25,15 @@
   },
   {
     "caller": "app/controllers",
-    "callee": "actionpack/ActionDispatch"
-  },
-  {
-    "caller": "app/controllers",
     "callee": "activesupport/ActiveSupport"
   },
   {
     "caller": "app/controllers",
     "callee": "app/helpers"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "openssl/OpenSSL"
   },
   {
     "caller": "app/lib",

@@ -1,1 +1,2121 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","status":["M .husky/pre-commit"],"git_last_annotated_tag":"0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"Bookmarks GET /api/v1/bookmarks without the authorization header returns http unauthorized","source_location":"spec/requests/api/v1/bookmarks_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"succeeded"},"classMap":[{"name":"activesupport","type":"package","children":[{"name":"ActiveSupport","type":"class","children":[{"name":"Callbacks","type":"class","children":[{"name":"CallbackSequence","type":"class","children":[{"name":"invoke_before","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597","static":false,"labels":["mvc.before_action"]},{"name":"invoke_after","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601","static":false,"labels":["mvc.after_action"]}]}]}]}]},{"name":"ruby","type":"package","children":[{"name":"String","type":"class","children":[{"name":"unpack","type":"function","location":"<internal:pack>:19","static":false,"labels":["string.unpack"]}]},{"name":"Array","type":"class","children":[{"name":"pack","type":"function","location":"<internal:pack>:7","static":false,"labels":["array.pack"]}]}]},{"name":"logger","type":"package","children":[{"name":"Logger","type":"class","children":[{"name":"LogDevice","type":"class","children":[{"name":"write","type":"function","location":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31","static":false,"labels":["log"]}]}]}]},{"name":"app","type":"package","children":[{"name":"controllers","type":"package","children":[{"name":"concerns","type":"package","children":[{"name":"Localized","type":"class","children":[{"name":"set_locale","type":"function","location":"app/controllers/concerns/localized.rb:10","static":false}]}]},{"name":"api","type":"package","children":[{"name":"Api","type":"class","children":[{"name":"BaseController","type":"class","children":[{"name":"current_user","type":"function","location":"app/controllers/api/base_controller.rb:116","static":false},{"name":"current_resource_owner","type":"function","location":"app/controllers/api/base_controller.rb:112","static":false},{"name":"disallow_unauthenticated_api_access?","type":"function","location":"app/controllers/api/base_controller.rb:152","static":false},{"name":"require_not_suspended!","type":"function","location":"app/controllers/api/base_controller.rb:126","static":false},{"name":"doorkeeper_unauthorized_render_options","type":"function","location":"app/controllers/api/base_controller.rb:85","static":false}]}]}]},{"name":"ApplicationController","type":"class","children":[{"name":"current_session","type":"function","location":"app/controllers/application_controller.rb:153","static":false},{"name":"check_self_destruct!","type":"function","location":"app/controllers/application_controller.rb:176","static":false},{"name":"set_cache_control_defaults","type":"function","location":"app/controllers/application_controller.rb:185","static":false}]}]},{"name":"helpers","type":"package","children":[{"name":"SelfDestructHelper","type":"class","children":[{"name":"self_destruct?","type":"function","location":"app/helpers/self_destruct_helper.rb:11","static":false}]}]},{"name":"lib","type":"package","children":[{"name":"RedisConfiguration","type":"class","children":[{"name":"pool","type":"function","location":"app/lib/redis_configuration.rb:12","static":true},{"name":"with","type":"function","location":"app/lib/redis_configuration.rb:10","static":true}]}]}]},{"name":"actionpack","type":"package","children":[{"name":"ActionDispatch","type":"class","children":[{"name":"Request","type":"class","children":[{"name":"Session","type":"class","children":[{"name":"[]","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/request/session.rb:112","static":false,"labels":["http.session.read"]}]}]},{"name":"Cookies","type":"class","children":[{"name":"CookieJar","type":"class","children":[{"name":"update","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb:344","static":false,"labels":["http.session.write"]},{"name":"[]","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb:328","static":false,"labels":["http.session.read"]}]}]}]},{"name":"ActionController","type":"class","children":[{"name":"Renderers","type":"class","children":[{"name":"render_to_body","type":"function","location":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_controller/metal/renderers.rb:140","static":false,"labels":["mvc.render"]}]}]}]},{"name":"json","type":"package","children":[{"name":"JSON","type":"class","children":[{"name":"Ext","type":"class","children":[{"name":"Generator","type":"class","children":[{"name":"State","type":"class","children":[{"name":"generate","type":"function","location":"JSON::Ext::Generator::State#generate","static":false,"labels":["format.json.generate","serialize"]}]}]}]}]}]},{"name":"lib/chewy/strategy","type":"package","children":[{"name":"Chewy","type":"class","children":[{"name":"Strategy","type":"class","children":[{"name":"Mastodon","type":"class","children":[{"name":"leave","type":"function","location":"lib/chewy/strategy/mastodon.rb:16","static":false}]}]}]}]}],"events":[{"id":321211,"event":"call","thread_id":9160,"http_server_request":{"request_method":"GET","path_info":"/api/v1/bookmarks","normalized_path_info":"/api/v1/bookmarks","headers":{"Version":"HTTP/1.0","Host":"www.example.com","Accept":"text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5","Content-Length":"0"}}},{"id":321212,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2386700,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":222040,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93803c8a8>"}},{"id":321213,"event":"return","thread_id":9160,"parent_id":321212,"elapsed":9.605701779946685e-05,"elapsed_instrumentation":0.00019259098917245865,"return_value":{"class":"Array","value":"[#<Proc:0x00007fc934226eb0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934226ff0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934227158 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934227310 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]","object_id":222060,"size":4}},{"id":321214,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2386700,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":222040,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93803c8a8>"}},{"id":321215,"event":"return","thread_id":9160,"parent_id":321214,"elapsed":3.035005647689104e-06,"elapsed_instrumentation":7.535796612501144e-05,"return_value":{"class":"Array","value":"[]","object_id":222080,"size":0}},{"id":321216,"event":"call","thread_id":9160,"defined_class":"String","method_id":"unpack","path":"<internal:pack>","lineno":19,"static":false,"parameters":[{"name":"fmt","class":"String","object_id":344180,"value":"NnnnnN","kind":"req"},{"name":"offset","class":"NilClass","object_id":4,"value":null,"kind":"key"}],"receiver":{"class":"String","object_id":2386720,"value":"_\t\t_s__9___^___@"}},{"id":321217,"event":"return","thread_id":9160,"parent_id":321216,"elapsed":6.363028660416603e-06,"elapsed_instrumentation":0.00021330197341740131,"return_value":{"class":"Array","value":"[3154708877, 29641, 52537, 51868, 63582, 2477557824]","object_id":2386740,"size":6}},{"id":321218,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":2386780,"value":"Processing by Api::V1::BookmarksController#index as HTML\n","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":321219,"event":"return","thread_id":9160,"parent_id":321218,"elapsed":0.0006095709977671504,"elapsed_instrumentation":0.00012716202763840556,"return_value":{"class":"Integer","value":"57","object_id":115}},{"id":321220,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2386800,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":2365080,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc937ccdca8>"}},{"id":321221,"event":"return","thread_id":9160,"parent_id":321220,"elapsed":3.163004294037819e-06,"elapsed_instrumentation":0.00010334706166759133,"return_value":{"class":"Array","value":"[]","object_id":2365100,"size":0}},{"id":321222,"event":"call","thread_id":9160,"defined_class":"Localized","method_id":"set_locale","path":"app/controllers/concerns/localized.rb","lineno":10,"static":false,"parameters":[{"name":"block","class":"NilClass","object_id":4,"value":null,"kind":"block"}],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321223,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_user","path":"app/controllers/api/base_controller.rb","lineno":116,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321224,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_resource_owner","path":"app/controllers/api/base_controller.rb","lineno":112,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321225,"event":"return","thread_id":9160,"parent_id":321224,"elapsed":5.738995969295502e-05,"elapsed_instrumentation":0.00020360504277050495},{"id":321226,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Request::Session","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/request/session.rb","lineno":112,"static":false,"parameters":[{"name":"key","class":"String","object_id":2386840,"value":"warden.user.user.key","kind":"req"}],"receiver":{"class":"ActionDispatch::Request::Session","object_id":2386860,"value":"#<ActionDispatch::Request::Session:0x00007fc932de3200>"}},{"id":321227,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"update","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":344,"static":false,"parameters":[{"name":"other_hash","class":"Hash","object_id":2386880,"value":"{}","kind":"req","size":0}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":2386900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"}},{"id":321228,"event":"return","thread_id":9160,"parent_id":321227,"elapsed":5.31697878614068e-06,"elapsed_instrumentation":0.00010797299910336733,"return_value":{"class":"ActionDispatch::Cookies::CookieJar","value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>","object_id":2386900}},{"id":321229,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":386580,"value":"_mastodon_session","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":2386900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"}},{"id":321230,"event":"return","thread_id":9160,"parent_id":321229,"elapsed":3.1030504032969475e-06,"elapsed_instrumentation":6.670993752777576e-05},{"id":321231,"event":"return","thread_id":9160,"parent_id":321226,"elapsed":0.00038053299067541957,"elapsed_instrumentation":8.266197983175516e-05},{"id":321232,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":2386900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"}},{"id":321233,"event":"return","thread_id":9160,"parent_id":321232,"elapsed":4.592991899698973e-06,"elapsed_instrumentation":0.00019686907762661576},{"id":321234,"event":"return","thread_id":9160,"parent_id":321223,"elapsed":0.0012864030431956053,"elapsed_instrumentation":5.043600685894489e-05},{"id":321235,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2386800,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":2365160,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc937ccdcf8>"}},{"id":321236,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_user","path":"app/controllers/api/base_controller.rb","lineno":116,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321237,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_resource_owner","path":"app/controllers/api/base_controller.rb","lineno":112,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321238,"event":"return","thread_id":9160,"parent_id":321237,"elapsed":3.8049009162932634e-05,"elapsed_instrumentation":4.570197779685259e-05},{"id":321239,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":2386900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"}},{"id":321240,"event":"return","thread_id":9160,"parent_id":321239,"elapsed":2.7579953894019127e-06,"elapsed_instrumentation":6.866100011393428e-05},{"id":321241,"event":"return","thread_id":9160,"parent_id":321236,"elapsed":0.0002912740455940366,"elapsed_instrumentation":5.1464943680912256e-05},{"id":321242,"event":"call","thread_id":9160,"defined_class":"ApplicationController","method_id":"current_session","path":"app/controllers/application_controller.rb","lineno":153,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321243,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":2386900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"}},{"id":321244,"event":"return","thread_id":9160,"parent_id":321243,"elapsed":5.103007424622774e-06,"elapsed_instrumentation":0.00011032796464860439},{"id":321245,"event":"return","thread_id":9160,"parent_id":321242,"elapsed":0.00014332804130390286,"elapsed_instrumentation":5.0826987717300653e-05},{"id":321246,"event":"call","thread_id":9160,"defined_class":"ApplicationController","method_id":"check_self_destruct!","path":"app/controllers/application_controller.rb","lineno":176,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321247,"event":"call","thread_id":9160,"defined_class":"SelfDestructHelper","method_id":"self_destruct?","path":"app/helpers/self_destruct_helper.rb","lineno":11,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321248,"event":"return","thread_id":9160,"parent_id":321247,"elapsed":7.283990271389484e-06,"elapsed_instrumentation":4.347902722656727e-05},{"id":321249,"event":"return","thread_id":9160,"parent_id":321246,"elapsed":6.765802390873432e-05,"elapsed_instrumentation":6.400595884770155e-05},{"id":321250,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_user","path":"app/controllers/api/base_controller.rb","lineno":116,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321251,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_resource_owner","path":"app/controllers/api/base_controller.rb","lineno":112,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321252,"event":"return","thread_id":9160,"parent_id":321251,"elapsed":3.392499638721347e-05,"elapsed_instrumentation":5.78199396841228e-05},{"id":321253,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":2386900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"}},{"id":321254,"event":"return","thread_id":9160,"parent_id":321253,"elapsed":2.80595850199461e-06,"elapsed_instrumentation":7.081800140440464e-05},{"id":321255,"event":"return","thread_id":9160,"parent_id":321250,"elapsed":0.0006739820237271488,"elapsed_instrumentation":4.5234046410769224e-05},{"id":321256,"event":"call","thread_id":9160,"defined_class":"ApplicationController","method_id":"set_cache_control_defaults","path":"app/controllers/application_controller.rb","lineno":185,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321257,"event":"return","thread_id":9160,"parent_id":321256,"elapsed":4.570989403873682e-06,"elapsed_instrumentation":0.0001405460643582046,"return_value":{"class":"Hash","value":"{:private=>true, :no_store=>true}","object_id":2386920,"size":2}},{"id":321258,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"disallow_unauthenticated_api_access?","path":"app/controllers/api/base_controller.rb","lineno":152,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321259,"event":"return","thread_id":9160,"parent_id":321258,"elapsed":1.4293997082859278e-05,"elapsed_instrumentation":5.5464974138885736e-05},{"id":321260,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"require_not_suspended!","path":"app/controllers/api/base_controller.rb","lineno":126,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321261,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_user","path":"app/controllers/api/base_controller.rb","lineno":116,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321262,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_resource_owner","path":"app/controllers/api/base_controller.rb","lineno":112,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321263,"event":"return","thread_id":9160,"parent_id":321262,"elapsed":2.4676963221281767e-05,"elapsed_instrumentation":4.124100087210536e-05},{"id":321264,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":2386900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"}},{"id":321265,"event":"return","thread_id":9160,"parent_id":321264,"elapsed":2.501008566468954e-06,"elapsed_instrumentation":6.544904317706823e-05},{"id":321266,"event":"return","thread_id":9160,"parent_id":321261,"elapsed":0.00026553100906312466,"elapsed_instrumentation":4.1620980482548475e-05},{"id":321267,"event":"return","thread_id":9160,"parent_id":321260,"elapsed":0.0003210590220987797,"elapsed_instrumentation":4.126800922676921e-05},{"id":321268,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"doorkeeper_unauthorized_render_options","path":"app/controllers/api/base_controller.rb","lineno":85,"static":false,"parameters":[{"name":"error","class":"Doorkeeper::OAuth::InvalidTokenResponse","object_id":2386940,"value":"#<Doorkeeper::OAuth::InvalidTokenResponse:0x00007fc931cfe7f0>","kind":"key"}],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321269,"event":"return","thread_id":9160,"parent_id":321268,"elapsed":9.284005500376225e-06,"elapsed_instrumentation":0.0001456470345146954,"return_value":{"class":"Hash","value":"{:json=>{:error=>The access token is invalid}}","object_id":2386960,"size":1}},{"id":321270,"event":"call","thread_id":9160,"defined_class":"ActionController::Renderers","method_id":"render_to_body","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_controller/metal/renderers.rb","lineno":140,"static":false,"parameters":[{"name":"options","class":"Hash","object_id":2386960,"value":"{:json=>{:error=>The access token is invalid}, :status=>401, :prefixes=>[api/v1/bookmarks, api/base, application], :template=>index, :layout=>}","kind":"req","size":5}],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321271,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_user","path":"app/controllers/api/base_controller.rb","lineno":116,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321272,"event":"call","thread_id":9160,"defined_class":"Api::BaseController","method_id":"current_resource_owner","path":"app/controllers/api/base_controller.rb","lineno":112,"static":false,"parameters":[],"receiver":{"class":"Api::V1::BookmarksController","object_id":2386820,"value":"#<Api::V1::BookmarksController:0x00007fc919a7eb00>"}},{"id":321273,"event":"return","thread_id":9160,"parent_id":321272,"elapsed":3.106403164565563e-05,"elapsed_instrumentation":4.774500848725438e-05},{"id":321274,"event":"call","thread_id":9160,"defined_class":"ActionDispatch::Cookies::CookieJar","method_id":"[]","path":"vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb","lineno":328,"static":false,"parameters":[{"name":"name","class":"String","object_id":317160,"value":"_session_id","kind":"req"}],"receiver":{"class":"ActionDispatch::Cookies::CookieJar","object_id":2386900,"value":"#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"}},{"id":321275,"event":"return","thread_id":9160,"parent_id":321274,"elapsed":3.6439741961658e-06,"elapsed_instrumentation":7.328297942876816e-05},{"id":321276,"event":"return","thread_id":9160,"parent_id":321271,"elapsed":0.00029840704519301653,"elapsed_instrumentation":5.699298344552517e-05},{"id":321277,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2386980,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":326180,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934e9f070>"}},{"id":321278,"event":"return","thread_id":9160,"parent_id":321277,"elapsed":2.4160253815352917e-06,"elapsed_instrumentation":9.09009831957519e-05,"return_value":{"class":"Array","value":"[]","object_id":326200,"size":0}},{"id":321279,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2386980,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":326220,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934e9f0c0>"}},{"id":321280,"event":"return","thread_id":9160,"parent_id":321279,"elapsed":2.3879692889750004e-06,"elapsed_instrumentation":7.302802987396717e-05,"return_value":{"class":"Array","value":"[]","object_id":326240,"size":0}},{"id":321281,"event":"call","thread_id":9160,"defined_class":"JSON::Ext::Generator::State","method_id":"generate","path":"JSON::Ext::Generator::State#generate","static":false,"parameters":[{"name":"arg","class":"Hash","object_id":2387000,"value":"{error=>The access token is invalid}","kind":"req","size":1}],"receiver":{"class":"JSON::Ext::Generator::State","object_id":2387020,"value":"#<JSON::Ext::Generator::State:0x00007fc9352f11a0>"}},{"id":321282,"event":"return","thread_id":9160,"parent_id":321281,"elapsed":6.569025572389364e-06,"elapsed_instrumentation":9.371200576424599e-05,"return_value":{"class":"String","value":"{\"error\":\"The access token is invalid\"}","object_id":2387040}},{"id":321283,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2386980,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":326220,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934e9f0c0>"}},{"id":321284,"event":"return","thread_id":9160,"parent_id":321283,"elapsed":2.6989728212356567e-06,"elapsed_instrumentation":6.313499761745334e-05,"return_value":{"class":"Array","value":"[]","object_id":328060,"size":0}},{"id":321285,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2386980,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":326180,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934e9f070>"}},{"id":321286,"event":"return","thread_id":9160,"parent_id":321285,"elapsed":2.0900042727589607e-06,"elapsed_instrumentation":5.995604442432523e-05,"return_value":{"class":"Array","value":"[]","object_id":328080,"size":0}},{"id":321287,"event":"return","thread_id":9160,"parent_id":321270,"elapsed":0.0012680680374614894,"elapsed_instrumentation":0.00019886094378307462,"return_value":{"class":"String","value":"{\"error\":\"The access token is invalid\"}","object_id":2387040}},{"id":321288,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":2387060,"value":"Filter chain halted as #<Proc:0x00007fc93942ddd0 /workspaces/mastodon/app/controllers/api/v1/bookmar (...52 more characters)","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":321289,"event":"return","thread_id":9160,"parent_id":321288,"elapsed":0.0005226859939284623,"elapsed_instrumentation":0.00030274299206212163,"return_value":{"class":"Integer","value":"152","object_id":305}},{"id":321290,"event":"return","thread_id":9160,"parent_id":321235,"elapsed":0.005425466981250793,"elapsed_instrumentation":0.0002480759867466986,"return_value":{"class":"Array","value":"[#<Proc:0x00007fc939073b90 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939076598 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc93907bb60 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc93907c948 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc93907e6a8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939066530 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939014fa0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939015c20 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939016d50 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939017ea8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib (...5 more items)]","object_id":2365380,"size":15}},{"id":321291,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2386800,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":2365160,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc937ccdcf8>"}},{"id":321292,"event":"return","thread_id":9160,"parent_id":321291,"elapsed":8.379982318729162e-06,"elapsed_instrumentation":0.0002570340293459594,"return_value":{"class":"Array","value":"[#<Proc:0x00007fc939009ce0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc93901c5c0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc9390789d8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]","object_id":2372100,"size":3}},{"id":321293,"event":"return","thread_id":9160,"parent_id":321222,"elapsed":0.007475805992726237,"elapsed_instrumentation":6.73290342092514e-05},{"id":321294,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2386800,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":2365080,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc937ccdca8>"}},{"id":321295,"event":"return","thread_id":9160,"parent_id":321294,"elapsed":3.235007170587778e-06,"elapsed_instrumentation":7.814203854650259e-05,"return_value":{"class":"Array","value":"[]","object_id":2372120,"size":0}},{"id":321296,"event":"call","thread_id":9160,"defined_class":"Logger::LogDevice","method_id":"write","path":"/usr/local/lib/ruby/3.2.0/logger/log_device.rb","lineno":31,"static":false,"parameters":[{"name":"message","class":"String","object_id":2387080,"value":"Completed 401 Unauthorized in 9ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 3862)\n","kind":"req"}],"receiver":{"class":"Logger::LogDevice","object_id":19780,"value":"#<Logger::LogDevice:0x00007fc942103e80>"}},{"id":321297,"event":"return","thread_id":9160,"parent_id":321296,"elapsed":0.0006640739738941193,"elapsed_instrumentation":0.0001361850299872458,"return_value":{"class":"Integer","value":"91","object_id":183}},{"id":321298,"event":"call","thread_id":9160,"defined_class":"RedisConfiguration","method_id":"pool","path":"app/lib/redis_configuration.rb","lineno":12,"static":true,"parameters":[],"receiver":{"class":"Class","object_id":32420,"value":"RedisConfiguration"}},{"id":321299,"event":"return","thread_id":9160,"parent_id":321298,"elapsed":3.8860016502439976e-06,"elapsed_instrumentation":0.00011805602116510272,"return_value":{"class":"ConnectionPool","value":"#<ConnectionPool:0x00007fc934c381b0>","object_id":345020}},{"id":321300,"event":"call","thread_id":9160,"defined_class":"Array","method_id":"pack","path":"<internal:pack>","lineno":7,"static":false,"parameters":[{"name":"fmt","class":"String","object_id":343760,"value":"m0","kind":"req"},{"name":"buffer","class":"NilClass","object_id":4,"value":null,"kind":"key"}],"receiver":{"class":"Array","object_id":2387100,"value":"[_C_R_d7___~__$m_]"}},{"id":321301,"event":"return","thread_id":9160,"parent_id":321300,"elapsed":6.387010216712952e-06,"elapsed_instrumentation":0.00012751092435792089,"return_value":{"class":"String","value":"sUOmUqZkN5D14n6zuSRtxg==","object_id":2387120}},{"id":321302,"event":"call","thread_id":9160,"defined_class":"Chewy::Strategy::Mastodon","method_id":"leave","path":"lib/chewy/strategy/mastodon.rb","lineno":16,"static":false,"parameters":[],"receiver":{"class":"Chewy::Strategy::Mastodon","object_id":2387140,"value":"#<Chewy::Strategy::Mastodon:0x00007fc935391470>"}},{"id":321303,"event":"call","thread_id":9160,"defined_class":"RedisConfiguration","method_id":"with","path":"app/lib/redis_configuration.rb","lineno":10,"static":true,"parameters":[{"name":"*","class":"Array","object_id":2387160,"value":"[]","kind":"rest","size":0},{"name":"**","class":"Hash","object_id":2387180,"value":"{}","kind":"keyrest","size":0},{"name":"&","class":"NilClass","object_id":4,"value":null,"kind":"block"}],"receiver":{"class":"Class","object_id":32420,"value":"RedisConfiguration"}},{"id":321304,"event":"call","thread_id":9160,"defined_class":"RedisConfiguration","method_id":"pool","path":"app/lib/redis_configuration.rb","lineno":12,"static":true,"parameters":[],"receiver":{"class":"Class","object_id":32420,"value":"RedisConfiguration"}},{"id":321305,"event":"return","thread_id":9160,"parent_id":321304,"elapsed":2.3519969545304775e-06,"elapsed_instrumentation":7.618195377290249e-05,"return_value":{"class":"ConnectionPool","value":"#<ConnectionPool:0x00007fc934c381b0>","object_id":345020}},{"id":321306,"event":"return","thread_id":9160,"parent_id":321303,"elapsed":0.00017561099957674742,"elapsed_instrumentation":0.0004301310400478542,"return_value":{"class":"Array","value":"[]","object_id":2387200,"size":0}},{"id":321307,"event":"return","thread_id":9160,"parent_id":321302,"elapsed":0.0006298339576460421,"elapsed_instrumentation":0.00010113604366779327,"return_value":{"class":"Array","value":"[]","object_id":2387200,"size":0}},{"id":321308,"event":"return","thread_id":9160,"parent_id":321211,"elapsed":0.01784888398833573,"elapsed_instrumentation":0.0010687180329114199,"return_value":{"class":"Hash","value":"{error=>The access token is invalid}","object_id":2387240,"size":1,"properties":[{"name":"error","class":"String"}]},"http_server_response":{"status_code":401,"headers":{"X-Frame-Options":"SAMEORIGIN","X-XSS-Protection":"0","X-Content-Type-Options":"nosniff","X-Download-Options":"noopen","X-Permitted-Cross-Domain-Policies":"none","Referrer-Policy":"strict-origin-when-cross-origin","Vary":"Authorization","Cache-Control":"private, no-store","WWW-Authenticate":"Bearer realm=\"Doorkeeper\", error=\"invalid_token\", error_description=\"The access token is invalid\"","Content-Type":"application/json; charset=utf-8","Content-Security-Policy":"default-src 'none'; frame-ancestors 'none'; form-action 'none'","X-Request-Id":"bc09098d-73c9-4d39-8a9c-f85e93ac8840","X-Runtime":"0.017388"}}},{"id":321309,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_before","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":597,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2387260,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":318420,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934c37c10>"}},{"id":321310,"event":"return","thread_id":9160,"parent_id":321309,"elapsed":0.00012459501158446074,"elapsed_instrumentation":0.00017487694276496768,"return_value":{"class":"Array","value":"[#<Proc:0x00007fc933f1f4d8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f618 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f758 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f910 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]","object_id":318440,"size":4}},{"id":321311,"event":"call","thread_id":9160,"defined_class":"ActiveSupport::Callbacks::CallbackSequence","method_id":"invoke_after","path":"vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb","lineno":601,"static":false,"parameters":[{"name":"arg","class":"ActiveSupport::Callbacks::Filters::Environment","object_id":2387260,"value":null,"kind":"req"}],"receiver":{"class":"ActiveSupport::Callbacks::CallbackSequence","object_id":318420,"value":"#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934c37c10>"}},{"id":321312,"event":"return","thread_id":9160,"parent_id":321311,"elapsed":3.5149860195815563e-06,"elapsed_instrumentation":0.0001695370301604271,"return_value":{"class":"Array","value":"[]","object_id":318460,"size":0}}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9160,
+      "http_server_request": {
+        "request_method": "GET",
+        "path_info": "/api/v1/bookmarks",
+        "normalized_path_info": "/api/v1/bookmarks",
+        "headers": {
+          "Version": "HTTP/1.0",
+          "Host": "www.example.com",
+          "Accept": "text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5",
+          "Content-Length": "0"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2386700,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 222040,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93803c8a8>"
+      }
+    },
+    {
+      "id": 3,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 2,
+      "elapsed": 0.00009605701779946685,
+      "elapsed_instrumentation": 0.00019259098917245865,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007fc934226eb0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934226ff0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934227158 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc934227310 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 222060,
+        "size": 4
+      }
+    },
+    {
+      "id": 4,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2386700,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 222040,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc93803c8a8>"
+      }
+    },
+    {
+      "id": 5,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 4,
+      "elapsed": 0.000003035005647689104,
+      "elapsed_instrumentation": 0.00007535796612501144,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 222080,
+        "size": 0
+      }
+    },
+    {
+      "id": 6,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "String",
+      "method_id": "unpack",
+      "path": "<internal:pack>",
+      "lineno": 19,
+      "static": false,
+      "parameters": [
+        {
+          "name": "fmt",
+          "class": "String",
+          "object_id": 344180,
+          "value": "NnnnnN",
+          "kind": "req"
+        },
+        {
+          "name": "offset",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "String",
+        "object_id": 2386720,
+        "value": "_\t\t_s__9___^___@"
+      }
+    },
+    {
+      "id": 7,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 6,
+      "elapsed": 0.000006363028660416603,
+      "elapsed_instrumentation": 0.00021330197341740131,
+      "return_value": {
+        "class": "Array",
+        "value": "[3154708877, 29641, 52537, 51868, 63582, 2477557824]",
+        "object_id": 2386740,
+        "size": 6
+      }
+    },
+    {
+      "id": 8,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 2386780,
+          "value": "Processing by Api::V1::BookmarksController#index as HTML\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 9,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 8,
+      "elapsed": 0.0006095709977671504,
+      "elapsed_instrumentation": 0.00012716202763840556,
+      "return_value": {
+        "class": "Integer",
+        "value": "57",
+        "object_id": 115
+      }
+    },
+    {
+      "id": 10,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2386800,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 2365080,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc937ccdca8>"
+      }
+    },
+    {
+      "id": 11,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 10,
+      "elapsed": 0.000003163004294037819,
+      "elapsed_instrumentation": 0.00010334706166759133,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 2365100,
+        "size": 0
+      }
+    },
+    {
+      "id": 12,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Localized",
+      "method_id": "set_locale",
+      "path": "app/controllers/concerns/localized.rb",
+      "lineno": 10,
+      "static": false,
+      "parameters": [
+        {
+          "name": "block",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "block"
+        }
+      ],
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 13,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_user",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 116,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 14,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_resource_owner",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 112,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 15,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 14,
+      "elapsed": 0.00005738995969295502,
+      "elapsed_instrumentation": 0.00020360504277050495
+    },
+    {
+      "id": 16,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Request::Session",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/request/session.rb",
+      "lineno": 112,
+      "static": false,
+      "parameters": [
+        {
+          "name": "key",
+          "class": "String",
+          "object_id": 2386840,
+          "value": "warden.user.user.key",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Request::Session",
+        "object_id": 2386860,
+        "value": "#<ActionDispatch::Request::Session:0x00007fc932de3200>"
+      }
+    },
+    {
+      "id": 17,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "update",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 344,
+      "static": false,
+      "parameters": [
+        {
+          "name": "other_hash",
+          "class": "Hash",
+          "object_id": 2386880,
+          "value": "{}",
+          "kind": "req",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 2386900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"
+      }
+    },
+    {
+      "id": 18,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 17,
+      "elapsed": 0.00000531697878614068,
+      "elapsed_instrumentation": 0.00010797299910336733,
+      "return_value": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>",
+        "object_id": 2386900
+      }
+    },
+    {
+      "id": 19,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 386580,
+          "value": "_mastodon_session",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 2386900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"
+      }
+    },
+    {
+      "id": 20,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 19,
+      "elapsed": 0.0000031030504032969475,
+      "elapsed_instrumentation": 0.00006670993752777576
+    },
+    {
+      "id": 21,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 16,
+      "elapsed": 0.00038053299067541957,
+      "elapsed_instrumentation": 0.00008266197983175516
+    },
+    {
+      "id": 22,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 2386900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"
+      }
+    },
+    {
+      "id": 23,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 22,
+      "elapsed": 0.000004592991899698973,
+      "elapsed_instrumentation": 0.00019686907762661576
+    },
+    {
+      "id": 24,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 13,
+      "elapsed": 0.0012864030431956053,
+      "elapsed_instrumentation": 0.00005043600685894489
+    },
+    {
+      "id": 25,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2386800,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 2365160,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc937ccdcf8>"
+      }
+    },
+    {
+      "id": 26,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_user",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 116,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 27,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_resource_owner",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 112,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 28,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 27,
+      "elapsed": 0.000038049009162932634,
+      "elapsed_instrumentation": 0.00004570197779685259
+    },
+    {
+      "id": 29,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 2386900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"
+      }
+    },
+    {
+      "id": 30,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 29,
+      "elapsed": 0.0000027579953894019127,
+      "elapsed_instrumentation": 0.00006866100011393428
+    },
+    {
+      "id": 31,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 26,
+      "elapsed": 0.0002912740455940366,
+      "elapsed_instrumentation": 0.000051464943680912256
+    },
+    {
+      "id": 32,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ApplicationController",
+      "method_id": "current_session",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 153,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 33,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 2386900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"
+      }
+    },
+    {
+      "id": 34,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 33,
+      "elapsed": 0.000005103007424622774,
+      "elapsed_instrumentation": 0.00011032796464860439
+    },
+    {
+      "id": 35,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 32,
+      "elapsed": 0.00014332804130390286,
+      "elapsed_instrumentation": 0.000050826987717300653
+    },
+    {
+      "id": 36,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ApplicationController",
+      "method_id": "check_self_destruct!",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 176,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 37,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "SelfDestructHelper",
+      "method_id": "self_destruct?",
+      "path": "app/helpers/self_destruct_helper.rb",
+      "lineno": 11,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 38,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 37,
+      "elapsed": 0.000007283990271389484,
+      "elapsed_instrumentation": 0.00004347902722656727
+    },
+    {
+      "id": 39,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 36,
+      "elapsed": 0.00006765802390873432,
+      "elapsed_instrumentation": 0.00006400595884770155
+    },
+    {
+      "id": 40,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_user",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 116,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 41,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_resource_owner",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 112,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 42,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 41,
+      "elapsed": 0.00003392499638721347,
+      "elapsed_instrumentation": 0.0000578199396841228
+    },
+    {
+      "id": 43,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 2386900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"
+      }
+    },
+    {
+      "id": 44,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 43,
+      "elapsed": 0.00000280595850199461,
+      "elapsed_instrumentation": 0.00007081800140440464
+    },
+    {
+      "id": 45,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 40,
+      "elapsed": 0.0006739820237271488,
+      "elapsed_instrumentation": 0.000045234046410769224
+    },
+    {
+      "id": 46,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ApplicationController",
+      "method_id": "set_cache_control_defaults",
+      "path": "app/controllers/application_controller.rb",
+      "lineno": 185,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 47,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 46,
+      "elapsed": 0.000004570989403873682,
+      "elapsed_instrumentation": 0.0001405460643582046,
+      "return_value": {
+        "class": "Hash",
+        "value": "{:private=>true, :no_store=>true}",
+        "object_id": 2386920,
+        "size": 2
+      }
+    },
+    {
+      "id": 48,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "disallow_unauthenticated_api_access?",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 152,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 49,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 48,
+      "elapsed": 0.000014293997082859278,
+      "elapsed_instrumentation": 0.000055464974138885736
+    },
+    {
+      "id": 50,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "require_not_suspended!",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 126,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 51,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_user",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 116,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 52,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_resource_owner",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 112,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 53,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 52,
+      "elapsed": 0.000024676963221281767,
+      "elapsed_instrumentation": 0.00004124100087210536
+    },
+    {
+      "id": 54,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 2386900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"
+      }
+    },
+    {
+      "id": 55,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 54,
+      "elapsed": 0.000002501008566468954,
+      "elapsed_instrumentation": 0.00006544904317706823
+    },
+    {
+      "id": 56,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 51,
+      "elapsed": 0.00026553100906312466,
+      "elapsed_instrumentation": 0.000041620980482548475
+    },
+    {
+      "id": 57,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 50,
+      "elapsed": 0.0003210590220987797,
+      "elapsed_instrumentation": 0.00004126800922676921
+    },
+    {
+      "id": 58,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "doorkeeper_unauthorized_render_options",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 85,
+      "static": false,
+      "parameters": [
+        {
+          "name": "error",
+          "class": "Doorkeeper::OAuth::InvalidTokenResponse",
+          "object_id": 2386940,
+          "value": "#<Doorkeeper::OAuth::InvalidTokenResponse:0x00007fc931cfe7f0>",
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 59,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 58,
+      "elapsed": 0.000009284005500376225,
+      "elapsed_instrumentation": 0.0001456470345146954,
+      "return_value": {
+        "class": "Hash",
+        "value": "{:json=>{:error=>The access token is invalid}}",
+        "object_id": 2386960,
+        "size": 1
+      }
+    },
+    {
+      "id": 60,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionController::Renderers",
+      "method_id": "render_to_body",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_controller/metal/renderers.rb",
+      "lineno": 140,
+      "static": false,
+      "parameters": [
+        {
+          "name": "options",
+          "class": "Hash",
+          "object_id": 2386960,
+          "value": "{:json=>{:error=>The access token is invalid}, :status=>401, :prefixes=>[api/v1/bookmarks, api/base, application], :template=>index, :layout=>}",
+          "kind": "req",
+          "size": 5
+        }
+      ],
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 61,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_user",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 116,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 62,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Api::BaseController",
+      "method_id": "current_resource_owner",
+      "path": "app/controllers/api/base_controller.rb",
+      "lineno": 112,
+      "static": false,
+      "receiver": {
+        "class": "Api::V1::BookmarksController",
+        "object_id": 2386820,
+        "value": "#<Api::V1::BookmarksController:0x00007fc919a7eb00>"
+      }
+    },
+    {
+      "id": 63,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 62,
+      "elapsed": 0.00003106403164565563,
+      "elapsed_instrumentation": 0.00004774500848725438
+    },
+    {
+      "id": 64,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActionDispatch::Cookies::CookieJar",
+      "method_id": "[]",
+      "path": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb",
+      "lineno": 328,
+      "static": false,
+      "parameters": [
+        {
+          "name": "name",
+          "class": "String",
+          "object_id": 317160,
+          "value": "_session_id",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActionDispatch::Cookies::CookieJar",
+        "object_id": 2386900,
+        "value": "#<ActionDispatch::Cookies::CookieJar:0x00007fc932de0aa0>"
+      }
+    },
+    {
+      "id": 65,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 64,
+      "elapsed": 0.0000036439741961658,
+      "elapsed_instrumentation": 0.00007328297942876816
+    },
+    {
+      "id": 66,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 61,
+      "elapsed": 0.00029840704519301653,
+      "elapsed_instrumentation": 0.00005699298344552517
+    },
+    {
+      "id": 67,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2386980,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 326180,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934e9f070>"
+      }
+    },
+    {
+      "id": 68,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 67,
+      "elapsed": 0.0000024160253815352917,
+      "elapsed_instrumentation": 0.0000909009831957519,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 326200,
+        "size": 0
+      }
+    },
+    {
+      "id": 69,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2386980,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 326220,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934e9f0c0>"
+      }
+    },
+    {
+      "id": 70,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 69,
+      "elapsed": 0.0000023879692889750004,
+      "elapsed_instrumentation": 0.00007302802987396717,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 326240,
+        "size": 0
+      }
+    },
+    {
+      "id": 71,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "JSON::Ext::Generator::State",
+      "method_id": "generate",
+      "path": "JSON::Ext::Generator::State#generate",
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "Hash",
+          "object_id": 2387000,
+          "value": "{error=>The access token is invalid}",
+          "kind": "req",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "JSON::Ext::Generator::State",
+        "object_id": 2387020,
+        "value": "#<JSON::Ext::Generator::State:0x00007fc9352f11a0>"
+      }
+    },
+    {
+      "id": 72,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 71,
+      "elapsed": 0.000006569025572389364,
+      "elapsed_instrumentation": 0.00009371200576424599,
+      "return_value": {
+        "class": "String",
+        "value": "{\"error\":\"The access token is invalid\"}",
+        "object_id": 2387040
+      }
+    },
+    {
+      "id": 73,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2386980,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 326220,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934e9f0c0>"
+      }
+    },
+    {
+      "id": 74,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 73,
+      "elapsed": 0.0000026989728212356567,
+      "elapsed_instrumentation": 0.00006313499761745334,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 328060,
+        "size": 0
+      }
+    },
+    {
+      "id": 75,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2386980,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 326180,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934e9f070>"
+      }
+    },
+    {
+      "id": 76,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 75,
+      "elapsed": 0.0000020900042727589607,
+      "elapsed_instrumentation": 0.00005995604442432523,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 328080,
+        "size": 0
+      }
+    },
+    {
+      "id": 77,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 60,
+      "elapsed": 0.0012680680374614894,
+      "elapsed_instrumentation": 0.00019886094378307462,
+      "return_value": {
+        "class": "String",
+        "value": "{\"error\":\"The access token is invalid\"}",
+        "object_id": 2387040
+      }
+    },
+    {
+      "id": 78,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 2387060,
+          "value": "Filter chain halted as #<Proc:0x00007fc93942ddd0 /workspaces/mastodon/app/controllers/api/v1/bookmar (...52 more characters)",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 79,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 78,
+      "elapsed": 0.0005226859939284623,
+      "elapsed_instrumentation": 0.00030274299206212163,
+      "return_value": {
+        "class": "Integer",
+        "value": "152",
+        "object_id": 305
+      }
+    },
+    {
+      "id": 80,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 25,
+      "elapsed": 0.005425466981250793,
+      "elapsed_instrumentation": 0.0002480759867466986,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007fc939073b90 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939076598 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc93907bb60 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc93907c948 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc93907e6a8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939066530 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939014fa0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939015c20 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939016d50 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc939017ea8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib (...5 more items)]",
+        "object_id": 2365380,
+        "size": 15
+      }
+    },
+    {
+      "id": 81,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2386800,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 2365160,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc937ccdcf8>"
+      }
+    },
+    {
+      "id": 82,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 81,
+      "elapsed": 0.000008379982318729162,
+      "elapsed_instrumentation": 0.0002570340293459594,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007fc939009ce0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc93901c5c0 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc9390789d8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 2372100,
+        "size": 3
+      }
+    },
+    {
+      "id": 83,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 12,
+      "elapsed": 0.007475805992726237,
+      "elapsed_instrumentation": 0.0000673290342092514
+    },
+    {
+      "id": 84,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2386800,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 2365080,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc937ccdca8>"
+      }
+    },
+    {
+      "id": 85,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 84,
+      "elapsed": 0.000003235007170587778,
+      "elapsed_instrumentation": 0.00007814203854650259,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 2372120,
+        "size": 0
+      }
+    },
+    {
+      "id": 86,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Logger::LogDevice",
+      "method_id": "write",
+      "path": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb",
+      "lineno": 31,
+      "static": false,
+      "parameters": [
+        {
+          "name": "message",
+          "class": "String",
+          "object_id": 2387080,
+          "value": "Completed 401 Unauthorized in 9ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 3862)\n",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "Logger::LogDevice",
+        "object_id": 19780,
+        "value": "#<Logger::LogDevice:0x00007fc942103e80>"
+      }
+    },
+    {
+      "id": 87,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 86,
+      "elapsed": 0.0006640739738941193,
+      "elapsed_instrumentation": 0.0001361850299872458,
+      "return_value": {
+        "class": "Integer",
+        "value": "91",
+        "object_id": 183
+      }
+    },
+    {
+      "id": 88,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "RedisConfiguration",
+      "method_id": "pool",
+      "path": "app/lib/redis_configuration.rb",
+      "lineno": 12,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 32420,
+        "value": "RedisConfiguration"
+      }
+    },
+    {
+      "id": 89,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 88,
+      "elapsed": 0.0000038860016502439976,
+      "elapsed_instrumentation": 0.00011805602116510272,
+      "return_value": {
+        "class": "ConnectionPool",
+        "value": "#<ConnectionPool:0x00007fc934c381b0>",
+        "object_id": 345020
+      }
+    },
+    {
+      "id": 90,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Array",
+      "method_id": "pack",
+      "path": "<internal:pack>",
+      "lineno": 7,
+      "static": false,
+      "parameters": [
+        {
+          "name": "fmt",
+          "class": "String",
+          "object_id": 343760,
+          "value": "m0",
+          "kind": "req"
+        },
+        {
+          "name": "buffer",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "key"
+        }
+      ],
+      "receiver": {
+        "class": "Array",
+        "object_id": 2387100,
+        "value": "[_C_R_d7___~__$m_]"
+      }
+    },
+    {
+      "id": 91,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 90,
+      "elapsed": 0.000006387010216712952,
+      "elapsed_instrumentation": 0.00012751092435792089,
+      "return_value": {
+        "class": "String",
+        "value": "sUOmUqZkN5D14n6zuSRtxg==",
+        "object_id": 2387120
+      }
+    },
+    {
+      "id": 92,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "Chewy::Strategy::Mastodon",
+      "method_id": "leave",
+      "path": "lib/chewy/strategy/mastodon.rb",
+      "lineno": 16,
+      "static": false,
+      "receiver": {
+        "class": "Chewy::Strategy::Mastodon",
+        "object_id": 2387140,
+        "value": "#<Chewy::Strategy::Mastodon:0x00007fc935391470>"
+      }
+    },
+    {
+      "id": 93,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "RedisConfiguration",
+      "method_id": "with",
+      "path": "app/lib/redis_configuration.rb",
+      "lineno": 10,
+      "static": true,
+      "parameters": [
+        {
+          "name": "*",
+          "class": "Array",
+          "object_id": 2387160,
+          "value": "[]",
+          "kind": "rest",
+          "size": 0
+        },
+        {
+          "name": "**",
+          "class": "Hash",
+          "object_id": 2387180,
+          "value": "{}",
+          "kind": "keyrest",
+          "size": 0
+        },
+        {
+          "name": "&",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "block"
+        }
+      ],
+      "receiver": {
+        "class": "Class",
+        "object_id": 32420,
+        "value": "RedisConfiguration"
+      }
+    },
+    {
+      "id": 94,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "RedisConfiguration",
+      "method_id": "pool",
+      "path": "app/lib/redis_configuration.rb",
+      "lineno": 12,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 32420,
+        "value": "RedisConfiguration"
+      }
+    },
+    {
+      "id": 95,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 94,
+      "elapsed": 0.0000023519969545304775,
+      "elapsed_instrumentation": 0.00007618195377290249,
+      "return_value": {
+        "class": "ConnectionPool",
+        "value": "#<ConnectionPool:0x00007fc934c381b0>",
+        "object_id": 345020
+      }
+    },
+    {
+      "id": 96,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 93,
+      "elapsed": 0.00017561099957674742,
+      "elapsed_instrumentation": 0.0004301310400478542,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 2387200,
+        "size": 0
+      }
+    },
+    {
+      "id": 97,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 92,
+      "elapsed": 0.0006298339576460421,
+      "elapsed_instrumentation": 0.00010113604366779327,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 2387200,
+        "size": 0
+      }
+    },
+    {
+      "id": 98,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 1,
+      "elapsed": 0.01784888398833573,
+      "elapsed_instrumentation": 0.0010687180329114199,
+      "return_value": {
+        "class": "Hash",
+        "value": "{error=>The access token is invalid}",
+        "object_id": 2387240,
+        "size": 1,
+        "properties": [
+          {
+            "name": "error",
+            "class": "String"
+          }
+        ]
+      },
+      "http_server_response": {
+        "status_code": 401,
+        "headers": {
+          "X-Frame-Options": "SAMEORIGIN",
+          "X-XSS-Protection": "0",
+          "X-Content-Type-Options": "nosniff",
+          "X-Download-Options": "noopen",
+          "X-Permitted-Cross-Domain-Policies": "none",
+          "Referrer-Policy": "strict-origin-when-cross-origin",
+          "Vary": "Authorization",
+          "Cache-Control": "private, no-store",
+          "WWW-Authenticate": "Bearer realm=\"Doorkeeper\", error=\"invalid_token\", error_description=\"The access token is invalid\"",
+          "Content-Type": "application/json; charset=utf-8",
+          "Content-Security-Policy": "default-src 'none'; frame-ancestors 'none'; form-action 'none'",
+          "X-Request-Id": "bc09098d-73c9-4d39-8a9c-f85e93ac8840",
+          "X-Runtime": "0.017388"
+        }
+      }
+    },
+    {
+      "id": 99,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_before",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 597,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2387260,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 318420,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934c37c10>"
+      }
+    },
+    {
+      "id": 100,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 99,
+      "elapsed": 0.00012459501158446074,
+      "elapsed_instrumentation": 0.00017487694276496768,
+      "return_value": {
+        "class": "Array",
+        "value": "[#<Proc:0x00007fc933f1f4d8 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f618 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f758 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib, #<Proc:0x00007fc933f1f910 /workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib]",
+        "object_id": 318440,
+        "size": 4
+      }
+    },
+    {
+      "id": 101,
+      "event": "call",
+      "thread_id": 9160,
+      "defined_class": "ActiveSupport::Callbacks::CallbackSequence",
+      "method_id": "invoke_after",
+      "path": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb",
+      "lineno": 601,
+      "static": false,
+      "parameters": [
+        {
+          "name": "arg",
+          "class": "ActiveSupport::Callbacks::Filters::Environment",
+          "object_id": 2387260,
+          "value": null,
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ActiveSupport::Callbacks::CallbackSequence",
+        "object_id": 318420,
+        "value": "#<ActiveSupport::Callbacks::CallbackSequence:0x00007fc934c37c10>"
+      }
+    },
+    {
+      "id": 102,
+      "event": "return",
+      "thread_id": 9160,
+      "parent_id": 101,
+      "elapsed": 0.0000035149860195815563,
+      "elapsed_instrumentation": 0.0001695370301604271,
+      "return_value": {
+        "class": "Array",
+        "value": "[]",
+        "object_id": 318460,
+        "size": 0
+      }
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_annotated_tag": "0.1.2-14608-g2c1ae2317e8741caf25b51e9b3b2c15776c54ae3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "Bookmarks GET /api/v1/bookmarks without the authorization header returns http unauthorized",
+    "source_location": "spec/requests/api/v1/bookmarks_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "succeeded"
+  },
+  "classMap": [
+    {
+      "name": "activesupport",
+      "type": "package",
+      "children": [
+        {
+          "name": "ActiveSupport",
+          "type": "class",
+          "children": [
+            {
+              "name": "Callbacks",
+              "type": "class",
+              "children": [
+                {
+                  "name": "CallbackSequence",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "invoke_before",
+                      "type": "function",
+                      "labels": [
+                        "mvc.before_action"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                    },
+                    {
+                      "name": "invoke_after",
+                      "type": "function",
+                      "labels": [
+                        "mvc.after_action"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ruby",
+      "type": "package",
+      "children": [
+        {
+          "name": "String",
+          "type": "class",
+          "children": [
+            {
+              "name": "unpack",
+              "type": "function",
+              "labels": [
+                "string.unpack"
+              ],
+              "static": false,
+              "location": "<internal:pack>:19"
+            }
+          ]
+        },
+        {
+          "name": "Array",
+          "type": "class",
+          "children": [
+            {
+              "name": "pack",
+              "type": "function",
+              "labels": [
+                "array.pack"
+              ],
+              "static": false,
+              "location": "<internal:pack>:7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logger",
+      "type": "package",
+      "children": [
+        {
+          "name": "Logger",
+          "type": "class",
+          "children": [
+            {
+              "name": "LogDevice",
+              "type": "class",
+              "children": [
+                {
+                  "name": "write",
+                  "type": "function",
+                  "labels": [
+                    "log"
+                  ],
+                  "static": false,
+                  "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "app",
+      "type": "package",
+      "children": [
+        {
+          "name": "controllers",
+          "type": "package",
+          "children": [
+            {
+              "name": "concerns",
+              "type": "package",
+              "children": [
+                {
+                  "name": "Localized",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "set_locale",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/controllers/concerns/localized.rb:10"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "api",
+              "type": "package",
+              "children": [
+                {
+                  "name": "Api",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "BaseController",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "current_user",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/controllers/api/base_controller.rb:116"
+                        },
+                        {
+                          "name": "current_resource_owner",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/controllers/api/base_controller.rb:112"
+                        },
+                        {
+                          "name": "disallow_unauthenticated_api_access?",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/controllers/api/base_controller.rb:152"
+                        },
+                        {
+                          "name": "require_not_suspended!",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/controllers/api/base_controller.rb:126"
+                        },
+                        {
+                          "name": "doorkeeper_unauthorized_render_options",
+                          "type": "function",
+                          "static": false,
+                          "location": "app/controllers/api/base_controller.rb:85"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "ApplicationController",
+              "type": "class",
+              "children": [
+                {
+                  "name": "current_session",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:153"
+                },
+                {
+                  "name": "check_self_destruct!",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:176"
+                },
+                {
+                  "name": "set_cache_control_defaults",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/controllers/application_controller.rb:185"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "helpers",
+          "type": "package",
+          "children": [
+            {
+              "name": "SelfDestructHelper",
+              "type": "class",
+              "children": [
+                {
+                  "name": "self_destruct?",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/helpers/self_destruct_helper.rb:11"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "lib",
+          "type": "package",
+          "children": [
+            {
+              "name": "RedisConfiguration",
+              "type": "class",
+              "children": [
+                {
+                  "name": "pool",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/lib/redis_configuration.rb:12"
+                },
+                {
+                  "name": "with",
+                  "type": "function",
+                  "static": true,
+                  "location": "app/lib/redis_configuration.rb:10"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "actionpack",
+      "type": "package",
+      "children": [
+        {
+          "name": "ActionDispatch",
+          "type": "class",
+          "children": [
+            {
+              "name": "Request",
+              "type": "class",
+              "children": [
+                {
+                  "name": "Session",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "[]",
+                      "type": "function",
+                      "labels": [
+                        "http.session.read"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/request/session.rb:112"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Cookies",
+              "type": "class",
+              "children": [
+                {
+                  "name": "CookieJar",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "update",
+                      "type": "function",
+                      "labels": [
+                        "http.session.write"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb:344"
+                    },
+                    {
+                      "name": "[]",
+                      "type": "function",
+                      "labels": [
+                        "http.session.read"
+                      ],
+                      "static": false,
+                      "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb:328"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ActionController",
+          "type": "class",
+          "children": [
+            {
+              "name": "Renderers",
+              "type": "class",
+              "children": [
+                {
+                  "name": "render_to_body",
+                  "type": "function",
+                  "labels": [
+                    "mvc.render"
+                  ],
+                  "static": false,
+                  "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_controller/metal/renderers.rb:140"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "json",
+      "type": "package",
+      "children": [
+        {
+          "name": "JSON",
+          "type": "class",
+          "children": [
+            {
+              "name": "Ext",
+              "type": "class",
+              "children": [
+                {
+                  "name": "Generator",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "State",
+                      "type": "class",
+                      "children": [
+                        {
+                          "name": "generate",
+                          "type": "function",
+                          "labels": [
+                            "format.json.generate",
+                            "serialize"
+                          ],
+                          "static": false,
+                          "location": "JSON::Ext::Generator::State#generate"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lib/chewy/strategy",
+      "type": "package",
+      "children": [
+        {
+          "name": "Chewy",
+          "type": "class",
+          "children": [
+            {
+              "name": "Strategy",
+              "type": "class",
+              "children": [
+                {
+                  "name": "Mastodon",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "leave",
+                      "type": "function",
+                      "static": false,
+                      "location": "lib/chewy/strategy/mastodon.rb:16"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "http",
+      "name": "HTTP server requests",
+      "children": [
+        {
+          "type": "route",
+          "name": "GET /api/v1/bookmarks"
+        }
+      ]
+    }
+  ]
+}

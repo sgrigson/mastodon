@@ -1,0 +1,14 @@
+[
+  "account_domain_blocks",
+  "account_pins",
+  "account_stats",
+  "accounts",
+  "blocks",
+  "bulk_import_rows",
+  "bulk_imports",
+  "domain_blocks",
+  "follow_requests",
+  "follows",
+  "instances",
+  "notifications"
+]

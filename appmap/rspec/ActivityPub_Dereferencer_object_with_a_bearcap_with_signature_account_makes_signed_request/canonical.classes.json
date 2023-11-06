@@ -40,6 +40,5 @@
   "openssl/OpenSSL::Random",
   "ruby/Array",
   "ruby/Marshal",
-  "ruby/String",
-  "sidekiq/Sidekiq::Client"
+  "ruby/String"
 ]

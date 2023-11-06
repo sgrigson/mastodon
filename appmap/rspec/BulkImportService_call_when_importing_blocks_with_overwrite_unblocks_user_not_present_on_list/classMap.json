@@ -1,0 +1,559 @@
+[
+  {
+    "name": "json",
+    "type": "package",
+    "children": [
+      {
+        "name": "JSON",
+        "type": "class",
+        "children": [
+          {
+            "name": "Ext",
+            "type": "class",
+            "children": [
+              {
+                "name": "Parser",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "parse",
+                    "type": "function",
+                    "labels": [
+                      "format.json.parse",
+                      "deserialize.safe"
+                    ],
+                    "static": false,
+                    "location": "JSON::Ext::Parser#parse"
+                  }
+                ]
+              },
+              {
+                "name": "Generator",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "State",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "generate",
+                        "type": "function",
+                        "labels": [
+                          "format.json.generate",
+                          "serialize"
+                        ],
+                        "static": false,
+                        "location": "JSON::Ext::Generator::State#generate"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "Account",
+            "type": "class",
+            "children": [
+              {
+                "name": "acct",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:191"
+              },
+              {
+                "name": "local?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:163"
+              },
+              {
+                "name": "object_type",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:385"
+              },
+              {
+                "name": "instance_actor?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:175"
+              },
+              {
+                "name": "to_param",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:389"
+              }
+            ]
+          },
+          {
+            "name": "concerns",
+            "type": "package",
+            "children": [
+              {
+                "name": "AccountInteractions",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "following?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:198"
+                  },
+                  {
+                    "name": "requested?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:238"
+                  },
+                  {
+                    "name": "block!",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:145"
+                  },
+                  {
+                    "name": "blocking?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:214"
+                  },
+                  {
+                    "name": "unblock!",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/account_interactions.rb:178"
+                  }
+                ]
+              },
+              {
+                "name": "Redisable",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "redis",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/models/concerns/redisable.rb:4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Block",
+            "type": "class",
+            "children": [
+              {
+                "name": "local?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/block.rb:24"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "PotentialFriendshipTracker",
+            "type": "class",
+            "children": [
+              {
+                "name": "remove",
+                "type": "function",
+                "static": true,
+                "location": "app/lib/potential_friendship_tracker.rb:27"
+              }
+            ]
+          },
+          {
+            "name": "activitypub",
+            "type": "package",
+            "children": [
+              {
+                "name": "ActivityPub",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "Adapter",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "serializable_hash",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/activitypub/adapter.rb:14"
+                      },
+                      {
+                        "name": "transform_key_casing!",
+                        "type": "function",
+                        "static": true,
+                        "location": "app/lib/activitypub/adapter.rb:10"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Serializer",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "serializable_hash",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/activitypub/serializer.rb:31"
+                      },
+                      {
+                        "name": "inherited",
+                        "type": "function",
+                        "static": true,
+                        "location": "app/lib/activitypub/serializer.rb:12"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "TagManager",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "uri_for",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/activitypub/tag_manager.rb:36"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "CaseTransform",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "camel_lower",
+                        "type": "function",
+                        "static": true,
+                        "location": "app/lib/activitypub/case_transform.rb:9"
+                      },
+                      {
+                        "name": "camel_lower_cache",
+                        "type": "function",
+                        "static": true,
+                        "location": "app/lib/activitypub/case_transform.rb:5"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "services/concerns",
+        "type": "package",
+        "children": [
+          {
+            "name": "Payloadable",
+            "type": "class",
+            "children": [
+              {
+                "name": "serialize_payload",
+                "type": "function",
+                "static": false,
+                "location": "app/services/concerns/payloadable.rb:13"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "serializers/activitypub",
+        "type": "package",
+        "children": [
+          {
+            "name": "ActivityPub",
+            "type": "class",
+            "children": [
+              {
+                "name": "BlockSerializer",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "id",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/block_serializer.rb:7"
+                  },
+                  {
+                    "name": "type",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/block_serializer.rb:11"
+                  },
+                  {
+                    "name": "actor",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/block_serializer.rb:15"
+                  },
+                  {
+                    "name": "virtual_object",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/block_serializer.rb:19"
+                  }
+                ]
+              },
+              {
+                "name": "UndoBlockSerializer",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "id",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/undo_block_serializer.rb:8"
+                  },
+                  {
+                    "name": "type",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/undo_block_serializer.rb:12"
+                  },
+                  {
+                    "name": "actor",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/serializers/activitypub/undo_block_serializer.rb:16"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "helpers",
+        "type": "package",
+        "children": [
+          {
+            "name": "ActivityPub",
+            "type": "class",
+            "children": [
+              {
+                "name": "TagManager",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "default_url_options",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/helpers/routing_helper.rb:12"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "ContextHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "serialized_context",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/context_helper.rb:41"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "sidekiq",
+    "type": "package",
+    "children": [
+      {
+        "name": "Sidekiq",
+        "type": "class",
+        "children": [
+          {
+            "name": "Client",
+            "type": "class",
+            "children": [
+              {
+                "name": "push",
+                "type": "function",
+                "labels": [
+                  "job.create"
+                ],
+                "static": false,
+                "location": "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "type": "package",
+    "children": [
+      {
+        "name": "String",
+        "type": "class",
+        "children": [
+          {
+            "name": "unpack1",
+            "type": "function",
+            "labels": [
+              "string.unpack"
+            ],
+            "static": false,
+            "location": "<internal:pack>:28"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "activesupport",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActiveSupport",
+        "type": "class",
+        "children": [
+          {
+            "name": "Callbacks",
+            "type": "class",
+            "children": [
+              {
+                "name": "CallbackSequence",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "invoke_before",
+                    "type": "function",
+                    "labels": [
+                      "mvc.before_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                  },
+                  {
+                    "name": "invoke_after",
+                    "type": "function",
+                    "labels": [
+                      "mvc.after_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"bulk_import_rows\".* FROM \"bulk_import_rows\" WHERE \"bulk_import_rows\".\"bulk_import_id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" INNER JOIN \"blocks\" ON \"accounts\".\"id\" = \"blocks\".\"target_account_id\" WHERE \"blocks\".\"account_id\" = $1 ORDER BY \"accounts\".\"id\" ASC LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "DELETE FROM \"bulk_import_rows\" WHERE \"bulk_import_rows\".\"id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "RELEASE SAVEPOINT active_record_1"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"follows\" WHERE \"follows\".\"account_id\" = $1 AND \"follows\".\"target_account_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $1 AND \"follow_requests\".\"target_account_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"blocks\".* FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1 AND \"blocks\".\"target_account_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"accounts\".\"id\", \"accounts\".\"username\", \"accounts\".\"domain\", \"accounts\".\"private_key\", \"accounts\".\"public_key\", \"accounts\".\"created_at\", \"accounts\".\"updated_at\", \"accounts\".\"note\", \"accounts\".\"display_name\", \"accounts\".\"uri\", \"accounts\".\"url\", \"accounts\".\"avatar_file_name\", \"accounts\".\"avatar_content_type\", \"accounts\".\"avatar_file_size\", \"accounts\".\"avatar_updated_at\", \"accounts\".\"header_file_name\", \"accounts\".\"header_content_type\", \"accounts\".\"header_file_size\", \"accounts\".\"header_updated_at\", \"accounts\".\"avatar_remote_url\", \"accounts\".\"locked\", \"accounts\".\"header_remote_url\", \"accounts\".\"last_webfingered_at\", \"accounts\".\"inbox_url\", \"accounts\".\"outbox_url\", \"accounts\".\"shared_inbox_url\", \"accounts\".\"followers_url\", \"accounts\".\"protocol\", \"accounts\".\"memorial\", \"accounts\".\"moved_to_account_id\", \"accounts\".\"featured_collection_url\", \"accounts\".\"fields\", \"accounts\".\"actor_type\", \"accounts\".\"discoverable\", \"accounts\".\"also_known_as\", \"accounts\".\"silenced_at\", \"accounts\".\"suspended_at\", \"accounts\".\"hide_collections\", \"accounts\".\"avatar_storage_schema_version\", \"accounts\".\"header_storage_schema_version\", \"accounts\".\"devices_url\", \"accounts\".\"suspension_origin\", \"accounts\".\"sensitized_at\", \"accounts\".\"trendable\", \"accounts\".\"reviewed_at\", \"accounts\".\"requested_review_at\", \"accounts\".\"indexable\" FROM \"accounts\" WHERE \"accounts\".\"id\" = $1 LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $1 AND \"blocks\".\"target_account_id\" = $2 LIMIT $3"
+      },
+      {
+        "type": "query",
+        "name": "DELETE FROM \"blocks\" WHERE \"blocks\".\"id\" = $1"
+      },
+      {
+        "type": "query",
+        "name": "UPDATE \"bulk_imports\" SET \"imported_items\" = $1, \"processed_items\" = $2, \"updated_at\" = $3 WHERE \"bulk_imports\".\"id\" = $4"
+      }
+    ]
+  }
+]

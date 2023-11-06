@@ -1,0 +1,11 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/helpers/ActivityPub::TagManager",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "app/models/Account",
+  "app/models/Bookmark",
+  "app/models/Status",
+  "json/JSON::Ext::Generator::State",
+  "json/JSON::Ext::Parser",
+  "ruby/String"
+]

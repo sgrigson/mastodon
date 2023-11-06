@@ -1,5 +1,32 @@
 [
   {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "app",
     "type": "package",
     "children": [
@@ -920,54 +947,6 @@
             ]
           },
           {
-            "name": "RequestPool",
-            "type": "class",
-            "children": [
-              {
-                "name": "flush",
-                "type": "function",
-                "static": false,
-                "location": "app/lib/request_pool.rb:114"
-              }
-            ]
-          },
-          {
-            "name": "connection_pool",
-            "type": "package",
-            "children": [
-              {
-                "name": "ConnectionPool",
-                "type": "class",
-                "children": [
-                  {
-                    "name": "SharedConnectionPool",
-                    "type": "class",
-                    "children": [
-                      {
-                        "name": "flush",
-                        "type": "function",
-                        "static": false,
-                        "location": "app/lib/connection_pool/shared_connection_pool.rb:13"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "SharedTimedStack",
-                    "type": "class",
-                    "children": [
-                      {
-                        "name": "flush",
-                        "type": "function",
-                        "static": false,
-                        "location": "app/lib/connection_pool/shared_timed_stack.rb:51"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "name": "Request",
             "type": "class",
             "children": [
@@ -1619,60 +1598,6 @@
     ]
   },
   {
-    "name": "sidekiq",
-    "type": "package",
-    "children": [
-      {
-        "name": "Sidekiq",
-        "type": "class",
-        "children": [
-          {
-            "name": "Client",
-            "type": "class",
-            "children": [
-              {
-                "name": "push",
-                "type": "function",
-                "labels": [
-                  "job.create"
-                ],
-                "static": false,
-                "location": "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "logger",
-    "type": "package",
-    "children": [
-      {
-        "name": "Logger",
-        "type": "class",
-        "children": [
-          {
-            "name": "LogDevice",
-            "type": "class",
-            "children": [
-              {
-                "name": "write",
-                "type": "function",
-                "labels": [
-                  "log"
-                ],
-                "static": false,
-                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
     "type": "database",
     "name": "Database",
     "children": [
@@ -1711,10 +1636,6 @@
       {
         "type": "query",
         "name": "INSERT INTO \"conversations\" (\"uri\", \"created_at\", \"updated_at\") VALUES ($1, $2, $3) RETURNING \"id\""
-      },
-      {
-        "type": "query",
-        "name": "UPDATE \"statuses\" SET \"deleted_at\" = $1 WHERE \"statuses\".\"id\" IN (SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS NULL AND \"statuses\".\"id\" IS NULL AND \"statuses\".\"text\" = $2 ORDER BY \"statuses\".\"id\" DESC)"
       },
       {
         "type": "query",
@@ -1766,7 +1687,7 @@
       },
       {
         "type": "query",
-        "name": "SELECT \"mentions\".\"id\", \"mentions\".\"account_id\" FROM \"mentions\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"mentions\".\"account_id\" INNER JOIN \"users\" ON \"users\".\"account_id\" = \"accounts\".\"id\" INNER JOIN \"follows\" ON \"accounts\".\"id\" = \"follows\".\"account_id\" WHERE \"mentions\".\"status_id\" = $1 AND \"follows\".\"target_account_id\" = $2 AND \"accounts\".\"domain\" IS NULL AND (users.current_sign_in_at > '2023-10-30 03:25:17.214628') ORDER BY \"mentions\".\"id\" ASC LIMIT $3"
+        "name": "SELECT \"mentions\".\"id\", \"mentions\".\"account_id\" FROM \"mentions\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"mentions\".\"account_id\" INNER JOIN \"users\" ON \"users\".\"account_id\" = \"accounts\".\"id\" INNER JOIN \"follows\" ON \"accounts\".\"id\" = \"follows\".\"account_id\" WHERE \"mentions\".\"status_id\" = $1 AND \"follows\".\"target_account_id\" = $2 AND \"accounts\".\"domain\" IS NULL AND (users.current_sign_in_at > '2023-10-30 08:04:30.495759') ORDER BY \"mentions\".\"id\" ASC LIMIT $3"
       },
       {
         "type": "query",

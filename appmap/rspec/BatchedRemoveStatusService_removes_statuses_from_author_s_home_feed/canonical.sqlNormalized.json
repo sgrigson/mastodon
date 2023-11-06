@@ -1,0 +1,3 @@
+[
+  "SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"id\" IN ($?, $?) ORDER BY \"statuses\".\"id\" DESC"
+]

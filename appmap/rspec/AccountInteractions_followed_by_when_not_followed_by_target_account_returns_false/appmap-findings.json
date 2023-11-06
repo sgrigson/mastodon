@@ -41,7 +41,7 @@
         "rule": "update-in-get-request"
       }
     ],
-    "timestampMs": 1699243455668.3164
+    "timestampMs": 1699257310678.2083
   },
   "appMapMetadata": {
     "/workspaces/mastodon/tmp/appmap/rspec/AccountInteractions_followed_by_when_not_followed_by_target_account_returns_false.appmap.json": {

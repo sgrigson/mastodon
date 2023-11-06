@@ -1,6 +1,5 @@
 [
-  "http.session.read",
-  "http.session.write",
+  "crypto.pkcs5",
   "log",
   "mvc.after_action",
   "mvc.before_action"

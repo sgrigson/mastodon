@@ -1,1 +1,820 @@
-{"version":"1.12.0","metadata":{"app":"mastodon","language":{"name":"ruby","engine":"ruby","version":"3.2.2"},"client":{"name":"appmap","url":"https://github.com/applandinc/appmap-ruby","version":"0.102.1"},"frameworks":[{"name":"rails","version":"7.1.1"},{"name":"rspec","version":"3.12.2"}],"git":{"repository":"https://github.com/sgrigson/mastodon.git","branch":"appmap-config","commit":"50d0a0445fe1bf0ac82032f1958ae8e614b2ebd3","status":["M .env.test","M .husky/pre-commit","M appmap/rspec/API_routes_Account_routes_routes_to_followers/appmap-findings.json","M appmap/rspec/API_routes_Account_routes_routes_to_search/appmap-findings.json","M appmap/rspec/API_routes_Account_routes_routes_to_statuses/appmap-findings.json","M appmap/rspec/API_routes_Credentials_routes_routes_to_update_credentials/appmap-findings.json","M appmap/rspec/API_routes_Credentials_routes_routes_to_verify_credentials/appmap-findings.json","M appmap/rspec/API_routes_Statuses_routes_routes_favourite/appmap-findings.json","M appmap/rspec/API_routes_Statuses_routes_routes_favourited_by/appmap-findings.json","M appmap/rspec/API_routes_Statuses_routes_routes_mute/appmap-findings.json","M appmap/rspec/API_routes_Statuses_routes_routes_reblog/appmap-findings.json","M appmap/rspec/API_routes_Statuses_routes_routes_reblogged_by/appmap-findings.json","M appmap/rspec/API_routes_Statuses_routes_routes_unfavourite/appmap-findings.json","M appmap/rspec/API_routes_Statuses_routes_routes_unmute/appmap-findings.json","M appmap/rspec/Apps_POST_api_v1_apps_with_a_too-long_name_returns_http_unprocessable_entity.appmap.json","M appmap/rspec/Apps_POST_api_v1_apps_with_a_too-long_redirect_uris_returns_http_unprocessable_entity.appmap.json","M appmap/rspec/Apps_POST_api_v1_apps_with_a_too-long_website_returns_http_unprocessable_entity.appmap.json","M appmap/rspec/Apps_POST_api_v1_apps_with_an_unsupported_scope_returns_http_unprocessable_entity.appmap.json","M appmap/rspec/Apps_POST_api_v1_apps_with_many_duplicate_scopes_only_saves_the_scope_once.appmap.json","M appmap/rspec/Apps_POST_api_v1_apps_with_valid_params_creates_an_OAuth_app.appmap.json","?? appmap/rspec/Apps_POST_api_v1_apps_with_a_too-long_name_returns_http_unprocessable_entity/","?? appmap/rspec/Apps_POST_api_v1_apps_with_a_too-long_redirect_uris_returns_http_unprocessable_entity/","?? appmap/rspec/Apps_POST_api_v1_apps_with_a_too-long_website_returns_http_unprocessable_entity/","?? appmap/rspec/Apps_POST_api_v1_apps_with_an_unsupported_scope_returns_http_unprocessable_entity/","?? appmap/rspec/Apps_POST_api_v1_apps_with_many_duplicate_scopes_only_saves_the_scope_once/","?? appmap/rspec/Apps_POST_api_v1_apps_with_valid_params_creates_an_OAuth_app/","?? appmap/rspec/Apps_POST_api_v1_apps_without_required_params_returns_http_unprocessable_entity/","?? appmap/rspec/Auth_ChallengesController_POST_create_with_correct_password_redirects_back/"],"git_last_annotated_tag":"0.1.2-14643-g50d0a0445fe1bf0ac82032f1958ae8e614b2ebd3","git_last_tag":"v4.2.0","git_commits_since_last_annotated_tag":0,"git_commits_since_last_tag":0},"name":"CacheBuster #bust when using default options makes an HTTP purging request","source_location":"spec/lib/cache_buster_spec.rb","recorder":{"name":"rspec","type":"tests"},"test_status":"failed","test_failure":{"message":"body has already been consumed","location":"app/lib/request.rb:217"},"exception":{"class":"HTTP::StateError","message":"body has already been consumed"}},"classMap":[{"name":"app/lib","type":"package","children":[{"name":"CacheBuster","type":"class","children":[{"name":"bust","type":"function","location":"app/lib/cache_buster.rb:15","static":false}]},{"name":"RequestPool","type":"class","children":[{"name":"current","type":"function","location":"app/lib/request_pool.rb:6","static":true},{"name":"with","type":"function","location":"app/lib/request_pool.rb:106","static":false},{"name":"Connection","type":"class","children":[{"name":"use","type":"function","location":"app/lib/request_pool.rb:47","static":false},{"name":"close","type":"function","location":"app/lib/request_pool.rb:85","static":false}]}]},{"name":"connection_pool","type":"package","children":[{"name":"ConnectionPool","type":"class","children":[{"name":"SharedConnectionPool","type":"class","children":[{"name":"with","type":"function","location":"app/lib/connection_pool/shared_connection_pool.rb:15","static":false},{"name":"checkout","type":"function","location":"app/lib/connection_pool/shared_connection_pool.rb:29","static":false},{"name":"checkin","type":"function","location":"app/lib/connection_pool/shared_connection_pool.rb:39","static":false}]},{"name":"SharedTimedStack","type":"class","children":[{"name":"pop","type":"function","location":"app/lib/connection_pool/shared_timed_stack.rb:23","static":false},{"name":"push","type":"function","location":"app/lib/connection_pool/shared_timed_stack.rb:14","static":false}]}]}]},{"name":"Request","type":"class","children":[{"name":"add_headers","type":"function","location":"app/lib/request.rb:100","static":false},{"name":"perform","type":"function","location":"app/lib/request.rb:105","static":false},{"name":"headers","type":"function","location":"app/lib/request.rb:126","static":false},{"name":"ClientLimit","type":"class","children":[{"name":"body_with_limit","type":"function","location":"app/lib/request.rb:227","static":false},{"name":"truncated_body","type":"function","location":"app/lib/request.rb:204","static":false}]}]}]},{"name":"lib/mastodon","type":"package","children":[{"name":"Mastodon","type":"class","children":[{"name":"Version","type":"class","children":[{"name":"user_agent","type":"function","location":"lib/mastodon/version.rb:67","static":true}]}]}]}],"events":[{"id":44467,"event":"call","thread_id":9960,"defined_class":"CacheBuster","method_id":"bust","path":"app/lib/cache_buster.rb","lineno":15,"static":false,"parameters":[{"name":"url","class":"String","object_id":573500,"value":"https://example.com/test_purge","kind":"req"}],"receiver":{"class":"CacheBuster","object_id":573520,"value":"#<CacheBuster:0x00007f5e0c95f2d8>"}},{"id":44468,"event":"call","thread_id":9960,"defined_class":"RequestPool","method_id":"current","path":"app/lib/request_pool.rb","lineno":6,"static":true,"parameters":[],"receiver":{"class":"Class","object_id":221900,"value":"RequestPool"}},{"id":44469,"event":"return","thread_id":9960,"parent_id":44468,"elapsed":6.326008588075638e-06,"elapsed_instrumentation":0.00032504601404070854,"return_value":{"class":"RequestPool","value":"#<RequestPool:0x00007f5e0e580228>","object_id":222000}},{"id":44470,"event":"call","thread_id":9960,"defined_class":"RequestPool","method_id":"with","path":"app/lib/request_pool.rb","lineno":106,"static":false,"parameters":[{"name":"site","class":"String","object_id":573540,"value":"https://example.com","kind":"req"},{"name":"block","class":"NilClass","object_id":4,"value":null,"kind":"block"}],"receiver":{"class":"RequestPool","object_id":222000,"value":"#<RequestPool:0x00007f5e0e580228>"}},{"id":44471,"event":"call","thread_id":9960,"defined_class":"ConnectionPool::SharedConnectionPool","method_id":"with","path":"app/lib/connection_pool/shared_connection_pool.rb","lineno":15,"static":false,"parameters":[{"name":"preferred_tag","class":"String","object_id":573540,"value":"https://example.com","kind":"req"},{"name":"options","class":"NilClass","object_id":4,"value":null,"kind":"opt"}],"receiver":{"class":"ConnectionPool::SharedConnectionPool","object_id":222040,"value":"#<ConnectionPool::SharedConnectionPool:0x00007f5e120f5dd0>"}},{"id":44472,"event":"call","thread_id":9960,"defined_class":"ConnectionPool::SharedConnectionPool","method_id":"checkout","path":"app/lib/connection_pool/shared_connection_pool.rb","lineno":29,"static":false,"parameters":[{"name":"preferred_tag","class":"String","object_id":573540,"value":"https://example.com","kind":"req"},{"name":"options","class":"Hash","object_id":573560,"value":"{}","kind":"opt","size":0}],"receiver":{"class":"ConnectionPool::SharedConnectionPool","object_id":222040,"value":"#<ConnectionPool::SharedConnectionPool:0x00007f5e120f5dd0>"}},{"id":44473,"event":"call","thread_id":9960,"defined_class":"ConnectionPool::SharedTimedStack","method_id":"pop","path":"app/lib/connection_pool/shared_timed_stack.rb","lineno":23,"static":false,"parameters":[{"name":"preferred_tag","class":"String","object_id":573540,"value":"https://example.com","kind":"req"},{"name":"timeout","class":"Integer","object_id":11,"value":"5","kind":"opt"}],"receiver":{"class":"ConnectionPool::SharedTimedStack","object_id":222080,"value":"#<ConnectionPool::SharedTimedStack:0x00007f5e120f5ce0>"}},{"id":44474,"event":"return","thread_id":9960,"parent_id":44473,"elapsed":1.675001112744212e-05,"elapsed_instrumentation":0.00012365198927000165,"return_value":{"class":"RequestPool::Connection","value":"#<RequestPool::Connection:0x00007f5e11d18a28>","object_id":556520}},{"id":44475,"event":"return","thread_id":9960,"parent_id":44472,"elapsed":0.0001759069855324924,"elapsed_instrumentation":0.0002499520778656006,"return_value":{"class":"RequestPool::Connection","value":"#<RequestPool::Connection:0x00007f5e11d18a28>","object_id":556520}},{"id":44476,"event":"call","thread_id":9960,"defined_class":"RequestPool::Connection","method_id":"use","path":"app/lib/request_pool.rb","lineno":47,"static":false,"parameters":[],"receiver":{"class":"RequestPool::Connection","object_id":556520,"value":"#<RequestPool::Connection:0x00007f5e11d18a28>"}},{"id":44477,"event":"call","thread_id":9960,"defined_class":"Mastodon::Version","method_id":"user_agent","path":"lib/mastodon/version.rb","lineno":67,"static":true,"parameters":[],"receiver":{"class":"Module","object_id":172680,"value":"4.3.0-alpha.0"}},{"id":44478,"event":"return","thread_id":9960,"parent_id":44477,"elapsed":2.768007107079029e-06,"elapsed_instrumentation":0.00017112900968641043,"return_value":{"class":"String","value":"http.rb/5.1.1 (Mastodon/4.3.0-alpha.0; +https://cb6e6126.ngrok.io/)","object_id":172740}},{"id":44479,"event":"call","thread_id":9960,"defined_class":"Request","method_id":"add_headers","path":"app/lib/request.rb","lineno":100,"static":false,"parameters":[{"name":"new_headers","class":"Hash","object_id":573580,"value":"{Secret-Header=>True}","kind":"req","size":1}],"receiver":{"class":"Request","object_id":573600,"value":"#<Request:0x00007f5e0c9a3b18>"}},{"id":44480,"event":"return","thread_id":9960,"parent_id":44479,"elapsed":8.537957910448313e-06,"elapsed_instrumentation":0.00044967798748984933,"return_value":{"class":"Request","value":"#<Request:0x00007f5e0c9a3b18>","object_id":573600}},{"id":44481,"event":"call","thread_id":9960,"defined_class":"Request","method_id":"perform","path":"app/lib/request.rb","lineno":105,"static":false,"parameters":[],"receiver":{"class":"Request","object_id":573600,"value":"#<Request:0x00007f5e0c9a3b18>"}},{"id":44482,"event":"call","thread_id":9960,"defined_class":"Request","method_id":"headers","path":"app/lib/request.rb","lineno":126,"static":false,"parameters":[],"receiver":{"class":"Request","object_id":573600,"value":"#<Request:0x00007f5e0c9a3b18>"}},{"id":44483,"event":"return","thread_id":9960,"parent_id":44482,"elapsed":1.6947975382208824e-05,"elapsed_instrumentation":0.00025176804047077894,"return_value":{"class":"Hash","value":"{User-Agent=>http.rb/5.1.1 (Mastodon/4.3.0-alpha.0; +https://cb6e6126.ngrok.io/), Host=>example.com, Date=>Mon, 06 Nov 2023 08:04:35 GMT, Accept-Encoding=>gzip, Secret-Header=>True}","object_id":573620,"size":5}},{"id":44484,"event":"call","thread_id":9960,"defined_class":"Request::ClientLimit","method_id":"body_with_limit","path":"app/lib/request.rb","lineno":227,"static":false,"parameters":[{"name":"limit","class":"NilClass","object_id":4,"value":null,"kind":"opt"}],"receiver":{"class":"HTTP::Response","object_id":573680,"value":""}},{"id":44485,"event":"call","thread_id":9960,"defined_class":"Request::ClientLimit","method_id":"truncated_body","path":"app/lib/request.rb","lineno":204,"static":false,"parameters":[{"name":"limit","class":"Integer","object_id":2097153,"value":"1048576","kind":"opt"}],"receiver":{"class":"HTTP::Response","object_id":573680,"value":""}},{"id":44486,"event":"return","thread_id":9960,"parent_id":44485,"elapsed":0.00020000000949949026,"elapsed_instrumentation":0.00016106199473142624,"exceptions":[{"class":"HTTP::StateError","message":"body has already been consumed","object_id":573700,"path":"/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb","lineno":67}]},{"id":44487,"event":"return","thread_id":9960,"parent_id":44484,"elapsed":0.00042001099791377783,"elapsed_instrumentation":0.0003558970056474209,"exceptions":[{"class":"HTTP::StateError","message":"body has already been consumed","object_id":573700,"path":"/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb","lineno":67}]},{"id":44488,"event":"return","thread_id":9960,"parent_id":44481,"elapsed":0.006357130012474954,"elapsed_instrumentation":8.291495032608509e-05,"exceptions":[{"class":"HTTP::StateError","message":"body has already been consumed","object_id":573700,"path":"/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb","lineno":67}]},{"id":44489,"event":"call","thread_id":9960,"defined_class":"RequestPool::Connection","method_id":"close","path":"app/lib/request_pool.rb","lineno":85,"static":false,"parameters":[],"receiver":{"class":"RequestPool::Connection","object_id":556520,"value":"#<RequestPool::Connection:0x00007f5e11d18a28>"}},{"id":44490,"event":"return","thread_id":9960,"parent_id":44489,"elapsed":5.266978405416012e-06,"elapsed_instrumentation":9.320501703768969e-05,"return_value":{"class":"Symbol","value":":clean","object_id":1565468}},{"id":44491,"event":"return","thread_id":9960,"parent_id":44476,"elapsed":0.007670686987694353,"elapsed_instrumentation":0.0001094290055334568,"exceptions":[{"class":"HTTP::StateError","message":"body has already been consumed","object_id":573700,"path":"/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb","lineno":67}]},{"id":44492,"event":"call","thread_id":9960,"defined_class":"ConnectionPool::SharedConnectionPool","method_id":"checkin","path":"app/lib/connection_pool/shared_connection_pool.rb","lineno":39,"static":false,"parameters":[{"name":"preferred_tag","class":"String","object_id":573540,"value":"https://example.com","kind":"req"}],"receiver":{"class":"ConnectionPool::SharedConnectionPool","object_id":222040,"value":"#<ConnectionPool::SharedConnectionPool:0x00007f5e120f5dd0>"}},{"id":44493,"event":"call","thread_id":9960,"defined_class":"ConnectionPool::SharedTimedStack","method_id":"push","path":"app/lib/connection_pool/shared_timed_stack.rb","lineno":14,"static":false,"parameters":[{"name":"connection","class":"RequestPool::Connection","object_id":556520,"value":"#<RequestPool::Connection:0x00007f5e11d18a28>","kind":"req"}],"receiver":{"class":"ConnectionPool::SharedTimedStack","object_id":222080,"value":"#<ConnectionPool::SharedTimedStack:0x00007f5e120f5ce0>"}},{"id":44494,"event":"return","thread_id":9960,"parent_id":44493,"elapsed":1.0212010238319635e-05,"elapsed_instrumentation":0.000133019988425076,"return_value":{"class":"Thread::ConditionVariable","value":"#<Thread::ConditionVariable:0x00007f5e0e5bfc20>","object_id":222520}},{"id":44495,"event":"return","thread_id":9960,"parent_id":44492,"elapsed":0.00018601701594889164,"elapsed_instrumentation":0.0004659159458242357},{"id":44496,"event":"return","thread_id":9960,"parent_id":44471,"elapsed":0.008987142995465547,"elapsed_instrumentation":0.0001957169733941555,"exceptions":[{"class":"HTTP::StateError","message":"body has already been consumed","object_id":573700,"path":"/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb","lineno":67}]},{"id":44497,"event":"return","thread_id":9960,"parent_id":44470,"elapsed":0.009271383984014392,"elapsed_instrumentation":0.00016704294830560684,"exceptions":[{"class":"HTTP::StateError","message":"body has already been consumed","object_id":573700,"path":"/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb","lineno":67}]},{"id":44498,"event":"return","thread_id":9960,"parent_id":44467,"elapsed":0.01018469501286745,"elapsed_instrumentation":0.0002800949732773006,"exceptions":[{"class":"HTTP::StateError","message":"body has already been consumed","object_id":573700,"path":"/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb","lineno":67}]}]}
+{
+  "events": [
+    {
+      "id": 1,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "CacheBuster",
+      "method_id": "bust",
+      "path": "app/lib/cache_buster.rb",
+      "lineno": 15,
+      "static": false,
+      "parameters": [
+        {
+          "name": "url",
+          "class": "String",
+          "object_id": 573500,
+          "value": "https://example.com/test_purge",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "CacheBuster",
+        "object_id": 573520,
+        "value": "#<CacheBuster:0x00007f5e0c95f2d8>"
+      }
+    },
+    {
+      "id": 2,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "RequestPool",
+      "method_id": "current",
+      "path": "app/lib/request_pool.rb",
+      "lineno": 6,
+      "static": true,
+      "receiver": {
+        "class": "Class",
+        "object_id": 221900,
+        "value": "RequestPool"
+      }
+    },
+    {
+      "id": 3,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 2,
+      "elapsed": 0.000006326008588075638,
+      "elapsed_instrumentation": 0.00032504601404070854,
+      "return_value": {
+        "class": "RequestPool",
+        "value": "#<RequestPool:0x00007f5e0e580228>",
+        "object_id": 222000
+      }
+    },
+    {
+      "id": 4,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "RequestPool",
+      "method_id": "with",
+      "path": "app/lib/request_pool.rb",
+      "lineno": 106,
+      "static": false,
+      "parameters": [
+        {
+          "name": "site",
+          "class": "String",
+          "object_id": 573540,
+          "value": "https://example.com",
+          "kind": "req"
+        },
+        {
+          "name": "block",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "block"
+        }
+      ],
+      "receiver": {
+        "class": "RequestPool",
+        "object_id": 222000,
+        "value": "#<RequestPool:0x00007f5e0e580228>"
+      }
+    },
+    {
+      "id": 5,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "ConnectionPool::SharedConnectionPool",
+      "method_id": "with",
+      "path": "app/lib/connection_pool/shared_connection_pool.rb",
+      "lineno": 15,
+      "static": false,
+      "parameters": [
+        {
+          "name": "preferred_tag",
+          "class": "String",
+          "object_id": 573540,
+          "value": "https://example.com",
+          "kind": "req"
+        },
+        {
+          "name": "options",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "opt"
+        }
+      ],
+      "receiver": {
+        "class": "ConnectionPool::SharedConnectionPool",
+        "object_id": 222040,
+        "value": "#<ConnectionPool::SharedConnectionPool:0x00007f5e120f5dd0>"
+      }
+    },
+    {
+      "id": 6,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "ConnectionPool::SharedConnectionPool",
+      "method_id": "checkout",
+      "path": "app/lib/connection_pool/shared_connection_pool.rb",
+      "lineno": 29,
+      "static": false,
+      "parameters": [
+        {
+          "name": "preferred_tag",
+          "class": "String",
+          "object_id": 573540,
+          "value": "https://example.com",
+          "kind": "req"
+        },
+        {
+          "name": "options",
+          "class": "Hash",
+          "object_id": 573560,
+          "value": "{}",
+          "kind": "opt",
+          "size": 0
+        }
+      ],
+      "receiver": {
+        "class": "ConnectionPool::SharedConnectionPool",
+        "object_id": 222040,
+        "value": "#<ConnectionPool::SharedConnectionPool:0x00007f5e120f5dd0>"
+      }
+    },
+    {
+      "id": 7,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "ConnectionPool::SharedTimedStack",
+      "method_id": "pop",
+      "path": "app/lib/connection_pool/shared_timed_stack.rb",
+      "lineno": 23,
+      "static": false,
+      "parameters": [
+        {
+          "name": "preferred_tag",
+          "class": "String",
+          "object_id": 573540,
+          "value": "https://example.com",
+          "kind": "req"
+        },
+        {
+          "name": "timeout",
+          "class": "Integer",
+          "object_id": 11,
+          "value": "5",
+          "kind": "opt"
+        }
+      ],
+      "receiver": {
+        "class": "ConnectionPool::SharedTimedStack",
+        "object_id": 222080,
+        "value": "#<ConnectionPool::SharedTimedStack:0x00007f5e120f5ce0>"
+      }
+    },
+    {
+      "id": 8,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 7,
+      "elapsed": 0.00001675001112744212,
+      "elapsed_instrumentation": 0.00012365198927000165,
+      "return_value": {
+        "class": "RequestPool::Connection",
+        "value": "#<RequestPool::Connection:0x00007f5e11d18a28>",
+        "object_id": 556520
+      }
+    },
+    {
+      "id": 9,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 6,
+      "elapsed": 0.0001759069855324924,
+      "elapsed_instrumentation": 0.0002499520778656006,
+      "return_value": {
+        "class": "RequestPool::Connection",
+        "value": "#<RequestPool::Connection:0x00007f5e11d18a28>",
+        "object_id": 556520
+      }
+    },
+    {
+      "id": 10,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "RequestPool::Connection",
+      "method_id": "use",
+      "path": "app/lib/request_pool.rb",
+      "lineno": 47,
+      "static": false,
+      "receiver": {
+        "class": "RequestPool::Connection",
+        "object_id": 556520,
+        "value": "#<RequestPool::Connection:0x00007f5e11d18a28>"
+      }
+    },
+    {
+      "id": 11,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "Mastodon::Version",
+      "method_id": "user_agent",
+      "path": "lib/mastodon/version.rb",
+      "lineno": 67,
+      "static": true,
+      "receiver": {
+        "class": "Module",
+        "object_id": 172680,
+        "value": "4.3.0-alpha.0"
+      }
+    },
+    {
+      "id": 12,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 11,
+      "elapsed": 0.000002768007107079029,
+      "elapsed_instrumentation": 0.00017112900968641043,
+      "return_value": {
+        "class": "String",
+        "value": "http.rb/5.1.1 (Mastodon/4.3.0-alpha.0; +https://cb6e6126.ngrok.io/)",
+        "object_id": 172740
+      }
+    },
+    {
+      "id": 13,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "Request",
+      "method_id": "add_headers",
+      "path": "app/lib/request.rb",
+      "lineno": 100,
+      "static": false,
+      "parameters": [
+        {
+          "name": "new_headers",
+          "class": "Hash",
+          "object_id": 573580,
+          "value": "{Secret-Header=>True}",
+          "kind": "req",
+          "size": 1
+        }
+      ],
+      "receiver": {
+        "class": "Request",
+        "object_id": 573600,
+        "value": "#<Request:0x00007f5e0c9a3b18>"
+      }
+    },
+    {
+      "id": 14,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 13,
+      "elapsed": 0.000008537957910448313,
+      "elapsed_instrumentation": 0.00044967798748984933,
+      "return_value": {
+        "class": "Request",
+        "value": "#<Request:0x00007f5e0c9a3b18>",
+        "object_id": 573600
+      }
+    },
+    {
+      "id": 15,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "Request",
+      "method_id": "perform",
+      "path": "app/lib/request.rb",
+      "lineno": 105,
+      "static": false,
+      "receiver": {
+        "class": "Request",
+        "object_id": 573600,
+        "value": "#<Request:0x00007f5e0c9a3b18>"
+      }
+    },
+    {
+      "id": 16,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "Request",
+      "method_id": "headers",
+      "path": "app/lib/request.rb",
+      "lineno": 126,
+      "static": false,
+      "receiver": {
+        "class": "Request",
+        "object_id": 573600,
+        "value": "#<Request:0x00007f5e0c9a3b18>"
+      }
+    },
+    {
+      "id": 17,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 16,
+      "elapsed": 0.000016947975382208824,
+      "elapsed_instrumentation": 0.00025176804047077894,
+      "return_value": {
+        "class": "Hash",
+        "value": "{User-Agent=>http.rb/5.1.1 (Mastodon/4.3.0-alpha.0; +https://cb6e6126.ngrok.io/), Host=>example.com, Date=>Mon, 06 Nov 2023 08:04:35 GMT, Accept-Encoding=>gzip, Secret-Header=>True}",
+        "object_id": 573620,
+        "size": 5
+      }
+    },
+    {
+      "id": 18,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "Request::ClientLimit",
+      "method_id": "body_with_limit",
+      "path": "app/lib/request.rb",
+      "lineno": 227,
+      "static": false,
+      "parameters": [
+        {
+          "name": "limit",
+          "class": "NilClass",
+          "object_id": 4,
+          "value": null,
+          "kind": "opt"
+        }
+      ],
+      "receiver": {
+        "class": "HTTP::Response",
+        "object_id": 573680,
+        "value": ""
+      }
+    },
+    {
+      "id": 19,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "Request::ClientLimit",
+      "method_id": "truncated_body",
+      "path": "app/lib/request.rb",
+      "lineno": 204,
+      "static": false,
+      "parameters": [
+        {
+          "name": "limit",
+          "class": "Integer",
+          "object_id": 2097153,
+          "value": "1048576",
+          "kind": "opt"
+        }
+      ],
+      "receiver": {
+        "class": "HTTP::Response",
+        "object_id": 573680,
+        "value": ""
+      }
+    },
+    {
+      "id": 20,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 19,
+      "elapsed": 0.00020000000949949026,
+      "elapsed_instrumentation": 0.00016106199473142624,
+      "exceptions": [
+        {
+          "class": "HTTP::StateError",
+          "message": "body has already been consumed",
+          "object_id": 573700,
+          "path": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb",
+          "lineno": 67
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 18,
+      "elapsed": 0.00042001099791377783,
+      "elapsed_instrumentation": 0.0003558970056474209,
+      "exceptions": [
+        {
+          "class": "HTTP::StateError",
+          "message": "body has already been consumed",
+          "object_id": 573700,
+          "path": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb",
+          "lineno": 67
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 15,
+      "elapsed": 0.006357130012474954,
+      "elapsed_instrumentation": 0.00008291495032608509,
+      "exceptions": [
+        {
+          "class": "HTTP::StateError",
+          "message": "body has already been consumed",
+          "object_id": 573700,
+          "path": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb",
+          "lineno": 67
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "RequestPool::Connection",
+      "method_id": "close",
+      "path": "app/lib/request_pool.rb",
+      "lineno": 85,
+      "static": false,
+      "receiver": {
+        "class": "RequestPool::Connection",
+        "object_id": 556520,
+        "value": "#<RequestPool::Connection:0x00007f5e11d18a28>"
+      }
+    },
+    {
+      "id": 24,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 23,
+      "elapsed": 0.000005266978405416012,
+      "elapsed_instrumentation": 0.00009320501703768969,
+      "return_value": {
+        "class": "Symbol",
+        "value": ":clean",
+        "object_id": 1565468
+      }
+    },
+    {
+      "id": 25,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 10,
+      "elapsed": 0.007670686987694353,
+      "elapsed_instrumentation": 0.0001094290055334568,
+      "exceptions": [
+        {
+          "class": "HTTP::StateError",
+          "message": "body has already been consumed",
+          "object_id": 573700,
+          "path": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb",
+          "lineno": 67
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "ConnectionPool::SharedConnectionPool",
+      "method_id": "checkin",
+      "path": "app/lib/connection_pool/shared_connection_pool.rb",
+      "lineno": 39,
+      "static": false,
+      "parameters": [
+        {
+          "name": "preferred_tag",
+          "class": "String",
+          "object_id": 573540,
+          "value": "https://example.com",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ConnectionPool::SharedConnectionPool",
+        "object_id": 222040,
+        "value": "#<ConnectionPool::SharedConnectionPool:0x00007f5e120f5dd0>"
+      }
+    },
+    {
+      "id": 27,
+      "event": "call",
+      "thread_id": 9960,
+      "defined_class": "ConnectionPool::SharedTimedStack",
+      "method_id": "push",
+      "path": "app/lib/connection_pool/shared_timed_stack.rb",
+      "lineno": 14,
+      "static": false,
+      "parameters": [
+        {
+          "name": "connection",
+          "class": "RequestPool::Connection",
+          "object_id": 556520,
+          "value": "#<RequestPool::Connection:0x00007f5e11d18a28>",
+          "kind": "req"
+        }
+      ],
+      "receiver": {
+        "class": "ConnectionPool::SharedTimedStack",
+        "object_id": 222080,
+        "value": "#<ConnectionPool::SharedTimedStack:0x00007f5e120f5ce0>"
+      }
+    },
+    {
+      "id": 28,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 27,
+      "elapsed": 0.000010212010238319635,
+      "elapsed_instrumentation": 0.000133019988425076,
+      "return_value": {
+        "class": "Thread::ConditionVariable",
+        "value": "#<Thread::ConditionVariable:0x00007f5e0e5bfc20>",
+        "object_id": 222520
+      }
+    },
+    {
+      "id": 29,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 26,
+      "elapsed": 0.00018601701594889164,
+      "elapsed_instrumentation": 0.0004659159458242357
+    },
+    {
+      "id": 30,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 5,
+      "elapsed": 0.008987142995465547,
+      "elapsed_instrumentation": 0.0001957169733941555,
+      "exceptions": [
+        {
+          "class": "HTTP::StateError",
+          "message": "body has already been consumed",
+          "object_id": 573700,
+          "path": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb",
+          "lineno": 67
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 4,
+      "elapsed": 0.009271383984014392,
+      "elapsed_instrumentation": 0.00016704294830560684,
+      "exceptions": [
+        {
+          "class": "HTTP::StateError",
+          "message": "body has already been consumed",
+          "object_id": 573700,
+          "path": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb",
+          "lineno": 67
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "event": "return",
+      "thread_id": 9960,
+      "parent_id": 1,
+      "elapsed": 0.01018469501286745,
+      "elapsed_instrumentation": 0.0002800949732773006,
+      "exceptions": [
+        {
+          "class": "HTTP::StateError",
+          "message": "body has already been consumed",
+          "object_id": 573700,
+          "path": "/workspaces/mastodon/vendor/bundle/ruby/3.2.0/gems/http-5.1.1/lib/http/response/body.rb",
+          "lineno": 67
+        }
+      ]
+    }
+  ],
+  "version": "1.12.0",
+  "metadata": {
+    "app": "mastodon",
+    "language": {
+      "name": "ruby",
+      "engine": "ruby",
+      "version": "3.2.2"
+    },
+    "client": {
+      "name": "appmap",
+      "url": "https://github.com/applandinc/appmap-ruby",
+      "version": "0.102.1"
+    },
+    "frameworks": [
+      {
+        "name": "rails",
+        "version": "7.1.1"
+      },
+      {
+        "name": "rspec",
+        "version": "3.12.2"
+      }
+    ],
+    "git": {
+      "repository": "https://github.com/sgrigson/mastodon.git",
+      "branch": "appmap-config",
+      "commit": "50d0a0445fe1bf0ac82032f1958ae8e614b2ebd3",
+      "git_last_annotated_tag": "0.1.2-14643-g50d0a0445fe1bf0ac82032f1958ae8e614b2ebd3",
+      "git_last_tag": "v4.2.0",
+      "git_commits_since_last_annotated_tag": 0,
+      "git_commits_since_last_tag": 0
+    },
+    "name": "CacheBuster #bust when using default options makes an HTTP purging request",
+    "source_location": "spec/lib/cache_buster_spec.rb",
+    "recorder": {
+      "name": "rspec",
+      "type": "tests"
+    },
+    "test_status": "failed",
+    "test_failure": {
+      "message": "body has already been consumed",
+      "location": "app/lib/request.rb:217"
+    },
+    "exception": {
+      "class": "HTTP::StateError",
+      "message": "body has already been consumed"
+    }
+  },
+  "classMap": [
+    {
+      "name": "app/lib",
+      "type": "package",
+      "children": [
+        {
+          "name": "CacheBuster",
+          "type": "class",
+          "children": [
+            {
+              "name": "bust",
+              "type": "function",
+              "static": false,
+              "location": "app/lib/cache_buster.rb:15"
+            }
+          ]
+        },
+        {
+          "name": "RequestPool",
+          "type": "class",
+          "children": [
+            {
+              "name": "current",
+              "type": "function",
+              "static": true,
+              "location": "app/lib/request_pool.rb:6"
+            },
+            {
+              "name": "with",
+              "type": "function",
+              "static": false,
+              "location": "app/lib/request_pool.rb:106"
+            },
+            {
+              "name": "Connection",
+              "type": "class",
+              "children": [
+                {
+                  "name": "use",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/request_pool.rb:47"
+                },
+                {
+                  "name": "close",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/request_pool.rb:85"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "connection_pool",
+          "type": "package",
+          "children": [
+            {
+              "name": "ConnectionPool",
+              "type": "class",
+              "children": [
+                {
+                  "name": "SharedConnectionPool",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "with",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/lib/connection_pool/shared_connection_pool.rb:15"
+                    },
+                    {
+                      "name": "checkout",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/lib/connection_pool/shared_connection_pool.rb:29"
+                    },
+                    {
+                      "name": "checkin",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/lib/connection_pool/shared_connection_pool.rb:39"
+                    }
+                  ]
+                },
+                {
+                  "name": "SharedTimedStack",
+                  "type": "class",
+                  "children": [
+                    {
+                      "name": "pop",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/lib/connection_pool/shared_timed_stack.rb:23"
+                    },
+                    {
+                      "name": "push",
+                      "type": "function",
+                      "static": false,
+                      "location": "app/lib/connection_pool/shared_timed_stack.rb:14"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Request",
+          "type": "class",
+          "children": [
+            {
+              "name": "add_headers",
+              "type": "function",
+              "static": false,
+              "location": "app/lib/request.rb:100"
+            },
+            {
+              "name": "perform",
+              "type": "function",
+              "static": false,
+              "location": "app/lib/request.rb:105"
+            },
+            {
+              "name": "headers",
+              "type": "function",
+              "static": false,
+              "location": "app/lib/request.rb:126"
+            },
+            {
+              "name": "ClientLimit",
+              "type": "class",
+              "children": [
+                {
+                  "name": "body_with_limit",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/request.rb:227"
+                },
+                {
+                  "name": "truncated_body",
+                  "type": "function",
+                  "static": false,
+                  "location": "app/lib/request.rb:204"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "lib/mastodon",
+      "type": "package",
+      "children": [
+        {
+          "name": "Mastodon",
+          "type": "class",
+          "children": [
+            {
+              "name": "Version",
+              "type": "class",
+              "children": [
+                {
+                  "name": "user_agent",
+                  "type": "function",
+                  "static": true,
+                  "location": "lib/mastodon/version.rb:67"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

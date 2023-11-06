@@ -1,0 +1,7 @@
+[
+  "activesupport",
+  "app/helpers",
+  "app/lib/activitypub",
+  "openssl",
+  "ruby"
+]

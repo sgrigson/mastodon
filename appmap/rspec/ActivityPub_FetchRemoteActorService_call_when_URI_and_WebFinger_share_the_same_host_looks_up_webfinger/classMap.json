@@ -140,54 +140,6 @@
         "type": "package",
         "children": [
           {
-            "name": "RequestPool",
-            "type": "class",
-            "children": [
-              {
-                "name": "flush",
-                "type": "function",
-                "static": false,
-                "location": "app/lib/request_pool.rb:114"
-              }
-            ]
-          },
-          {
-            "name": "connection_pool",
-            "type": "package",
-            "children": [
-              {
-                "name": "ConnectionPool",
-                "type": "class",
-                "children": [
-                  {
-                    "name": "SharedConnectionPool",
-                    "type": "class",
-                    "children": [
-                      {
-                        "name": "flush",
-                        "type": "function",
-                        "static": false,
-                        "location": "app/lib/connection_pool/shared_connection_pool.rb:13"
-                      }
-                    ]
-                  },
-                  {
-                    "name": "SharedTimedStack",
-                    "type": "class",
-                    "children": [
-                      {
-                        "name": "flush",
-                        "type": "function",
-                        "static": false,
-                        "location": "app/lib/connection_pool/shared_timed_stack.rb:51"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "name": "activitypub",
             "type": "package",
             "children": [
@@ -292,6 +244,33 @@
                     "location": "app/lib/request.rb:204"
                   }
                 ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
               }
             ]
           }

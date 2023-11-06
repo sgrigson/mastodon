@@ -1,5 +1,32 @@
 [
   {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "app",
     "type": "package",
     "children": [
@@ -639,33 +666,6 @@
                     "location": "JSON::Ext::Parser#parse"
                   }
                 ]
-              }
-            ]
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "sidekiq",
-    "type": "package",
-    "children": [
-      {
-        "name": "Sidekiq",
-        "type": "class",
-        "children": [
-          {
-            "name": "Client",
-            "type": "class",
-            "children": [
-              {
-                "name": "push",
-                "type": "function",
-                "labels": [
-                  "job.create"
-                ],
-                "static": false,
-                "location": "vendor/bundle/ruby/3.2.0/gems/sidekiq-6.5.12/lib/sidekiq/client.rb:72"
               }
             ]
           }

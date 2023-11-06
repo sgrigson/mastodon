@@ -1,10 +1,6 @@
 [
   {
     "caller": "HTTP server requests",
-    "callee": "actionpack"
-  },
-  {
-    "caller": "HTTP server requests",
     "callee": "activesupport"
   },
   {
@@ -22,10 +18,6 @@
   {
     "caller": "activesupport",
     "callee": "logger"
-  },
-  {
-    "caller": "app",
-    "callee": "actionpack"
   },
   {
     "caller": "app",
@@ -34,5 +26,9 @@
   {
     "caller": "app",
     "callee": "lib/mastodon"
+  },
+  {
+    "caller": "app",
+    "callee": "openssl"
   }
 ]

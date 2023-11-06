@@ -1,0 +1,14 @@
+[
+  "account_stats",
+  "accounts",
+  "bulk_import_rows",
+  "bulk_imports",
+  "list_accounts",
+  "lists",
+  "settings",
+  "user_invite_requests",
+  "user_ips",
+  "user_roles",
+  "users",
+  "webhooks"
+]
