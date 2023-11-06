@@ -1,0 +1,20 @@
+[
+  {
+    "name": "app/lib",
+    "type": "package",
+    "children": [
+      {
+        "name": "ContentSecurityPolicy",
+        "type": "class",
+        "children": [
+          {
+            "name": "assets_host",
+            "type": "function",
+            "static": false,
+            "location": "app/lib/content_security_policy.rb:8"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,1074 @@
+[
+  {
+    "name": "activesupport",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActiveSupport",
+        "type": "class",
+        "children": [
+          {
+            "name": "Callbacks",
+            "type": "class",
+            "children": [
+              {
+                "name": "CallbackSequence",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "invoke_before",
+                    "type": "function",
+                    "labels": [
+                      "mvc.before_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:597"
+                  },
+                  {
+                    "name": "invoke_after",
+                    "type": "function",
+                    "labels": [
+                      "mvc.after_action"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/activesupport-7.1.1/lib/active_support/callbacks.rb:601"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ruby",
+    "type": "package",
+    "children": [
+      {
+        "name": "String",
+        "type": "class",
+        "children": [
+          {
+            "name": "unpack",
+            "type": "function",
+            "labels": [
+              "string.unpack"
+            ],
+            "static": false,
+            "location": "<internal:pack>:19"
+          }
+        ]
+      },
+      {
+        "name": "Marshal",
+        "type": "class",
+        "children": [
+          {
+            "name": "dump",
+            "type": "function",
+            "labels": [
+              "serialize"
+            ],
+            "static": true,
+            "location": "Marshal.dump"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "logger",
+    "type": "package",
+    "children": [
+      {
+        "name": "Logger",
+        "type": "class",
+        "children": [
+          {
+            "name": "LogDevice",
+            "type": "class",
+            "children": [
+              {
+                "name": "write",
+                "type": "function",
+                "labels": [
+                  "log"
+                ],
+                "static": false,
+                "location": "/usr/local/lib/ruby/3.2.0/logger/log_device.rb:31"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "controllers",
+        "type": "package",
+        "children": [
+          {
+            "name": "concerns",
+            "type": "package",
+            "children": [
+              {
+                "name": "Localized",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "set_locale",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/controllers/concerns/localized.rb:10"
+                  }
+                ]
+              },
+              {
+                "name": "WebAppControllerConcern",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "redirect_unauthenticated_to_permalinks!",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/controllers/concerns/web_app_controller_concern.rb:21"
+                  },
+                  {
+                    "name": "set_app_body_class",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/controllers/concerns/web_app_controller_concern.rb:17"
+                  },
+                  {
+                    "name": "skip_csrf_meta_tags?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/controllers/concerns/web_app_controller_concern.rb:13"
+                  }
+                ]
+              },
+              {
+                "name": "CacheConcern",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "enforce_cache_control!",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/controllers/concerns/cache_concern.rb:165"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "ApplicationController",
+            "type": "class",
+            "children": [
+              {
+                "name": "current_session",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/application_controller.rb:153"
+              },
+              {
+                "name": "check_self_destruct!",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/application_controller.rb:176"
+              },
+              {
+                "name": "set_cache_control_defaults",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/application_controller.rb:185"
+              },
+              {
+                "name": "current_account",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/application_controller.rb:147"
+              },
+              {
+                "name": "single_user_mode?",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/application_controller.rb:131"
+              },
+              {
+                "name": "current_theme",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/application_controller.rb:159"
+              },
+              {
+                "name": "body_class_string",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/application_controller.rb:165"
+              }
+            ]
+          },
+          {
+            "name": "HomeController",
+            "type": "class",
+            "children": [
+              {
+                "name": "index",
+                "type": "function",
+                "static": false,
+                "location": "app/controllers/home_controller.rb:6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "helpers",
+        "type": "package",
+        "children": [
+          {
+            "name": "SelfDestructHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "self_destruct?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/self_destruct_helper.rb:11"
+              }
+            ]
+          },
+          {
+            "name": "MascotHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "instance_presenter",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/mascot_helper.rb:8"
+              }
+            ]
+          },
+          {
+            "name": "InstanceHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "site_hostname",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/instance_helper.rb:8"
+              },
+              {
+                "name": "site_title",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/instance_helper.rb:4"
+              }
+            ]
+          },
+          {
+            "name": "ApplicationHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "opengraph",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/application_helper.rb:150"
+              },
+              {
+                "name": "render_initial_state",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/application_helper.rb:184"
+              },
+              {
+                "name": "cdn_host?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/application_helper.rb:167"
+              },
+              {
+                "name": "cdn_host",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/application_helper.rb:163"
+              },
+              {
+                "name": "storage_host?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/application_helper.rb:175"
+              },
+              {
+                "name": "title",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/application_helper.rb:94"
+              },
+              {
+                "name": "body_classes",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/application_helper.rb:154"
+              },
+              {
+                "name": "locale_direction",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/application_helper.rb:86"
+              }
+            ]
+          },
+          {
+            "name": "RoutingHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "full_asset_url",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/routing_helper.rb:17"
+              },
+              {
+                "name": "use_storage?",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/routing_helper.rb:31"
+              },
+              {
+                "name": "asset_host",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/routing_helper.rb:23"
+              }
+            ]
+          },
+          {
+            "name": "HomeHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "default_props",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/home_helper.rb:4"
+              }
+            ]
+          },
+          {
+            "name": "BrandingHelper",
+            "type": "class",
+            "children": [
+              {
+                "name": "render_symbol",
+                "type": "function",
+                "static": false,
+                "location": "app/helpers/branding_helper.rb:25"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lib",
+        "type": "package",
+        "children": [
+          {
+            "name": "PermalinkRedirector",
+            "type": "class",
+            "children": [
+              {
+                "name": "redirect_path",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/permalink_redirector.rb:10"
+              }
+            ]
+          },
+          {
+            "name": "RequestPool",
+            "type": "class",
+            "children": [
+              {
+                "name": "flush",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/request_pool.rb:114"
+              }
+            ]
+          },
+          {
+            "name": "connection_pool",
+            "type": "package",
+            "children": [
+              {
+                "name": "ConnectionPool",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "SharedConnectionPool",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "flush",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/connection_pool/shared_connection_pool.rb:13"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "SharedTimedStack",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "flush",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/lib/connection_pool/shared_timed_stack.rb:51"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Themes",
+            "type": "class",
+            "children": [
+              {
+                "name": "names",
+                "type": "function",
+                "static": false,
+                "location": "app/lib/themes.rb:13"
+              }
+            ]
+          },
+          {
+            "name": "RedisConfiguration",
+            "type": "class",
+            "children": [
+              {
+                "name": "pool",
+                "type": "function",
+                "static": true,
+                "location": "app/lib/redis_configuration.rb:12"
+              },
+              {
+                "name": "with",
+                "type": "function",
+                "static": true,
+                "location": "app/lib/redis_configuration.rb:10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "views",
+        "type": "package",
+        "children": [
+          {
+            "name": "app_views_home_index_html_haml",
+            "type": "class",
+            "children": [
+              {
+                "name": "render",
+                "type": "function",
+                "labels": [
+                  "mvc.template"
+                ],
+                "static": true,
+                "location": "app/views/home/index.html.haml"
+              }
+            ]
+          },
+          {
+            "name": "app_views_shared__og_html_haml",
+            "type": "class",
+            "children": [
+              {
+                "name": "render",
+                "type": "function",
+                "labels": [
+                  "mvc.template"
+                ],
+                "static": true,
+                "location": "app/views/shared/_og.html.haml"
+              }
+            ]
+          },
+          {
+            "name": "app_views_shared__web_app_html_haml",
+            "type": "class",
+            "children": [
+              {
+                "name": "render",
+                "type": "function",
+                "labels": [
+                  "mvc.template"
+                ],
+                "static": true,
+                "location": "app/views/shared/_web_app.html.haml"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "presenters",
+        "type": "package",
+        "children": [
+          {
+            "name": "InstancePresenter",
+            "type": "class",
+            "children": [
+              {
+                "name": "thumbnail",
+                "type": "function",
+                "static": false,
+                "location": "app/presenters/instance_presenter.rb:77"
+              },
+              {
+                "name": "description",
+                "type": "function",
+                "static": false,
+                "location": "app/presenters/instance_presenter.rb:25"
+              },
+              {
+                "name": "title",
+                "type": "function",
+                "static": false,
+                "location": "app/presenters/instance_presenter.rb:41"
+              },
+              {
+                "name": "domain",
+                "type": "function",
+                "static": false,
+                "location": "app/presenters/instance_presenter.rb:37"
+              },
+              {
+                "name": "source_url",
+                "type": "function",
+                "static": false,
+                "location": "app/presenters/instance_presenter.rb:73"
+              },
+              {
+                "name": "version",
+                "type": "function",
+                "static": false,
+                "location": "app/presenters/instance_presenter.rb:69"
+              },
+              {
+                "name": "mascot",
+                "type": "function",
+                "static": false,
+                "location": "app/presenters/instance_presenter.rb:81"
+              }
+            ]
+          },
+          {
+            "name": "InitialStatePresenter",
+            "type": "class",
+            "children": [
+              {
+                "name": "role",
+                "type": "function",
+                "static": false,
+                "location": "app/presenters/initial_state_presenter.rb:8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "Setting",
+            "type": "class",
+            "children": [
+              {
+                "name": "[]",
+                "type": "function",
+                "static": true,
+                "location": "app/models/setting.rb:24"
+              },
+              {
+                "name": "default_settings",
+                "type": "function",
+                "static": true,
+                "location": "app/models/setting.rb:55"
+              }
+            ]
+          },
+          {
+            "name": "MediaAttachment",
+            "type": "class",
+            "children": [
+              {
+                "name": "supported_file_extensions",
+                "type": "function",
+                "static": true,
+                "location": "app/models/media_attachment.rb:288"
+              },
+              {
+                "name": "supported_mime_types",
+                "type": "function",
+                "static": true,
+                "location": "app/models/media_attachment.rb:284"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "serializers",
+        "type": "package",
+        "children": [
+          {
+            "name": "InitialStateSerializer",
+            "type": "class",
+            "children": [
+              {
+                "name": "meta",
+                "type": "function",
+                "static": false,
+                "location": "app/serializers/initial_state_serializer.rb:15"
+              },
+              {
+                "name": "compose",
+                "type": "function",
+                "static": false,
+                "location": "app/serializers/initial_state_serializer.rb:69"
+              },
+              {
+                "name": "accounts",
+                "type": "function",
+                "static": false,
+                "location": "app/serializers/initial_state_serializer.rb:84"
+              },
+              {
+                "name": "media_attachments",
+                "type": "function",
+                "static": false,
+                "location": "app/serializers/initial_state_serializer.rb:101"
+              },
+              {
+                "name": "languages",
+                "type": "function",
+                "static": false,
+                "location": "app/serializers/initial_state_serializer.rb:105"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "actionpack",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActionDispatch",
+        "type": "class",
+        "children": [
+          {
+            "name": "Request",
+            "type": "class",
+            "children": [
+              {
+                "name": "Session",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "[]",
+                    "type": "function",
+                    "labels": [
+                      "http.session.read"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/request/session.rb:112"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Cookies",
+            "type": "class",
+            "children": [
+              {
+                "name": "CookieJar",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "update",
+                    "type": "function",
+                    "labels": [
+                      "http.session.write"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb:344"
+                  },
+                  {
+                    "name": "[]",
+                    "type": "function",
+                    "labels": [
+                      "http.session.read"
+                    ],
+                    "static": false,
+                    "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_dispatch/middleware/cookies.rb:328"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ActionController",
+        "type": "class",
+        "children": [
+          {
+            "name": "Renderers",
+            "type": "class",
+            "children": [
+              {
+                "name": "render_to_body",
+                "type": "function",
+                "labels": [
+                  "mvc.render"
+                ],
+                "static": false,
+                "location": "vendor/bundle/ruby/3.2.0/gems/actionpack-7.1.1/lib/action_controller/metal/renderers.rb:140"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "actionview",
+    "type": "package",
+    "children": [
+      {
+        "name": "ActionView",
+        "type": "class",
+        "children": [
+          {
+            "name": "Resolver",
+            "type": "class",
+            "children": [
+              {
+                "name": "find_all",
+                "type": "function",
+                "labels": [
+                  "mvc.template.resolver"
+                ],
+                "static": false,
+                "location": "vendor/bundle/ruby/3.2.0/gems/actionview-7.1.1/lib/action_view/template/resolver.rb:63"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "lib",
+    "type": "package",
+    "children": [
+      {
+        "name": "webpacker",
+        "type": "package",
+        "children": [
+          {
+            "name": "Webpacker",
+            "type": "class",
+            "children": [
+              {
+                "name": "ManifestExtensions",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "lookup",
+                    "type": "function",
+                    "static": false,
+                    "location": "lib/webpacker/manifest_extensions.rb:4"
+                  }
+                ]
+              },
+              {
+                "name": "HelperExtensions",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "javascript_pack_tag",
+                    "type": "function",
+                    "static": false,
+                    "location": "lib/webpacker/helper_extensions.rb:4"
+                  },
+                  {
+                    "name": "stylesheet_pack_tag",
+                    "type": "function",
+                    "static": false,
+                    "location": "lib/webpacker/helper_extensions.rb:9"
+                  },
+                  {
+                    "name": "preload_pack_asset",
+                    "type": "function",
+                    "static": false,
+                    "location": "lib/webpacker/helper_extensions.rb:14"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "chewy",
+        "type": "package",
+        "children": [
+          {
+            "name": "Chewy",
+            "type": "class",
+            "children": [
+              {
+                "name": "SettingsExtensions",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "enabled?",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/chewy/settings_extensions.rb:5"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "strategy",
+            "type": "package",
+            "children": [
+              {
+                "name": "Chewy",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "Strategy",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "Mastodon",
+                        "type": "class",
+                        "children": [
+                          {
+                            "name": "leave",
+                            "type": "function",
+                            "static": false,
+                            "location": "lib/chewy/strategy/mastodon.rb:16"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "mastodon",
+        "type": "package",
+        "children": [
+          {
+            "name": "Mastodon",
+            "type": "class",
+            "children": [
+              {
+                "name": "Version",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "repository",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:46"
+                  },
+                  {
+                    "name": "source_url",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:59"
+                  },
+                  {
+                    "name": "source_tag",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:55"
+                  },
+                  {
+                    "name": "source_base_url",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:50"
+                  },
+                  {
+                    "name": "to_a",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:31"
+                  },
+                  {
+                    "name": "major",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:7"
+                  },
+                  {
+                    "name": "minor",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:11"
+                  },
+                  {
+                    "name": "patch",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:15"
+                  },
+                  {
+                    "name": "prerelease",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:23"
+                  },
+                  {
+                    "name": "default_prerelease",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:19"
+                  },
+                  {
+                    "name": "build_metadata",
+                    "type": "function",
+                    "static": true,
+                    "location": "lib/mastodon/version.rb:27"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "json",
+    "type": "package",
+    "children": [
+      {
+        "name": "JSON",
+        "type": "class",
+        "children": [
+          {
+            "name": "Ext",
+            "type": "class",
+            "children": [
+              {
+                "name": "Parser",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "parse",
+                    "type": "function",
+                    "labels": [
+                      "format.json.parse",
+                      "deserialize.safe"
+                    ],
+                    "static": false,
+                    "location": "JSON::Ext::Parser#parse"
+                  }
+                ]
+              },
+              {
+                "name": "Generator",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "State",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "generate",
+                        "type": "function",
+                        "labels": [
+                          "format.json.generate",
+                          "serialize"
+                        ],
+                        "static": false,
+                        "location": "JSON::Ext::Generator::State#generate"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "http",
+    "name": "HTTP server requests",
+    "children": [
+      {
+        "type": "route",
+        "name": "GET /"
+      }
+    ]
+  },
+  {
+    "type": "class",
+    "name": "inline_template",
+    "children": [
+      {
+        "type": "function",
+        "name": "render",
+        "static": true
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"site_uploads\".* FROM \"site_uploads\" WHERE \"site_uploads\".\"var\" = $1 LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SELECT \"settings\".* FROM \"settings\" WHERE (thing_type is NULL and thing_id is NULL) AND \"settings\".\"var\" = $1 ORDER BY \"settings\".\"id\" ASC LIMIT $2"
+      }
+    ]
+  }
+]
