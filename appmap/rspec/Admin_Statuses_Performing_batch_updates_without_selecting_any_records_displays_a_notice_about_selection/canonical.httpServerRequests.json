@@ -1,0 +1,12 @@
+[
+  {
+    "route": "GET /admin/accounts/{account_id}/statuses",
+    "parameters": "(page)",
+    "status": 200
+  },
+  {
+    "route": "POST /admin/accounts/{account_id}/statuses/batch",
+    "parameters": "(page,report)",
+    "status": 302
+  }
+]

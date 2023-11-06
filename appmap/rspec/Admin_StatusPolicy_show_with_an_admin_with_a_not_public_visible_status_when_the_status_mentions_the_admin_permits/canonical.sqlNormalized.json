@@ -1,0 +1,5 @@
+[
+  "SELECT ? AS one FROM \"mentions\" WHERE \"mentions\".\"status_id\" = $? AND \"mentions\".\"account_id\" = $? LIMIT $?",
+  "SELECT ? AS one FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $? AND \"reports\".\"action_taken_at\" IS ? AND (? = ANY(status_ids)) LIMIT $?",
+  "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $? LIMIT $?"
+]

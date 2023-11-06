@@ -1,0 +1,146 @@
+[
+  {
+    "name": "app",
+    "type": "package",
+    "children": [
+      {
+        "name": "policies",
+        "type": "package",
+        "children": [
+          {
+            "name": "admin",
+            "type": "package",
+            "children": [
+              {
+                "name": "Admin",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "StatusPolicy",
+                    "type": "class",
+                    "children": [
+                      {
+                        "name": "show?",
+                        "type": "function",
+                        "static": false,
+                        "location": "app/policies/admin/status_policy.rb:14"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "StatusPolicy",
+            "type": "class",
+            "children": [
+              {
+                "name": "show?",
+                "type": "function",
+                "static": false,
+                "location": "app/policies/status_policy.rb:10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "models",
+        "type": "package",
+        "children": [
+          {
+            "name": "User",
+            "type": "class",
+            "children": [
+              {
+                "name": "role",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user.rb:153"
+              }
+            ]
+          },
+          {
+            "name": "UserRole",
+            "type": "class",
+            "children": [
+              {
+                "name": "can?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user_role.rb:131"
+              },
+              {
+                "name": "computed_permissions",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user_role.rb:139"
+              },
+              {
+                "name": "everyone?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user_role.rb:115"
+              },
+              {
+                "name": "nobody?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/user_role.rb:119"
+              },
+              {
+                "name": "everyone",
+                "type": "function",
+                "static": true,
+                "location": "app/models/user_role.rb:105"
+              }
+            ]
+          },
+          {
+            "name": "Status",
+            "type": "class",
+            "children": [
+              {
+                "name": "reported?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/status.rb:258"
+              }
+            ]
+          },
+          {
+            "name": "Account",
+            "type": "class",
+            "children": [
+              {
+                "name": "suspended?",
+                "type": "function",
+                "static": false,
+                "location": "app/models/account.rb:237"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $1 LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $1 AND \"reports\".\"action_taken_at\" IS NULL AND (111361445423704049 = ANY(status_ids)) LIMIT $2"
+      },
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"mentions\" WHERE \"mentions\".\"status_id\" = $1 AND \"mentions\".\"account_id\" = $2 LIMIT $3"
+      }
+    ]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "caller": "app/models",
+    "callee": "SELECT 1 AS one FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $1 AND \"reports\".\"action_taken_at\" IS NULL AND (111361445423704049 = ANY(status_ids)) LIMIT $2"
+  },
+  {
+    "caller": "app/models",
+    "callee": "SELECT \"user_roles\".* FROM \"user_roles\" WHERE \"user_roles\".\"id\" = $1 LIMIT $2"
+  },
+  {
+    "caller": "app/policies",
+    "callee": "SELECT 1 AS one FROM \"mentions\" WHERE \"mentions\".\"status_id\" = $1 AND \"mentions\".\"account_id\" = $2 LIMIT $3"
+  },
+  {
+    "caller": "app/policies",
+    "callee": "app/models"
+  }
+]

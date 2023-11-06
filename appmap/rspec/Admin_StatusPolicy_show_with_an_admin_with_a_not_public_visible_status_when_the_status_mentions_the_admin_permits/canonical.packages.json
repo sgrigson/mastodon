@@ -1,0 +1,5 @@
+[
+  "app/models",
+  "app/policies",
+  "app/policies/admin"
+]

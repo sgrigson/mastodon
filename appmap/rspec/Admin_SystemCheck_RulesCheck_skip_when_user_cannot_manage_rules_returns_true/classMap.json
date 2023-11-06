@@ -1,0 +1,32 @@
+[
+  {
+    "name": "app/lib/admin/system_check",
+    "type": "package",
+    "children": [
+      {
+        "name": "Admin",
+        "type": "class",
+        "children": [
+          {
+            "name": "SystemCheck",
+            "type": "class",
+            "children": [
+              {
+                "name": "RulesCheck",
+                "type": "class",
+                "children": [
+                  {
+                    "name": "skip?",
+                    "type": "function",
+                    "static": false,
+                    "location": "app/lib/admin/system_check/rules_check.rb:6"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

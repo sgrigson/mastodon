@@ -1,0 +1,8 @@
+[
+  "app/models/Account",
+  "app/models/Status",
+  "app/models/User",
+  "app/models/UserRole",
+  "app/policies/StatusPolicy",
+  "app/policies/admin/Admin::StatusPolicy"
+]
