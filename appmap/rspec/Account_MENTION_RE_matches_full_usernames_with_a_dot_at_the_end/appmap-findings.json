@@ -44,9 +44,9 @@
     "timestampMs": 1699257310678.2083
   },
   "appMapMetadata": {
-    "/workspaces/mastodon/tmp/appmap/rspec/Account_actions_POST_api_v1_admin_accounts_id_action_with_type_of_disable_behaves_like_a_successful_notification_delivery_notifies_the_user_about_the_action_taken.appmap.json": {
-      "name": "Account actions POST /api/v1/admin/accounts/:id/action with type of disable behaves like a successful notification delivery notifies the user about the action taken",
-      "source_location": "spec/requests/api/v1/admin/account_actions_spec.rb",
+    "/workspaces/mastodon/tmp/appmap/rspec/Account_MENTION_RE_matches_full_usernames_with_a_dot_at_the_end.appmap.json": {
+      "name": "Account MENTION_RE matches full usernames with a dot at the end",
+      "source_location": "spec/models/account_spec.rb",
       "test_status": "succeeded"
     }
   },
