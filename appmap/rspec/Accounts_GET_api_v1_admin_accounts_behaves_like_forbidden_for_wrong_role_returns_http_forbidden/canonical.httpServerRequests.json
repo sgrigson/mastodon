@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /api/v1/admin/accounts",
-    "parameters": "()",
-    "status": 403
-  }
-]

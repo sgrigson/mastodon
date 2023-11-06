@@ -1,4 +1,0 @@
-[
-  "app/helpers/DatabaseHelper",
-  "app/workers/AddToPublicStatusesIndexWorker"
-]

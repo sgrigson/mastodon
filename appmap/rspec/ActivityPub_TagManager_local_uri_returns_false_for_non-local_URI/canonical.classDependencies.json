@@ -1,6 +1,0 @@
-[
-  {
-    "caller": "app/lib/activitypub",
-    "callee": "app/lib/TagManager"
-  }
-]

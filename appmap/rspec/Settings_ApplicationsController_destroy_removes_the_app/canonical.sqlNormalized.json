@@ -1,3 +1,0 @@
-[
-  "SELECT \"oauth_applications\".* FROM \"oauth_applications\" WHERE \"oauth_applications\".\"id\" = $? LIMIT $?"
-]

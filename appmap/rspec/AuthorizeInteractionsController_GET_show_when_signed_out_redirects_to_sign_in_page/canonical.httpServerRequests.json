@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /authorize_interaction",
-    "parameters": "(controller,action)",
-    "status": null
-  }
-]

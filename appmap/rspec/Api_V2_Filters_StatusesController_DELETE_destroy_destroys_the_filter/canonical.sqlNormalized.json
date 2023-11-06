@@ -1,3 +1,0 @@
-[
-  "SELECT \"custom_filter_statuses\".* FROM \"custom_filter_statuses\" WHERE \"custom_filter_statuses\".\"id\" = $? LIMIT $?"
-]

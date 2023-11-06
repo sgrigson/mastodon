@@ -1,8 +1,0 @@
-[
-  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::BaseDimension",
-  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::SpaceUsageDimension",
-  "app/models/concerns/Redisable",
-  "lib/chewy/Chewy::SettingsExtensions",
-  "logger/Logger::LogDevice",
-  "ruby/Marshal"
-]

@@ -1,6 +1,0 @@
-[
-  "SELECT ? AS one FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $? AND \"blocks\".\"target_account_id\" = $? LIMIT $?",
-  "SELECT ? AS one FROM \"follows\" WHERE \"follows\".\"account_id\" = $? AND \"follows\".\"target_account_id\" = $? LIMIT $?",
-  "SELECT ? AS one FROM \"media_attachments\" WHERE \"media_attachments\".\"status_id\" = $? LIMIT $?",
-  "SELECT \"statuses\".* FROM \"statuses\" INNER JOIN \"media_attachments\" ON \"media_attachments\".\"status_id\" = \"statuses\".\"id\" LEFT OUTER JOIN \"mentions\" ON \"mentions\".\"status_id\" = \"statuses\".\"id\" WHERE \"statuses\".\"account_id\" = $? AND (\"statuses\".\"visibility\" IN ($?, $?, $?) OR \"mentions\".\"account_id\" = $?) AND \"statuses\".\"deleted_at\" IS ? AND \"media_attachments\".\"account_id\" = $? GROUP BY \"statuses\".\"id\""
-]

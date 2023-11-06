@@ -1,3 +1,0 @@
-[
-  "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"account_id\" = $? AND \"statuses\".\"visibility\" IN ($?, $?) AND \"statuses\".\"deleted_at\" IS ? AND (statuses.reply = ? OR statuses.in_reply_to_account_id = statuses.account_id) ORDER BY \"statuses\".\"id\" DESC"
-]

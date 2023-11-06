@@ -1,6 +1,0 @@
-[
-  "activesupport",
-  "app/lib",
-  "app/models/concerns",
-  "logger"
-]

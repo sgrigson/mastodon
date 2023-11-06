@@ -1,7 +1,0 @@
-[
-  "deserialize.unsafe",
-  "log",
-  "mvc.after_action",
-  "mvc.before_action",
-  "serialize"
-]

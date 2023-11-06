@@ -1,9 +1,0 @@
-[
-  "actionview/ActionView::Resolver",
-  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "app/helpers/AccountsHelper",
-  "app/mailers/AdminMailer",
-  "app/mailers/ApplicationMailer",
-  "app/models/Account",
-  "app/views/app_views_layouts_plain_mailer_html_haml"
-]

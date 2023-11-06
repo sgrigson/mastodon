@@ -1,5 +1,0 @@
-[
-  "RELEASE SAVEPOINT active_record_1",
-  "SAVEPOINT active_record_1",
-  "UPDATE \"account_statuses_cleanup_policies\" SET \"keep_direct\" = $?, \"keep_pinned\" = $?, \"keep_polls\" = $?, \"keep_media\" = $?, \"keep_self_fav\" = $?, \"keep_self_bookmark\" = $?, \"min_favs\" = $?, \"min_reblogs\" = $?, \"updated_at\" = $? WHERE \"account_statuses_cleanup_policies\".\"id\" = $?"
-]

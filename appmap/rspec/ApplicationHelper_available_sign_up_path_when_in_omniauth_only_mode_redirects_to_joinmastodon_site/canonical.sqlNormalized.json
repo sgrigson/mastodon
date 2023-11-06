@@ -1,3 +1,0 @@
-[
-  "SELECT \"settings\".* FROM \"settings\" WHERE (thing_type is ? and thing_id is ?) AND \"settings\".\"var\" = $? ORDER BY \"settings\".\"id\" ASC LIMIT $?"
-]

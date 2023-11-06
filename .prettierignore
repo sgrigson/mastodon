@@ -73,6 +73,3 @@ app/javascript/styles/mastodon/reset.scss
 
 # Ignore the generated AUTHORS.md
 AUTHORS.md
-
-# ignore appmap
-/appmap

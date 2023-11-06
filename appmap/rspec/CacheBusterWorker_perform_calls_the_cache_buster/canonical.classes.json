@@ -1,5 +1,0 @@
-[
-  "app/helpers/CacheBusterWorker",
-  "app/helpers/RoutingHelper",
-  "app/workers/CacheBusterWorker"
-]

@@ -1,4 +1,0 @@
-[
-  "app/helpers/admin/Admin::FilterHelper",
-  "logger/Logger::LogDevice"
-]

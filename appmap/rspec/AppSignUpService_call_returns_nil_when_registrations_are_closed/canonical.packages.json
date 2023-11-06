@@ -1,8 +1,0 @@
-[
-  "activesupport",
-  "app/models",
-  "app/validators",
-  "logger",
-  "psych",
-  "ruby"
-]

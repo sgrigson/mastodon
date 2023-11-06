@@ -1,3 +1,0 @@
-[
-  "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"id\" = $? ORDER BY \"statuses\".\"id\" DESC LIMIT $?"
-]

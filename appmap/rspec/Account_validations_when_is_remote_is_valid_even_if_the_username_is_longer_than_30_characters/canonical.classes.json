@@ -1,6 +1,0 @@
-[
-  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "app/lib/TagManager",
-  "app/models/Account",
-  "app/validators/UniqueUsernameValidator"
-]

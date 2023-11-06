@@ -1,4 +1,0 @@
-[
-  "SELECT ? AS one FROM \"status_edits\" WHERE \"status_edits\".\"status_id\" = $? LIMIT $?",
-  "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"id\" = $? LIMIT $?"
-]

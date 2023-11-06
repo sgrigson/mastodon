@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /api/v1/lists/{list_id}/accounts",
-    "parameters": "(limit)",
-    "status": 200
-  }
-]

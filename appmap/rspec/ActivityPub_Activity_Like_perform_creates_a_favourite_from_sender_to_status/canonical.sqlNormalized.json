@@ -1,3 +1,0 @@
-[
-  "SELECT ? AS one FROM \"favourites\" WHERE \"favourites\".\"status_id\" = $? AND \"favourites\".\"account_id\" = $? LIMIT $?"
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /api/v1/bookmarks",
-    "parameters": "()",
-    "status": 200
-  }
-]

@@ -1,3 +1,0 @@
-[
-  "SELECT COUNT(*) FROM \"web_push_subscriptions\" WHERE (\"web_push_subscriptions\".\"user_id\" = $? OR \"web_push_subscriptions\".\"access_token_id\" = $?)"
-]

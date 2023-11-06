@@ -1,8 +1,0 @@
-[
-  "actionpack/ActionDispatch::Cookies::CookieJar",
-  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "app/controllers/ApplicationController",
-  "app/controllers/concerns/Localized",
-  "app/helpers/SelfDestructHelper",
-  "logger/Logger::LogDevice"
-]

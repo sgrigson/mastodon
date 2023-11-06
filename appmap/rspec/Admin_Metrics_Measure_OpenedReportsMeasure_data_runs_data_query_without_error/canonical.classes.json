@@ -1,7 +1,0 @@
-[
-  "app/lib/admin/metrics/measure/Admin::Metrics::Measure::BaseMeasure",
-  "app/lib/admin/metrics/measure/Admin::Metrics::Measure::OpenedReportsMeasure",
-  "app/lib/admin/metrics/measure/Admin::Metrics::Measure::QueryHelper",
-  "logger/Logger::LogDevice",
-  "ruby/Marshal"
-]

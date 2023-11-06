@@ -1,6 +1,0 @@
-[
-  "app/models/concerns",
-  "lib/active_record",
-  "logger",
-  "ruby"
-]

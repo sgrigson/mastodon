@@ -1,5 +1,0 @@
-[
-  "app/models/MediaAttachment",
-  "json/JSON::Ext::Parser",
-  "lib/paperclip/Paperclip::AttachmentExtensions"
-]

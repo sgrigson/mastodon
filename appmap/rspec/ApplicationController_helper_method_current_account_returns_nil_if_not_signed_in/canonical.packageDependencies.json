@@ -1,6 +1,0 @@
-[
-  {
-    "caller": "app/controllers",
-    "callee": "actionpack"
-  }
-]

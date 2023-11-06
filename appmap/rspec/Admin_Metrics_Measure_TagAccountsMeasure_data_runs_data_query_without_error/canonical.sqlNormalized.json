@@ -1,3 +1,0 @@
-[
-  "SELECT \"tags\".* FROM \"tags\" WHERE \"tags\".\"id\" = $? LIMIT $?"
-]

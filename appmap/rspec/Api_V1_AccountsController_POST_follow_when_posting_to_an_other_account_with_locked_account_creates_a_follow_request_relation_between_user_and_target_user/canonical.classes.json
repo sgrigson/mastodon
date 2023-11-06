@@ -1,4 +1,0 @@
-[
-  "app/models/concerns/AccountInteractions",
-  "json/JSON::Ext::Parser"
-]

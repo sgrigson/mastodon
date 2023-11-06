@@ -1,6 +1,0 @@
-[
-  {
-    "caller": "devise/Devise",
-    "callee": "ruby/String"
-  }
-]

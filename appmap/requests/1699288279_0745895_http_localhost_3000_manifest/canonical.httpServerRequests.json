@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /manifest",
-    "parameters": "()",
-    "status": 200
-  }
-]

@@ -1,5 +1,0 @@
-[
-  "INSERT INTO account_stats(account_id, followers_count, created_at, updated_at) VALUES (?, ?, now(), now()) ON CONFLICT (account_id) DO UPDATE SET followers_count = account_stats.followers_count + ?, updated_at = now() RETURNING id;",
-  "SELECT \"account_stats\".\"id\", \"account_stats\".\"account_id\", \"account_stats\".\"statuses_count\", \"account_stats\".\"following_count\", \"account_stats\".\"followers_count\", \"account_stats\".\"created_at\", \"account_stats\".\"updated_at\", \"account_stats\".\"last_status_at\" FROM \"account_stats\" WHERE \"account_stats\".\"account_id\" = $? LIMIT $?",
-  "SELECT \"account_stats\".\"id\", \"account_stats\".\"account_id\", \"account_stats\".\"statuses_count\", \"account_stats\".\"following_count\", \"account_stats\".\"followers_count\", \"account_stats\".\"created_at\", \"account_stats\".\"updated_at\", \"account_stats\".\"last_status_at\" FROM \"account_stats\" WHERE \"account_stats\".\"id\" = $? LIMIT $?"
-]

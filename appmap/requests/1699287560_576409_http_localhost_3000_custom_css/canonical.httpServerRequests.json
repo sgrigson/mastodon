@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /custom.css",
-    "parameters": "()",
-    "status": 200
-  }
-]

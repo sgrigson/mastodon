@@ -1,6 +1,0 @@
-[
-  "app/lib/admin/metrics/measure",
-  "lib/mastodon",
-  "logger",
-  "ruby"
-]

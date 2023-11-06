@@ -1,4 +1,0 @@
-[
-  "SELECT \"poll_votes\".* FROM \"poll_votes\" WHERE \"poll_votes\".\"poll_id\" = $? ORDER BY \"poll_votes\".\"id\" ASC LIMIT $?",
-  "SELECT \"polls\".* FROM \"polls\" WHERE \"polls\".\"id\" = $? LIMIT $?"
-]

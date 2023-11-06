@@ -1,6 +1,0 @@
-[
-  "array.pack",
-  "crypto.pkey",
-  "mvc.after_action",
-  "mvc.before_action"
-]

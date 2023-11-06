@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /api/v1/emails/check_confirmation",
-    "parameters": "()",
-    "status": 200
-  }
-]

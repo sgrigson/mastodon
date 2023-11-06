@@ -1,4 +1,0 @@
-[
-  "app/models/AccountStatusesCleanupPolicy",
-  "lib/mastodon/Mastodon::Snowflake"
-]

@@ -1,6 +1,0 @@
-[
-  {
-    "caller": "app/controllers/ApplicationController",
-    "callee": "SELECT 1 AS one FROM \"accounts\" WHERE (id > 0) LIMIT $1"
-  }
-]

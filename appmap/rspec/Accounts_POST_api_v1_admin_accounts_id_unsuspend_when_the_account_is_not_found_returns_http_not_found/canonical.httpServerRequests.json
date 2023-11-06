@@ -1,7 +1,0 @@
-[
-  {
-    "route": "POST /api/v1/admin/accounts/{id}/unsuspend",
-    "parameters": "()",
-    "status": 404
-  }
-]

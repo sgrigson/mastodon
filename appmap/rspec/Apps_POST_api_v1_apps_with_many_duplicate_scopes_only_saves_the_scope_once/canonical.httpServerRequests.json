@@ -1,7 +1,0 @@
-[
-  {
-    "route": "POST /api/v1/apps",
-    "parameters": "(client_name,redirect_uris,scopes,website)",
-    "status": 200
-  }
-]

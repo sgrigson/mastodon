@@ -1,8 +1,0 @@
-[
-  "app/helpers/ApplicationHelper",
-  "app/lib/UserSettingsSerializer",
-  "app/models/UserSettings",
-  "app/models/concerns/HasUserSettings",
-  "app/models/user_settings/UserSettings::DSL::ClassMethods",
-  "app/models/user_settings/UserSettings::Setting"
-]

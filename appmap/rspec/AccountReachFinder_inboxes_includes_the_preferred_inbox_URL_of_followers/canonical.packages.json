@@ -1,7 +1,0 @@
-[
-  "app/lib",
-  "app/models",
-  "lib/mastodon",
-  "logger",
-  "ruby"
-]

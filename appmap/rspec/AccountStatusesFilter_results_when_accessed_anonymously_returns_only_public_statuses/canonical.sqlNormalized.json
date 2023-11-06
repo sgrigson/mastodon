@@ -1,3 +1,0 @@
-[
-  "SELECT \"statuses\".\"visibility\" FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"account_id\" = $? AND \"statuses\".\"visibility\" IN ($?, $?) ORDER BY \"statuses\".\"id\" DESC"
-]

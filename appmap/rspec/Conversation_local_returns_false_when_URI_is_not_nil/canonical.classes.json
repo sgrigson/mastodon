@@ -1,4 +1,0 @@
-[
-  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "app/models/Conversation"
-]

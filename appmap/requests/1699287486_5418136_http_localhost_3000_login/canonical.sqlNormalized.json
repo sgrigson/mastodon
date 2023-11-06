@@ -1,3 +1,0 @@
-[
-  "SELECT \"ip_blocks\".\"ip\" FROM \"ip_blocks\" WHERE \"ip_blocks\".\"severity\" = $?"
-]

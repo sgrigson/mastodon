@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /api/v1/blocks",
-    "parameters": "(since_id)",
-    "status": 200
-  }
-]

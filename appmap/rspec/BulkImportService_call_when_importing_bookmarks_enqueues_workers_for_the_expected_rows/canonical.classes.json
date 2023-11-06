@@ -1,6 +1,0 @@
-[
-  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "json/JSON::Ext::Generator::State",
-  "json/JSON::Ext::Parser",
-  "ruby/String"
-]

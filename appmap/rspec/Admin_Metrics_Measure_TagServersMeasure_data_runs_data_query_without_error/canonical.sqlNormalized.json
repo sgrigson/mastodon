@@ -1,5 +1,0 @@
-[
-  "SELECT COUNT(distinct accounts.domain) FROM \"statuses\" INNER JOIN \"statuses_tags\" ON \"statuses\".\"id\" = \"statuses_tags\".\"status_id\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"statuses\".\"account_id\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses_tags\".\"tag_id\" = $? AND (statuses.id BETWEEN ? AND ?)",
-  "SELECT \"tags\".* FROM \"tags\" WHERE \"tags\".\"id\" = $? LIMIT $?",
-  "SELECT axis.*, ( SELECT count(distinct accounts.domain) AS value FROM statuses INNER JOIN statuses_tags ON statuses.id = statuses_tags.status_id INNER JOIN accounts ON statuses.account_id = accounts.id WHERE statuses_tags.tag_id = ? AND statuses.id BETWEEN ? AND ? AND date_trunc(?, statuses.created_at)::date = axis.day ) FROM ( SELECT generate_series(date_trunc(?, ?::timestamp)::date, date_trunc(?, ?::timestamp)::date, (?)::interval) AS day ) as axis"
-]

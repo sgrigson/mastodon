@@ -1,3 +1,0 @@
-[
-  "SELECT \"webauthn_credentials\".* FROM \"webauthn_credentials\" WHERE \"webauthn_credentials\".\"id\" = $? LIMIT $?"
-]

@@ -1,4 +1,0 @@
-[
-  "app/models/AccountStat",
-  "app/models/concerns/AccountCounters"
-]

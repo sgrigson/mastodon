@@ -1,3 +1,0 @@
-[
-  "SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"account_id\" = $? AND \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"id\" <= $? ORDER BY \"statuses\".\"id\" ASC LIMIT $?"
-]

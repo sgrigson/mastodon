@@ -1,9 +1,0 @@
-[
-  "activesupport",
-  "app/lib",
-  "app/models",
-  "app/models/admin",
-  "app/models/concerns",
-  "app/validators",
-  "lib/paperclip"
-]

@@ -1,7 +1,0 @@
-[
-  "SELECT \"relays\".\"inbox_url\" FROM \"relays\" WHERE \"relays\".\"state\" = $?",
-  "SELECT \"unavailable_domains\".\"domain\" FROM \"unavailable_domains\"",
-  "SELECT coalesce(nullif(accounts.shared_inbox_url, ?), accounts.inbox_url) AS preferred_inbox_url FROM \"accounts\" INNER JOIN \"follows\" ON \"accounts\".\"id\" = \"follows\".\"account_id\" WHERE \"follows\".\"target_account_id\" = $? AND \"accounts\".\"protocol\" = $? GROUP BY \"preferred_inbox_url\"",
-  "SELECT coalesce(nullif(accounts.shared_inbox_url, ?), accounts.inbox_url) AS preferred_inbox_url FROM \"accounts\" INNER JOIN \"mentions\" ON \"mentions\".\"account_id\" = \"accounts\".\"id\" WHERE \"mentions\".\"status_id\" IN (SELECT \"statuses\".\"id\" FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"account_id\" = $? AND \"statuses\".\"id\" >= $? ORDER BY \"statuses\".\"id\" DESC LIMIT $?) AND \"accounts\".\"protocol\" = $? GROUP BY \"preferred_inbox_url\"",
-  "SELECT coalesce(nullif(accounts.shared_inbox_url, ?), accounts.inbox_url) AS preferred_inbox_url FROM \"accounts\" WHERE \"accounts\".\"id\" IN (SELECT \"reports\".\"account_id\" FROM \"reports\" WHERE \"reports\".\"target_account_id\" = $?) AND \"accounts\".\"protocol\" = $? GROUP BY \"preferred_inbox_url\""
-]

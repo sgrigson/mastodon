@@ -1,8 +1,0 @@
-[
-  "domain_allows",
-  "instances",
-  "pg_attribute",
-  "pg_class",
-  "pg_index",
-  "pg_namespace"
-]

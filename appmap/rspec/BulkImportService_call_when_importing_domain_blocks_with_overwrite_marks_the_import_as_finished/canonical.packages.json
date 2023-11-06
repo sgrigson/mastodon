@@ -1,9 +1,0 @@
-[
-  "activesupport",
-  "app/lib",
-  "app/models/concerns",
-  "app/validators",
-  "json",
-  "logger",
-  "ruby"
-]

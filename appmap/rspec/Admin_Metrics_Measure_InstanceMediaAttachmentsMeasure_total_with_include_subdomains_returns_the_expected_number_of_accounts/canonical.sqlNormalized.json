@@ -1,6 +1,0 @@
-[
-  "SELECT SUM(COALESCE(file_file_size, ?) + COALESCE(thumbnail_file_size, ?)) FROM \"media_attachments\" INNER JOIN \"accounts\" ON \"accounts\".\"id\" = \"media_attachments\".\"account_id\" WHERE \"accounts\".\"domain\" IN (SELECT \"instances\".\"domain\" FROM \"instances\" WHERE (reverse(? || domain) LIKE reverse(?)))",
-  "SELECT SUM(\"media_attachments\".\"file_file_size\") FROM \"media_attachments\" WHERE \"media_attachments\".\"account_id\" = $?",
-  "SELECT SUM(\"media_attachments\".\"thumbnail_file_size\") FROM \"media_attachments\" WHERE \"media_attachments\".\"account_id\" = $?",
-  "SELECT axis.*, ( WITH new_media_attachments AS ( SELECT COALESCE(media_attachments.file_file_size, ?) + COALESCE(media_attachments.thumbnail_file_size, ?) AS size FROM media_attachments INNER JOIN accounts ON accounts.id = media_attachments.account_id WHERE date_trunc(?, media_attachments.created_at)::date = axis.period AND accounts.domain IN (SELECT domain FROM instances WHERE reverse(? || domain) LIKE reverse(? || ?::text)) ) SELECT SUM(size) FROM new_media_attachments ) AS value FROM ( SELECT generate_series(date_trunc(?, ?::timestamp)::date, date_trunc(?, ?::timestamp)::date, interval ?) AS period ) AS axis"
-]

@@ -1,7 +1,0 @@
-[
-  "app/helpers/JsonLdHelper",
-  "app/lib/Request",
-  "app/lib/Request::ClientLimit",
-  "app/lib/activitypub/ActivityPub::Dereferencer",
-  "lib/mastodon/Mastodon::Version"
-]

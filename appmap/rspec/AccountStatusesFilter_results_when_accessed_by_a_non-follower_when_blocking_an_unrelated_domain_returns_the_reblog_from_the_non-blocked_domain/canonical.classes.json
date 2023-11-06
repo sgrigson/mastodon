@@ -1,7 +1,0 @@
-[
-  "app/lib/AccountStatusesFilter",
-  "app/models/Account",
-  "app/models/concerns/AccountInteractions",
-  "logger/Logger::LogDevice",
-  "ruby/Marshal"
-]

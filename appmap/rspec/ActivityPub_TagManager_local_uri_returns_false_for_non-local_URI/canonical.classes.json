@@ -1,4 +1,0 @@
-[
-  "app/lib/TagManager",
-  "app/lib/activitypub/ActivityPub::TagManager"
-]

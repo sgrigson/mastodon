@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /api/v1/admin/reports",
-    "parameters": "(limit)",
-    "status": 200
-  }
-]

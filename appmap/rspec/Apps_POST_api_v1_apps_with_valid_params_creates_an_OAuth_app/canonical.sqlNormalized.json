@@ -1,6 +1,0 @@
-[
-  "INSERT INTO \"oauth_applications\" (\"name\", \"uid\", \"secret\", \"redirect_uri\", \"scopes\", \"created_at\", \"updated_at\", \"superapp\", \"website\", \"owner_type\", \"owner_id\", \"confidential\") VALUES ($?, $?, $?, $?, $?, $?, $?, $?, $?, $?, $?, $?) RETURNING \"id\"",
-  "RELEASE SAVEPOINT active_record_1",
-  "SAVEPOINT active_record_1",
-  "SELECT ? AS one FROM \"oauth_applications\" WHERE \"oauth_applications\".\"uid\" = $? LIMIT $?"
-]

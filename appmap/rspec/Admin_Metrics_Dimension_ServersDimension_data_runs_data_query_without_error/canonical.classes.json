@@ -1,8 +1,0 @@
-[
-  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::BaseDimension",
-  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::QueryHelper",
-  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::ServersDimension",
-  "lib/mastodon/Mastodon::Snowflake",
-  "logger/Logger::LogDevice",
-  "ruby/Marshal"
-]

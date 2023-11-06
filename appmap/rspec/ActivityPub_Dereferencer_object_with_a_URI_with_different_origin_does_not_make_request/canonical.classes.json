@@ -1,4 +1,0 @@
-[
-  "app/helpers/JsonLdHelper",
-  "app/lib/activitypub/ActivityPub::Dereferencer"
-]

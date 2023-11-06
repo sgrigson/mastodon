@@ -1,4 +1,0 @@
-[
-  "SELECT ? AS one FROM \"accounts\" WHERE LOWER(\"accounts\".\"username\") = ? AND LOWER(\"accounts\".\"domain\") IS ? LIMIT $?",
-  "SELECT \"settings\".* FROM \"settings\" WHERE (thing_type is ? and thing_id is ?) AND \"settings\".\"var\" = $? ORDER BY \"settings\".\"id\" ASC LIMIT $?"
-]

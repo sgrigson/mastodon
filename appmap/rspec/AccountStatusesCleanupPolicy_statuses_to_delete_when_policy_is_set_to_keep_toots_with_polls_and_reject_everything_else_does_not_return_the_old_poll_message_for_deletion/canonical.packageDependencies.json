@@ -1,6 +1,0 @@
-[
-  {
-    "caller": "app/models",
-    "callee": "lib/mastodon"
-  }
-]

@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /explore(/*any)",
-    "parameters": "()",
-    "status": 200
-  }
-]

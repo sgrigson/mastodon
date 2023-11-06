@@ -1,8 +1,0 @@
-[
-  "app/lib/AccountReachFinder",
-  "app/lib/DeliveryFailureTracker",
-  "app/models/Account",
-  "lib/mastodon/Mastodon::Snowflake",
-  "logger/Logger::LogDevice",
-  "ruby/Marshal"
-]

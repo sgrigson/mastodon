@@ -1,7 +1,0 @@
-[
-  "activesupport",
-  "app/lib",
-  "lib/chewy/strategy",
-  "logger",
-  "ruby"
-]

@@ -1,9 +1,0 @@
-[
-  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "app/lib/RedisConfiguration",
-  "app/lib/TagManager",
-  "app/models/Instance",
-  "app/models/concerns/DomainMaterializable",
-  "app/models/concerns/Redisable",
-  "app/validators/DomainValidator"
-]

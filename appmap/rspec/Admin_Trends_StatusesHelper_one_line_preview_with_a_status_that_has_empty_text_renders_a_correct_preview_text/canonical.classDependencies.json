@@ -1,6 +1,0 @@
-[
-  {
-    "caller": "app/helpers/admin/trends",
-    "callee": "app/models"
-  }
-]

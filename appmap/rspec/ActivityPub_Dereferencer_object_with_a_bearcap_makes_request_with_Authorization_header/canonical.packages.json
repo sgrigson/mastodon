@@ -1,6 +1,0 @@
-[
-  "app/helpers",
-  "app/lib",
-  "app/lib/activitypub",
-  "lib/mastodon"
-]

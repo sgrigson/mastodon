@@ -1,9 +1,0 @@
-[
-  "INSERT INTO \"oauth_applications\" (\"name\", \"uid\", \"secret\", \"redirect_uri\", \"scopes\", \"created_at\", \"updated_at\", \"superapp\", \"website\", \"owner_type\", \"owner_id\", \"confidential\") VALUES ($?, $?, $?, $?, $?, $?, $?, $?, $?, $?, $?, $?) RETURNING \"id\"",
-  "INSERT INTO \"settings\" (\"var\", \"value\", \"thing_type\", \"created_at\", \"updated_at\", \"thing_id\") VALUES ($?, $?, $?, $?, $?, $?) RETURNING \"id\"",
-  "RELEASE SAVEPOINT active_record_1",
-  "SAVEPOINT active_record_1",
-  "SELECT ? AS one FROM \"oauth_applications\" WHERE \"oauth_applications\".\"uid\" = $? LIMIT $?",
-  "SELECT \"settings\".* FROM \"settings\" WHERE (thing_type is ? and thing_id is ?) AND \"settings\".\"var\" = $? ORDER BY \"settings\".\"id\" ASC LIMIT $?",
-  "UPDATE \"settings\" SET \"value\" = $?, \"updated_at\" = $? WHERE \"settings\".\"id\" = $?"
-]

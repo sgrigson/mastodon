@@ -1,6 +1,0 @@
-[
-  "app/lib/FeedManager",
-  "app/models/Feed",
-  "app/models/concerns/Cacheable::ClassMethods",
-  "app/models/concerns/Redisable"
-]

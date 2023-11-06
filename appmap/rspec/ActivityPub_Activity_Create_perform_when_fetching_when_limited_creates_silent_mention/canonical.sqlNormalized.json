@@ -1,4 +1,0 @@
-[
-  "SELECT \"mentions\".* FROM \"mentions\" WHERE \"mentions\".\"status_id\" = $? ORDER BY \"mentions\".\"id\" ASC LIMIT $?",
-  "SELECT \"statuses\".* FROM \"statuses\" WHERE \"statuses\".\"deleted_at\" IS ? AND \"statuses\".\"account_id\" = $? ORDER BY \"statuses\".\"id\" DESC LIMIT $?"
-]

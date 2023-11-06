@@ -14,6 +14,8 @@ Running this via VS Code is recommended.
 
 Run as a local machine devcontainer via Docker.
 
+You might need to manually run `foreman start -f Procfile.dev`.
+
 Run `bundle exec rails server` on devcontainer startup, after installing AppMap. When the server starts up it will run via AppMap and start logging requests.
 
 ## Running All of The Tests Locally
@@ -26,7 +28,7 @@ Run `RAILS_ENV=test bundle exec rspec` to execute all the tests. This is not a s
 
 ## Running Tests on an Ongoing Basis
 
-As data is updated and controllers are changed, AppMap knows which tests need to be re-run. Thanks to committing all of the JSON files for this process to the repo, we're able to skip running all of the tests, even from a cold start.
+As data is updated and controllers are changed, AppMap knows which tests need to be re-run, so long as you've populated your local appmap data by running all the tests, above.
 
 For more information, review [this](https://dev.to/appmap/the-fastest-way-to-run-mastodon-tests-5g03).
 

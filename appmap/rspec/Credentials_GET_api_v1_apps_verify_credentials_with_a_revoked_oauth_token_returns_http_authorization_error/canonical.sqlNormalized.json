@@ -1,7 +1,0 @@
-[
-  "RELEASE SAVEPOINT active_record_1",
-  "SAVEPOINT active_record_1",
-  "SELECT ? AS one FROM \"oauth_access_tokens\" WHERE \"oauth_access_tokens\".\"token\" = $? AND \"oauth_access_tokens\".\"id\" != $? LIMIT $?",
-  "SELECT \"oauth_access_tokens\".* FROM \"oauth_access_tokens\" WHERE \"oauth_access_tokens\".\"token\" = $? LIMIT $?",
-  "UPDATE \"oauth_access_tokens\" SET \"last_used_at\" = $?, \"last_used_ip\" = $? WHERE \"oauth_access_tokens\".\"id\" = $?"
-]

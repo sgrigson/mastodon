@@ -1,5 +1,0 @@
-[
-  "app/helpers/AccountsHelper",
-  "app/helpers/InstanceHelper",
-  "app/models/Account"
-]

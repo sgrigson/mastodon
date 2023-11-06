@@ -1,3 +1,0 @@
-[
-  "SELECT ? AS one FROM \"follow_requests\" WHERE \"follow_requests\".\"account_id\" = $? AND \"follow_requests\".\"target_account_id\" = $? LIMIT $?"
-]

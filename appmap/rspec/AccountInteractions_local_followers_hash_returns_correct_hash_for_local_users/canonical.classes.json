@@ -1,9 +1,0 @@
-[
-  "app/helpers/ActivityPub::TagManager",
-  "app/lib/activitypub/ActivityPub::TagManager",
-  "app/models/Account",
-  "app/models/concerns/AccountInteractions",
-  "lib/active_record/ActiveRecord::Batches",
-  "logger/Logger::LogDevice",
-  "ruby/String"
-]

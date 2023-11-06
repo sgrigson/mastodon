@@ -1,7 +1,0 @@
-[
-  {
-    "route": "PATCH /api/v1/accounts/update_credentials",
-    "parameters": "(discoverable,locked,indexable)",
-    "status": 403
-  }
-]

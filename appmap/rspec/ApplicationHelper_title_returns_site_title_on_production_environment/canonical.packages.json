@@ -1,7 +1,0 @@
-[
-  "activesupport",
-  "app/helpers",
-  "app/models",
-  "logger",
-  "psych"
-]

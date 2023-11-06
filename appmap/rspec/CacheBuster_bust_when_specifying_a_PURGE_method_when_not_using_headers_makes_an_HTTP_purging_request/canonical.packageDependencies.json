@@ -1,6 +1,0 @@
-[
-  {
-    "caller": "app/lib",
-    "callee": "lib/mastodon"
-  }
-]

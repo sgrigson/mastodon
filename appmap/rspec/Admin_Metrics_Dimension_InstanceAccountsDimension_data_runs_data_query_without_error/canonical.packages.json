@@ -1,7 +1,0 @@
-[
-  "app/lib",
-  "app/lib/admin/metrics/dimension",
-  "app/lib/connection_pool",
-  "logger",
-  "ruby"
-]

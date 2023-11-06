@@ -1,7 +1,0 @@
-[
-  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::BaseDimension",
-  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::QueryHelper",
-  "app/lib/admin/metrics/dimension/Admin::Metrics::Dimension::SourcesDimension",
-  "logger/Logger::LogDevice",
-  "ruby/Marshal"
-]

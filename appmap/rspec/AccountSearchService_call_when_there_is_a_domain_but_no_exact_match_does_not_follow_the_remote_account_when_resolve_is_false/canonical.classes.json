@@ -1,6 +1,0 @@
-[
-  "app/lib/TagManager",
-  "app/models/concerns/AccountFinderConcern::AccountFinder",
-  "app/services/AccountSearchService::QueryBuilder",
-  "lib/chewy/Chewy::SettingsExtensions"
-]

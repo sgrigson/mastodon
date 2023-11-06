@@ -1,8 +1,0 @@
-[
-  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "app/lib/PotentialFriendshipTracker",
-  "app/models/concerns/AccountInteractions",
-  "app/models/concerns/Mute",
-  "app/models/concerns/Redisable",
-  "logger/Logger::LogDevice"
-]

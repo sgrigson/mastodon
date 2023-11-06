@@ -1,3 +1,0 @@
-[
-  "SELECT \"web_push_subscriptions\".* FROM \"web_push_subscriptions\" WHERE \"web_push_subscriptions\".\"endpoint\" = $? LIMIT $?"
-]

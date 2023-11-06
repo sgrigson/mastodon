@@ -1,7 +1,0 @@
-[
-  {
-    "route": "PUT /api/v1/admin/reports/{id}",
-    "parameters": "(category)",
-    "status": 200
-  }
-]

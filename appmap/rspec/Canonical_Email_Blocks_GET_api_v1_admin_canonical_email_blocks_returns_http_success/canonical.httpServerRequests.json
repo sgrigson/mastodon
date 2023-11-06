@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /api/v1/admin/canonical_email_blocks",
-    "parameters": "()",
-    "status": 200
-  }
-]

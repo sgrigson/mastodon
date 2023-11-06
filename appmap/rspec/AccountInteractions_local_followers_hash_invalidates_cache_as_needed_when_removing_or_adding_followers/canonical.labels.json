@@ -1,6 +1,0 @@
-[
-  "log",
-  "mvc.after_action",
-  "mvc.before_action",
-  "string.unpack"
-]

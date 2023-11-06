@@ -1,4 +1,0 @@
-[
-  "logger/Logger::LogDevice",
-  "ruby/Marshal"
-]

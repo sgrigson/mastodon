@@ -1,8 +1,0 @@
-[
-  "app/lib/ActivityTracker",
-  "app/lib/admin/metrics/measure/Admin::Metrics::Measure::ActiveUsersMeasure",
-  "app/lib/admin/metrics/measure/Admin::Metrics::Measure::BaseMeasure",
-  "app/models/concerns/Redisable",
-  "logger/Logger::LogDevice",
-  "ruby/Marshal"
-]

@@ -1,3 +1,0 @@
-[
-  "SELECT \"reports\".\"id\", \"reports\".\"status_ids\", \"reports\".\"comment\", \"reports\".\"created_at\", \"reports\".\"updated_at\", \"reports\".\"account_id\", \"reports\".\"action_taken_by_account_id\", \"reports\".\"target_account_id\", \"reports\".\"assigned_account_id\", \"reports\".\"uri\", \"reports\".\"forwarded\", \"reports\".\"category\", \"reports\".\"action_taken_at\", \"reports\".\"rule_ids\" FROM \"reports\" WHERE \"reports\".\"account_id\" = $? AND \"reports\".\"target_account_id\" = $? LIMIT $?"
-]

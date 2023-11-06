@@ -1,6 +1,0 @@
-[
-  "crypto.pkcs5",
-  "log",
-  "mvc.after_action",
-  "mvc.before_action"
-]

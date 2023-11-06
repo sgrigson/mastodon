@@ -1,8 +1,0 @@
-[
-  "app/lib/admin/metrics/measure/Admin::Metrics::Measure::BaseMeasure",
-  "app/lib/admin/metrics/measure/Admin::Metrics::Measure::InstanceStatusesMeasure",
-  "app/lib/admin/metrics/measure/Admin::Metrics::Measure::QueryHelper",
-  "lib/mastodon/Mastodon::Snowflake",
-  "logger/Logger::LogDevice",
-  "ruby/Marshal"
-]

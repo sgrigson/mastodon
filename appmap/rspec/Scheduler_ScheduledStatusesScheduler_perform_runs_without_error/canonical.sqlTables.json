@@ -1,9 +1,0 @@
-[
-  "announcements",
-  "pg_attrdef",
-  "pg_attribute",
-  "pg_collation",
-  "pg_index",
-  "pg_type",
-  "scheduled_statuses"
-]

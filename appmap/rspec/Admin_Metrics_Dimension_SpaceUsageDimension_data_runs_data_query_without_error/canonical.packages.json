@@ -1,7 +1,0 @@
-[
-  "app/lib/admin/metrics/dimension",
-  "app/models/concerns",
-  "lib/chewy",
-  "logger",
-  "ruby"
-]

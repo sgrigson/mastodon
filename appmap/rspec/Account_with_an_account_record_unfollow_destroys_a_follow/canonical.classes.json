@@ -1,7 +1,0 @@
-[
-  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "app/models/Account",
-  "app/models/concerns/AccountCounters",
-  "app/models/concerns/AccountInteractions",
-  "logger/Logger::LogDevice"
-]

@@ -1,4 +1,0 @@
-[
-  "actionpack/ActionDispatch::Cookies::CookieJar",
-  "app/controllers/ApplicationController"
-]

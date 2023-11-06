@@ -1,3 +1,0 @@
-[
-  "SELECT \"announcement_mutes\".* FROM \"announcement_mutes\" WHERE \"announcement_mutes\".\"announcement_id\" = $? AND \"announcement_mutes\".\"account_id\" = $? LIMIT $?"
-]

@@ -1,3 +1,0 @@
-[
-  "SELECT \"markers\".* FROM \"markers\" WHERE \"markers\".\"user_id\" = $? ORDER BY \"markers\".\"id\" ASC LIMIT $?"
-]

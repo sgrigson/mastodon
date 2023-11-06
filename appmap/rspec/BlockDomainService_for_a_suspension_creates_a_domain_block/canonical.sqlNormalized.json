@@ -1,3 +1,0 @@
-[
-  "SELECT \"domain_blocks\".* FROM \"domain_blocks\" WHERE \"domain_blocks\".\"domain\" IN ($?, $?) ORDER BY char_length(domain) desc LIMIT $?"
-]

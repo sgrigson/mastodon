@@ -1,7 +1,0 @@
-[
-  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "app/models/Account",
-  "app/models/Poll",
-  "app/validators/PollValidator",
-  "openssl/OpenSSL::Random"
-]

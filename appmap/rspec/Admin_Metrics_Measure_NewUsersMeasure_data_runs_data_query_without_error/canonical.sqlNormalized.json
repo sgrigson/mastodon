@@ -1,4 +1,0 @@
-[
-  "SELECT COUNT(*) FROM \"users\" WHERE \"users\".\"created_at\" BETWEEN $? AND $?",
-  "SELECT axis.*, ( WITH new_users AS ( SELECT users.id FROM users WHERE date_trunc(?, users.created_at)::date = axis.period ) SELECT count(*) FROM new_users ) AS value FROM ( SELECT generate_series(date_trunc(?, ?::timestamp)::date, date_trunc(?, ?::timestamp)::date, interval ?) AS period ) AS axis"
-]

@@ -1,5 +1,0 @@
-[
-  "INSERT INTO \"conversations\" (\"uri\", \"created_at\", \"updated_at\") VALUES ($?, $?, $?) RETURNING \"id\"",
-  "RELEASE SAVEPOINT active_record_1",
-  "SAVEPOINT active_record_1"
-]

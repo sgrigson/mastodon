@@ -1,6 +1,0 @@
-[
-  "INSERT INTO \"settings\" (\"var\", \"value\", \"thing_type\", \"created_at\", \"updated_at\", \"thing_id\") VALUES ($?, $?, $?, $?, $?, $?) RETURNING \"id\"",
-  "RELEASE SAVEPOINT active_record_1",
-  "SAVEPOINT active_record_1",
-  "SELECT \"settings\".* FROM \"settings\" WHERE (thing_type is ? and thing_id is ?) AND \"settings\".\"var\" = $? ORDER BY \"settings\".\"id\" ASC LIMIT $?"
-]

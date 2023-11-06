@@ -1,7 +1,0 @@
-[
-  {
-    "route": "GET /backups/{id}/download",
-    "parameters": "()",
-    "status": 302
-  }
-]

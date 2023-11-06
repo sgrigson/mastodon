@@ -1,8 +1,0 @@
-[
-  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
-  "app/lib/RedisConfiguration",
-  "lib/chewy/strategy/Chewy::Strategy::Mastodon",
-  "logger/Logger::LogDevice",
-  "ruby/Array",
-  "ruby/String"
-]

@@ -1,6 +1,0 @@
-[
-  {
-    "caller": "app/models/admin",
-    "callee": "Database"
-  }
-]

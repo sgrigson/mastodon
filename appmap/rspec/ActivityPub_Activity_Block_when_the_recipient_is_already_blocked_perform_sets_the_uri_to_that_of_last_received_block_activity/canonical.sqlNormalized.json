@@ -1,3 +1,0 @@
-[
-  "SELECT \"blocks\".* FROM \"blocks\" WHERE \"blocks\".\"account_id\" = $? AND \"blocks\".\"target_account_id\" = $? LIMIT $?"
-]
