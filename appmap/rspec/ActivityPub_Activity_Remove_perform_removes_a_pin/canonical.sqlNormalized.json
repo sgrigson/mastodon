@@ -1,0 +1,3 @@
+[
+  "SELECT ? AS one FROM \"status_pins\" WHERE \"status_pins\".\"account_id\" = $? AND \"status_pins\".\"status_id\" = $? LIMIT $?"
+]

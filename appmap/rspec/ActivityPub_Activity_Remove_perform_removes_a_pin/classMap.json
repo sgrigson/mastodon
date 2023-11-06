@@ -1,0 +1,30 @@
+[
+  {
+    "name": "app/models/concerns",
+    "type": "package",
+    "children": [
+      {
+        "name": "AccountInteractions",
+        "type": "class",
+        "children": [
+          {
+            "name": "pinned?",
+            "type": "function",
+            "static": false,
+            "location": "app/models/concerns/account_interactions.rb:254"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "database",
+    "name": "Database",
+    "children": [
+      {
+        "type": "query",
+        "name": "SELECT 1 AS one FROM \"status_pins\" WHERE \"status_pins\".\"account_id\" = $1 AND \"status_pins\".\"status_id\" = $2 LIMIT $3"
+      }
+    ]
+  }
+]

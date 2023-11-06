@@ -1,0 +1,21 @@
+[
+  "account_stats",
+  "accounts",
+  "bookmarks",
+  "favourites",
+  "follows",
+  "list_accounts",
+  "lists",
+  "media_attachments",
+  "mentions",
+  "notifications",
+  "polls",
+  "preview_cards_statuses",
+  "reports",
+  "status_edits",
+  "status_pins",
+  "status_stats",
+  "statuses",
+  "statuses_tags",
+  "users"
+]

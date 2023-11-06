@@ -1,0 +1,14 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/helpers/ActivityPub::TagManager",
+  "app/helpers/JsonLdHelper",
+  "app/lib/StatusFinder",
+  "app/lib/TagManager",
+  "app/lib/activitypub/ActivityPub::Activity",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "app/lib/activitypub/activity/ActivityPub::Activity::Undo",
+  "app/models/Account",
+  "app/models/Status",
+  "app/models/StatusStat",
+  "app/models/concerns/AccountInteractions"
+]

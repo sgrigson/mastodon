@@ -1,0 +1,11 @@
+[
+  "activesupport/ActiveSupport::Callbacks::CallbackSequence",
+  "app/helpers/JsonLdHelper",
+  "app/lib/activitypub/ActivityPub::Activity",
+  "app/lib/activitypub/ActivityPub::TagManager",
+  "app/lib/activitypub/activity/ActivityPub::Activity::Undo",
+  "app/models/Account",
+  "app/models/concerns/AccountCounters",
+  "app/models/concerns/AccountInteractions",
+  "logger/Logger::LogDevice"
+]
