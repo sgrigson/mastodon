@@ -1,0 +1,10 @@
+[
+  {
+    "caller": "app/controllers",
+    "callee": "actionpack/ActionDispatch"
+  },
+  {
+    "caller": "app/controllers",
+    "callee": "app/lib"
+  }
+]

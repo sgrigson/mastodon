@@ -1,0 +1,8 @@
+[
+  "actionpack",
+  "app/controllers",
+  "app/lib",
+  "app/lib/connection_pool",
+  "app/models",
+  "logger"
+]

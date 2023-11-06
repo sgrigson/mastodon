@@ -1,0 +1,5 @@
+[
+  "actionpack/ActionDispatch::Cookies::CookieJar",
+  "app/controllers/ApplicationController",
+  "app/lib/Themes"
+]

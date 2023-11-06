@@ -1,0 +1,20 @@
+[
+  {
+    "name": "app/controllers/concerns",
+    "type": "package",
+    "children": [
+      {
+        "name": "CacheConcern",
+        "type": "class",
+        "children": [
+          {
+            "name": "cache_collection",
+            "type": "function",
+            "static": false,
+            "location": "app/controllers/concerns/cache_concern.rb:193"
+          }
+        ]
+      }
+    ]
+  }
+]

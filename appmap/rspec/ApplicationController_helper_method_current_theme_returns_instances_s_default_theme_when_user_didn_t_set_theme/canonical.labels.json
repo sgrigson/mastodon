@@ -1,0 +1,17 @@
+[
+  "array.pack",
+  "crypto.secure_compare",
+  "deserialize.safe",
+  "deserialize.unsafe",
+  "format.json.generate",
+  "format.json.parse",
+  "http.session.read",
+  "http.session.write",
+  "job.create",
+  "log",
+  "mvc.after_action",
+  "mvc.before_action",
+  "random.secure",
+  "serialize",
+  "string.unpack"
+]

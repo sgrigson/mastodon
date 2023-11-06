@@ -1,0 +1,6 @@
+[
+  {
+    "caller": "app/controllers/ApplicationController",
+    "callee": "actionpack/ActionDispatch"
+  }
+]

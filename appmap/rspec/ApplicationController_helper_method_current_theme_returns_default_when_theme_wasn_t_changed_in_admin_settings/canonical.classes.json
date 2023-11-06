@@ -1,0 +1,10 @@
+[
+  "actionpack/ActionDispatch::Cookies::CookieJar",
+  "app/controllers/ApplicationController",
+  "app/lib/RequestPool",
+  "app/lib/Themes",
+  "app/lib/connection_pool/ConnectionPool::SharedConnectionPool",
+  "app/lib/connection_pool/ConnectionPool::SharedTimedStack",
+  "app/models/Setting",
+  "logger/Logger::LogDevice"
+]
